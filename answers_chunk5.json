@@ -1,0 +1,2330 @@
+[
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "python_code_returner(\"Next action: Use hoist1 to lift crate1 from crate0 at depot1\")"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist3 to lift crate0 from pallet3 at distributor0."
+  },
+  {
+    "output": "Attack object b"
+  },
+  {
+    "output": "def next_step():\n    return \"Lift crate0 from pallet1 at depot1 using hoist1\""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The next step is to use hoist3 to lift crate0 from pallet3 at distributor0 and load it into truck1 or truck2."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Insufficient information to determine the next action."
+  },
+  {
+    "output": "feast object c from object b"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "drive truck0 from depot1 to depot0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "drive truck0 from distributor0 to depot1"
+  },
+  {
+    "output": "load package_0 into airplane_0 at location_0_0"
+  },
+  {
+    "output": "The information provided is incomplete and lacks the full context of the current state and the conditions for each action. Therefore, it is not possible to determine the next action."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Attack object d"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def unstack_yellow_from_red():\n    # Simulate unstacking the yellow block from the red block\n    print(\"Unstacking yellow block from red block\")"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use a hoist to lift crate2 from crate0 and drop it on pallet3."
+  },
+  {
+    "output": "def next_action(): return 'unstack the yellow block from on top of the white block'"
+  },
+  {
+    "output": "stack the orange block on top of the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "def next_action(): return 'unstack the blue block from on top of the white block'"
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist0 to lift crate0 from pallet0 at depot0."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "drive truck0 from depot0 to distributor0"
+  },
+  {
+    "output": "Use hoist0 to lift crate0 from pallet0 at depot0."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Error: No problem found for CoT analysis"
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The next action cannot be determined yet."
+  },
+  {
+    "output": "def next_step():\n    return \"Pick up the orange block and place it on top of the red block.\""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Step 5: Put down the orange block."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def check_conditions(current_state):\n    return (current_state['sneeze'] == object_0 and \n            current_state['texture'] == object_1 and \n            current_state['texture'] == object_2 and \n            current_state['stupendous'] == object_3 and \n            current_state['next'] == (object_0, object_1) and \n            current_state['collect'] == (object_1, object_3) and \n            current_state['collect'] == (object_2, object_3))"
+  },
+  {
+    "output": "def next_action(): return 'Feast object a from object d'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def execute_plan():\n    return \"Feast object a from object b\""
+  },
+  {
+    "output": "wretched object_5 object_10 object_11 object_3"
+  },
+  {
+    "output": "Use hoist3 to lift crate1 from pallet1 at distributor0\nUse hoist3 to drop crate1 to pallet3 at distributor0"
+  },
+  {
+    "output": "def next_action(): return 'pick up the red block'"
+  },
+  {
+    "output": "def feast_object_c_from_object_b(): return 'Feast object c from object b'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The plan is to follow the steps above to achieve the goal."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist3 to lift crate1 from pallet3 at distributor0\nUse hoist3 to drop crate1 to pallet2 at distributor0"
+  },
+  {
+    "output": "drive truck0 from depot1 to depot2"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "def next_action(): return 'overcome object b from object d'"
+  },
+  {
+    "output": "unstack the yellow block from on top of the blue block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": "The next step in the plan to achieve the goal cannot be determined without the specific initial conditions and available actions."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "python_code_returner(\"Implement the plan to pick up the red block and stack it on top of the orange block.\")"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist1 to lift crate0 from pallet1 at depot1."
+  },
+  {
+    "output": "Feast object b from object a"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": "The action \"clip object_23 object_7 object_15\" cannot be executed at this"
+  },
+  {
+    "output": "Please provide the complete current state and the goal."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "Use hoist0 to lift crate1 from pallet1 at depot0 and drop it on crate0 at depot0."
+  },
+  {
+    "output": "Use hoist2 to lift crate1 from pallet2 at depot2."
+  },
+  {
+    "output": "Determine the current location of Crate0."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The first action in the plan cannot"
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "FEAST object b from object a"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "clip object_15 object_5 object_9"
+  },
+  {
+    "output": "def next_action(): return 'unstack the blue block from on top of the red block'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action(): return 'pick up the yellow block'"
+  },
+  {
+    "output": "Use hoist1 to lift crate2 from pallet1 at depot1 and place it on crate1."
+  },
+  {
+    "output": "Use hoist0 to lift crate1 from crate0 at depot0."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the red block from on top of the blue block"
+  },
+  {
+    "output": "Use hoist1 to lift crate1 from pallet1 at depot1."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the red block from on top of the orange block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Feast object a from object b"
+  },
+  {
+    "output": "analyze the initial conditions and determine the first action to achieve the goal."
+  },
+  {
+    "output": "print(\"Pick up the orange block\")\n    \n    # Step 4: Stack the orange block on top of the yellow block\n    print(\"Stack the orange block on top of the yellow block\")"
+  },
+  {
+    "output": "Feast object a from object b"
+  },
+  {
+    "output": "I will analyze the current state and the plan step by step to determine the next action."
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "load package_0 into truck_2 at location_2_0"
+  },
+  {
+    "output": "feast object b from object c"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The next step cannot be determined without the initial conditions."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "def next_action():\n    return \"Evaluate the initial conditions and determine the next action based on the goal.\""
+  },
+  {
+    "output": "clip object_14 object_5 object_10"
+  },
+  {
+    "output": "unstack the orange block from on top of the yellow block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the blue block from the table"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the red block from on top of the orange block"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "feast object a from object d"
+  },
+  {
+    "output": "Use hoist1 to lift crate0 from pallet1 at depot1."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "Attack object d"
+  },
+  {
+    "output": "unstack the blue block from on top of the yellow block"
+  },
+  {
+    "output": "def next_action(): return 'feast object b from object a'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Please provide the complete plan for evaluation."
+  },
+  {
+    "output": "The plan is incomplete and repetitive, and the initial conditions are not fully understood. A detailed analysis of the initial conditions and the plan is required to determine the next action."
+  },
+  {
+    "output": "drive truck0 from depot0 to depot1"
+  },
+  {
+    "output": "The information provided is incomplete and fragmented, making it difficult to determine the next action without further details."
+  },
+  {
+    "output": "Use hoist1 to lift crate1 from pallet1 at depot1 and drop it on pallet2 at depot1."
+  },
+  {
+    "output": "pick up the orange block"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The plan is incomplete and the next step cannot be determined without more information."
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from on top of the blue block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "Feast object a from object d"
+  },
+  {
+    "output": "unstack the yellow block from on top of the orange block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Attack object c"
+  },
+  {
+    "output": "def execute_actions():\n    # Overcome object b from object a\n    # Assuming a function 'overcome' exists to modify cravings\n    overcome(\"b\", \"a\")"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action(): return 'attack object a'"
+  },
+  {
+    "output": "\"unstack the red block from the yellow block\""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist2 to unload crate2 from truck0 at depot2."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_step(): return 'overcome object a from object b'"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "def next_action(): return 'feast object d from object b'"
+  },
+  {
+    "output": "unstack the blue block from on top of the yellow block."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action():\n    return \"Attack\""
+  },
+  {
+    "output": "Use hoist2 to lift crate0 from pallet2 at depot2."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "\"Pick up the red block\""
+  },
+  {
+    "output": "Please provide the full problem statement to proceed."
+  },
+  {
+    "output": "Use hoist3 to lift crate0 from pallet3 at distributor0."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Pick up the blue block."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "Error: No code found"
+  },
+  {
+    "output": "Feast object a from object c"
+  },
+  {
+    "output": "unstack the blue block from under the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the blue block, unstack the blue block from the orange block, stack the blue block on top of the red block, pick up the yellow"
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def plan(): unstack('orange', 'blue')"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "def next_step(): return 'drive truck0 from depot2 to distributor0'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action(): return 'overcome object b from object a'"
+  },
+  {
+    "output": "hoist1.move_to_location(\"depot1\", \"pallet1\")"
+  },
+  {
+    "output": "def next_step():\n    return \"Pick up the blue block\""
+  },
+  {
+    "output": "unstack the orange block from on top of the blue block"
+  },
+  {
+    "output": "Evaluate the current state to ensure that the conditions for the"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "I will analyze the plan step by step to determine its feasibility based on the initial conditions and the rules of the actions."
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up red block and stack it on top of blue block\""
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up the red block\""
+  },
+  {
+    "output": "The plan is incomplete and cannot be evaluated for feasibility."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "\"Pick up the blue block\""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "Feast object c from object b."
+  },
+  {
+    "output": "Feast action"
+  },
+  {
+    "output": "\"Pick up the red block\""
+  },
+  {
+    "output": "pick up the orange block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the orange block from on top of the white block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Feast object a from object b"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def perform_action(action): return action"
+  },
+  {
+    "output": "Attack object a"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from on top of the blue block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Please provide the plan to determine the next action."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "clip object_18 object_7 object_12"
+  },
+  {
+    "output": "Use hoist3 to unstack crate1 from crate0 at distributor0."
+  },
+  {
+    "output": "The next action cannot be determined without the complete current state and plan details."
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": "def solve():\n    return \"Use hoist1 to lift crate0 from pallet1 at depot1\""
+  },
+  {
+    "output": "feast object b from object a"
+  },
+  {
+    "output": "The plan is incomplete and cannot be evaluated. Please provide the full plan."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "Feast object c"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "clip object_"
+  },
+  {
+    "output": "drive truck2 from depot1 to pallet3"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "feast object a from object b"
+  },
+  {
+    "output": "unstack the orange block from on top of the yellow block"
+  },
+  {
+    "output": "The plan is feasible based on the initial conditions and the rules of the actions. The sequence of actions aligns with the required conditions and the goal can be achieved."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "overcome object d from object b"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "The next action cannot be determined without a complete description of the current state and the plan."
+  },
+  {
+    "output": "Feast object a from object d"
+  },
+  {
+    "output": "feast object a from object c"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "put down the white block on the yellow block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "Analyze the current state and determine which actions are possible based on the conditions provided."
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "unstack the blue"
+  },
+  {
+    "output": "Please provide complete initial conditions and the goal to proceed with the analysis."
+  },
+  {
+    "output": "\"Use hoist3 at distributor0 to lift crate2 from crate1.\""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist2 to lift crate2 from pallet2 at depot2 and drop it on crate1 at depot2."
+  },
+  {
+    "output": "Use hoist1 to lift crate1 from crate0 at depot1."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "unstack the orange block from on top of the red block"
+  },
+  {
+    "output": "unstack the red block from on top of the orange block"
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": "Step 1: Unstack the yellow block from the table."
+  },
+  {
+    "output": "def next_action(): return 'pick up the red block'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "unstack the blue block from on top of the orange block"
+  },
+  {
+    "output": "Please provide the complete plan to evaluate its feasibility."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from the orange block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Please provide the complete current state and the full goal description to determine the next step in the plan."
+  },
+  {
+    "output": "feast object e from object b"
+  },
+  {
+    "output": "def next_action(): return 'unstack the orange block from on top of the red block'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Evaluate the plan and determine the next action to achieve the goal."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "Use hoist2 to lift crate0 from pallet2 at depot2."
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": "Feast object"
+  },
+  {
+    "output": "The next step is to analyze the current state and determine if"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Insufficient information to determine the next action."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The initial conditions and the goal are not fully specified, so I cannot determine the next action."
+  },
+  {
+    "output": "Use hoist2 to drop crate2 to pallet2 at depot2."
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "feast object c from"
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "python_code_returner(\"wretched object_7 object_12 object_13 object_4\")"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "def execute_plan(plan, initial_state):\n    current_state = initial_state.copy()\n    for action in plan:\n        if all(precondition(current_state) for precondition in action['preconditions']):\n            current_state = action['execute'](current_state)\n            if not all(postcondition(current_state) for postcondition in action['postconditions']):\n                raise Exception(\"Postcondition not met for action: \" + action['name'])\n    return current_state"
+  },
+  {
+    "output": "Evaluate the initial conditions and the plan step by step to determine the next action."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The next step in the plan to achieve the goal cannot be determined without the specific initial conditions and available actions."
+  },
+  {
+    "output": "Use hoist2 to drop crate2 to pallet2 at depot2."
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "def feast_action(): return 'Feast action performed'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist0 to lift crate1 from crate0 at depot0."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "Use hoist1 to lift crate1 from crate0 at depot1."
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up the blue block.\""
+  },
+  {
+    "output": "Please provide the complete current state and the conditions for each action to proceed."
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "Use hoist3 to lift crate1 from pallet1 at distributor0 and use hoist3 to place crate1 on crate0 at distributor0."
+  },
+  {
+    "output": "Error in CoT analysis; problem description not recognized."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from on top of the orange block"
+  },
+  {
+    "output": "Gather and analyze the initial conditions, available actions, and restrictions to determine the next logical step in the plan."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "unstack the yellow block from on top of the blue block"
+  },
+  {
+    "output": "The plan is to unstack the blue block, put it down, pick up the red block, stack it on the blue block, pick up the orange block, and stack it on the red block."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "Insufficient information to determine the next action."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "feast object a from object b"
+  },
+  {
+    "output": "Attack object b"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from on top of the orange block"
+  },
+  {
+    "output": "The plan is incomplete and needs to be revised to include steps for moving crate0 and crate1 to their respective pallets."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Error: No problem found for CoT analysis"
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up the blue block\""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_step(): return 'unstack the blue block from on top of the red block'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the orange block from on top of the yellow block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(11 - 1) × (1 + 1)"
+  },
+  {
+    "output": "Solution: 12 × (1 + 1) × 1"
+  },
+  {
+    "output": "(13 - 1) * (1 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(7 + 1) * (2 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (9 - 1) * (2 + 1)"
+  },
+  {
+    "output": "(10 + 1 + 1) * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(13 * 2) - (1 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 / (1 - 3/6)) * 1"
+  },
+  {
+    "output": "(7 - 1) * (3 + 1)"
+  },
+  {
+    "output": "16"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "**\nSolution: (11 + 1) * (3 - 1)"
+  },
+  {
+    "output": "12 × (3 - (1 / 1))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (4 * (1 + 1)) + 4"
+  },
+  {
+    "output": "Solution: (5 × (4 + 1)) - 1"
+  },
+  {
+    "output": "Solution: (6 / (1 - (4 / 6))) * 1"
+  },
+  {
+    "output": "Solution: (7 + 1) * (4 - 1)"
+  },
+  {
+    "output": "Solution: (8 / (1 - (4 / 8))) * 1"
+  },
+  {
+    "output": "Solution: (9 - 1) * (4 - 1)"
+  },
+  {
+    "output": "(10 × (1 + 1)) + 4"
+  },
+  {
+    "output": "**\nSolution: 12 × (4 - (1 + 1))"
+  },
+  {
+    "output": "Solution: (5 * 5) - (1 / 1)"
+  },
+  {
+    "output": "Solution: (6 / (1 - 5/6)) = 24"
+  },
+  {
+    "output": "Solution: (7 - (1 / 1)) * (5 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 / (1 - (6 / 1)))"
+  },
+  {
+    "output": "Solution: (8 / (1 - (6 / (1 + 1))))"
+  },
+  {
+    "output": "9 × (1 + 1) + 6"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (10 × (1 + 1)) - 7"
+  },
+  {
+    "output": "(8 × (1 + 1)) + 8"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (13 - 1) * (1 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 × 1) + (11 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 + 12) * 1 / 1"
+  },
+  {
+    "output": "Solution: (12 + 1) * (1 + 1)"
+  },
+  {
+    "output": "Solution: (13 - 1) * (1 + 1)"
+  },
+  {
+    "output": "(4 × 2) × (2 + 1)"
+  },
+  {
+    "output": "Solution: (5 + 1) * (2 + 2)"
+  },
+  {
+    "output": "Solution: (6 / (1 - 2/2))"
+  },
+  {
+    "output": "Solution: (7 * (2 + 2)) - 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (9 - 1) * (2 + 2)"
+  },
+  {
+    "output": "Solution: (10 - 2) * (2 + 1)"
+  },
+  {
+    "output": "**\nSolution: (11 × 2) + ("
+  },
+  {
+    "output": "**\nSolution: (12 ÷ (2 - 1)) × 2"
+  },
+  {
+    "output": "(13 * 2) - (2 * 1)"
+  },
+  {
+    "output": "Solution: (3 * (3 + 1)) + 2"
+  },
+  {
+    "output": "(1 + 2 + 3) * 4"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "6 × (3 + 1) × (2 / 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (8 * (3 - (2 - 1)))"
+  },
+  {
+    "output": "Solution: (9 - 3) * (2 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\nSolution: (11 - 3) * (2 + 1)"
+  },
+  {
+    "output": "Solution: (12 * (3 - 1)) + 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (8 / (4 - 2)) * (1 + 1)"
+  },
+  {
+    "output": "Solution: (9 × (4 -"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\n\nSolution: ("
+  },
+  {
+    "output": "Solution: (12 × 2) × ("
+  },
+  {
+    "output": "(13 - 1) * (4 - 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 / (1 - 5/6))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(8 * (2 + 1)) - 5"
+  },
+  {
+    "output": "Solution: (9 × 2) + (5 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: 12 * 2 * ((5 - 1) / (5 - 1))"
+  },
+  {
+    "output": "(13 - 5) * (2 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(6 × (2 + 1)) + (7 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(9 × 2) + (6 ÷ 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(7 × 2) + (11 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "when done."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 × (10 - (2 + 1)))"
+  },
+  {
+    "output": "13 + 10 + (2 - 1)"
+  },
+  {
+    "output": "Solution: (11 - (11 / (2 + 1))) * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(13 + 11) * (2 - 1)"
+  },
+  {
+    "output": "(12 + 12) / (2 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: 3 * 3 * (1 + (3 / 3))"
+  },
+  {
+    "output": "**\nSolution: (3 × 4) × (3 -"
+  },
+  {
+    "output": "Solution: (3 * (5 - (1 / 3)))"
+  },
+  {
+    "output": "Solution: (6 / (3 - 1)) * 3"
+  },
+  {
+    "output": "Solution: (7 - (3 / 3)) * 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (9"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(11 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(7 × 3) + (4 - 1)"
+  },
+  {
+    "output": "**\nSolution: (8 + 4) × (3 - 1)"
+  },
+  {
+    "output": "Solution: (9 - 3) * (4 - 1)"
+  },
+  {
+    "output": "(10 - 4) * (3 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 - 4) * (3 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(9 - 3) * (5 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(11 - 5) * (3 + 1)"
+  },
+  {
+    "output": "Solution: (5 * 3) + (12 / 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 * 3) + (7 - 1)"
+  },
+  {
+    "output": "Solution: (8 / (3 - 1)) * (6 - 3)"
+  },
+  {
+    "output": "Solution: (9 × (3 - 1)) + 6"
+  },
+  {
+    "output": "(10 × 3) - (6 ÷ 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\nSolution: (12 - 6) × (3 + 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(9 + 3) × (7 - 1) / 3"
+  },
+  {
+    "output": "(10 * 3) - (7 - 1)"
+  },
+  {
+    "output": "Solution: (12 / (7 - (3 + 1))) * 3"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (8 * (3 + (8"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\nSolution: (11 + 1) × (3 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 × (3 - 1)) + (10 - 10)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 × 3) - (12 ÷ 1)"
+  },
+  {
+    "output": "when done."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (4 * (4 + 1)) + 4"
+  },
+  {
+    "output": "Solution: (4 * (5 - (1 / 4)))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (8 / (4 - 1)) * 4"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: 10 × (1 + 1) + 4"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (5 * 4)"
+  },
+  {
+    "output": "Solution: (6 / (1 - (5 / 4)))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(11 - (5 / 1)) * 4"
+  },
+  {
+    "output": "Solution: (5 - (12 / (4 + 1))) * 12"
+  },
+  {
+    "output": "(13 - 5) * (4 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(10 × (4 - 1)) - 6"
+  },
+  {
+    "output": "(11 + 1) * (6 - 4)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "8 * (7 - 4) * 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "7 / 3 = 2.333...\n3. Subtract th"
+  },
+  {
+    "output": "12 * (7 - 4 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\nSolution: (8 × 4) -"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (11 × (4 - 1)) - 9"
+  },
+  {
+    "output": "when done."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(10 + 10) + (4 ÷ 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 + 12) × (1 - (4 - 4))"
+  },
+  {
+    "output": "Solution: (5 * 5) - (1 / 5)"
+  },
+  {
+    "output": "Solution: (5 - (1 / 5)) * 6"
+  },
+  {
+    "output": "Solution: (5 - (9 / (5 - 1))) * 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(5 × 5) - (13 ÷ 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 × (5 - 1)) + 7"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 / (12 - 5)) * (1 + 5)"
+  },
+  {
+    "output": "Solution: (13 - 5) * (6 - 1)"
+  },
+  {
+    "output": "(8 × (5 − 1)) − 7"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(11 - 7) * (5 + 1)"
+  },
+  {
+    "output": "when done."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(8 × (5 - 1)) - 8"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (11 - 5) * (9 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(13 - 9) * (5 + 1)"
+  },
+  {
+    "output": "(10 + 10) + (5 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (13 - 5) * (1 + 1)"
+  },
+  {
+    "output": "**\nSolution: ((11 + 1) * (5 - 1)) / 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 / (1 - 6/6))"
+  },
+  {
+    "output": "Solution: (6 / (8 - 6)) * (1 + 6)"
+  },
+  {
+    "output": "Solution: (6 / (9 - 6)) * (1 + 6)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 × (11 - (6 + 1)))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 × (11 - 7)) - 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "when done."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (12 × (6 ÷ (9 - 6"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(13 - 1) * (10 - 6)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (7 - (9 / (7 - 1))) * 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: 12 * (1 + (7 / 7))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "10 + 8 + 7 - 1"
+  },
+  {
+    "output": "(11 - 8) * (7 + 1)"
+  },
+  {
+    "output": "(12 - 8) * (7 - 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(10 - 7) * (9 - 1)"
+  },
+  {
+    "output": "(11 + 1) * (9 - 7)"
+  },
+  {
+    "output": "when done."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (12 × (7 - (10 ÷ (1 + 1))))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (13 × (7 - (13 ÷ 1)))"
+  },
+  {
+    "output": "Solution: (8 / (8 - 8 + 1)) * 8"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\nSolution: (8 × (11 − 8)) × 1"
+  },
+  {
+    "output": "24\n\nSolution: 12 × (8 ÷ (8 - 1))"
+  },
+  {
+    "output": "when done."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Error: '(' was never closed (<string>, line 1)"
+  },
+  {
+    "output": "Solution: (12 × (10 - 8)) - 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 × (8 - (11 - 1))) × (-1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "("
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\nSolution: (13 - 1) × (11 - 9)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: 12 × (11 - (10 - 1))"
+  },
+  {
+    "output": "Solution: 12 × (12 − 10) × 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "12 * (1 + (11 / 11))"
+  },
+  {
+    "output": "**\nSolution"
+  },
+  {
+    "output": "(12 + 12) + (11 - 11)"
+  },
+  {
+    "output": "**\nSolution: (12 × (13 − 11)) × 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "12 × (1 + (12 ÷ 12))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "12 * (1 + (13 / 13))"
+  },
+  {
+    "output": "Solution: (2 + 2 + 2) * 3"
+  },
+  {
+    "output": "Solution: (2 + 2 + 2) * 4"
+  },
+  {
+    "output": "**\nSolution: (5 × (2 + 2)) + (2 × 2)"
+  },
+  {
+    "output": "**\nSolution: (7 × (2 + 2)) - (2 + 2)"
+  },
+  {
+    "output": "Solution: (8 / (2 - (2 / 2)))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\nSolution: (11 + (2 / 2)) * 2"
+  },
+  {
+    "output": "(12 × 2) × (2 ÷ 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (3 * 2) * (2 + 3 - 2)"
+  },
+  {
+    "output": "when done."
+  },
+  {
+    "output": "Solution: (5 × (3 + 2)) - (2 / 2)"
+  },
+  {
+    "output": "(6 × 2) × (3 - (2 / 2))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(9 × 2) + (3 × 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 × (3 - (2 / 2)))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (4 / (2 - (4 / 2))) * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 / (2 - (4 / 2))) * 2"
+  },
+  {
+    "output": "(7 × 4) - (2 + 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(10 - 2) * (2 + 4) / 2"
+  },
+  {
+    "output": "(11 × (4 - 2)) + 2"
+  },
+  {
+    "output": "Solution: (12 - 2) * (2 + 4)"
+  },
+  {
+    "output": "24\n\nSolution: (13 - (4 / 2)) * 2"
+  },
+  {
+    "output": "Solution: (5 * 5) - (2 / 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(11 - 5) * (2 + 2)"
+  }
+]

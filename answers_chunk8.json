@@ -1,0 +1,2330 @@
+[
+  {
+    "output": "import time\nimport subprocess\nimport os\n\ndef task_func(script_path, output_file, timeout):\n    start_time = time.time()\n    process = subprocess.Popen(['Rscript', script_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)\n    while True:\n        if os.path.exists(output_file):\n            return True, f\"Output file {output_file} generated successfully.\"\n        if time.time() - start_time > timeout:\n            return False, f\"Timeout exceeded. Output file {output_file} not generated.\"\n        time.sleep(1)"
+  },
+  {
+    "output": "def task_func(directory, extension):\n    import os\n    import json\n    result = {}\n    for filename in os.listdir(directory):\n        if filename.endswith(extension):\n            file_path = os.path.join(directory, filename)\n            with open(file_path, 'r') as file:\n                content = json.load(file)\n            result[filename] = content\n    return result"
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nfrom collections import Counter\n\ndef calculate_word_occurrences(sentences, target_words):\n    word_counts = Counter()\n    for sentence in sentences:\n        words = sentence.split()\n        word_counts.update(words)\n    target_counts = {word: word_counts.get(word, 0) for word in target_words}\n    plt.bar(target_counts.keys(), target_counts.values())\n    plt.xlabel('Words')\n    plt.ylabel('Occurrences')\n    plt.title('Word Occurrences')\n    plt.show()"
+  },
+  {
+    "output": "def function_name(keys):\n    if len(set(keys)) != 10:\n        raise ValueError(\"The 'keys' parameter must contain exactly 10 unique elements.\")\n    import random\n    import json\n    import os\n    random_elements = [random.randint(1, 100) for _ in range(10)]\n    updated_dict = {k: random_elements[i] for i, k in enumerate(keys)}\n    json_file_path = \"updated_dict.json\"\n    with open(json_file_path, 'w') as f:\n        json.dump(updated_dict, f)\n    from collections import Counter\n    key_freq = Counter(updated_dict.keys())\n    text_file_path = \"key_frequency.txt\"\n    with open(text_file_path, 'w') as f:\n        for key, freq in key_freq.items():\n            f.write(f\"{key}: {freq}\\n\")\n    return (updated_dict, json_file_path, text_file_path)"
+  },
+  {
+    "output": "def task_func():\n    import math\n    return math.sqrt(16)"
+  },
+  {
+    "output": "def process_string_to_df(input_string):\n    processed_lines = [line.replace('\\t', ' ') for line in input_string.splitlines() if line.strip()]\n    import pandas as pd\n    return pd.DataFrame(processed_lines, columns=['Text'])"
+  },
+  {
+    "output": "def task_func(text):\n    from textblob import TextBlob\n    from nltk.corpus import stopwords\n    from nltk.tokenize import word_tokenize\n    import re\n\n    stop_words = set(stopwords.words('english'))\n    words = word_tokenize(text.lower())\n    filtered = [word for word in words if word.isalpha() and word not in stop_words]\n    cleaned_text = ' '.join(filtered)\n    return TextBlob(cleaned_text).sentiment.polarity"
+  },
+  {
+    "output": "def task_func(data_list):\n    if not data_list:\n        raise ValueError(\"Input data list is empty\")\n    from collections import Counter\n    import matplotlib.pyplot as plt\n    counts = Counter(data_list)\n    predefined_categories = ['A', 'B', 'C', 'D']\n    predefined_counts = {cat: counts.get(cat, 0) for cat in predefined_categories}\n    total_predefined = sum(predefined_counts.values())\n    total_all = sum(counts.values())\n    is_uniform = abs(total_all - 4 * total_predefined) < 1\n    additional_categories = [cat for cat in counts if cat not in predefined_categories]\n    plt.bar(predefined_categories, [counts.get(cat, 0) for cat in predefined_categories])\n    plt.bar(additional_categories, [counts[cat] for cat in additional_categories], bottom=[sum(predefined_counts.values()), 0])\n    plt.xlabel('Categories')\n    plt.ylabel('Frequency')\n    plt.title('Category Distribution')\n    plt.show()"
+  },
+  {
+    "output": "def calculate_time_differences_and_plot(datetime_strings):\n    import matplotlib.pyplot as plt\n    from datetime import datetime\n    time_differences = []\n    for i in range(1, len(datetime_strings)):\n        t1 = datetime.strptime(datetime_strings[i-1], \"%Y-%m-%d %H:%M:%S\")\n        t2 = datetime.strptime(datetime_strings[i], \"%Y-%m-%d %H:%M:%S\")\n        diff = (t2 - t1).total_seconds()\n        time_differences.append(diff)\n    fig, ax = plt.subplots()\n    ax.bar(range(len(time_differences)), time_differences)\n    ax.set_xlabel('Interval')\n    ax.set_ylabel('Time Difference (seconds)')\n    ax.set_title('Time Differences Between Consecutive Datetimes')\n    return ax"
+  },
+  {
+    "output": "import os\nimport shutil\n\ndef arrange_files_by_extension(directory):\n    for filename in os.listdir(directory):\n        file_path = os.path.join(directory, filename)\n        if os.path.isfile(file_path):\n            _, ext = os.path.splitext(filename)\n            ext = ext.lower()\n            if ext not in ['','.']:\n                ext_dir = os.path.join(directory, ext[1:])\n                os.makedirs(ext_dir, exist_ok=True)\n                shutil.move(file_path, os.path.join(ext_dir, filename))"
+  },
+  {
+    "output": "def generate_and_visualize_normal_samples(mean, std_dev):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    import scipy.stats as stats\n    samples = np.random.normal(mean, std_dev, 500)\n    plt.hist(samples, bins=30, density=True, alpha=0.6, color='g')\n    pdf = stats.norm.pdf(samples, mean, std_dev)\n    plt.plot(samples, pdf, 'k', linewidth=2)\n    plt.show()"
+  },
+  {
+    "output": "def generate_random_dataframe(rows, columns):\n    import pandas as pd\n    import numpy as np\n    data = {}\n    for col in columns:\n        if np.random.rand() > 0.5:\n            data[col] = np.random.randint(0, 100, size=rows)\n        else:\n            data[col] = np.random.choice(['low', 'medium', 'high'], size=rows)\n    return pd.DataFrame(data)"
+  },
+  {
+    "output": "import pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\nCOLUMNS = ['col1', 'col2', 'col3']\n\ndef task_func(data):\n    df = pd.DataFrame(data, columns=COLUMNS)\n    pivot_df = df.pivot_table(index='col1', columns='col2', values='col3', aggfunc='count').fillna(0)\n    ax = sns.heatmap(pivot_df, annot=True, fmt='d', cmap='viridis')\n    return df, ax"
+  },
+  {
+    "output": "def task_func(text, stopwords):\n    import re\n    from collections import Counter\n    text = re.sub(r'http\\S+', '', text)\n    words = text.split()\n    word_counts = Counter(words)\n    filtered_counts = {word: count for word, count in word_counts.items() if word in stopwords}\n    return list(filtered_counts.items())"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nimport numpy as np\nfrom sklearn.preprocessing import StandardScaler\n\ndef task_func(df, features):\n    scaler = StandardScaler()\n    df[features] = scaler.fit_transform(df[features])\n    return df\n```"
+  },
+  {
+    "output": "def task_func(directory):\n    import os\n    import json\n    count = 0\n    for filename in os.listdir(directory):\n        file_path = os.path.join(directory, filename)\n        if os.path.isfile(file_path) and filename.endswith('.json'):\n            with open(file_path, 'r') as f:\n                data = json.load(f)\n            if 'mynewkey' not in data:\n                data['mynewkey'] = 'value'\n                count += 1\n                with open(file_path, 'w') as f:\n                    json.dump(data, f)\n    return count"
+  },
+  {
+    "output": "except FileNotFoundError as e:\n        return str(e)\n    except HTTPError as e:\n        return f\"HTTP error occurred: {e}\"\n    except Exception as e:\n        return f\"An error occurred: {e}\""
+  },
+  {
+    "output": "def task_func(data=None):\n    if not isinstance(data, pd.DataFrame):\n        data = pd.DataFrame(data)\n    data = data.applymap(lambda x: 0 if x < 0.5 else x)\n    scaler = StandardScaler()\n    data_scaled = scaler.fit_transform(data)\n    data_preprocessed = pd.DataFrame(data_scaled, columns=data.columns)\n    return data_preprocessed"
+  },
+  {
+    "output": "import subprocess\nimport time\nimport json\nimport platform\nimport psutil\nLOGFILE_PATH = \"logfile.log\"\n\ndef task_func(interval, duration):\n    if interval <= 0 or duration <= 0:\n        raise ValueError(\"Both 'interval' and 'duration' must be greater than zero.\")\n    log_data = []\n    start_time = time.time()\n    while (time.time() - start_time) < duration:\n        cpu_usage = psutil.cpu_percent(interval=1)\n        log_data.append({\n            \"timestamp\": time.time(),\n            \"cpu_usage\": cpu_usage\n        })\n        time.sleep(interval)\n    try:\n        with open(LOGFILE_PATH, 'w') as file:\n            json.dump(log_data, file)\n        return LOGFILE_PATH\n    except IOError:\n        return None"
+  },
+  {
+    "output": "def task_func(df, letter):\n    filtered_words = df[df['Word'].str.startswith(letter)]['Word']\n    lengths = filtered_words.str.len()\n    import matplotlib.pyplot as plt\n    plt.hist(lengths, bins=range(1, max(lengths)+2), edgecolor='black')\n    plt.xlabel('Word Length')\n    plt.ylabel('Frequency')\n    plt.title('Histogram of Word Lengths')\n    plt.show()"
+  },
+  {
+    "output": "def predict_price_based_on_area(area):\n    import numpy as np\n    from sklearn.linear_model import LinearRegression\n    # Example training data\n    areas = np.array([100, 150, 200, 250, 300]).reshape(-1, 1)\n    prices = np.array([100000, 150000, 200000, 250000, 300000])\n    model = LinearRegression()\n    model.fit(areas, prices)\n    return model.predict([[area]])[0]"
+  },
+  {
+    "output": "def process_text(text):\n    import re\n    from collections import Counter\n    cleaned = re.sub(r'[^a-zA-Z0-9]', '', text)\n    words = cleaned.split()\n    return dict(Counter(words))"
+  },
+  {
+    "output": "def task_func(json_str):\n    import json\n    data = json.loads(json_str)\n    cleaned_data = {k: v for k, v in data.items() if v is not None}\n    from collections import Counter\n    freq = Counter(cleaned_data.values())\n    return {'processed_data': cleaned_data, 'frequency': freq}"
+  },
+  {
+    "output": "def task_func(df):\n    if not isinstance(df, pd.DataFrame) or 'Name' not in df.columns:\n        return \"Invalid input\"\n    unique_names = df['Name'].unique()\n    scores = df[df['Name'].isin(unique_names)]['Score']\n    countries = df[df['Name'].isin(unique_names)]['Country']\n    plt.figure(figsize=(12, 6))\n    plt.hist(scores, bins=10, color='blue', alpha=0.7)\n    plt.title('Histogram of Scores')\n    plt.xlabel('Score')\n    plt.ylabel('Frequency')\n    plt.show()\n    plt.figure(figsize=(12, 6))\n    countries = countries.dropna()\n    scores = scores.loc[countries.index]\n    plt.boxplot([scores[countries == country] for country in countries.unique()], labels=countries.unique())\n    plt.title('Boxplot of Scores by Country')\n    plt.xlabel('Country')\n    plt.ylabel('Score')\n    plt.show()"
+  },
+  {
+    "output": "def generate_histograms_and_check_uniformity(df):\n    import matplotlib.pyplot as plt\n    fig, axes = plt.subplots(nrows=len(df.columns), ncols=1, figsize=(10, 5*len(df.columns)))\n    for i, col in enumerate(df.columns):\n        ax = axes[i] if len(df.columns) > 1 else axes\n        df[col].plot(kind='hist', ax=ax)\n        ax.set_title(f'Histogram of {col}')\n        # Check for uniform distribution\n        if len(df[col].unique()) == len(df[col]):\n            print(f\"The distribution of '{col}' is uniform.\")\n        else:\n            print(f\"The distribution of '{col}' is not uniform.\")\n    plt.tight_layout()\n    return axes if len(df.columns) > 1 else [axes]"
+  },
+  {
+    "output": "import pandas as pd\nimport csv\nimport os\n\ndef read_excel_to_csv_and_sum_columns(file_path, output_csv_path):\n    try:\n        df = pd.read_excel(file_path)\n        df.to_csv(output_csv_path, index=False)\n        sums = df.sum(numeric_only=True)\n        return sums.to_dict()\n    except Exception as e:\n        return {\"error\": str(e)}"
+  },
+  {
+    "output": "def task_func(num_samples=100, n_estimators=100, random_seed=None, cv=5):\n    import numpy as np\n    from sklearn.model_selection import cross_val_score\n    from sklearn.ensemble import RandomForestRegressor\n    if num_samples / cv < 2:\n        raise ValueError(\"num_samples / cv < 2\")\n    np.random.seed(random_seed)\n    features = np.random.randn(num_samples, 5)\n    feature_sum = np.sum(features, axis=1)\n    noise = np.random.randn(num_samples)\n    target = feature_sum + noise\n    model = RandomForestRegressor(n_estimators=n_estimators, random_state=random_seed)\n    scores = cross_val_score(model, features, target, cv=cv)\n    mean_score = np.mean(scores)\n    return mean_score, model"
+  },
+  {
+    "output": "import os\nimport subprocess\n\ndef task_func(pattern):\n    files = [f for f in os.listdir() if os.path.isfile(f) and pattern in f]\n    archive_name = 'archive.tar'\n    subprocess.run(['tar', '-cvf', archive_name] + files)\n    for file in files:\n        os.remove(file)\n    return archive_name"
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nimport numpy as np\n\ndef task_func(n, seed=0):\n    np.random.seed(seed)\n    x = np.random.rand(n)\n    y = np.random.rand(n)\n    points = list(zip(x, y))\n    \n    plt.figure()\n    plt.scatter(x, y)\n    plt.title(\"Scatter plot of random points\")\n    plt.xlabel(\"X\")\n    plt.ylabel(\"Y\")\n    \n    return plt.gcf(), points"
+  },
+  {
+    "output": "def process_text(text):\n    text = re.sub(r'\\W+', ' ', text).lower()\n    words = text.split()\n    filtered_words = [word for word in words if word not in STOPWORDS]\n    return ' '.join(filtered_words)"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nfrom sklearn.preprocessing import MinMaxScaler\n\ndef task_func(d):\n    if not d:\n        return pd.DataFrame()\n    df = pd.DataFrame(d)\n    scaler = MinMaxScaler()\n    scaled_data = scaler.fit_transform(df[['x', 'y', 'z']])\n    scaled_df = pd.DataFrame(scaled_data, columns=['x', 'y', 'z'])\n    return scaled_df\n```"
+  },
+  {
+    "output": "def read_image(path, threshold):\n    from PIL import Image\n    import os\n    if not os.path.exists(path):\n        raise FileNotFoundError(f\"Invalid file path: {path}\")\n    if threshold < 0 or threshold > 255:\n        raise ValueError(\"Threshold must be between 0 and 255\")\n    img = Image.open(path)\n    img = img.convert(\"L\")\n    img = img.point(lambda p: 255 if p >= threshold else 0)\n    img.save(\"binary_image.jpg\")"
+  },
+  {
+    "output": "import os\nimport zipfile\n\ndef zip_files_with_extensions(source_dir, target_dir, zip_name, valid_extensions):\n    if not os.path.exists(source_dir):\n        raise OSError(f\"Source directory '{source_dir}' does not exist.\")\n    files = [f for f in os.listdir(source_dir) if os.path.isfile(os.path.join(source_dir, f)) and os.path.splitext(f)[1].lower() in valid_extensions]\n    zip_path = os.path.join(target_dir, zip_name)\n    with zipfile.ZipFile(zip_path, 'w') as zipf:\n        for file in files:\n            file_path = os.path.join(source_dir, file)\n            zipf.write(file_path, os.path.basename(file_path))\n    return zip_path"
+  },
+  {
+    "output": "import os\nimport csv\nimport subprocess\n\ndef task_func(commands_file, output_dir):\n    if not os.path.exists(commands_file):\n        raise FileNotFoundError(f\"The commands file {commands_file} does not exist.\")\n    os.makedirs(output_dir, exist_ok=True)\n    output_files = []\n    with open(commands_file, 'r') as f:\n        reader = csv.reader(f)\n        for i, row in enumerate(reader):\n            command = ' '.join(row)\n            output_file = os.path.join(output_dir, f\"output_{i}.txt\")\n            output_files.append(output_file)\n            with open(output_file, 'w') as out_f:\n                try:\n                    result = subprocess.run(command, shell=True, capture_output=True, text=True)\n                    out_f.write(result.stdout)\n                except Exception as e:\n                    out_f.write(f\"Error: {str(e)}\")\n    return output_files"
+  },
+  {
+    "output": "def task_func(n_rows):\n    import random\n    import matplotlib.pyplot as plt\n    from collections import Counter\n    if n_rows <= 0:\n        raise ValueError(\"n_rows must be greater than 0\")\n    data = [''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ', k=3)) for _ in range(n_rows)]\n    counts = Counter(data)\n    top_30 = counts.most_common(30)\n    labels, values = zip(*top_30)\n    plt.bar(labels, values)\n    plt.xlabel('3-letter strings')\n    plt.ylabel('Frequency')\n    plt.title('Frequency of Top 30 Most Common 3-letter Strings')\n    plt.xticks(rotation=45)\n    plt.tight_layout()\n    plt.show()"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.preprocessing import StandardScaler\n\ndef task_func(df, cols):\n    if not isinstance(df, pd.DataFrame):\n        raise ValueError(\"df is not a DataFrame\")\n    if not isinstance(cols, list):\n        raise ValueError(\"cols is not a list\")\n    for col in cols:\n        if col not in df.columns:\n            raise ValueError(f\"Column {col} does not exist in the DataFrame\")\n    scaler = StandardScaler()\n    df[cols] = scaler.fit_transform(df[cols])\n    return df"
+  },
+  {
+    "output": "import os\nimport re\n\ndef task_func(pattern, log_dir='/var/log/'):\n    # Step 1: List all files in the directory\n    files = [f for f in os.listdir(log_dir) if os.path.isfile(os.path.join(log_dir, f))]\n    \n    # Step 2: Filter files based on the regex pattern\n    regex = re.compile(pattern)\n    matching_files = [f for f"
+  },
+  {
+    "output": "def task_func():\n    return \"Hello, World!\""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def task_func(**kwargs):\n    import os\n    import shutil\n    target_dir = kwargs.get('target_dir', '.')\n    copied_files = []\n    for file_path, source_path in kwargs.items():\n        if os.path.exists(source_path):\n            if os.path.isfile(source_path):\n                shutil.copy2(source_path, target_dir)\n                copied_files.append(os.path.join(target_dir, os.path.basename(source_path)))\n    return copied_files"
+  },
+  {
+    "output": "60"
+  },
+  {
+    "output": "def task_func(source_folder):\n    import os\n    import shutil\n    try:\n        if not os.path.exists(source_folder):\n            raise ValueError\n        shutil.copytree(source_folder, f\"{source_folder}_backup\")\n        os.rmdir(source_folder)\n        return True\n    except Exception as e:\n        return False"
+  },
+  {
+    "output": "def task_func(df, column, pattern):\n    import re\n    if pattern == '':\n        return df.copy()\n    def reverse_matching_words(row):\n        words = row[column].split()\n        def reverse_word(word):\n            return word[::-1] if re.match(pattern, word) else word\n        reversed_words = [reverse_word(word) for word in words]\n        return ' '.join(reversed_words)\n    return df.apply(reverse_matching_words, axis=1)"
+  },
+  {
+    "output": "import random\nimport math\n\ndef generate_average_distance(n, RADIUS):\n    total_distance = 0.0\n    for _ in range(n):\n        theta = 2 * math.pi * random.random()\n        r = RADIUS * random.random() ** 0.5\n        x = r * math.cos(theta)\n        y = r * math.sin(theta)\n        distance = math.hypot(x, y)\n        total_distance += distance\n    return total_distance / n"
+  },
+  {
+    "output": "def task_func(text):\n    import re\n    from collections import Counter\n    import matplotlib.pyplot as plt\n    import numpy as np\n    names = re.findall(r'\\b([A-Za-z]+)\\b', text)\n    name_counts = Counter(names)\n    names, counts = zip(*name_counts.items())\n    plt.bar(names, counts)\n    plt.xlabel('Names')\n    plt.ylabel('Frequency')\n    plt.title('Name Frequencies')\n    plt.show()\n    skewness = np.ma.masked_invalid(counts).skew()\n    kurtosis = np.ma.masked_invalid(counts).kurtosis()\n    return {'name_counts': dict(name_counts), 'skewness': skewness, 'kurtosis': kurtosis}"
+  },
+  {
+    "output": "def task_func(df):\n    if len(df) < 2:\n        return float('nan')\n    scores = df['scores'].astype(float)\n    grades = df['grades'].str.replace('A', '4').str.replace('B', '3').str.replace('C', '2').str.replace('D', '1').astype(float)\n    return (scores - scores.mean()) * (grades - grades.mean()).sum() / ( (scores - scores.mean()).pow(2).sum() * (grades - grades.mean()).pow(2).sum() )**0.5"
+  },
+  {
+    "output": "def analyze_sales_data(data):\n    if not data:\n        return \"No data provided\"\n    try:\n        for value in data:\n            if value < 0:\n                raise ValueError(\"Negative values are not allowed\")\n        sum_val = sum(data)\n        mean_val = sum_val / len(data)\n        min_val = min(data)\n        max_val = max(data)\n        import matplotlib.pyplot as plt\n        plt.bar(range(len(data)), data)\n        plt.xlabel('Index')\n        plt.ylabel('Sales')\n        plt.title('Sales Data')\n        plt.show()\n        return f\"Sum: {sum_val}, Mean: {mean_val}, Min: {min_val}, Max: {max_val}\"\n    except ValueError as e:\n        return str(e)"
+  },
+  {
+    "output": "import numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndef calculate_row_sums_and_plot(data):\n    if data.size == 0:\n        return pd.DataFrame(columns=['row_sum'])\n    row_sums = np.sum(data, axis=1)\n    dates = pd.date_range(start='2020-01-01', periods=row_sums.shape[0])\n    df = pd.DataFrame({'row_sum': row_sums}, index=dates)\n    df.plot(kind='line')\n    plt.show()\n    return df"
+  },
+  {
+    "output": "def task_func(elements, pattern):\n    import random\n    import re\n    formatted = []\n    for elem in elements:\n        replaced = ''.join(random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789') for _ in range(len(elem)))\n        formatted.append(f\"%{replaced}%\")\n    combined = ''.join(formatted)\n    result = re.search(pattern, combined)\n    return formatted, bool(result)"
+  },
+  {
+    "output": "def task_func(start_ip, end_ip):\n    import subprocess\n    import re\n    active_ips = {}\n    for ip in range(int(start_ip.split('.')[-1]), int(end_ip.split('.')[-1]) + 1):\n        ip_address = f\"{start_ip.split('.')[0]}.{start_ip.split('.')[1]}.{start_ip.split('.')[2]}.{ip}\"\n        try:\n            output = subprocess.check_output([\"ping\", \"-c\", \"1\", ip_address], stderr=subprocess.STDOUT, timeout=1)\n            if b\"1 received\" in output:\n                active_ips[ip_address] = True\n            else:\n                active_ips[ip_address] = False\n        except subprocess.CalledProcessError:\n            active_ips[ip_address] = False\n        except Exception:\n            active_ips[ip_address] = False\n    return active_ips"
+  },
+  {
+    "output": "def task_func(text):\n    import pandas as pd\n    if not isinstance(text, str):\n        raise ValueError(\"Input must be a string\")\n    import re\n    words = re.findall(r'\\b\\w+\\b', text)\n    filtered = [word for word in words if word.startswith('$')]\n    filtered = [word for word in filtered if not re.fullmatch(r'[^a-zA-Z0-9]+', word)]\n    from collections import Counter\n    counts = Counter(filtered)\n    return pd.DataFrame(list(counts.items()), columns=['word', 'frequency'])"
+  },
+  {
+    "output": "import csv\nimport os\n\nOUTPUT_DIR = './output'\n\ndef task_func(df, filename, output_dir=OUTPUT_DIR):\n    # Ensure the output directory exists\n    os.makedirs(output_dir, exist_ok=True)\n    # Construct the full file path\n    file_path = os.path.join(output_dir, filename)\n    # Save the DataFrame to a CSV file\n    df.to_csv(file_path, index=False)\n    # Return the absolute path of the saved CSV file\n    return os.path.abspath(file_path)"
+  },
+  {
+    "output": "import numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndef task_func(data_str, separator=\",\", bins=20):\n    try:\n        data_list = list(map(int, data_str.split(separator)))\n        if not data_list:\n            raise ValueError(\"Data is empty.\")\n        series = pd.Series(data_list, dtype=np.int64)\n        fig, ax = plt.subplots()\n        ax.hist(series, bins=bins, color='#607c8e', rwidth=0.9, grid=True)\n        return (series, ax)\n    except ValueError as e:\n        raise ValueError(\"Failed to convert data or data is empty.\") from e"
+  },
+  {
+    "output": "def task_func():\n    return \"Hello, world!\""
+  },
+  {
+    "output": "kurtosis, ax)"
+  },
+  {
+    "output": "def load_data_and_plot(file_path):\n    import pandas as pd\n    import matplotlib.pyplot as plt\n    try:\n        df = pd.read_excel(file_path)\n        if df.empty:\n            raise ValueError(\"The Excel file is empty.\")\n        mean = df.mean()\n        std_dev = df.std()\n        mean.plot(kind='bar', yerr=std_dev, capsize=5)\n        plt.title('Mean Values with Standard Deviation')\n        plt.ylabel('Value')\n        plt.xlabel('Columns')\n        plt.show()\n    except Exception as e:\n        print(f\"An error occurred: {e}\")"
+  },
+  {
+    "output": "```python\nimport numpy as np\nimport pandas as pd\nfrom datetime import datetime, timedelta\nimport matplotlib.pyplot as plt\n\ndef task_func(start_date, end_date, seed=42):\n    np.random.seed(seed)\n    \n    # Calculate the number of days between start_date and end_date\n    start = datetime.strptime(start_date, \"%Y-%m-%d\")\n    end = datetime.strptime(end_date, \"%Y-%m-%d\")\n    delta = end - start\n    num_days = delta.days + 1\n    \n    # Generate random sales data\n    sales = np.random.randint(0, 501, size=num_days)\n    \n    # Create date range\n    dates = [start + timedelta(days=i) for i in range(num_days)]\n    \n    # Create DataFrame\n    df = pd.DataFrame({\n        'Date': dates,\n        'Sales': sales\n    })\n    \n    # Plot sales over time\n    plt.figure(figsize=(10, 5"
+  },
+  {
+    "output": "def serialize_and_save(obj, file_path):\n    import os\n    import pickle\n    try:\n        directory = os.path.dirname(file_path)\n        if not os.path.exists(directory):\n            os.makedirs(directory)\n        with open(file_path, 'wb') as f:\n            pickle.dump(obj, f)\n        return True\n    except Exception as e:\n        return False"
+  },
+  {
+    "output": "def process_data(file_path, sort_column, write_to_file=None, do_regression=False, regression_columns=None):\n    import pandas as pd\n    try:\n        df = pd.read_csv(file_path)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"The file {file_path} does not exist.\")\n    if sort_column not in df.columns:\n        raise ValueError(f\"Column {sort_column} not found in the CSV file.\")\n    df.sort_values(by=sort_column, inplace=True)\n    if write_to_file:\n        df.to_csv(write_to_file, index=False)\n    if do_regression:\n        if not regression_columns or len(regression_columns) < 2:\n            raise ValueError(\"Regression requires at least two columns.\")\n        if any(col not in df.columns for col in regression_columns):\n            raise ValueError(\"One or more regression columns not found in the CSV file.\")\n        X = df[regression_columns[:-1]]\n        y = df[regression_columns[-1]]\n        from sklearn.linear_model import LinearRegression\n        model = LinearRegression().fit(X, y)\n        return model.coef_, model.intercept_\n    return df"
+  },
+  {
+    "output": "import pytz\nfrom dateutil.parser import parse\nfrom datetime import datetime\n\ndef task_func(date_str, from_tz, to_tz):\n    naive_date = parse(date_str)\n    from_tz = pytz.timezone(from_tz)\n    localized_date = from_tz.localize(naive_date)\n    to_tz = pytz.timezone(to_tz)\n    converted_date = localized_date.astimezone(to_tz)\n    current_time = datetime.now(to_tz)\n    time_difference = (current_time - converted_date).total_seconds()\n    return int(time_difference)"
+  },
+  {
+    "output": "def calculate_and_plot_differences(list1, list2, n):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    diffs = np.array(list1) - np.array(list2)\n    squared_diffs = np.square(diffs)\n    sorted_diffs = np.sort(squared_diffs)[::-1]\n    top_n = sorted_diffs[:n]\n    plt.plot(top_n)\n    plt.title(\"Top N Squared Differences\")\n    plt.xlabel(\"Index\")\n    plt.ylabel(\"Squared Difference\")\n    plt.show()"
+  },
+  {
+    "output": "def task_func(hex_str, encoding='utf-8'):\n    import binascii\n    return binascii.unhexlify(hex_str).decode(encoding)"
+  },
+  {
+    "output": "```python\nimport numpy as np\nimport itertools\nimport random\n\ndef task_func(T1, max_value=100):\n    # Convert string representations to integers\n    integers = []\n    for inner_tuple in T1:\n        for s in inner_tuple:\n            integers.append(int(s))\n    sum_integers = sum(integers)\n    \n    # Create a list of random integers\n    random_list = [random.randint(1, max_value) for _ in range(sum_integers)]\n    \n    # Compute percentiles\n    p25 = np.percentile(random_list, 25)\n    p50 = np.percentile(random_list, 50)\n    p75 = np.percentile(random_list, 75)\n    \n    return (p25, p50, p75)\n```"
+  },
+  {
+    "output": "from random import choice, randint\nfrom difflib import SequenceMatcher\n\ndef task_func(s, min_length, max_length, letters):\n    length = randint(min_length, max_length)\n    generated = ''.join(choice(letters) for _ in range(length))\n    similarity = SequenceMatcher(None, generated, s).ratio()\n    return (generated, similarity >= 0.5)"
+  },
+  {
+    "output": "def calculate_position_means(data, export_to_json=False, filename=\"position_means.json\"):\n    if not data:\n        return {}\n    max_length = max(len(row) for row in data)\n    means = {}\n    for i in range(max_length):\n        values = [row[i] for row in data if len(row) > i]\n        if all(isinstance(x, (int, float)) for x in values):\n            mean = sum(values) / len(values)\n            means[f'Position {i}'] = mean\n    if export_to_json:\n        import json\n        with open(filename, 'w') as f:\n            json.dump(means, f)\n    return means"
+  },
+  {
+    "output": "```python\nimport numpy as np\nimport random\nfrom datetime import datetime, timedelta\n\ndef task_func(rows=3, columns=2, start_date=datetime(2021, 1, 1), end_date=datetime(2021, 12, 31), seed=0):\n    random.seed(seed)\n    \n    # Generate a list of unique dates between start_date and end_date\n    date_list = []\n    current_date = start_date\n    while current_date <= end_date:\n        date_list.append(current_date)\n        current_date += timedelta(days=1)\n    \n    # Ensure the number of dates is sufficient to fill the matrix\n    if len(date_list) < rows * columns:\n        raise ValueError(\"Not enough unique dates between start and end date to fill the matrix.\")"
+  },
+  {
+    "output": "```python\nimport matplotlib.pyplot as plt\nimport numpy as np\nfrom sklearn.cluster import KMeans\n\n# Constants for configuration\nRANGE = 100\nSIZE = 1000\nCLUSTERS = 5\n\ndef task_func():\n    # Generate random 2D points\n    np.random.seed(42)\n    data = np.random.rand(SIZE, 2) * RANGE\n\n    # Apply KMeans clustering\n    kmeans = KMeans(n_clusters=CLUSTERS, n_init=10)\n    kmeans.fit(data)\n    labels = kmeans.predict(data)\n    centroids = kmeans.cluster_centers_\n\n    # Plot the results\n    plt.scatter(data[:, 0], data[:, 1], c=labels, cmap='viridis"
+  },
+  {
+    "output": "def extract_and_analyze(text, top_n):\n    import re\n    from collections import Counter\n    import matplotlib.pyplot as plt\n    text = re.sub(r'\\[.*?\\]', ' ', text)\n    words = re.findall(r'\\b\\w+\\b', text.lower())\n    word_counts = Counter(words)\n    top_words = dict(word_counts.most_common(top_n))\n    plt.figure(figsize=(10, 5))\n    plt.bar(top_words.keys(), top_words.values())\n    plt.xlabel('Words')\n    plt.ylabel('Frequency')\n    plt.title('Top {} Word Frequencies'.format(top_n))\n    plt.show()\n    return top_words"
+  },
+  {
+    "output": "def generate_system_usage_table():\n    import psutil\n    from texttable import Texttable\n    t = Texttable()\n    t.header(['CPU%', 'Memory%', 'Disk%'])\n    for cpu in psutil.cpu_percent(interval=1, percpu=True):\n        mem = psutil.virtual_memory().percent\n        disk = psutil.disk_usage('/').percent\n        t.add_row([cpu, mem, disk])\n    return t.draw()"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\n\ndef task_func():\n    x = np.linspace(0, 2*np.pi, 1000)\n    sin_x = np.sin(x)\n    cos_x = np.cos(x)\n    abs_diff = np.abs(sin_x - cos_x)\n    sequence = list(zip(x, sin_x, cos_x, abs_diff))\n    plt.plot(x, sin_x, label='sin(x)')\n    plt.plot(x, cos_x, label='cos(x)')\n    plt.legend()\n    fft_abs_diff = np.fft.fft(abs_diff)\n    mean_fft = np.mean(np.abs(fft_abs_diff))\n    median_fft = np.median(np.abs(fft_abs_diff))\n    return mean_fft, median_fft, sequence"
+  },
+  {
+    "output": "def convert_csv_to_json(csv_file_path):\n    import csv\n    import json\n    import os\n    if not os.path.exists(csv_file_path):\n        raise FileNotFoundError(f\"The file {csv_file_path} does not exist.\")\n    with open(csv_file_path, 'r') as csv_file:\n        csv_reader = csv.DictReader(csv_file)\n        json_data = [row for row in csv_reader]\n    json_file_path = csv_file_path.replace('.csv', '.json')\n    with open(json_file_path, 'w') as json_file:\n        json.dump(json_data, json_file)\n    return json_file_path"
+  },
+  {
+    "output": "def task_func(directory):\n    import os\n    import json\n    processed_files = []\n    for filename in os.listdir(directory):\n        file_path = os.path.join(directory, filename)\n        try:\n            with open(file_path, 'r') as f:\n                data = json.load(f)\n            with open(file_path, 'w') as f:\n                json.dump(data, f, ensure_ascii=False)\n            processed_files.append(filename)\n        except FileNotFoundError:\n            pass\n    return processed_files"
+  },
+  {
+    "output": "# Calculate the number of days between start_date and end_date\n    delta = relativedelta(end_date, start_date)\n    num_days = delta.days + 1\n    \n    # Generate random dates\n    random_dates = [start_date + timedelta(days=randint(0, num_days - 1)) for _ in range(10)]\n    \n    # Create pandas Series\n    return pd.Series(random_dates, name='random_dates')"
+  },
+  {
+    "output": "def task_func(numbers):\n    if not numbers:\n        raise ValueError(\"Input list cannot be empty\")\n    import numpy as np\n    arr = np.array(numbers)\n    mode = np.unique(arr, return_counts=True)[0][np.argmax(np.unique(arr, return_counts=True)[1])]\n    counts = np.unique(arr, return_counts=True)[1]\n    probabilities = counts / counts.sum()\n    entropy = -np.sum(probabilities * np.log2(probabilities))\n    return {'mode': mode, 'entropy': entropy}"
+  },
+  {
+    "output": "from sklearn.preprocessing import StandardScaler\nimport numpy as np\nimport base64\n\ndef task_func(data):\n    data_array = np.array(data, dtype=np.float64)\n    scaler = StandardScaler()\n    standardized_data = scaler.fit_transform(data_array.reshape(-1, 1))\n    flattened_data = standardized_data.flatten()\n    data_bytes = flattened_data.tobytes()\n    base64_encoded = base64.b64encode(data_bytes).decode('ascii')\n    return base64_encoded"
+  },
+  {
+    "output": "def task_func(input_list, directory):\n    import os\n    import random\n    import matplotlib.pyplot as plt\n    \n    deduplicated = list(dict.fromkeys(input_list))\n    os.makedirs(directory, exist_ok=True)\n    file_names = []\n    \n    for plot_name in deduplicated:\n        data = [random.random() for _ in range(10)]\n        plt.bar(range(10), data)\n        plt.title(plot_name)\n        file_name = os.path.join(directory, f\"{plot_name}.png\")\n        plt.savefig(file_name)\n        plt.close()\n        file_names.append(file_name)\n    \n    if not os.path.exists(directory):\n        raise FileNotFoundError(f\"The directory {directory} does not exist and could not be created.\")\n    \n    return file_names"
+  },
+  {
+    "output": "def task_func(df, visualize=False):\n    if df.empty or df['Value'].isnull().all():\n        return None\n    df['Value'] = df['Value'].apply(lambda x: x.split(',') if isinstance(x, list) else x)\n    df = df.explode('Value').reset_index(drop=True)\n    df['Value'] = pd.to_numeric(df['Value'], errors='coerce')\n    df.dropna(inplace=True)\n    corr = df.corr()\n    if visualize:\n        plt.figure(figsize=(10, 8))\n        sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=\".2f\")\n        plt.title(\"Correlation Heatmap\")\n        plt.show()\n    return corr.values.tolist()"
+  },
+  {
+    "output": "import pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\ndef task_func(list_of_pairs):\n    df = pd.DataFrame(list_of_pairs, columns=['Category', 'Value'])\n    plt.figure(figsize=(10, 6))\n    sns.barplot(x='Category', y='Value', data=df)\n    plt.title('Category vs Value')\n    plt.xlabel('Category')\n    plt.ylabel('Value')\n    plt.xticks(rotation=45)\n    plt.tight_layout()\n    return df, plt.gca()"
+  },
+  {
+    "output": "df = pd.DataFrame(match_results)\n    \n    # Plotting Goals\n    plt.figure(figsize=(10, 6))\n    sns.barplot(x='Team', y='Goals', data=df)\n    plt.title('Goals Scored by Teams')\n    plt.xlabel('Team')\n    plt.ylabel('Goals')\n    plt.tight_layout()\n    \n    # Plotting Penalty Costs\n    plt.figure(figsize=(10, 6))\n    sns.barplot(x='Team', y='Fine', data=df)\n    plt.title('Penalty Costs by Teams')\n    plt.xlabel('Team')\n    plt.ylabel('Fine (in dollars)')\n    plt.tight_layout()\n    \n    return df, [plt.gca(), plt.gca()]"
+  },
+  {
+    "output": "def process_sentences(n_sentences, vocabulary):\n    import random\n    processed = []\n    for _ in range(n_sentences):\n        sentence = ' '.join(random.choices(vocabulary, k=5))\n        processed.append(sentence.replace(' ', '_').lower())\n    return processed"
+  },
+  {
+    "output": "import numpy as np\n\ndef random_walk(length):\n    if length < 0:\n        raise ValueError(\"Length cannot be negative\")\n    steps = np.random.choice([-1, 1], size=length)\n    positions = np.zeros(length + 1, dtype=int)\n    for i in range(length):\n        positions[i + 1] = positions[i] + steps[i]\n    return positions"
+  },
+  {
+    "output": "import json\nimport os\nfrom openpyxl import Workbook\n\ndef convert_json_to_excel(json_str):\n    try:\n        data = json.loads(json_str)\n    except json.JSONDecodeError:\n        raise ValueError(\"Invalid JSON string\")\n    \n    if not data or not isinstance(data, list):\n        raise ValueError(\"JSON string is empty or not a list\")\n    \n    wb = Workbook()\n    ws = wb.active\n    ws.append(['Key', 'Value'])\n    \n    for item in data:\n        if isinstance(item, dict):\n            for key, value in item.items():\n                ws.append([key, value])\n        else:\n            ws.append([str(item), ''])\n    \n    file_path = os.path.join(os.getcwd(), 'output.xlsx')\n    wb.save(file_path)\n    \n    return os.path.abspath(file_path)"
+  },
+  {
+    "output": "def extract_domains_geolocation(input_string):\n    import re\n    import requests\n    from urllib.parse import urlparse\n    \n    urls = re.findall(r'https?://(?:www\\.)?([^\"\\']+)/?', input_string)\n    domains = list(set([urlparse(url).netloc for url in urls]))\n    \n    geolocation_data = {}\n    for domain in domains:\n        try:\n            response = requests.get(f'https://ipapi.co/{domain}/json/').json()\n            geolocation_data[domain] = response\n        except:\n            geolocation_data[domain] = {\"error\": \"Failed to retrieve geolocation data\"}\n    \n    return geolocation_data"
+  },
+  {
+    "output": "def task_func(directory, pattern, suffix):\n    import os\n    import mimetypes\n    result = {}\n    for filename in os.listdir(directory):\n        if pattern in filename and suffix in filename:\n            filepath = os.path.join(directory, filename)\n            if os.path.isfile(filepath):\n                mime_type = mimetypes.guess_type(filepath)[0] or 'application/octet-stream'\n                result[filename] = mime_type\n    return result"
+  },
+  {
+    "output": "def analyze_fitness_data(data):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    if not data or not all(isinstance(x, (int, float)) for x in data):\n        raise ValueError(\"Invalid data format\")\n    mean = np.mean(data)\n    std_dev = np.std(data)\n    plt.plot(data)\n    plt.title(\"Fitness Data\")\n    plt.xlabel(\"Sample\")\n    plt.ylabel(\"Value\")\n    plt.show()\n    return mean, std_dev"
+  },
+  {
+    "output": "def task_func(param1, param2):\n    return param1 + param2"
+  },
+  {
+    "output": "def extract_archive(archive_path, extract_to):\n    import os\n    import shutil\n    import zipfile\n    import tarfile\n    try:\n        if not os.path.exists(archive_path):\n            raise FileNotFoundError(f\"The archive file '{archive_path}' does not exist.\")\n        if not os.path.exists(extract_to):\n            os.makedirs(extract_to)\n        if archive_path.endswith('.zip'):\n            with zipfile.ZipFile(archive_path, 'r') as zip_ref:\n                zip_ref.extractall(extract_to)\n        elif archive_path.endswith(('.tar', '.tar.gz', '.tgz')):\n            with tarfile.open(archive_path, 'r') as tar_ref:\n                tar_ref.extractall(extract_to)\n        else:\n            raise ValueError(f\"Unsupported archive format: {archive_path}\")\n        return os.path.abspath(extract_to)\n    except Exception as e:\n        return str(e)"
+  },
+  {
+    "output": "quantity = quantity.strip()\n        code = code.strip()\n        price = price.strip()\n        description = description.strip()\n        \n        # Assign product name based on code\n        product_name = random.choice(product_names)\n        \n        # Append the parsed data to the list\n        data.append({\n            'ID': id_val,\n            'Quantity': quantity,\n            'Code': code,\n            'Price': price,\n            'Description': description,\n            'Product': product_name\n        })\n    \n    # Create DataFrame from the parsed data\n    df = pd.DataFrame(data)\n    \n    # Return the DataFrame\n    return df"
+  },
+  {
+    "output": "def task_func():\n    import random\n    numbers = [random.randint(1, 100) for _ in range(10)]\n    return numbers"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\n\ndef generate_normal_samples_and_plot():\n    np.random.seed(42)\n    samples = np.random.normal(loc=0, scale=1, size=1000)\n    fig, ax = plt.subplots()\n    ax.hist(samples, bins=30, density=True, alpha=0.6, color='g')\n    x = np.linspace(-4, 4, 100)\n    pdf = (1 / np.sqrt(2 * np.pi)) * np.exp(-x**2 / 2)\n    ax.plot(x, pdf, 'r', lw=2)\n    return ax, samples"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.preprocessing import LabelEncoder\n\ndef task_func(num_samples, gender_options, age_range, location_options):\n    if not isinstance(num_samples, int):\n        raise ValueError(\"num_samples must be an integer\")\n    df = pd.DataFrame()\n    df['gender'] = pd.Series([LabelEncoder().fit(gender_options).transform([gender_options[i % len(gender_options)] for i in range(num_samples)]) for _ in range(num_samples)])\n    df['age'] = pd.Series([pd.Series(range(age_range[0], age_range[1] + 1))[i % len(pd.Series(range(age_range[0], age_range[1] + 1)))] for i in range(num_samples)])\n    df['location'] = pd.Series([LabelEncoder().fit(location_options).transform([location_options[i % len(location_options)] for i in range(num_samples)]) for _ in range(num_samples)])\n    return df"
+  },
+  {
+    "output": "import math\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport random\n\nRANGE = 10000\nSIZE = 1000\nPI = np.pi\n\ndef task_func(size=SIZE, frequency=1):\n    phase = random.uniform(0, 2 * PI)\n    amplitude = random.uniform(0.5, 2.0)\n    noise = np.random.normal(0, 0.1, size)\n    x = np.linspace(0, RANGE, size)\n    sinusoidal_values = amplitude * np.sin(frequency * x + phase) + noise\n    fig, ax = plt.subplots()\n    ax.plot(x, sinusoidal_values, label='Sinusoidal Wave')\n    ax.set_xlabel('X-axis')\n    ax.set_ylabel('Amplitude')\n    ax.set_title('Random Sinusoidal Wave')\n    ax.legend()\n    return ax"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndef process_and_plot_data(df):\n    numeric_cols = df.select_dtypes(include=np.number).columns\n    df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].mean())\n    stats = df[numeric_cols].describe()\n    for col in numeric_cols:\n        plt.figure()\n        plt.hist(df[col], bins=20)\n        plt.title(f'Distribution of {col}')\n        plt.xlabel(col)\n        plt.ylabel('Frequency')\n    plt.show()"
+  },
+  {
+    "output": "import base64\nimport hashlib\nimport hmac\n\ndef task_func(s, signature, secret_key):\n    decoded_message = base64.b64decode(s)\n    hmac_hash = hmac.new(secret_key.encode('utf-8'), decoded_message, hashlib.sha1).digest()\n    computed_signature = base64.b64encode(hmac_hash).decode('utf-8')\n    return computed_signature == signature"
+  },
+  {
+    "output": "def task_func(df, col1, col2, N=10):\n    if col1 not in df.columns or col2 not in df.columns:\n        raise ValueError('ValueError: If specified columns are not in the provided DataFrame.')\n    scaler = StandardScaler()\n    scaled_values = scaler.fit_transform(df[[col1, col2]])\n    abs_diff = np.abs(scaled_values[:, 0] - scaled_values[:, 1])\n    top_n_indices = heapq.nlargest(N, range(len(abs_diff)), key=lambda i: abs_diff[i])\n    return top_n_indices"
+  },
+  {
+    "output": "def generate_performance_report(data):\n    import pandas as pd\n    return pd.DataFrame(data).set_index('timestamp').resample('D').mean().reset_index()"
+  },
+  {
+    "output": "def read_convert_csv(file_path, input_encoding, output_encoding):\n    import csv\n    with open(file_path, 'r', encoding=input_encoding) as file:\n        reader = csv.DictReader(file)\n        data = [row for row in reader]\n    converted_data = '\\n'.join([','.join(row.values()) for row in data])\n    return data, converted_data.encode(output_encoding).decode('utf-8')"
+  },
+  {
+    "output": "def predict_stock_prices(df):\n    import pandas as pd\n    import numpy as np\n    import matplotlib.pyplot as plt\n    from sklearn.linear_model import LinearRegression\n    \n    df = df.reset_index(drop=True)\n    X = np.array(df.index).reshape(-1, 1)\n    y = df['Close'].values\n    \n    model = LinearRegression()\n    model.fit(X, y)\n    y_pred = model.predict(X)\n    \n    plt.figure(figsize=(14, 7))\n    plt.plot(df.index, y, label='Actual Prices')\n    plt.plot(df.index, y_pred, label='Fitted Line')\n    plt.title('Stock Closing Prices')\n    plt.xlabel('Days')\n    plt.ylabel('Price')\n    plt.legend()\n    \n    future_days = 7\n    future_X = np.array(range(len(df), len(df) + future_days)).reshape(-1, 1)\n    future_prices = model.predict(future_X)\n    \n    return (future_prices, plt.gca())"
+  },
+  {
+    "output": "ax.hist(values_list, bins=20, density=True, alpha=0.6, color='blue')"
+  },
+  {
+    "output": "import pandas as pd\n\ndef flatten_and_count_menu_items(nested_list):\n    from collections import Counter\n    flat_list = [item for sublist in nested_list for item in sublist]\n    counts = Counter(flat_list)\n    return pd.DataFrame(list(counts.items()), columns=['Item', 'Count'])"
+  },
+  {
+    "output": "def task_func(x):\n    from itertools import combinations\n    keys = list(x.keys())\n    min_total = float('inf')\n    min_subseq = []\n    for i in range(1, len(keys)+1):\n        for combo in combinations(keys, i):\n            total = sum(x[key] for key in combo)\n            if total < min_total:\n                min_total = total\n                min_subseq = list(combo)\n    return min_subseq"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.preprocessing import StandardScaler\n\ndef task_func(df, age, weight):\n    required_columns = ['Age', 'Weight']\n    if not all(col in df.columns for col in required_columns):\n        return pd.DataFrame()\n    filtered_df = df[(df['Age'] == age) & (df['Weight'] == weight)]\n    if filtered_df.empty:\n        return pd.DataFrame()\n    scaler = StandardScaler()\n    scaled_values = scaler.fit_transform(filtered_df)\n    return pd.DataFrame(scaled_values, columns=filtered_df.columns)"
+  },
+  {
+    "output": "from collections import Counter\n\ndef task_func(data):\n    total = 0\n    categories = []\n    for item in data:\n        total += item[1]\n        categories.append(item[0])\n    return total, Counter(categories)"
+  },
+  {
+    "output": "import os\nimport shutil\n\ndef find_and_move_interesting_files(directory):\n    interesting_files = []\n    for filename in os.listdir(directory):\n        if \"like\" in filename or \"what\" in filename:\n            old_path = os.path.join(directory, filename)\n            new_path = os.path.join(directory, \"Interesting Files\", filename)\n            os.makedirs(os.path.join(directory, \"Interesting Files\"), exist_ok=True)\n            shutil.move(old_path, new_path)\n            interesting_files.append(filename)\n    return interesting_files"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.feature_extraction.text import TfidfVectorizer\n\ndef calculate_tfidf_scores(documents):\n    vectorizer = TfidfVectorizer()\n    tfidf_matrix = vectorizer.fit_transform(documents)\n    feature_names = vectorizer.get_feature_names_out()\n    df = pd.DataFrame(tfidf_matrix.toarray(), columns=feature_names)\n    return df.transpose()"
+  },
+  {
+    "output": "return df.tolist()"
+  },
+  {
+    "output": "def task_func(df, column, value):\n    if column in df.columns and pd.api.types.is_numeric_dtype(df[column]):\n        avg = df[column].mean()\n        greater_than_avg = df[df[column] > avg]\n        count = len(greater_than_avg)\n        plt.hist(df[column], bins=10)\n        ax = plt.gca()\n        return (np.array(df[column]), count, ax)\n    else:\n        return (np.array([]), 0, None)"
+  },
+  {
+    "output": "from collections import Counter\nimport pandas as pd\n\ndef task_func(myList):\n    word_counts = Counter(myList)\n    return pd.DataFrame(list(word_counts.items()), columns=['word', 'count'])"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.preprocessing import StandardScaler\n\ndef task_func(df):\n    scaler = StandardScaler()\n    df_standardized = pd.DataFrame(scaler.fit_transform(df), columns=df.columns)\n    return df_standardized"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nfrom sklearn.cluster import KMeans\nimport matplotlib.pyplot as plt\n\ndef task_func(df, n_clusters=3, random_state=0):\n    # Check if the DataFrame is empty or lacks required columns\n    if df.empty or 'date' not in df.columns or 'value' not in df.columns:\n        raise ValueError(\"DataFrame is empty or lacks required columns.\")\n    \n    # Convert 'date' to datetime\n    df['date'] = pd.to_datetime(df['date'])\n    \n    # Convert to ordinal (number of days since 0001-01-01)\n    df['date_ordinal'] = df['date'].dt.toordinal\n    \n    # Prepare the data for clustering\n    X"
+  },
+  {
+    "output": "def perform_kmeans_clustering(data_series1, data_series2, n_clusters=3):\n    import pandas as pd\n    import numpy as np\n    from sklearn.cluster import KMeans\n    import matplotlib.pyplot as plt\n    \n    if not isinstance(data_series1, pd.Series) or not isinstance(data_series2, pd.Series):\n        raise ValueError(\"Both inputs must be pandas Series.\")\n    \n    if data_series1.shape[0] != data_series2.shape[0]:\n        raise ValueError(\"Both Series must have the same length.\")\n    \n    data = pd.DataFrame({\n        'x': data_series1,\n        'y': data_series2\n    })\n    \n    kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(data)\n    labels = kmeans.labels_\n    centroids = kmeans.cluster_centers_\n    \n    plt.scatter(data['x'], data['y'], c=labels, s=50, cmap='viridis')\n    plt.scatter(centroids[:, 0], centroids[:, 1], c='red', s=200, marker='x', label='Centroids')\n    plt.xlabel('Feature 1')\n    plt.ylabel('Feature 2')\n    plt.title('K-Means Clustering')\n    plt.legend()\n    plt.show()"
+  },
+  {
+    "output": "import pandas as pd\nimport matplotlib.pyplot as plt\n\ndef task_func(df):\n    if df.empty or 'Word' not in df.columns:\n        return None\n    filtered = df[df['Word'].str[0].str.lower().isin(['a', 'b', 'c', 'd', 'e'])]\n    if filtered.empty:\n        return None\n    lengths = filtered['Word'].str.len()\n    plt.boxplot(lengths)\n    plt.ylabel('Length')\n    plt.title('Word Length Distribution')\n    plt.show()"
+  },
+  {
+    "output": "data.append([f\"Average\", average_age, average_height, average_weight])\n    \n    # Write to CSV\n    filename = os.path.join(os.getcwd(), filename)\n    with open(filename, 'w', newline='') as csvfile:\n        writer = csv.writer(csvfile)\n        writer.writerow(COLUMNS)\n        writer.writerows(data)\n    \n    return filename"
+  },
+  {
+    "output": "import csv\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport os\n\ndef process_csv_file(file_path):\n    with open(file_path, 'r') as file:\n        reader = csv.reader(file)\n        data = [float(row[0]) for row in reader]\n    sample = np.random.choice(data, size=30, replace=False)\n    mean = np.mean(sample)\n    std_dev = np.std(sample)\n    plt.hist(sample, bins=10, density=True, alpha=0.6, color='g')\n    x = np.linspace(min(sample), max(sample), 100)\n    pdf = (1 / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-((x - mean) ** 2) / (2 * std_dev ** 2))\n    plt.plot(x, pdf, 'k', linewidth=2)\n    plt.title('Histogram with Normal Distribution Curve')\n    plt.xlabel('Value')\n    plt.ylabel('Frequency')\n    plt.show()"
+  },
+  {
+    "output": "import os\nfrom flask_mail import Mail\n\ndef task_func(app):\n    mail_config = {\n        'MAIL_SERVER': os.getenv('MAIL_SERVER', 'smtp.example.com'),\n        'MAIL_PORT': int(os.getenv('MAIL_PORT', '587')),\n        'MAIL_USE_TLS': os.getenv('MAIL_USE_TLS', 'True').lower() in ('true', '1', 't'),\n        'MAIL_USE_SSL': os.getenv('MAIL_USE_SSL', 'False').lower() in ('true', '1', 't'),\n        'MAIL_USERNAME': os.getenv('MAIL_USERNAME', ''),\n        'MAIL_PASSWORD': os.getenv('MAIL_PASSWORD', ''),\n        'MAIL_DEFAULT_SENDER': os.getenv('MAIL_DEFAULT_SENDER', ''),\n    }\n    \n    mail = Mail(app)\n    \n    return (mail, mail_config)"
+  },
+  {
+    "output": "def task_func(df, mapping):\n    required_features = ['feature1', 'feature2', 'feature3']\n    if not all(feature in df.columns for feature in required_features):\n        raise ValueError(\"DataFrame is missing required features\")\n    for col in required_features:\n        df[col] = df[col].replace(mapping)\n    stats = {}\n    for col in required_features:\n        mean = df[col].mean()\n        median = df[col].median()\n        mode = df[col].mode().iloc[0] if not df[col].mode().empty else None\n        variance = df[col].var()\n        stats[col] = {\n            'mean': mean,\n            'median': median,\n            'mode': mode,\n            'variance': variance\n        }\n    return stats"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.ndimage import gaussian_filter\nfrom matplotlib.image import imread\n\ndef task_func(image_path):\n    try:\n        image = imread(image_path)\n        if len(image.shape) == 3:\n            image = np.mean(image, axis=2)\n        filtered = gaussian_filter(image, sigma=1)\n        plt.figure(figsize=(10, 5))\n        plt.subplot(1, 2, 1)\n        plt.imshow(image, cmap='gray')\n        plt.title('Original Image')\n        plt.subplot(1, 2, 2)\n        plt.imshow(filtered, cmap='gray')\n        plt.title('Filtered Image')\n        plt.show()\n        return image, filtered\n    except Exception as e:\n        print(f\"An error occurred: {e}\")\n        return None, None"
+  },
+  {
+    "output": "def task_func(url, file_path):\n    import requests\n    import pandas as pd\n    response = requests.get(url)\n    df = pd.read_csv(response.content)\n    df.to_json(file_path, orient='records')\n    return file_path"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.stats import f_oneway\n\ndef analyze_data(file_path):\n    df = pd.read_csv(file_path)\n    numeric_cols = df.select_dtypes(include=np.number).columns\n    for col in numeric_cols:\n        df[col] = pd.to_numeric(df[col], errors='coerce')\n    df.dropna(inplace=True)\n    for col in numeric_cols:\n        mean = df[col].mean()\n        std_dev = df[col].std()\n        print(f\"Mean of {col}: {mean}, Standard Deviation: {std_dev}\")\n        plt.hist(df[col], bins=10, edgecolor='black')\n        plt.title(f'Histogram of {col}')\n        plt.xlabel(col)\n        plt.ylabel('Frequency')\n        plt.show()\n    if len(numeric_cols) >= 2:\n        group_cols = numeric_cols[:2]\n        group_data = [df[col] for col in group_cols]\n        f_stat, p_val = f_oneway(*group_data)\n        print(f\"ANOVA F-statistic: {f_stat}, p-value: {p_val}\")"
+  },
+  {
+    "output": "def simulate_dice_rolls(num_rolls):\n    import random\n    import matplotlib.pyplot as plt\n    import numpy as np\n    results = [random.randint(1, 6) for _ in range(num_rolls)]\n    frequencies = np.bincount(results, minlength=7)[1:]\n    plt.bar(range(1, 7), frequencies)\n    plt.xlabel('Dice Roll')\n    plt.ylabel('Frequency')\n    plt.title('Dice Roll Frequencies')\n    plt.show()"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\n\ndef generate_random_gdp_data(countries):\n    np.random.seed(42)\n    gdp_data = np.random.uniform(1000, 100000, size=len(countries))\n    return pd.DataFrame({\n        'Country': countries,\n        'GDP': gdp_data\n    })"
+  },
+  {
+    "output": "def task_func(request):\n    from http.server import BaseHTTPRequestHandler\n    import os\n    import urllib.parse\n\n    parsed_path = urllib.parse.urlparse(request.path).path\n    filename = parsed_path.strip('/') or 'index.html'\n    file_path = os.path.join('static', filename)\n\n    if os.path.isfile(file_path):\n        with open(file_path, 'rb') as f:\n            content = f.read()\n        response = BaseHTTPRequestHandler.responses[200][0]\n        return response + content\n    else:\n        response = BaseHTTPRequestHandler.responses[404][0]\n        return response"
+  },
+  {
+    "output": "def function_to_create():\n    import numpy as np\n    import matplotlib.pyplot as plt\n    \n    original = [5, 10, 15, 20, 25]\n    arr = np.array(original)\n    normalized = (arr - np.min(arr)) / (np.max(arr) - np.min(arr))\n    \n    plt.figure(figsize=(10, 5))\n    plt.plot(original, label='Original')\n    plt.plot(normalized, label='Normalized')\n    plt.legend()\n    plt.show()\n    \n    return arr, normalized"
+  },
+  {
+    "output": "import json\nimport requests\nfrom bs4 import BeautifulSoup\n\ndef scrape_title_to_json(url, filename):\n    response = requests.get(url)\n    soup = BeautifulSoup(response.text, 'html.parser')\n    title = soup.title.string if soup.title else ''\n    data = {'title': title}\n    mode = 'a' if filename.exists() else 'w'\n    with open(filename, mode) as f:\n        json.dump(data, f)\n        f.write('\\n')\n    return str(filename)"
+  },
+  {
+    "output": "def plot_parabola():\n    import matplotlib.pyplot as plt\n    x = [i/10 for i in range(-100, 101)]\n    y = [i**2 for i in x]\n    plt.plot(x, y)\n    plt.title('Parabola y = x^2')\n    plt.xlabel('x')\n    plt.ylabel('y')\n    plt.grid(True)\n    plt.show()"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nimport os\nimport numpy as np\nimport ast\n\ndef task_func(directory):\n    # Check if directory exists\n    if not os.path.exists(directory):\n        return pd.DataFrame(columns=['email', 'list', 'sum', 'mean', 'median']), None\n    \n    # Traverse directory for CSV files\n    csv_files = [f for f in os.listdir(directory) if f.endswith('.csv')]\n    \n    # If no CSV files, return empty DataFrame and None\n    if not csv_files:\n        return pd.DataFrame(columns=['email', 'list', 'sum', 'mean', 'median']), None\n    \n    # Find CSV file with the longest filename\n    longest_file = max(csv_files, key=lambda x: len(x))\n    file_path = os.path.join(directory, longest_file)\n    \n    #"
+  },
+  {
+    "output": "import heapq\nimport random\n\ndef task_func(list_length: int, k: int):\n    random_list = [random.randint(1, 100) for _ in range(list_length)]\n    k_largest = heapq.nlargest(k, random_list)\n    return (random_list, k_largest)"
+  },
+  {
+    "output": "import pandas as pd\nimport matplotlib.pyplot as plt\n\ndef task_func(input_dict, target_value):\n    df = pd.DataFrame(input_dict)\n    matching_rows = df.apply(lambda row: all(cell == target_value for cell in row), axis=1)\n    counts = df.apply(lambda col: (col == target_value).sum(), axis=0)\n    fig, ax = plt.subplots()\n    counts.plot(kind='bar', ax=ax)\n    return counts, ax"
+  },
+  {
+    "output": "def task_func(source_dir, target_dir, prefix):\n    import os\n    import hashlib\n    if not os.path.exists(source_dir):\n        raise FileNotFoundError(f\"Source directory '{source_dir}' does not exist.\")\n    os.makedirs(target_dir, exist_ok=True)\n    files = [os.path.join(source_dir, f) for f in os.listdir(source_dir) if os.path.isfile(os.path.join(source_dir, f))]\n    result = []\n    for file_path in files:\n        with open(file_path, 'rb') as f:\n            content = f.read()\n        hash_md5 = hashlib.md5(content).hexdigest()\n        modified_content = f\"{prefix}{hash_md5}{content.decode('utf-8', 'ignore')}\"\n        target_path = os.path.join(target_dir, os.path.basename(file_path))\n        with open(target_path, 'wb') as f:\n            f.write(modified_content.encode('utf-8'))\n        result.append(target_path)\n    return result"
+  },
+  {
+    "output": "import zlib\nimport base64\nimport random\nimport string\n\ndef generate_compressed_encoded_string(length):\n    random_string = ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))\n    compressed = zlib.compress(random_string.encode('utf-8'))\n    encoded = base64.b64encode(compressed).decode('utf-8')\n    return encoded"
+  },
+  {
+    "output": "from itertools import zip_longest\nfrom scipy.spatial import distance\nimport math\n\ndef task_func(points):\n    if len(points) < 2:\n        return []\n    \n    # Normalize points\n    normalized_points = []\n    for point in points:\n        if isinstance(point, tuple):\n            if len(point) == 1:\n                normalized_points.append((point[0], point[0]))\n            else:\n                normalized_points.append(point)\n        else:\n            normalized_points.append((point, point))\n    \n    # Calculate distances between consecutive points\n    distances = []\n    for i in range(len(normalized_points) - 1):\n        p1 = normalized_points[i]\n        p2 = normalized_points[i + 1]\n        dist = math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)\n        distances.append(dist)\n    \n    return distances"
+  },
+  {
+    "output": "import numpy as np\nfrom scipy import stats\ndef task_func(L):\n    flat_list = np.concatenate(L)\n    mode = stats.mode(flat_list).mode[0]\n    return mode"
+  },
+  {
+    "output": "from matplotlib import pyplot as plt\nfrom sklearn.decomposition import PCA\ndef task_func(arr):\n    summed_data = arr.sum(axis=1).reshape(-1, 1)\n    pca = PCA(n_components=1)\n    pca.fit(summed_data)\n    explained_variance_ratio = pca.explained_variance_ratio_\n    fig, ax = plt.subplots()\n    ax.bar(range(1), explained_variance_ratio, align='center')\n    ax.set_title(\"Explained Variance Ratio\")"
+  },
+  {
+    "output": "import numpy as np\n\ndef calculate_product_of_seconds(tuples_list):\n    second_values = [t[1] for t in tuples_list]\n    product = np.prod(second_values)\n    return np.array([product])"
+  },
+  {
+    "output": "def find_target_in_csv(directory, target, move_to=None):\n    import os\n    import csv\n    import shutil\n    files = [f for f in os.listdir(directory) if f.endswith('.csv')]\n    results = []\n    for file in files:\n        file_path = os.path.join(directory, file)\n        with open(file_path, 'r') as f:\n            reader = csv.reader(f)\n            for idx, row in enumerate(reader):\n                if row and row[0] == target:\n                    results.append((file, idx))\n                    break\n        if move_to and os.path.exists(file_path):\n            shutil.move(file_path, os.path.join(move_to, file))\n    return results"
+  },
+  {
+    "output": "import random\nimport math\n\ndef generate_random_float_from_hex(hex_list):\n    hex_str = random.choice(hex_list)\n    float_val = float.fromhex(hex_str)\n    rounded_val = round(float_val, 2)\n    return rounded_val"
+  },
+  {
+    "output": "def task_func(df):\n    y = df['target']\n    X = df.drop('target', axis=1)\n    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)\n    return (X_train, X_test, y_train, y_test)"
+  },
+  {
+    "output": "def task_func(api_url):\n    import pandas as pd\n    import matplotlib.pyplot as plt\n    import requests\n    if not isinstance(api_url, str):\n        raise ValueError(\"api_url must be a string\")\n    try:\n        response = requests.get(api_url)\n        response.raise_for_status()\n    except requests.exceptions.RequestException as e:\n        raise Exception(\"API request failed\") from e\n    try:\n        data = response.json()\n    except Exception as e:\n        raise Exception(\"Failed to parse JSON response\") from e\n    if not data:\n        raise ValueError(\"API returned empty data\")\n    df = pd.DataFrame(data)\n    if not df.empty:\n        df.plot()\n        plt.show()\n    else:\n        raise ValueError(\"DataFrame is empty after processing\")"
+  },
+  {
+    "output": "import itertools\nimport string\nimport pandas as pd\n\ndef task_func():\n    letters = string.ascii_uppercase\n    combinations = list(itertools.product(letters, repeat=3))\n    df = pd.DataFrame(combinations, columns=['Letter1', 'Letter2', 'Letter3'])\n    return df"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.stats import gaussian_kde\n\ndef generate_and_plot_gaussian_kde(mean, std_dev, sample_size):\n    np.random.seed(42)\n    data = np.random.normal(mean, std_dev, sample_size)\n    kde = gaussian_kde(data)\n    x = np.linspace(data.min(), data.max(), 1000)\n    y = kde(x)\n    fig, ax = plt.subplots()\n    ax.plot(x, y)\n    return ax"
+  },
+  {
+    "output": "def task_func(file_path, private_key_path):\n    import rsa\n    import hashlib\n    import base64\n    with open(file_path, 'rb') as f:\n        file_data = f.read()\n    hash_object = hashlib.sha256(file_data)\n    hash_hex = hash_object.hexdigest()\n    with open(private_key_path, 'rb') as pk:\n        private_key = rsa.PrivateKey.load_pkcs1(pk.read())\n    signature = rsa.sign_hash(hash_hex.encode('utf-8'), private_key, 'sha256')\n    return base64.b64encode(signature).decode('utf-8')"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nimport string\n\ndef task_func(word):\n    # Input validation\n    if not isinstance(word, str):\n        raise ValueError(\"Input must be a string.\")\n    if not word.islower():\n        raise ValueError"
+  },
+  {
+    "output": "def task_func(numbers):\n    def is_prime(n):\n        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n    primes = [n for n in numbers if is_prime(n)]\n    degrees = [n * 9 / 5 for n in primes]\n    degrees.sort()\n    return degrees"
+  },
+  {
+    "output": "def task_func(n, pattern, seed=None):\n    import random\n    import re\n    random.seed(seed)\n    chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'\n    random_str = ''.join(random.choice(chars) for _ in range(n))\n    regex = re.compile(pattern)\n    matches = regex.finditer(random_str)\n    return [match.group() for match in matches]"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndef task_func(df, letters=list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')):\n    # Check if the input is a DataFrame\n    if not isinstance(df, pd.DataFrame):\n        raise ValueError(\"If 'df' is not a DataFrame or lacks the 'Letters' column.\")\n    # Check if the 'Letters' column exists\n    if 'Letters' not in df.columns:\n        raise ValueError(\"If 'df' is not a DataFrame or lacks the 'Letters' column.\")\n    \n    # Count the frequency of each letter\n    letter_counts = df['Letters'].value_counts()\n    \n    # Create a bar chart\n    fig, ax = plt.subplots()\n    letter_counts.plot(kind='bar', ax=ax)\n    \n    # Set labels and title\n    ax.set_xlabel('Letters')\n    ax.set_ylabel('Frequency')\n    ax.set_title('Letter Frequency')\n    \n    #"
+  },
+  {
+    "output": "def task_func(df, target_column, target_values=None):\n    if not isinstance(df, pd.DataFrame) or not isinstance(target_column, str):\n        raise ValueError(\"Input df must be a DataFrame and target_column must be a string\")\n    if target_values is not None and not all(isinstance(val, (int, float)) for val in target_values):\n        raise ValueError(\"All elements in target_values must be numeric\")\n    for col in df.columns:\n        if target_values is not None:\n            df[col] = df[col].apply(lambda x: x if x in target_values else 0)\n    X = df.drop(columns=[target_column])\n    y = df[target_column]\n    model = LinearRegression().fit(X, y)\n    return model.coef_, model.intercept_"
+  },
+  {
+    "output": "def task_func(n):\n    if not isinstance(n, int) or n <= 0:\n        raise ValueError(\"Input must be a positive integer.\")\n    import random\n    import matplotlib.pyplot as plt\n    steps = [0]\n    for _ in range(n):\n        step = random.choice([-1, 1])\n        steps.append(steps[-1] + step)\n    mean = sum(steps) / len(steps)\n    variance = sum((x - mean)**2 for x in steps) / len(steps)\n    plt.plot(steps)\n    plt.title(\"Random Walk\")\n    plt.xlabel(\"Step\")\n    plt.ylabel(\"Position\")\n    plt.show()\n    return mean, variance, steps"
+  },
+  {
+    "output": "2.6666666666666665"
+  },
+  {
+    "output": "def task_func(input_list):\n    from math import factorial\n    if not isinstance(input_list, list) or any(not isinstance(x, int) or x < 0 for x in input_list):\n        return \"Invalid input\"\n    from itertools import permutations\n    results = []\n    for perm in permutations(input_list):\n        total = sum(factorial(num) for num in perm)\n        results.append(total)\n    return results"
+  },
+  {
+    "output": "def normalize_and_visualize(data):\n    import numpy as np\n    import pandas as pd\n    import matplotlib.pyplot as plt\n    \n    df = pd.DataFrame(data)\n    min_vals = df.min()\n    max_vals = df.max()\n    normalized = (df - min_vals) / (max_vals - min_vals)\n    row_averages = normalized.mean(axis=1)\n    normalized['average'] = row_averages\n    normalized.plot(kind='line')\n    plt.show()"
+  },
+  {
+    "output": "import base64\nimport json\nimport requests\n\ndef convert_and_send(data, api_endpoint):\n    json_str = json.dumps(data)\n    base64_str = base64.b64encode(json_str.encode()).decode()\n    response = requests.post(api_endpoint, data={'payload': base64_str})\n    return response"
+  },
+  {
+    "output": "def task_func(url):\n    import os\n    import requests\n    from zipfile import ZipFile\n    import io\n\n    try:\n        response = requests.get(url)\n        response.raise_for_status()\n        zip_data = io.BytesIO(response.content)\n        with ZipFile(zip_data, 'r') as zip_ref:\n            zip_ref.extractall(path='unzipped_files')\n        filenames = os.listdir('unzipped_files')\n        return \"Success\", filenames\n    except Exception as e:\n        return \"Error: \" + str(e), []"
+  },
+  {
+    "output": "def create_cumulative_sum_heatmap(data_dict):\n    import pandas as pd\n    import seaborn as sns\n    import matplotlib.pyplot as plt\n    df = pd.DataFrame(data_dict)\n    if df.empty or not df.select_dtypes(include=['number']).shape[1] == df.shape[1]:\n        raise ValueError(\"DataFrame is empty or contains non-numeric columns\")\n    cumulative_sums = df.cumsum()\n    ax = sns.heatmap(cumulative_sums, annot=True, cmap='viridis')\n    plt.show()\n    return ax"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndef task_func(my_list, seed=42):\n    # Part A: Validate the input\n    if not isinstance(my_list, list):\n        raise TypeError(\"my_list must be a list.\")\n    \n    # Part B: Add '12' to the list\n    my_list.append('12')\n    \n    # Part C: Simulate sales data\n    categories = ['Electronics', 'Fashion', 'Home & Kitchen', 'Automotive', 'Sports']\n    np.random.seed(seed)\n    sales_data = np.random.randint(100, 1000, size=len(categories))\n    \n    # Create DataFrame\n    sales_df = pd.DataFrame"
+  },
+  {
+    "output": "def max_weight_subsequence(s, weight_map):\n    dp = [0] * (len(s) + 1)\n    for i in range(1, len(s) + 1):\n        dp[i] = max(dp[i-1], dp[i-1] + weight_map.get(s[i-1], 0))\n    return dp[len(s)]"
+  },
+  {
+    "output": "def process_data(df):\n    if df.empty or df['age'].min() < 0:\n        raise ValueError(\"DataFrame is empty or contains negative ages\")\n    df['age'] = df['age'].apply(lambda x: int(x // 1))\n    name_duplicates = df[df.duplicated('name', keep=False)].groupby('name').size().reset_index(name='count')\n    duplicate_names = name_duplicates[name_duplicates['count'] > 1]['name'].tolist()\n    duplicate_ages = df[df['name'].isin(duplicate_names)].groupby('name')['age'].value_counts().unstack().fillna(0).astype(int)\n    from collections import Counter\n    import matplotlib.pyplot as plt\n    import numpy as np\n    age_distribution = Counter()\n    for name, group in df.groupby('name'):\n        if len(group) > 1:\n            age_distribution[name] = group['age'].value_counts().to_dict()\n    plt.figure(figsize=(10, 6))\n    plt.hist(df['age'], bins=range(int(df['age'].min()), int(df['age'].max()) + 2), align='left', rwidth=0.8)\n    plt.title('Age Distribution')\n    plt.xlabel('Age')\n    plt.ylabel('Frequency')\n    plt.grid(axis='y', alpha=0.75)\n    plt.show()\n    return age_distribution, plt.gcf()"
+  },
+  {
+    "output": "def task_func(l=None):\n    if l is None:\n        l = random.sample(ELEMENTS, 10)\n    arr = np.array(l)\n    if len(arr) < 3:\n        return arr\n    return np.concatenate((arr[3:], arr[:3]))"
+  },
+  {
+    "output": "from flask import Flask, request, render_template\nimport logging\n\napp = Flask(__name__, template_folder='templates')\n\n@app.route('/', methods=['POST'])\ndef index():\n    data = request.get_json()\n    logging.info(f\"Received data: {data}\")\n    return render_template('index.html', data=data)"
+  },
+  {
+    "output": "def extract_and_resolve_urls(input_string):\n    import re\n    import socket\n    urls = re.findall(r'https?://(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}', input_string)\n    result = {}\n    for url in urls:\n        domain = url.split('/')[2]\n        try:\n            ip = socket.gethostbyname(domain)\n            result[domain] = ip\n        except socket.gaierror:\n            raise socket.gaierror(f\"Domain {domain} could not be resolved\")\n    return result"
+  },
+  {
+    "output": "def task_func(df):\n    numeric_cols = df.select_dtypes(include=['number']).columns\n    for col in df.columns:\n        if col not in numeric_cols:\n            try:\n                df[col] = pd.to_numeric(df[col], errors='coerce')\n                numeric_cols = numeric_cols.union([col])\n            except:\n                pass\n    scaler = StandardScaler()\n    df[numeric_cols] = scaler.fit_transform(df[numeric_cols])\n    return df"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nimport numpy as np\n\ndef task_func(data, cols):\n    df = pd.DataFrame(data, columns=cols)\n    numeric_cols = df.select_dtypes(include=np.number).columns\n    correlation_matrix = df[numeric_cols].corr()\n    return correlation_matrix\n```"
+  },
+  {
+    "output": "import numpy as np\nfrom scipy.stats import iqr\ndef task_func(L):\n    # Flatten the nested list\n    flat_list = np.concatenate([np.array(sublist) for sublist in L])\n    # Calculate the interquartile range\n    iqr_value = iqr(flat_list)\n    return iqr_value"
+  },
+  {
+    "output": "class EmailHandler:\n    def handle_post(self, data):\n        try:\n            import smtplib\n            from email.mime.text import MIMEText\n            from email.mime.multipart import MIMEMultipart\n\n            sender_email = \"your_email@example.com\"\n            receiver_email = \"receiver@example.com\"\n            password = \"your_password\"\n\n            message = MIMEMultipart()\n            message[\"From\"] = sender_email\n            message[\"To\"] = receiver_email\n            message[\"Subject\"] = \"New Request\"\n\n            body = \"Data received: \" + str(data)\n            message.attach(MIMEText(body, \"plain\"))\n\n            server = smtplib.SMTP(\"smtp.example.com\", 587)\n            server.starttls()\n            server.login(sender_email, password)\n            text = message.as_string()\n            server.sendmail(sender_email, receiver_email, text)\n            server.quit()\n\n            return \"Email sent successfully\"\n        except smtplib.SMTPException as e:\n            return \"SMTP error: \" + str(e)\n        except Exception as e:\n            return \"An error occurred: \" + str(e)"
+  },
+  {
+    "output": "import numpy as np\nfrom itertools import combinations\n\ndef task_func(matrix):\n    sorted_array = np.sort(matrix.flatten())\n    unique_pairs = list(combinations(sorted_array, 2))\n    return (sorted_array, unique_pairs)"
+  },
+  {
+    "output": "def fetch_and_convert_to_df(url):\n    import requests\n    import pandas as pd\n    try:\n        response = requests.get(url)\n        response.raise_for_status()\n        data = response.json()\n        return pd.DataFrame(data)\n    except requests.exceptions.RequestException as e:\n        return f\"Network error: {e}\"\n    except ValueError as e:\n        return f\"Invalid JSON: {e}\"\n    except Exception as e:\n        return f\"Unexpected error: {e}\""
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nimport seaborn as sns\nfrom sklearn.datasets import load_boston\nimport numpy as np\n\ndef generate_correlation_heatmap(output_file):\n    try:\n        boston = load_boston()\n        df = pd.DataFrame(boston.data, columns=boston.feature_names)\n        df['MEDV'] = boston.target\n        corr = df.corr()\n        plt.figure(figsize=(10, 8))\n        ax = sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=\".2f\")\n        plt.savefig(output_file)\n        return ax\n    except Exception as e:\n        raise ValueError(f\"An error occurred: {str(e)}\")"
+  },
+  {
+    "output": "import re\nimport csv\nimport requests\nimport os\n\ndef task_func():\n    response = requests.get('https://api.example.com/data')\n    data = response.text\n    pattern = re.compile(r'pattern')\n    matches = pattern.findall(data)\n    with open('matched_data.csv', 'w', newline='') as csvfile:\n        writer = csv.writer(csvfile)\n        for match in matches:\n            writer.writerow([match])\n    return os.path.abspath('matched_data.csv')"
+  },
+  {
+    "output": "import pandas as pd\nimport seaborn as sns\nimport numpy as np\nimport ast\n\ndef task_func(csv_file):\n    df = pd.read_csv(csv_file)\n    df['list'] = df['list'].apply(ast.literal_eval)\n    df['sum'] = df['list'].apply(lambda x: sum(x))\n    df['mean'] = df['list'].apply(lambda x: np.mean(x))\n    df['std'] = df['list'].apply(lambda x: np.std(x))\n    df = df.drop(columns=['list'])\n    sns.histplot(df['mean'], kde=False)\n    return df, sns.histplot(df['mean'], kde=False)"
+  },
+  {
+    "output": "from itertools import cycle\nfrom random import shuffle\nfrom collections import Counter\n\ndef task_func(l):\n    cycled = cycle(l)\n    shuffled = list(cycled)\n    shuffle(shuffled)\n    first_30 = shuffled[:30]\n    return Counter(first_30)"
+  },
+  {
+    "output": "def task_func(request):\n    try:\n        auth_header = request.headers.get('Authorization')\n        if not auth_header:\n            return 'Missing authorization header', 401\n        parts = auth_header.split()\n        if parts[0].lower() != 'basic':\n            return 'Invalid authorization type', 401\n        decoded = base64.b64decode(parts[1]).decode('utf-8')\n        username, password = decoded.split(':', 1)\n        expected_hash = '5f4dcc3b5aa9661096a88d705e360000'  # Example hash for 'password'\n        if not username or not password:\n            return 'Invalid credentials', 401\n        if f\"{username}:{password}\" != base64.b64decode(expected_hash).decode('utf-8'):\n            return 'Invalid credentials', 401\n        return 'Authentication successful', 200\n    except Exception as e:\n        return f'Error: {str(e)}', 500"
+  },
+  {
+    "output": "import csv\n\ndef find_most_common_values(csv_file_path):\n    with open(csv_file_path, 'r') as file:\n        reader = csv.reader(file)\n        headers = next(reader)\n        if not headers:\n            return {}\n        rows = list(reader)\n        if not rows:\n            return {}\n        result = {}\n        for col_index, header in enumerate(headers):\n            column_values = [row[col_index] for row in rows]\n            unique_values = {}\n            for value in column_values:\n                unique_values[value] = unique_values.get(value, 0) + 1\n            max_count = max(unique_values.values())\n            candidates = [k for k, v in unique_values.items() if v == max_count]\n            candidates.sort()\n            result[header] = candidates[0]\n        return result"
+  },
+  {
+    "output": "def task_func(input_text, output_file):\n    import re\n    words = re.findall(r'\\b\\w+\\b', input_text)\n    filtered = [word for word in words if word.startswith('$') and not re.fullmatch(r'[^a-zA-Z0-9]+', word)]\n    with open(output_file, 'w') as f:\n        f.write('\\n'.join(filtered))\n    return f\"{output_file}\""
+  },
+  {
+    "output": "Error generating code"
+  },
+  {
+    "output": "import os\nfrom datetime import datetime\n\ndef task_func(filepath: str) -> dict:\n    if not os.path.exists(filepath):\n        raise FileNotFoundError(f\"The file {filepath} does not exist.\")\n    \n    file_size = os.path.getsize(filepath)\n    modification_time = os.path.getmtime(filepath)\n    modification_date = datetime.fromtimestamp(modification_time).strftime('%Y-%m-%d %H:%M:%S')\n    \n    return {\n        'size': file_size,\n        'last_modified': modification_date\n    }"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "import pandas as pd\n\ndef load_and_clean_csv(file_path, column_name):\n    df = pd.read_csv(file_path)\n    df[column_name] = df[column_name].str.replace('\\n', '<br>')\n    return df"
+  },
+  {
+    "output": "def task_func(source_dir, dest_dir, extension):\n    import os\n    import shutil\n    if not os.path.exists(source_dir) or not os.path.exists(dest_dir):\n        raise FileNotFoundError\n    result = []\n    for filename in os.listdir(source_dir):\n        if filename.endswith(extension):\n            src_path = os.path.join(source_dir, filename)\n            dest_path = os.path.join(dest_dir, filename)\n            if not os.path.exists(dest_path):\n                shutil.move(src_path, dest_path)\n                result.append(dest_path)\n    return result"
+  },
+  {
+    "output": "plt.grid(axis='y')"
+  },
+  {
+    "output": "```python\nimport struct\n\ndef task_func(hex_string=KEY):\n    # Convert hex string to float\n    float_value = float.fromhex(hex_string)\n    \n    # Convert float to 32-bit binary representation (little-endian)\n    binary_bytes = struct.pack('<f', float_value)\n    \n    return binary_bytes\n```"
+  },
+  {
+    "output": "```python\nimport os\nimport re\n\ndef find_files_and_write_config(directory, pattern, target_dir):\n    # Step 1: Validate the input\n    if not os.path.exists(directory):\n        raise ValueError(f\"Directory {directory} does not exist.\")\n    \n    # Compile the regular expression pattern\n    try:\n        regex = re.compile(pattern)\n    except re.error as e:\n        raise ValueError(f\"Invalid regular expression pattern: {e}\")\n\n    # Step 2: Search for files\n    matched_files = []\n    for filename in os.listdir(directory):\n        if re.fullmatch(pattern, filename):\n            matched_files.append(os.path.join(directory, filename))\n\n    # Step 3: Write to a configuration file\n    config_file_path = os.path.join(target_dir, \"config.txt\")\n    with open(config_file_path, 'w') as config_file:\n        for file_path in matched_files:\n            config_file.write(file_path + '\\n')\n\n    # Step 4: Return the configuration file path\n    return config_file_path"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nimport numpy as np\n\ndef task_func(data_size=1000, column_names=['A', 'B', 'C', 'D', 'E'], seed=0):\n    np.random.seed(seed)\n    data = np.random.randint(1, 101, size=(data_size, len(column_names)))\n    df = pd.DataFrame(data, columns=column_names)\n    df = df.applymap(lambda x: -1 if x < 10 else x)\n    return df\n```"
+  },
+  {
+    "output": "def task_func(data, n_clusters, random_state=None):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    from sklearn.cluster import KMeans\n    \n    if not isinstance(data, np.ndarray) or data.ndim != 2:\n        raise ValueError(\"Data must be a 2D numpy array.\")\n    if not isinstance(n_clusters, int) or n_clusters <= 0:\n        raise ValueError(\"n_clusters must be a positive integer.\")\n    \n    kmeans = KMeans(n_clusters=n_clusters, random_state=random_state)\n    kmeans.fit(data)\n    labels = kmeans.labels_\n    centroids = kmeans.cluster_centers_\n    \n    plt.scatter(data[:, 0], data[:, 1], c=labels, cmap='viridis', s=50)\n    plt.scatter(centroids[:, 0], centroids[:, 1], c='red', s=200, marker='x')\n    plt.title('K-means Clustering')\n    plt.xlabel('Feature 1')\n    plt.ylabel('Feature 2')\n    plt.show()"
+  },
+  {
+    "output": "import json\nimport pandas as pd\n\ndef task_func(result, csv_file_path=\"test.csv\", json_file_path=\"test.json\"):\n    with open(json_file_path, 'w') as json_file:\n        json.dump(result, json_file)\n    df = pd.DataFrame(result)\n    df.to_csv(csv_file_path, index=False)"
+  },
+  {
+    "output": "def task_func(filename, num_rows, fields):\n    import csv\n    import random\n    with open(filename, 'w', newline='') as csvfile:\n        writer = csv.writer(csvfile)\n        writer.writerow(fields)\n        for _ in range(num_rows):\n            row = [random.choice(field) if isinstance(field, list) else random.randint(1, 100) for field in fields]\n            writer.writerow(row)"
+  },
+  {
+    "output": "def task_func(ax, num_points):\n    if not isinstance(ax, plt.Axes) or not isinstance(num_points, int) or num_points < 0:\n        raise ValueError\n    theta = np.random.uniform(0, 2*np.pi, num_points)\n    r = np.random.uniform(0, 1, num_points)\n    ax.scatter(theta, r)\n    ax.set_thetagrids(np.arange(0, 360, 10))\n    return ax"
+  },
+  {
+    "output": "def process_data(data):\n    try:\n        result = {}\n        for item in data:\n            if isinstance(item, dict):\n                result.update(item)\n            elif isinstance(item, list):\n                result['lists'] = result.get('lists', []) + item\n            else:\n                result['other'] = result.get('other', []) + [item]\n        return result\n    except Exception as e:\n        import logging\n        logging.error(f\"An error occurred: {e}\")\n        return {}"
+  },
+  {
+    "output": "import random\nimport statistics\n# Constants\nAGE_RANGE = (22, 60)\n\ndef task_func(dict1):\n    employee_ages = dict1.get(\"EMP$$\", [])\n    if not employee_ages:\n        num_employees = random.randint(5, 15)\n        employee_ages = [random.randint(AGE_RANGE[0], AGE_RANGE[1]) for _ in range(num_employees)]\n    mean = statistics.mean(employee_ages)\n    median = statistics.median(employee_ages)\n    mode = statistics.mode(employee_ages) if len(set(employee_ages)) != len(employee_ages) else []\n    return (mean, median, mode)"
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\n\ndef generate_and_plot_stacked_bar_chart(num_categories):\n    np.random.seed(42)\n    data = np.random.rand(num_categories, 3)\n    df = pd.DataFrame(data, columns=['Category', 'Value1', 'Value2'])\n    df['Category'] = df['Category'].astype(int)\n    df = df.sort_values('Category')\n    df.set_index('Category', inplace=True)\n    df.plot(kind='bar', stacked=True)\n    plt.title('Stacked Bar Chart')\n    plt.xlabel('Category')\n    plt.ylabel('Value')\n    plt.show()"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.spatial import Voronoi\nimport matplotlib.patches as mpatches\n\ndef task_func(points):\n    np.random.seed(42)\n    jitter = np.random.normal(0, 0.01, points.shape)\n    points_jittered = points + jitter\n    vor = Voronoi(points_jittered)\n    fig, ax = plt.subplots()\n    voronoi_plot = voronoi_plot_2d(vor, ax=ax)\n    ax.set_title('Voronoi Diagram')\n    ax.set_aspect('equal')\n    return vor, ax"
+  },
+  {
+    "output": "def generate_normal_distribution(length):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    np.random.seed(0)\n    data = np.random.normal(0, 1, length)\n    x = np.linspace(-4, 4, 1000)\n    pdf = (1/(np.sqrt(2*np.pi))) * np.exp(-x**2/2)\n    plt.hist(data, bins=30, density=True, alpha=0.6, color='g')\n    plt.plot(x, pdf, 'k', linewidth=2)\n    plt.title('Histogram and PDF of Normal Distribution')\n    plt.xlabel('Value')\n    plt.ylabel('Density')\n    plt.grid(True)\n    return data, plt.gca()"
+  },
+  {
+    "output": "def task_func(input_list):\n    import pandas as pd\n    import numpy as np\n    counts = np.array([t[0] for t in input_list])\n    weights = np.array([t[1] for t in input_list])\n    z_scores = (counts - np.mean(counts)) / np.std(counts)\n    min_weight = np.min(weights)\n    max_weight = np.max(weights)\n    min_max_scaled_weights = (weights - min_weight) / (max_weight - min_weight)\n    df = pd.DataFrame({\n        'z_score': z_scores,\n        'min_max_scaled_weight': min_max_scaled_weights\n    })\n    return df"
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nimport time\nimport random\n\ndef generate_random_data(duration):\n    timestamps = []\n    values = []\n    start_time = time.time()\n    while (time.time() - start_time) < duration:\n        current_time = time.time() - start_time\n        timestamps.append(current_time)\n        values.append(random.random())\n        plt.plot(timestamps, values, 'r-')\n        plt.pause(0.01)\n    plt.show()\n    return (timestamps, values)"
+  },
+  {
+    "output": "import json\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndef process_json_and_plot(json_data):\n    data = json.loads(json_data)\n    numerical_data = [item for item in data if all(isinstance(val, (int, float)) for val in item.values())]\n    numerical_data = np.array(numerical_data)\n    min_vals = numerical_data.min(axis=0)\n    max_vals = numerical_data.max(axis=0)\n    normalized = (numerical_data - min_vals) / (max_vals - min_vals)\n    plt.plot(normalized)\n    plt.show()"
+  },
+  {
+    "output": "def task_func(filepath, destination_dir):\n    import os\n    import shutil\n    import ctypes\n    dll_name = os.path.basename(filepath)\n    dll_path = os.path.abspath(filepath)\n    dll_dir = os.path.dirname(dll_path)\n    dll_files = [f for f in os.listdir(dll_dir) if f.endswith('.dll')]\n    for dll_file in dll_files:\n        src = os.path.join(dll_dir, dll_file)\n        dst = os.path.join(destination_dir, dll_file)\n        shutil.move(src, dst)\n    dll_handle = ctypes.windll.LoadLibrary(dll_path)\n    return dll_name"
+  },
+  {
+    "output": "def task_func(result, colors=['b', 'g', 'r', 'c', 'm', 'y', 'k']):\n    from_users = [entry['from_user'] for entry in result]\n    selected_color = random.choice(colors)\n    sns.histplot(data=from_users, color=selected_color)\n    plt.title('Histogram of \"from_user\" Values')\n    plt.xlabel('From User')\n    plt.ylabel('Frequency')\n    plt.show()"
+  },
+  {
+    "output": "```python\nimport numpy as np\nimport pandas as pd\nfrom sklearn.preprocessing import StandardScaler\n\ndef task_func(records: np.ndarray, random_seed: int = 0) -> pd.DataFrame:\n    if len(records.shape) != 2:\n        raise ValueError(\"ValueError: If records is not 2D.\")\n    \n    np.random.seed(random_seed)\n    # Shuffle the features\n    shuffled_features = np.random.permutation(records.shape[1])\n    shuffled_data = records[:, shuffled_features]\n    \n    # Normalize the data\n    scaler = StandardScaler()\n    normalized_data = scaler.fit_transform(shuffled_data)\n    \n    # Create feature names\n    feature_names = [f\"f{i+1}\" for i in range(records.shape[1])]\n    np.random.shuffle(feature_names)\n    \n    # Convert to DataFrame\n    df = pd.DataFrame(normalized_data, columns=feature_names)\n    return df\n```"
+  },
+  {
+    "output": "```python\nfrom datetime import datetime\nimport os\nfrom pathlib import Path\n# Constants\nDATE_FORMAT = '%Y-%m-%d %H:%M:%S'\n\ndef task_func(file_path):\n    path = Path(file_path)\n    if not path.exists():\n        raise FileNotFoundError(f\"The file {file_path} does not exist.\")\n    creation_time = datetime.fromtimestamp(path.stat().st_ctime)\n    formatted_time = creation_time.strftime(DATE_FORMAT)\n    return formatted_time\n```"
+  },
+  {
+    "output": "from collections import Counter\nfrom sklearn.cluster import KMeans\nimport matplotlib.pyplot as plt\nimport pandas as pd\ndef task_func(df, n_clusters=3, random_state=None, n_init=10):\n    point_tuples = list(zip(df['x'], df['y']))\n    point_counts = Counter(point_tuples)\n    unique_points = [point for point, count in point_counts.items() if count == 1]\n    unique_df = pd.DataFrame(unique_points, columns=['x', 'y'])\n    kmeans = KMeans(n_clusters=n_clusters, random_state=random_state, n_init=n_init).fit(unique_df)\n    unique_df['cluster'] = kmeans.labels_\n    plt.scatter(unique_df['x'], unique_df['y'], c=unique_df['cluster'], cmap='viridis')\n    plt.xlabel('x')\n    plt.ylabel('y')\n    plt.title('Clustered Points')\n    plt.show()\n    return (point_counts, unique_df, plt.gcf())"
+  },
+  {
+    "output": "return {\n        'mean': mean,\n        'median': median,\n        'std_dev': std_dev\n    }"
+  },
+  {
+    "output": "```python\nfrom sklearn.preprocessing import MinMaxScaler\nimport matplotlib.pyplot as plt\nimport pandas as pd\nimport numpy as np\n\ndef task_func(df):\n    # Step 1: Replace missing values with column averages\n    numeric_cols = df.select_dtypes(include=np.number).columns\n    df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].mean())\n\n    # Step 2: Normalize numeric columns using MinMaxScaler\n    scaler = MinMaxScaler()\n    normalized_data = scaler.fit_transform(df[numeric_cols])\n\n    # Step 3: Replace original numeric columns with normalized values\n    df[numeric_cols] = normalized_data\n\n    # Step 4: Draw a box plot for each numeric column\n    fig, ax = plt.subplots()\n    df[numeric_cols].boxplot(ax=ax)\n\n    # Return the normalized"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndef generate_and_visualize_data(categories, num_columns):\n    if num_columns > len(categories):\n        raise ValueError(\"The number of columns cannot exceed the number of available categories.\")\n    data = {category: np.random.rand(10) for category in categories}\n    df = pd.DataFrame(data)\n    df.plot(kind='bar', stacked=True)\n    plt.title('Stacked Bar Chart')\n    plt.xlabel('Index')\n    plt.ylabel('Values')\n    plt.show()"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.preprocessing import LabelEncoder\n\ndef transform_categorical_to_numerical(data):\n    df = pd.DataFrame(data)\n    le = LabelEncoder()\n    encoded = le.fit_transform(df.iloc[:, 0])\n    return pd.DataFrame({'Category': df.iloc[:, 0], 'Encoded': encoded})"
+  },
+  {
+    "output": "plt.plot(history.history['val_loss'])\nplt.title('Training and Validation Loss')\nplt.ylabel('Loss')\nplt.xlabel('Epoch')\nplt.legend(['Train', 'Validation'], loc='upper right')\nplt.show()"
+  },
+  {
+    "output": "color='red', label='Standard Normal PDF')\n    ax.legend()\n    return ax, normalized_data"
+  },
+  {
+    "output": "def task_func(text):\n    import pandas as pd\n    import regex as re\n    pattern = r'Score: (\\d+), Category: ([A-Za-z]+)'\n    matches = re.findall(pattern, text)\n    data = [{'Score': int(score), 'Category': category} for score, category in matches]\n    df = pd.DataFrame(data)\n    return df"
+  },
+  {
+    "output": "if len(indices) == 0:\n        return ('N/A', 'N/A', 'N/A', 'N/A')\n    \n    # Perform statistical analysis\n    mean = np.mean(indices)\n    variance = np.var(indices)\n    skewness = stats.skew(indices)\n    kurtosis = stats.kurtosis(indices)\n    \n    # Plot distribution\n    plt.hist(indices, bins=10, edgecolor='black')\n    plt.title('Distribution of Row Indices')\n    plt.xlabel('Index')\n    plt.ylabel('Frequency')\n    plt.show()\n    \n    return (mean, variance, skewness, kurtosis)"
+  },
+  {
+    "output": "```python\nimport collections\nimport json\nimport os\n\ndef task_func(directory_path: str) -> dict:\n    key_counter = collections.Counter()\n    \n    for filename in os.listdir(directory_path):\n        file_path = os.path.join(directory_path, filename)\n        if os.path.isfile(file_path) and filename.endswith('.json'):\n            with open(file_path, 'r') as file:\n                data = json.load(file)\n                keys = data.keys()\n                key_counter.update(keys)\n    \n    return dict(key_counter)\n```"
+  },
+  {
+    "output": "def task_func(df, mapping, record_histograms=None):\n    if not isinstance(df, pd.DataFrame):\n        raise ValueError(\"Input must be a DataFrame\")\n    for col in df.columns:\n        if col in mapping:\n            df[col] = df[col].replace(mapping[col])\n    if record_histograms:\n        for col in record_histograms:\n            if col in df.columns:\n                plt.hist(df[col], bins=10)\n                plt.title(f\"Histogram of {col}\")\n                plt.xlabel(col)\n                plt.ylabel(\"Frequency\")\n                plt.show()"
+  },
+  {
+    "output": "color='purple', linestyle='--', label=f'Std Dev: {std_dev:.2f}')\n    ax.legend()\n    \n    # Save the plot as a PNG file\n    plt.savefig('random_histogram.png')\n    plt.close()"
+  },
+  {
+    "output": "def task_func(input_dict):\n    sorted_items = sorted(input_dict.items())\n    from prettytable import PrettyTable\n    table = PrettyTable()\n    table.field_names = [\"Key\", \"Value\"]\n    table.add_rows(sorted_items)\n    return table"
+  },
+  {
+    "output": "def task_func(input_data):\n    try:\n        result = eval(input_data)\n        return result\n    except Exception as e:\n        return f\"Error: {str(e)}\""
+  },
+  {
+    "output": "def clean_and_hash(input_string):\n    import re\n    cleaned = re.sub(r'[^a-zA-Z0-9]', '', input_string)\n    import hashlib\n    return hashlib.sha256(cleaned.encode()).hexdigest()"
+  },
+  {
+    "output": "def task_func(url, headers=None, timeout=10):\n    import requests\n    from bs4 import BeautifulSoup\n    try:\n        response = requests.get(url, headers=headers, timeout=timeout)\n        response.raise_for_status()\n        return BeautifulSoup(response.content, 'html.parser')\n    except Exception as e:\n        return None"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\n\ndef generate_cdf_dataframe(start_range, end_range, length, columns):\n    data = np.random.uniform(start_range, end_range, (length, len(columns)))\n    df = pd.DataFrame(data, columns=columns)\n    cdf = df.apply(lambda col: (col - col.min()) / (col.max() - col.min()))\n    return cdf.reset_index(drop=True)"
+  },
+  {
+    "output": "from sklearn.preprocessing import MinMaxScaler\n\ndef task_func(my_dict):\n    if 'array' not in my_dict or not isinstance(my_dict['array'], (list, tuple, np.ndarray)):\n        raise TypeError(\"The 'array' key is missing or not a valid array type.\")\n    arr = my_dict['array']\n    if isinstance(arr, (list, tuple)):\n        arr = np.array(arr)\n    scaler = MinMaxScaler()\n    normalized = scaler.fit_transform(arr.reshape(-1, 1)).flatten()\n    my_dict['normalized_array'] = normalized\n    return my_dict"
+  },
+  {
+    "output": "def normalize_and_plot(file_path, title, x_label, y_label):\n    import pandas as pd\n    import matplotlib.pyplot as plt\n    df = pd.read_csv(file_path)\n    df['column1'] = (df['column1'] - df['column1'].min()) / (df['column1'].max() - df['column1'].min())\n    plt.plot(df['column1'])\n    plt.title(title)\n    plt.xlabel(x_label)\n    plt.ylabel(y_label)\n    plt.show()"
+  },
+  {
+    "output": "import base64\nimport hashlib\nimport os\n\ndef encrypt_password(password):\n    salt = os.urandom(16)\n    hashed = hashlib.sha256(salt + password.encode('utf-8')).digest()\n    return base64.b64encode(salt + hashed).decode('utf-8')"
+  },
+  {
+    "output": "def task_func(path):\n    import sys\n    import os\n    sys.path.append(path)\n    os.makedirs(path, exist_ok=True)\n    return path"
+  },
+  {
+    "output": "import pandas as pd\nimport random\nimport os\n\ndef select_random_data_from_csv(csv_files, num_records):\n    selected_file = random.choice(csv_files)\n    if os.path.getsize(selected_file) == 0:\n        return (selected_file, pd.DataFrame())\n    df = pd.read_csv(selected_file)\n    selected_rows = random.sample(range(len(df)), num_records)\n    return (selected_file, df.iloc[selected_rows])"
+  },
+  {
+    "output": "def task_func(L):\n    import numpy as np\n    from collections import Counter\n    import matplotlib.pyplot as plt\n\n    mean = np.mean(L)\n    median = np.median(L)\n    counter = Counter(L)\n    mode = counter.most_common(1)[0][0]\n    std_dev = np.std(L)\n    fig, ax = plt.subplots()\n    ax.hist(L, bins=10, edgecolor='black')\n    return {\n        'mean': mean,\n        'median': median,\n        'mode': mode,\n        'std_dev': std_dev,\n        'plot': ax\n    }"
+  },
+  {
+    "output": "from collections import Counter\nimport random\n\ndef generate_and_analyze_letter_pairs():\n    predefined_list = ['AA', 'AB', 'AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI', 'AJ', 'AK', 'AL', 'AM', 'AN', 'AO', 'AP', 'AQ', 'AR', 'AS', 'AT', 'AU', 'AV', 'AW', 'AX', 'AY', 'AZ', 'BA', 'BB', 'BC', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BK', 'BL', 'BM', 'BN', 'BO', 'BP', 'BQ', 'BR', 'BS', 'BT', 'BU', 'BV', 'BW', 'BX', 'BY', 'BZ']\n    sample_size = 1000\n    random_pairs = [random.choice(predefined_list) for _ in range(sample_size)]\n    frequency = Counter(random_pairs)\n    return frequency"
+  },
+  {
+    "output": "def generate_and_plot_temperature_data(days_in_past):\n    import random\n    import matplotlib.pyplot as plt\n    if days_in_past < 1:\n        raise ValueError(\"days_in_past must be at least 1\")\n    dates = [f\"Day {i}\" for i in range(days_in_past, 0, -1)]\n    temperatures = [random.randint(15, 35) for _ in range(days_in_past)]\n    plt.plot(dates, temperatures)\n    plt.xlabel('Day')\n    plt.ylabel('Temperature (°C)')\n    plt.title('Temperature Trend')\n    plt.show()"
+  },
+  {
+    "output": "def process_json_file(file_path):\n    import json\n    import pandas as pd\n    data = json.load(open(file_path))\n    results = {}\n    for key in data[0].keys():\n        values = [d[key] for d in data]\n        numeric_values = [v for v in values if isinstance(v, (int, float))]\n        mean = sum(numeric_values) / len(numeric_values) if numeric_values else None\n        median = sorted(numeric_values)[len(numeric_values) // 2] if numeric_values else None\n        results[key] = {'mean': mean, 'median': median}\n    df = pd.DataFrame(results).T\n    df = df.sort_index()\n    return df"
+  },
+  {
+    "output": "import pickle\nimport os\nimport random\nimport string\n\ndef task_func(strings, filename=None):\n    if filename is None:\n        filename = f\"random_strings_{int(os.path.getmtime(''))}.pickle\"\n    if strings is None:\n        strings = [''.join(random.choices(string.ascii_letters + string.digits, k=10)) for _ in range(5)]\n    with open(filename, 'wb') as f:\n        pickle.dump(strings, f)\n    with open(filename, 'rb') as f:\n        loaded_strings = pickle.load(f)\n    return loaded_strings"
+  },
+  {
+    "output": "import re\nimport socket\n\ndef task_func(ip_addresses: list) -> dict:\n    result = {}\n    for ip in ip_addresses:\n        if re.match(r'^(\\d{1,3}\\.){3}\\d{1,3}$', ip):\n            try:\n                hostname = socket.gethostbyaddr(ip)[0]\n                result[ip] = hostname\n            except socket.herror:\n                result[ip] = None\n    return result"
+  },
+  {
+    "output": "from collections import Counter\nimport re\nfrom nltk.corpus import stopwords\nfrom nltk import ngrams\n\ndef task_func(text, n=2):\n    text = re.sub(r'\\W+', ' ', text).lower()\n    stop_words = set(stopwords.words('english'))\n    words = [word for word in text.split() if word not in stop_words]\n    grams = ngrams(words, n)\n    return dict(Counter(grams))"
+  },
+  {
+    "output": "def task_func():\n    return \"Hello, World!\""
+  },
+  {
+    "output": "def task_func(db_path, users, salt):\n    import sqlite3\n    import hashlib\n    conn = sqlite3.connect(db_path)\n    cursor = conn.cursor()\n    updated_count = 0\n    for user in users:\n        if not isinstance(salt, str):\n            raise TypeError(\"Salt must be a string\")\n        hashed_password = hashlib.sha256(salt.encode() + user['password'].encode()).hexdigest()\n        cursor.execute(\"UPDATE user SET password = ? WHERE id = ?\", (hashed_password, user['id']))\n        updated_count += 1\n    conn.commit()\n    conn.close()\n    return updated_count"
+  },
+  {
+    "output": "def task_func(url):\n    import requests\n    try:\n        response = requests.get(url)\n        response.raise_for_status()\n        content = response.content\n        if not content:\n            return {}\n        encoding = response.apparent_encoding\n        try:\n            return response.json()\n        except Exception as e:\n            return {}\n    except requests.exceptions.RequestException as e:\n        raise Exception(f\"Request failed: {e}\") from e"
+  },
+  {
+    "output": "import numpy as np\nimport gzip\nimport struct\n\ndef compress_numpy_array(arr):\n    data = arr.tobytes()\n    compressed = gzip.compress(data)\n    return compressed"
+  },
+  {
+    "output": "df = pd.DataFrame(data)\n    \n    # Draw the bar chart\n    plt.figure(figsize=(12, 6))\n    plt.bar(df['Timezone'], df['Datetime'])\n    plt.xticks(rotation=45)\n    plt.tight_layout()\n    plt.show()"
+  },
+  {
+    "output": "def fit_quadratic(data, plot=False):\n    import numpy as np\n    from scipy.optimize import curve_fit\n    x = np.array([i for i in range(len(data))])\n    y = np.array(data)\n    def quadratic_func(x, a, b, c):\n        return a * x**2 + b * x + c\n    params, _ = curve_fit(quadratic_func, x, y)\n    fitted_values = quadratic_func(x, *params)\n    if plot:\n        import matplotlib.pyplot as plt\n        plt.scatter(x, y, label='Data')\n        plt.plot(x, fitted_values, color='red', label='Fit')\n        plt.legend()\n        plt.show()\n    return params, fitted_values"
+  },
+  {
+    "output": "def scrape_and_save_to_csv(url, output_file):\n    import urllib.request\n    from bs4 import BeautifulSoup\n    import csv\n    response = urllib.request.urlopen(url)\n    html = response.read()\n    soup = BeautifulSoup(html, 'html.parser')\n    data = []\n    for row in soup.find_all('tr'):\n        row_data = [cell.get_text(strip=True) for cell in row.find_all(['td', 'th'])]\n        if row_data:\n            data.append(row_data)\n    with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:\n        writer = csv.writer(csvfile)\n        writer.writerows(data)\n    return output_file"
+  },
+  {
+    "output": "from collections import Counter\nimport itertools\nfrom random import randint\n\ndef task_func(T1, RANGE=100):\n    T1_int = [int(x) for x in T1]\n    num_integers = sum(T1_int)\n    random_integers = [randint(0, RANGE) for _ in range(num_integers)]\n    counter = Counter(random_integers)\n    return counter"
+  },
+  {
+    "output": "def task_func(input_str, verify_hash=None):\n    import hashlib\n    if not isinstance(input_str, (str, type(None))) or (verify_hash is not None and not isinstance(verify_hash, (str, type(None)))):\n        raise TypeError(\"Input and verify_hash must be strings or None\")\n    hash_obj = hashlib.sha256()\n    hash_obj.update(input_str.encode('utf-8'))\n    computed_hash = hash_obj.hexdigest()\n    if verify_hash is not None:\n        if computed_hash != verify_hash:\n            raise ValueError(\"Hash mismatch\")\n    return computed_hash"
+  },
+  {
+    "output": "import pandas as pd\nfrom datetime import datetime\nimport pytz\n\ndef convert_utc_to_timezone(utc_time_str, target_timezone):\n    utc_time = datetime.strptime(utc_time_str, \"%Y-%m-%d %H:%M:%S\")\n    utc_time = utc_time.replace(tzinfo=pytz.utc)\n    target_tz = pytz.timezone(target_timezone)\n    localized_time = utc_time.astimezone(target_tz)\n    return pd.DataFrame([localized_time.strftime(\"%Y-%m-%d %H:%M:%S\")], columns=[\"converted_time\"])"
+  },
+  {
+    "output": "def process_and_scale_data(df, plot=False):\n    if 'Date' not in df.columns or 'Value' not in df.columns:\n        raise ValueError(\"DataFrame must contain 'Date' and 'Value' columns\")\n    df['Date'] = pd.to_datetime(df['Date'])\n    df.set_index('Date', inplace=True)\n    df = df['Value'].str.split(',', expand=True).apply(pd.to_numeric, errors='coerce')\n    scaler = StandardScaler()\n    scaled = scaler.fit_transform(df)\n    scaled_df = pd.DataFrame(scaled, index=df.index, columns=df.columns)\n    if plot:\n        scaled_df.plot(kind='bar')\n    return scaled_df, plt if plot else None"
+  },
+  {
+    "output": "def task_func(directory, zip_filename):\n    import os\n    import zipfile\n    from Crypto.PublicKey import RSA\n    from Crypto.Cipher import PKCS1_OAEP\n    from Crypto.Random import get_random_bytes\n    import base64\n    \n    key = RSA.generate(2048)\n    public_key = key.publickey()\n    \n    encrypted_files = []\n    \n    for filename in os.listdir(directory):\n        file_path = os.path.join(directory, filename)\n        if os.path.isfile(file_path):\n            with open(file_path, 'rb') as f:\n                data = f.read()\n            cipher = PKCS1_OAEP.new(public_key)\n            encrypted_data = cipher.encrypt(data)\n            encrypted_filename = f\"encrypted_{filename}\"\n            with open(encrypted_filename, 'wb') as f:\n                f.write(encrypted_data)\n            encrypted_files.append(encrypted_filename)\n    \n    with zipfile.ZipFile(zip_filename, 'w') as zipf:\n        for file in encrypted_files:\n            zipf.write(file)\n    \n    os.makedirs('encrypted_files', exist_ok=True)\n    for file in encrypted_files:\n        os.rename(file, os.path.join('encrypted_files', file))\n    \n    return public_key, zip_filename"
+  },
+  {
+    "output": "```python\nimport numpy as np\nfrom scipy.stats import norm\n\ndef task_func(data: np.ndarray, threshold: float = 2.0) -> list:\n    mean = np.mean(data)\n    std_dev = np.std(data)\n    var = std_dev ** 2\n    \n    if std_dev == 0:\n        return [], mean, var\n    \n    z_scores = (data - mean) / std_dev\n    outlier_indices = np.where(np.abs(z_scores) > threshold)[0].tolist()\n    \n    return outlier_indices, mean, var\n```"
+  },
+  {
+    "output": "import sys\nimport json\nfrom datetime import datetime\n\ndef task_func(path_to_add, json_file_path):\n    sys.path.append(path_to_add)\n    current_time = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    with open(json_file_path, 'w') as f:\n        json.dump({\"timestamp\": current_time}, f)"
+  },
+  {
+    "output": "def task_func(json_data, path):\n    import json\n    import matplotlib.pyplot as plt\n    import numpy as np\n    try:\n        data = json.loads(json_data)\n        current = data\n        for key in path:\n            current = current[key]\n        if isinstance(current, list):\n            plt.boxplot(current)\n            plt.show()\n        else:\n            raise ValueError(\"Path leads to a non-list value\")\n    except Exception as e:\n        return str(e)"
+  },
+  {
+    "output": "for col1, col2 in selected_pairs) return df_filtered, selected_pairs else return pd.DataFrame(), []"
+  },
+  {
+    "output": "def identify_duplicates_and_plot(df):\n    import pandas as pd\n    import numpy as np\n    import matplotlib.pyplot as plt\n    from scipy.stats import norm\n    \n    duplicates = df['value'].value_counts().loc[lambda x: x > 1]\n    duplicate_counts = duplicates.sort_values(ascending=False)\n    \n    plt.figure(figsize=(10, 6))\n    plt.hist(df['value'], bins=30, density=True, alpha=0.6, color='g')\n    mu, std = np.mean(df['value']), np.std(df['value'])\n    x = np.linspace(mu - 3*std, mu + 3*std, 100)\n    plt.plot(x, norm.pdf(x, mu, std), 'k', linewidth=2)\n    plt.title('Histogram with Normal Distribution Curve')\n    plt.xlabel('Value')\n    plt.ylabel('Density')\n    plt.grid(True)\n    plt.show()\n    \n    return duplicate_counts, plt.gcf()"
+  },
+  {
+    "output": "from itertools import chain\nimport numpy as np\nfrom sklearn.cluster import KMeans\nimport matplotlib.pyplot as plt\n\ndef task_func(L):\n    data = list(chain.from_iterable(L))\n    data_array = np.array(data).reshape(-1, 1)\n    kmeans = KMeans(n_clusters=3, random_state=0).fit(data_array)\n    labels = kmeans.labels_\n    fig, ax = plt.subplots()\n    ax.scatter(data_array, np.zeros_like(data_array), c=labels, cmap='viridis', s=10)\n    return ax"
+  },
+  {
+    "output": "def task_func():\n    return \"Hello, world!\""
+  },
+  {
+    "output": "import yaml\nimport math\n\ndef process_yaml_file(file_path, key):\n    with open(file_path, 'r') as file:\n        data = yaml.safe_load(file)\n    if key in data:\n        data[key] = math.cos(data[key])\n    with open(file_path, 'w') as file:\n        yaml.safe_dump(data, file)\n    return data"
+  },
+  {
+    "output": "import sys\nimport sqlite3\n\ndef task_func(path):\n    sys.path.append(path)\n    conn = sqlite3.connect('path.db')\n    c = conn.cursor()\n    c.execute('''CREATE TABLE IF NOT EXISTS paths (path TEXT PRIMARY KEY)''')\n    c.execute(\"SELECT * FROM paths WHERE path = ?\", (path,))\n    if not c.fetchone():\n        c.execute(\"INSERT INTO paths (path) VALUES (?)\", (path,))\n        conn.commit()\n    conn.close()\n    return path"
+  },
+  {
+    "output": "```python\nimport pytz\nimport numpy as np\nfrom dateutil.parser import parse\nimport math\n\nMOON_PHASES_YEARS = np.array([1987, 1994, 2001, 2008, 2015, 2022])\n\ndef task_func(date_str, from_tz, to_tz):\n    # Parse the input date string\n    date = parse(date_str)\n    \n    # Convert the date to the specified"
+  },
+  {
+    "output": "from django.http import HttpResponse\nimport uuid\nimport json\n\ndef task_func(data):\n    response = HttpResponse(json.dumps(data), content_type=\"application/json\")\n    response[\"X-Request-ID\"] = str(uuid.uuid4())\n    return response"
+  },
+  {
+    "output": "def serialize_data(data):\n    import json\n    from datetime import datetime\n    from decimal import Decimal\n    class CustomEncoder(json.JSONEncoder):\n        def default(self, obj):\n            if isinstance(obj, datetime):\n                return obj.isoformat()\n            if isinstance(obj, Decimal):\n                return str(obj)\n            return super().default(obj)\n    return json.dumps(data, cls=CustomEncoder)"
+  },
+  {
+    "output": "import pandas as pd\nimport random\n\ndef process_strings(strings):\n    modified = []\n    for s in strings:\n        if ',' in s:\n            parts = s.split(',')\n            random_index = random.randint(0, len(parts)-1)\n            modified_str = ','.join(parts[:random_index] + parts[random_index+1:])\n            modified.append(modified_str)\n        else:\n            modified.append(s)\n    return pd.DataFrame({'Original': strings, 'Modified': modified})"
+  },
+  {
+    "output": "```python\nimport cv2\nimport numpy as np\nimport os\nfrom sklearn.cluster import KMeans\n\ndef task_func(image_path='image.jpg', n_clusters=3, random_seed=42):\n    # Check if the image file exists\n    if not os.path.exists(image_path):\n        raise FileNotFoundError(f\"The image file '{image_path}' does not exist.\")\n    \n    # Check if n_clusters is a positive integer\n    if not isinstance(n_clusters, int) or n_clusters <= 0:\n        raise ValueError(\"n_clusters must be a positive integer.\")\n    \n    # Read the image\n    original_image = cv2.imread(image_path)\n    if original_image is None:\n        raise FileNotFoundError(f\"The image file '{image_path}' could not be read.\")\n    \n    # Reshape the image to a list of pixels\n    pixels = original_image.reshape(-1, 3"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\ndef generate_distribution(mean, std_dev):\n    samples = np.random.normal(mean, std_dev, 1000)\n    fig = plt.figure()\n    plt.hist(samples, bins=30, density=True, alpha=0.6, color='g')\n    stats.probplot(samples, dist=\"norm\", plot=plt)\n    return fig"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nfrom statistics import mean\n\ndef task_func(df: pd.DataFrame) -> dict:\n    if 'Name' not in df.columns or 'Score' not in df.columns:\n        raise ValueError(\"DataFrame must contain 'Name' and 'Score' columns"
+  },
+  {
+    "output": "def move_files_by_extension(source_dir, dest_dir, extension):\n    import os\n    import shutil\n    count = 0\n    for filename in os.listdir(source_dir):\n        if filename.endswith(extension):\n            file_path = os.path.join(source_dir, filename)\n            dest_path = os.path.join(dest_dir, filename)\n            shutil.move(file_path, dest_path)\n            count += 1\n    return count"
+  },
+  {
+    "output": "def task_func(lst):\n    try:\n        lst.append(12)\n        total = sum(lst)\n        import random\n        random_numbers = [random.randint(1, 100) for _ in range(total)]\n        import matplotlib.pyplot as plt\n        plt.hist(random_numbers, bins=10)\n        plt.show()\n    except Exception as e:\n        print(f\"An error occurred: {e}\")"
+  },
+  {
+    "output": "class MyRequestHandler(http.server.BaseHTTPRequestHandler):\n    def do_POST(self):\n        content_length = int(self.headers['Content-Length'])\n        post_data = self.rfile.read(content_length)\n        self.send_response(200)\n        self.end_headers()\n        self.wfile.write(b'POST request received')"
+  },
+  {
+    "output": "import wikipedia\nfrom wordcloud import WordCloud\nimport matplotlib.pyplot as plt\n\ndef task_func(page_title):\n    try:\n        page = wikipedia.page(page_title)\n        text = page.summary\n        wordcloud = WordCloud().generate(text)\n        plt.figure(figsize=(10, 5))\n        plt.imshow(wordcloud, interpolation='bilinear')\n        plt.axis(\"off\")\n        plt.show()\n        fig, ax = plt.subplots()\n        ax.imshow(wordcloud, interpolation='bilinear')\n        ax.axis(\"off\")\n        return ax\n    except wikipedia.exceptions.PageNotFoundError:\n        return None"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\n\ndef task_func():\n    np.random.seed(42)\n    articles = []\n    for _ in range(100):\n        title = f\"Article {np.random.randint(1, 1000)}\"\n        content = \" \".join(np.random.choice([\"This\", \"is\", \"a\", \"random\", \"article\"], size=np.random.randint(5, 20)))\n        author = np.random.choice([\"Alice\", \"Bob\", \"Charlie\", \"David\", \"Eve\"])\n        date = pd.to_datetime(\"2023-01-01\") + np.random.randint(0, 365, size=1)\n        articles.append({\n            \"title\": title,\n            \"content\": content,\n            \"author\": author,\n            \"date\": date\n        })\n    return pd.DataFrame(articles)"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.preprocessing import MinMaxScaler\n\ndef task_func(list_of_pairs):\n    if not list_of_pairs:\n        raise Exception(\"Input array is empty\")\n    try:\n        df = pd.DataFrame(list_of_pairs, columns=['Category', 'Value'])\n        if not pd.api.types.is_numeric_dtype(df['Value']):\n            raise ValueError(\"Values are not numeric\")\n        scaler = MinMaxScaler()\n        df['Value'] = scaler.fit_transform(df[['Value']])\n        return df\n    except Exception as e:\n        raise e"
+  },
+  {
+    "output": "import random\n\ndef generate_palindrome_sentence(word_pool, MIN_WORDS, MAX_WORDS):\n    length = random.randint(MIN_WORDS, MAX_WORDS)\n    if length % 2 == 0:\n        first_half = random.sample(word_pool, length // 2)\n        second_half = first_half[::-1]\n    else:\n        first_half = random.sample(word_pool, (length - 1) // 2)\n        middle = [random.choice(word_pool)]\n        second_half = first_half[::-1]\n    sentence = first_half + middle + second_half\n    return ' '.join(sentence)"
+  },
+  {
+    "output": "import pandas as pd\nimport random\nfrom random import shuffle\n\ndef process_strings(strings):\n    def apply_operation(s, operation):\n        if operation == 'remove':\n            start = random.randint(0, len(s) - 1)\n            end = random.randint(start + 1, len(s))\n            return s[:start] + s[end:]\n        elif operation == 'replace':\n            start = random.randint(0, len(s) - 1)\n            end = random.randint(start + 1, len(s))\n            replacement = ''.join(random.choices('abcdefghijklmnopqrstuvwxyz', k=end - start))\n            return s[:start] + replacement + s[end:]\n        elif operation == 'shuffle':\n            substring = list(random.choices(s, k=random.randint(1, len(s))))\n            shuffle(substring)\n            return ''.join(substring)\n        elif operation == 'randomize':\n            return ''.join(random.choices('abcdefghijklmnopqrstuvwxyz', k=len(s)))\n        else:\n            return s\n\n    operations = ['remove', 'replace', 'shuffle', 'randomize']\n    modified = []\n    for s in strings:\n        op = random.choice(operations)\n        modified.append(apply_operation(s, op))\n    \n    df = pd.DataFrame({\n        'Original': strings,\n        'Modified': modified\n    })\n    return df"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.preprocessing import MinMaxScaler\n\ndef task_func(data, columns):\n    df = data.copy()\n    scaler = MinMaxScaler()\n    df[columns] = scaler.fit_transform(df[columns])\n    return df"
+  },
+  {
+    "output": "def task_func():\n    return \"Hello, world!\""
+  },
+  {
+    "output": "from collections import Counter\nimport heapq\nimport string\ndef task_func(my_dict):\n    letter_counts = Counter({letter: my_dict.get(letter, 0) for letter in string.ascii_lowercase})\n    most_common_letters = heapq.nsmallest(3, letter_counts.items(), key=lambda x: x[1])\n    most_common_letters = [letter for letter, _ in most_common_letters]\n    return most_common_letters"
+  },
+  {
+    "output": "def combine_and_plot(list1, list2, predefined_items):\n    combined = list1 + list2\n    from collections import Counter\n    counts = Counter(combined)\n    predefined_counts = {item: counts.get(item, 0) for item in predefined_items}\n    import matplotlib.pyplot as plt\n    items = predefined_counts.keys()\n    values = predefined_counts.values()\n    plt.bar(items, values)\n    plt.xlabel('Items')\n    plt.ylabel('Frequency')\n    plt.title('Frequency of Predefined Items')\n    plt.show()"
+  },
+  {
+    "output": "def task_func(L):\n    dimensions = []\n    for sublist in L:\n        for dim in sublist:\n            dimensions.append(dim)\n    dfs = []\n    for dim in dimensions:\n        rows, cols = dim\n        df = pd.DataFrame(np.random.randint(1, 101, size=(rows, cols)))\n        dfs.append(df)\n    return dfs"
+  },
+  {
+    "output": "import pandas as pd\nimport itertools\nimport random\n\ndef task_func(colors, states):\n    # Compute the Cartesian product of colors and states\n    combinations = list(itertools.product(colors, states))\n    \n    # Shuffle the combinations\n    random.shuffle(combinations)\n    \n    # Flatten the combinations into a list of strings in \"Color:State\" format\n    flattened = [f\"{color}:{state}\" for color, state in combinations]\n    \n    # Determine the number of columns: the smaller of the lengths of colors or states\n    num_columns = min(len(colors), len(states))\n    \n    # Determine the number of rows: ceiling of total combinations divided by num_columns\n    num_rows = (len(combinations) + num_columns - 1) // num_columns\n    \n    # Reshape the flattened list into a 2D array with num_rows rows and num_columns columns\n    reshaped = [flattened[i*num_columns:(i+1)*num_columns] for i in range(num_rows)]\n    \n    # Create a pandas DataFrame\n    df = pd.DataFrame(resh"
+  },
+  {
+    "output": "def task_func():\n    return \"Hello, World!\""
+  },
+  {
+    "output": "def task_func(df, feature, target, n):\n    import pandas as pd\n    from sklearn.linear_model import LinearRegression\n    import heapq\n\n    if feature not in df.columns or target not in df.columns:\n        raise ValueError(\"Feature or target column not found in DataFrame\")\n\n    X = df[[feature]]\n    y = df[target]\n    model = LinearRegression().fit(X, y)\n    residuals = y - model.predict(X)\n    indices = heapq.nlargest(n, range(len(residuals)), key=lambda i: abs(residuals[i]))\n    return indices, model"
+  },
+  {
+    "output": "```python\nimport random\nimport re\n\n# Constants\nWORD_LIST = [\"sample\", \"text\", \"contains\", \"several\", \"words\", \"including\"]\n\ndef task_func(n_sentences):\n    sentences = []\n    for _ in range(n_sentences):\n        # Randomly select 3-5 words from the word list\n        sentence_words = random.choices(WORD_LIST, k=random.randint(3, 5))\n        # Join the words and add a period at the end\n        sentence = \" \".join(sentence_words) + \".\"\n        # Convert to lowercase and remove non-alphanumeric characters except for the period\n        cleaned_sentence = re.sub(r'[^\\w\\s.]', '', sentence).lower()\n        sentences.append(cleaned_sentence)\n    # Join all sentences into a single string\n    return \" \".join(sentences)\n```"
+  },
+  {
+    "output": "figs.append(fig)"
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nimport numpy as np\n\ndef plot_sales_trends_with_std_dev(sales_data):\n    fig, ax = plt.subplots()\n    products = list(sales_data.keys())\n    dates = np.arange(1, 13)\n    for i, product in enumerate(products):\n        sales = sales_data[product]\n        mean = np.mean(sales)\n        std = np.std(sales)\n        ax.plot(dates, sales, label=product)\n        ax.fill_between(dates, mean - std, mean + std, alpha=0.3)\n    ax.set_xlabel('Month')\n    ax.set_ylabel('Sales')\n    ax.set_title('Sales Trends with Standard Deviation')\n    ax.legend()\n    return ax"
+  },
+  {
+    "output": "def task_func(filepath):\n    import hashlib\n    with open(filepath, 'rb') as f:\n        data = f.read()\n    md5_hash = hashlib.md5(data).hexdigest()\n    sha256_hash = hashlib.sha256(data).hexdigest()\n    print(f\"MD5: {md5_hash}\")\n    print(f\"SHA256: {sha256_hash}\")\n    print(f\"File name: {filepath.split('/')[-1]}\")"
+  },
+  {
+    "output": "import os\nimport json\nimport random\n\ndef task_func(directory, n):\n    os.makedirs(directory, exist_ok=True)\n    for i in range(n):\n        file_path = os.path.join(directory, f'file_{i}.json')\n        data = {'number': random.randint(1, 100)}\n        with open(file_path, 'w') as f:\n            json.dump(data, f)\n        with open(file_path, 'r') as f:\n            content = f.read()\n        with open(file_path, 'w') as f:\n            f.write(content)"
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "python_code_returner(\"Generate the Python code to represent the action of lifting Crate2 from pallet2 at depot2 using Hoist2.\")"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist3 to drop crate1 to pallet3 at distributor0."
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "load package_0 into truck_0 at location_0_1"
+  },
+  {
+    "output": "load package_1 into truck_2"
+  },
+  {
+    "output": "Use hoist0 to lift crate1 from pallet0 at depot0."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up the blue block.\""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "Feast(\"a\", \"b\", \"Harmony\")"
+  },
+  {
+    "output": "Move crate2 from its current location to a position where it can be placed on pallet3."
+  },
+  {
+    "output": "Feast object a from object"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The plan is correct and complete. It ensures that all packages are moved to their target locations according to the given rules."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist1 to lift crate2 from pallet1 at depot1."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Feast object c from"
+  },
+  {
+    "output": "def next_step():\n    return \"Pick up the orange block and place it on top of the red block.\""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist2 to unload crate2 from truck0 at depot2."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Please provide the complete current state and the goal."
+  },
+  {
+    "output": "Use hoist3 to lift crate0 from pallet3 at distributor0."
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": "def next_step(): return 'unstack the blue block from on top of the yellow block'"
+  },
+  {
+    "output": "Use hoist3 to lift crate0 from pallet3 at distributor0."
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "Use hoist1 to lift crate2 from pallet1 at depot1."
+  },
+  {
+    "output": "Attack object c"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "We cannot determine the next step in the plan without the initial conditions, available actions, and restrictions."
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "unstack the yellow block from on top of the blue block"
+  },
+  {
+    "output": "Feast object a from"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Feast action"
+  },
+  {
+    "output": "Feast object d"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action(): return 'unstack the orange block from on top of the blue block'"
+  },
+  {
+    "output": "Feast object a from object c"
+  },
+  {
+    "output": "Cannot determine the next action without additional information."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the blue block from on top of the orange block"
+  },
+  {
+    "output": "drive truck0 from depot2 to depot1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "python_code_returner(\"Generate Python code to lift crate1 from pallet1\")"
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "Complete the plan with the correct sequence of actions to achieve the goal."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "The current state of the system is incomplete and lacks clarity, making it difficult to determine the next step."
+  },
+  {
+    "output": "move package_0 from location_0_0 to location_1_0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Pick up the blue block."
+  },
+  {
+    "output": "The plan is incomplete and cannot be evaluated for feasibility."
+  },
+  {
+    "output": "wretched object_5 object_10 object_11 object_3"
+  },
+  {
+    "output": "Use hoist1 to lift crate0 from pallet1 at depot1."
+  },
+  {
+    "output": "Please provide the complete plan for evaluation."
+  },
+  {
+    "output": "\"Pick up the red block\""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Analyze the initial conditions and determine which action can be taken."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The next action cannot be determined without the complete current state and plan details."
+  },
+  {
+    "output": "clip object_23 object_7 object_"
+  },
+  {
+    "output": "Use hoist1 to lift crate0 from pallet1 at depot1."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "We cannot determine the next step in the plan without the initial conditions, available actions, and constraints."
+  },
+  {
+    "output": "unstack the blue block from on top of the yellow block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The plan is incomplete and requires additional steps to achieve the goal. The next step would be to continue the plan by specifying the remaining actions to move crate0 to pallet1 and crate1 to crate0."
+  },
+  {
+    "output": "def next_action(): return \"Feast\""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "unstack the red block"
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_step():\n    return \"unstack(yellow, orange)\""
+  },
+  {
+    "output": "The current state of the world is incomplete and lacks critical information needed to determine the next step."
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up the orange block.\""
+  },
+  {
+    "output": "Use a hoist at depot1 to lift crate2 from pallet1."
+  },
+  {
+    "output": "\"Pick up the yellow block\""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Please provide the complete and clear plan or clarify the current state of the objects."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Step 1: Unstack the yellow block from the table."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Feast object a from object"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "Feast object a from object c"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "feast object d from object c"
+  },
+  {
+    "output": "Please provide the complete current state and the goal."
+  },
+  {
+    "output": "def next_step(): return 'unstack the orange block from the table'"
+  },
+  {
+    "output": "load package"
+  },
+  {
+    "output": "Cannot determine the next action without the current state."
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up the red block and stack it under the yellow block\""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "The information provided is incomplete and lacks clarity, making it impossible to determine the next action. Please provide a complete and clear description of the current state, the available actions, and the desired goal."
+  },
+  {
+    "output": "Move crate0 from pallet1 to pallet2."
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": "The plan's feasibility needs to be evaluated in detail against the initial conditions and action rules. The error suggests a problem with the CoT analysis, and further review is required."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the red block from on top of the yellow block"
+  },
+  {
+    "output": "def next_action(): return 'feast object d from object e'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "Error: No problem found for CoT analysis"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "def next_action(): return 'pick up the yellow block'"
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "def next_step():\n    return \"Pick up the yellow block and stack it on top of the blue block\""
+  },
+  {
+    "output": "unstack the yellow block from on top of the orange block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def feast_action(): return 'Feast object a from object d'"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The problem statement is incomplete, making it impossible to evaluate the feasibility of the plan. Please provide the full problem statement."
+  },
+  {
+    "output": "unstack the yellow block from on top of the orange block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "\"Pick up the red block\""
+  },
+  {
+    "output": "Use hoist3 to lift crate0 from pallet3 at distributor0."
+  },
+  {
+    "output": "Feast object a from object d"
+  },
+  {
+    "output": "Insufficient information to determine the next action."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "unstack the orange block from on top of the blue block"
+  },
+  {
+    "output": "def next_action(): return 'pick up the red block'"
+  },
+  {
+    "output": "Overcome object c from object a"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "Use hoist0 to load crate"
+  },
+  {
+    "output": "unstack the red block from on top of the yellow block"
+  },
+  {
+    "output": "Use hoist3 to lift crate0 from pallet3 at distributor0."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Feast action"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "Feast object from object c"
+  },
+  {
+    "output": "def next_action(): return 'unstack the white block from on top of the orange block'"
+  },
+  {
+    "output": "The initial conditions are not fully provided, so it is not possible to determine the next action."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Error in CoT analysis; problem description not recognized."
+  },
+  {
+    "output": "Use hoist0 to lift crate0 from pallet0 at depot0."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the white"
+  },
+  {
+    "output": "The plan is incomplete and lacks the necessary details to determine the next action. Please provide the complete plan or additional information about the current state."
+  },
+  {
+    "output": "drive truck0 from depot1 to depot0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "The problem is incomplete and cannot be analyzed."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist2 to lift crate0 from pallet2 at depot2."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "overcome object b from object c"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The next step cannot be determined without the initial conditions, available actions, and restrictions."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "clip object_18 object_7 object_14"
+  },
+  {
+    "output": "I will analyze the plan step by step to determine its feasibility based on the initial conditions and the rules of the actions."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "drive truck0 from distributor0 to depot1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Feast object a from"
+  },
+  {
+    "output": "Insufficient information to determine the next action."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "python_code_returner(\"load package_0 into airplane_0 at location_1_0\")"
+  },
+  {
+    "output": "I will continue evaluating the rest of the plan step by step."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist1 to lift crate2 from pallet0 at depot0\nUse hoist1 to load crate2 into truck0 at depot0\nDrive truck0 from depot0 to depot1\nUse hoist1 to unload crate2 from truck0 at depot1\nUse hoist1 to drop crate2 to crate1 at depot1"
+  },
+  {
+    "output": "unstack the yellow block from on top of the blue block"
+  },
+  {
+    "output": "def next_action(current_state, rules):\n    if current_state['blue_block']['on_table'] and current_state['blue_block']['clear']:\n        return \"Pick up the blue block\"\n    return \"No action\""
+  },
+  {
+    "output": "The first step is valid."
+  },
+  {
+    "output": "Feast action"
+  },
+  {
+    "output": "Use a hoist to lift crate0 from pallet0 and drop it on pallet1."
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The plan is complete and addresses all the required steps to achieve the goal."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist3 to lift crate2 from pallet3 at distributor0."
+  },
+  {
+    "output": "Use a hoist to lift crate0 from pallet2 at depot2."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Evaluate the initial conditions and determine which action can be performed first based on the conditions."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action(): return 'pick up the red block'"
+  },
+  {
+    "output": "unstack the yellow block from on top of the blue block"
+  },
+  {
+    "output": "\"clip object_17 object_6 object_15\""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "move package_0 from location_0_1 to location_2_0"
+  },
+  {
+    "output": "[Hard problem, difficulty=7] Step-by-step reasoning:\n### Step 1: Identify what we're asked to find  \nWe are asked to **evaluate the feasibility of a plan** based on **initial conditions** and **restrictions on actions**. However, the problem does not provide specific details about the plan, the initial conditions, or the restrictions. Therefore, we need to **assume a generic scenario** to demonstrate the process of evaluating feasibility.\n\n---\n\n### Step 2: Break down the problem into smaller parts  \nTo evaluate the feasibility of a plan, we can break the process into the following logical steps:\n\n1. **Understand the Plan**: What is the goal of the plan? What actions are proposed?\n2. **Identify Initial Conditions**: What is the current state of the system or environment?\n3. **Identify Restrictions on Actions**: Are there any constraints, limitations, or rules that must be followed?\n4. **Assess Compatibility**: Do the proposed actions align with the initial conditions and restrictions?\n5. **Determine Feasibility**: Based on the above, is the plan achievable under the given constraints?\n\n---\n\n### Step 3: Solve each part carefully  \nLet’s assume a hypothetical scenario to illustrate the process:\n\n#### **Scenario:**\n- **Plan**: Build a new bridge across a river to improve transportation.\n- **Initial Conditions**:\n  - The river is 100 meters wide.\n  - The river has a current of 2 meters per second.\n  - The river is 5 meters deep.\n  - There are no existing bridges.\n  - The area is a rural region with limited infrastructure.\n- **Restrictions on Actions**:\n  - No heavy machinery is available.\n  - No permits for construction are available.\n  - No funding is available.\n  - No skilled labor is available.\n\n#### **Step 1: Understand the Plan**\n- The goal is to build a new bridge to improve transportation.\n- The proposed action is to construct a bridge across a river.\n\n#### **Step 2: Identify Initial Conditions**\n- The river is 100 meters wide.\n- The river has a current of 2 meters per second.\n- The river is 5 meters deep.\n- No existing bridges.\n- Rural area with limited infrastructure.\n\n#### **Step 3: Identify Restrictions on Actions**\n- No heavy machinery.\n- No permits.\n- No funding.\n- No skilled labor.\n\n#### **Step 4: Assess Compatibility**\n- **Building a bridge** requires heavy machinery, skilled labor, and funding.\n- The **lack of"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist2 to lift crate1 from crate0 at depot2"
+  },
+  {
+    "output": "when done."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Attack object c"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "def next_step(): return 'unstack the red block from on top of the blue block'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Determine the current location of Crate0."
+  },
+  {
+    "output": "Use hoist1 to lift crate0 from pallet1 at depot1."
+  },
+  {
+    "output": "unstack the blue block from on top of the orange block"
+  },
+  {
+    "output": "def unstack_block(block, from_block): print(f'Unstacking {block} from on top of {from_block}')"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": "Use hoist1 to lift crate1 from crate0 at depot1."
+  },
+  {
+    "output": "feast object d from object a"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "Evaluate the current state to ensure that the conditions for the"
+  },
+  {
+    "output": "Insufficient information to determine the next action."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "\"Pick up the red block\""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist1 to lift crate0 from pallet1 at depot1."
+  },
+  {
+    "output": "Use hoist3 to lift crate2 from crate1 at distributor0."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "I will wait for the plan to be provided before proceeding."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up the red block\""
+  },
+  {
+    "output": "The next action cannot be determined without the initial conditions and the plan. Please provide the initial conditions and the plan to proceed."
+  },
+  {
+    "output": "\"Pick up the yellow block\""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "Feast object c from object a"
+  },
+  {
+    "output": "unstack the orange block from on top of the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action(): return 'pick up the red block'"
+  },
+  {
+    "output": "The initial conditions and the goal are not fully specified, so I cannot determine the next action."
+  },
+  {
+    "output": "unstack the white block from on top of the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist2 to lift crate1 from crate0 at depot2."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The plan's feasibility cannot be determined without further information or clarification."
+  },
+  {
+    "output": "Please provide the complete list of initial conditions."
+  },
+  {
+    "output": "We cannot determine the next step in the plan without the initial conditions, available actions, and constraints."
+  },
+  {
+    "output": "overcome object d from object c"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up the blue block.\""
+  },
+  {
+    "output": "pick up the blue block, put down the blue block, pick up the orange block, put down the orange block, pick up the red block, stack the red block on top of the orange block, put down the red block"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The next step in the plan is to perform the Feast action."
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The next action cannot be \"feast object a from object e\" because the condition \""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist2 to lift crate2 from depot2."
+  },
+  {
+    "output": "Overcome object c from object a."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the red block from on top of the blue block"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist1 to lift crate1 from pallet0 at depot0 and drop it on pallet2 at depot0."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def perform_action():\n    # Perform the Feast action on object c from object d\n    # This action will change the relationship of object c\n    # from craving object d to craving object a\n    # based on the problem's logic\n    pass"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist1 to lift crate2 from pallet1 at depot1."
+  },
+  {
+    "output": "FEAST object b from object a"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": "The plan is incomplete and repetitive, and the initial conditions are not fully understood. A detailed analysis of the initial conditions and the plan is required to determine the next action."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The plan is incomplete and lacks the necessary details to determine the next action."
+  },
+  {
+    "output": "def execute_action():\n    return \"Feast object a from object c\""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Attack object a"
+  },
+  {
+    "output": "def next_action(): return 'unstack the orange block from on top of the red block'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up the blue block.\""
+  },
+  {
+    "output": "def next_action(): return 'unstack the yellow block from the orange block'"
+  },
+  {
+    "output": "Please provide a clear question or task to proceed."
+  },
+  {
+    "output": "Feast object a from object"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "The plan is valid."
+  },
+  {
+    "output": "def next_action(): return 'overcome object b from object d'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "Use hoist1 to lift crate0 from pallet1 at depot1."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def execute_plan_step():\n    return \"Feast object a from object b\""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "load package_0 into airplane_0 at location_0_0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from on top of the red block"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "I will analyze the initial conditions and the plan step by step to determine the next step."
+  },
+  {
+    "output": "feast object a from object d"
+  },
+  {
+    "output": "Drive truck1 from depot2 to distributor0."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "unstack the red block from on top of the blue block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "clip object_17 object_7 object_15"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "feast object d from object a"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "Use hoist1 to lift crate1 from pallet1 at depot1\nUse hoist1 to drop crate1 to pallet2 at depot1"
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "unstack the blue block from on top of the yellow block"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "python_code_returner(\"Generate a corrected plan based on the initial conditions and the restrictions on the actions.\")"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the blue block"
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "Use hoist2 to lift crate2 from pallet2 at depot2."
+  },
+  {
+    "output": "attack object"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the blue block from the red block"
+  },
+  {
+    "output": "def next_action(): return 'feast object c from object d'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Attack object b"
+  },
+  {
+    "output": "Re-express the problem in a clear and structured manner to enable a proper Chain-of-Thought (CoT) analysis."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "print('clip object_14 object_3 object_5')"
+  },
+  {
+    "output": "unstack the yellow block from on top of the orange block"
+  },
+  {
+    "output": "Please provide the complete list of initial conditions."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Feast object a from object d"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Insufficient information to determine the next action."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from on top of the orange block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action():\n    return \"Pick up the red block\""
+  },
+  {
+    "output": "def next_step(): return 'pick up the blue block'"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the yellow block from on top of the blue block"
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Feast object a from object c"
+  },
+  {
+    "output": "def check_conditions(current_state):\n    return (current_state['sneeze'] == object_0 and \n            current_state['texture'] == object_1 and \n            current_state['texture'] == object_2 and \n            current_state['stupendous'] == object_3 and \n            current_state['next'] == (object_0, object_1) and \n            current_state['collect'] == (object_1, object_3) and \n            current_state['collect'] == (object_2, object_3))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the blue block from the table"
+  },
+  {
+    "output": "Feasibility cannot be determined with the current information."
+  },
+  {
+    "output": "def next_action(current_state, goal):\n    if current_state['yellow_block']['clear'] and current_state['yellow_block']['on_table']:\n        return \"Pick up yellow block and stack on orange block\"\n    return \"No valid action\""
+  },
+  {
+    "output": "def plan(): unstack('orange', 'blue')"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_action(): return 'unstack the yellow block from on top of the white block'"
+  },
+  {
+    "output": "def simulate_creation():\n    objects = {\n        'a': {'craves': 'c'},\n        'b': {'craves': 'c'},\n        'c': {'craves': 'a'}\n    }\n    return objects"
+  },
+  {
+    "output": "Use a hoist to lift crate2 from pallet2 at depot2."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "\"drive truck0 from depot1 to depot2\""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "Feast object c from object b."
+  },
+  {
+    "output": "pick up the orange block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Feast object d"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Analyze the current state and the plan step by step to determine the next action."
+  },
+  {
+    "output": "The plan is feasible. The steps to achieve the goal are: pick up the orange block and stack it on top of the red block."
+  },
+  {
+    "output": "Feast object a from object d"
+  },
+  {
+    "output": "Evaluate the plan and determine the next action to achieve the goal."
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": "unstack the yellow block from on top of the orange block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the red block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "feast object d from object b"
+  },
+  {
+    "output": "The next step cannot be determined without the initial conditions and available actions."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "pick up the yellow block"
+  },
+  {
+    "output": "Error: No code found"
+  },
+  {
+    "output": "unstack the blue block from on top of the red block"
+  },
+  {
+    "output": "The plan is incomplete and cannot be evaluated for feasibility."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Use hoist2 to lift crate2 from pallet2 at depot2."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "unstack the red block from the orange block"
+  },
+  {
+    "output": "unstack the yellow block from on top of the blue block"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def next_step(): return 'pick up the yellow block'"
+  }
+]

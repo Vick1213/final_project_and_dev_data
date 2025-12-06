@@ -1,0 +1,2330 @@
+[
+  {
+    "output": "def find_min_k_records(records, k):\n    return sorted(records, key=lambda x: sum(x))[:k]\n\ndef test_find_min_k_records():\n    assert find_min_k_records([(1, 2), (3, 4), (5, 6)], 2) == [(1, 2), (3, 4)]\n    assert find_min_k_records([(10, 20), (5, 5), (1, 1)], 1) == [(1, 1)]\n    assert find_min_k_records([(1, 1), (2, 2), (3, 3)], 3) == [(1, 1), (2, 2), (3, 3)]"
+  },
+  {
+    "output": "def find_common_elements(list1, list2, list3):\n    return [list1[i] for i in range(min(len(list1), len(list2), len(list3))) if list1[i] == list2[i] == list3[i]]"
+  },
+  {
+    "output": "def find_second_smallest(lst):\n    return sorted(list(set(lst)))[1] if len(list(set(lst))) >= 2 else None"
+  },
+  {
+    "output": "def matches_pattern(s):\n    import re\n    return bool(re.fullmatch(r'ab+', s))"
+  },
+  {
+    "output": "def count_reverse_pairs(string_list):\n    count = 0\n    for i in range(len(string_list)):\n        for j in range(i + 1, len(string_list)):\n            if string_list[i] == string_list[j][::-1]:\n                count += 1\n    return count"
+  },
+  {
+    "output": "def count_lists_in_list(input_list):\n    from collections import defaultdict\n    counted = defaultdict(int)\n    for item in input_list:\n        if isinstance(item, list):\n            counted[tuple(item)] += 1\n    return dict(counted)"
+  },
+  {
+    "output": "def is_decimal_with_two_decimal_places(s):\n    return isinstance(s, str) and s.replace('.', '', 1).lstrip('-').isdigit() and len(s.split('.', 1)) <= 2 and len(s.split('.', 1)[1]) <= 2 if '.' in s else len(s) <= 2 and s.isdigit() and s[0] != '-' or s == '-' and len(s) == 1 and s[0] == '-' and s[1] == '-' and s[2] == '-' and s[3] == '-' and s[4] == '-' and s[5] == '-' and s[6] == '-' and s[7] == '-' and s[8] == '-' and s[9] == '-' and s[10] == '-' and s[11] == '-' and s[12] == '-' and s[13] == '-' and s[14] == '-' and s[15] == '-' and s[16] == '-' and s[17] == '-' and s[18] == '-' and s[19] == '-' and s[20] == '-' and s[21] == '-' and s[22] == '-' and s[23] == '-' and s[24] == '-' and s[25] == '-' and s[26] == '-' and s[27] == '-' and s[28] == '-' and s[29] == '-' and s[30] == '-' and s[31] == '-' and s[32] == '-' and s[33] == '-' and s[34] == '-' and s[35] == '-' and s[36] == '-' and s[37] == '-' and s[38] == '-' and s[39] == '-' and s[40] == '-' and s[41] == '-' and s[42] == '-' and s[43] == '-' and s[44] == '-' and s[45] == '-' and s[46] == '-' and s[47] == '-' and s[48] == '-' and s[49] == '-' and s[50] == '-' and s[51] == '-' and s[52] == '-' and s[53] == '-' and s[54] == '-' and s[55] == '-' and s[56] == '-' and s[57] == '-' and s[58] == '-' and s[59] == '-' and s[60] == '-' and s[61] == '-' and s[62] == '-' and s[63] == '-' and s[64] == '-' and s[65] == '-' and s[66] == '-' and s[67] == '-' and s[68] == '-' and s[69] == '-' and s[70] == '-' and s[71] == '-' and s[72] == '-' and s[73] == '-' and s[74] == '-' and s[75] == '-' and s[76] == '-' and s[77] == '-' and s[78] == '-' and s[79] == '-' and s[80] == '-' and s[81] == '-' and s[82] == '-' and s[83] == '-' and s[84] == '-' and s[85] == '-' and s["
+  },
+  {
+    "output": "def check_single_distinct(nums):\n    return len(set(nums)) == 1"
+  },
+  {
+    "output": "def check_month_has_30_days(month):\n    return month in {4, 6, 9, 11}"
+  },
+  {
+    "output": "def minimum_difference(arr):\n    arr.sort()\n    min_diff = float('inf')\n    for i in range(1, len(arr)):\n        diff = abs(arr[i] - arr[i-1])\n        if diff < min_diff:\n            min_diff = diff\n    return min_diff"
+  },
+  {
+    "output": "def count_digits(s):\n    return sum(1 for c in s if c.isdigit())"
+  },
+  {
+    "output": "def find_nth_polite_number(n):\n    return n + 1"
+  },
+  {
+    "output": "def consecutive_pairs(lst):\n    return [(lst[i], lst[i+1]) for i in range(len(lst)-1)]"
+  },
+  {
+    "output": "def count_pairs_with_sum(nums, sum):\n    count = 0\n    seen = set()\n    for num in nums:\n        if (sum - num) in seen:\n            count += 1\n        seen.add(num)\n    return count"
+  },
+  {
+    "output": "def get_difference(list1, list2):\n    return list(set(list1) - set(list2))"
+  },
+  {
+    "output": "def sum_of_fourth_powers_of_odd_numbers(n):\n    return sum((2*i + 1)**4 for i in range(n))"
+  },
+  {
+    "output": "def is_balanced(expression):\n    stack = []\n    pairs = {'(': ')', '[': ']', '{': '}'}\n    for char in expression:\n        if char in pairs:\n            stack.append(char)\n        elif char in pairs.values():\n            if not stack or pairs[stack.pop()] != char:\n                return False\n    return not stack"
+  },
+  {
+    "output": "def remove_k_length_words(s, k):\n    return ' '.join(word for word in s.split() if len(word) != k)"
+  },
+  {
+    "output": "def find_substring_occurrences(text, substring):\n    occurrences = []\n    start = 0\n    while True:\n        start = text.find(substring, start)\n        if start == -1:\n            break\n        occurrences.append((start, start + len(substring)))\n        start += len(substring)\n    return occurrences if occurrences else None"
+  },
+  {
+    "output": "def check_odd_indices_odd_numbers(lst):\n    return all(lst[i] % 2 == 1 for i in range(1, len(lst), 2))"
+  },
+  {
+    "output": "def count_vowel_neighbors(s):\n    vowels = {'a', 'e', 'i', 'o', 'u'}\n    count = 0\n    for i in range(1, len(s) - 1):\n        if (s[i-1] in vowels and s[i+1] in vowels) or (s[i-1] in vowels and s[i+1] in vowels):\n            count += 1\n    return count"
+  },
+  {
+    "output": "def sum_non_repeated_elements(lst):\n    return sum(x for x in lst if lst.count(x) == 1)"
+  },
+  {
+    "output": "def pack_consecutive_duplicates(lst):\n    if not lst:\n        return []\n    result = []\n    current = [lst[0]]\n    for item in lst[1:]:\n        if item == current[-1]:\n            current.append(item)\n        else:\n            result.append(current)\n            current = [item]\n    result.append(current)\n    return result"
+  },
+  {
+    "output": "def count_lists_as_tuples(input_list):\n    from collections import defaultdict\n    counter = defaultdict(int)\n    for item in input_list:\n        if isinstance(item, list):\n            counter[tuple(item)] += 1\n    return dict(counter)"
+  },
+  {
+    "output": "def find_combinations_with_sum(tuple_list, target_sum):\n    from itertools import combinations\n    result = []\n    for r in range(1, len(tuple_list) + 1):\n        for combo in combinations(tuple_list, r):\n            if sum(combo) == target_sum:\n                result.append(combo)\n    return result"
+  },
+  {
+    "output": "def check_even_divisor_count(n):\n    count = 0\n    for i in range(1, n + 1):\n        if n % i == 0:\n            count += 1\n    return count % 2 == 0"
+  },
+  {
+    "output": "def sum_odd_length_subarrays(arr):\n    n = len(arr)\n    total = 0\n    for i in range(n):\n        for j in range(i, n):\n            length = j - i + 1\n            if length % 2 == 1:\n                total += sum(arr[i:j+1])\n    return total"
+  },
+  {
+    "output": "def rgb_to_hsv(r, g, b):\n    r, g, b = r / 255.0, g / 255.0, b / 255.0\n    max_c = max(r, g, b)\n    min_c = min(r, g, b)\n    delta = max_c - min_c\n    h = 0\n    if delta != 0:\n        if max_c == r:\n            h = (g - b) / delta % 6\n        elif max_c == g:\n            h = (b - r) / delta + 2\n        else:\n            h = (r - g) / delta + 4\n        h *= 60\n    s = delta / max_c if max_c != 0 else 0\n    v = max_c\n    return h, s, v"
+  },
+  {
+    "output": "def product_of_first_even_odd(numbers):\n    even = next((x for x in numbers if x % 2 == 0), None)\n    odd = next((x for x in numbers if x % 2 != 0), None)\n    return even * odd if even is not None and odd is not None else 0"
+  },
+  {
+    "output": "def convert_tuple_to_ints(input_tuple):\n    return tuple(int(item) for item in input_tuple)"
+  },
+  {
+    "output": "def find_insert_position(nums, target):\n    left, right = 0, len(nums)\n    while left < right:\n        mid = (left + right) // 2\n        if nums[mid] < target:\n            left = mid + 1\n        else:\n            right = mid\n    return left"
+  },
+  {
+    "output": "def matches_pattern(s):\n    return len(s) >= 4 and s[0] == 'a' and s[1] == 'b' and s[2] == 'b' and s[3] == 'b' and all(c == 'b' for c in s[4:]) if len(s) > 4 else len(s) == 4 and s == 'abbb'"
+  },
+  {
+    "output": "def create_tuple_from_string_and_list(s, lst):\n    return tuple(s + str(lst))"
+  },
+  {
+    "output": "def check_even_indices_even_count(lst):\n    return all(lst[i] % 2 == 0 for i in range(len(lst)) if i % 2 == 0)"
+  },
+  {
+    "output": "def remove_tuples_from_tuple(input_tuple):\n    return tuple(item for item in input_tuple if not isinstance(item, tuple))"
+  },
+  {
+    "output": "def count_lists(lists):\n    return sum(1 for x in lists if isinstance(x, list))"
+  },
+  {
+    "output": "def find_last_position(arr, target):\n    left, right = 0, len(arr) - 1\n    result = -1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            result = mid\n            left = mid + 1\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return result"
+  },
+  {
+    "output": "def matches_pattern(s):\n    import re\n    return re.fullmatch(r'a.*b', s) is not None"
+  },
+  {
+    "output": "python_code_returner(\"Write a function to find the sum of all items in the given dictionary.\")"
+  },
+  {
+    "output": "def sum_odd_numbers(l, r):\n    return sum(x for x in range(l, r+1) if x % 2 != 0)"
+  },
+  {
+    "output": "def sum_array(arr):\n    return sum(arr)"
+  },
+  {
+    "output": "def rotate_left(n, d):\n    return (n << d) | (n >> (32 - d)) & 0xFFFFFFFF"
+  },
+  {
+    "output": "def remove_whitespaces(s):\n    return s.replace(\" \", \"\").replace(\"\\t\", \"\").replace(\"\\n\", \"\").replace(\"\\r\", \"\")"
+  },
+  {
+    "output": "def count_equal_numbers(a, b, c):\n    return sum(1 for x in (a, b, c) if x == a)"
+  },
+  {
+    "output": "def count_rotations(arr):\n    n = len(arr)\n    for i in range(n):\n        if i < n-1 and arr[i] > arr[i+1]:\n            return i + 1\n        elif i == n-1 and arr[i] <= arr[0]:\n            return 0\n    return 0"
+  },
+  {
+    "output": "def is_perfect_square(n):\n    return n >= 0 and int(n**0.5) ** 2 == n"
+  },
+  {
+    "output": "def is_product_even(numbers):\n    return any(num % 2 == 0 for num in numbers)"
+  },
+  {
+    "output": "def find_max_sum_list(list_of_lists):\n    return max(list_of_lists, key=sum)"
+  },
+  {
+    "output": "def find_max_run(s):\n    max_count = 0\n    current_count = 0\n    for char in s:\n        if char.isupper():\n            current_count += 1\n            if current_count > max_count:\n                max_count = current_count\n        else:\n            current_count = 0\n    return max_count"
+  },
+  {
+    "output": "def find_first_odd(numbers):\n    for num in numbers:\n        if num % 2 != 0:\n            return num\n    return None"
+  },
+  {
+    "output": "def contains_k(tuples, k):\n    return any(k in t for t in tuples)"
+  },
+  {
+    "output": "def check_tuples(tuple1, tuple2):\n    return all(b < a for a, b in zip(tuple1, tuple2))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def count_non_square_sets():\n    import math\n    count = 0\n    for i in range(1000):\n        start = 100 * i\n        end = 100 * (i + 1) - 1\n        has_square = False\n        for n in range(int(math.isqrt(start)) + 1, int(math.isqrt(end)) + 2):\n            if n * n >= start and n * n <= end:\n                has_square = True\n                break\n        if not has_square:\n            count += 1\n    return count"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "84"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_longest_sequence():\n    max_length = 0\n    result = 0\n    for x in range(1, 1000):\n        a, b = 1, x\n        length = 2\n        while True:\n            c = a - b\n            if c <= 0:\n                break\n            a, b = b, c\n            length += 1\n        if length > max_length:\n            max_length = length\n            result = x\n    return result"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def count_difference_of_squares():\n    count = 0\n    for n in range(1, 1001):\n        for i in range(1, int(n**0.5) + 1):\n            if n % i == 0:\n                a, b = i, n // i\n                if (a + b) % 2 == 0 and (a - b) % 2 == 0:\n                    count += 1\n                    break\n    return count"
+  },
+  {
+    "output": "171/364\nThe probability that Club Truncator finishes the season with more wins than losses is $\\frac{171}{364}$. Therefore, $m = 171$ and $n = 364$, and $m + n = 535$. \n\nFINAL ANSWER: 535"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1000"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "108"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "for j in range(1, 13):\n    for v in range(7):\n        if dp[j-1][v] > 0:\n            for neighbor in adj[vertices[v]]:\n                if neighbor != 'E':\n                    dp[j][vertex_to_index[neighbor]] += dp[j-1][v]\nreturn sum(dp[12][v] for v in range(7))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "476"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "# Find the original position of the card labeled 1999\n    original_position = table.index(1999) + 1\n    return original_position"
+  },
+  {
+    "output": "83"
+  },
+  {
+    "output": "240"
+  },
+  {
+    "output": "def find_1994th_term_mod_1000():\n    count = 0\n    n = 1\n    while True:\n        if (n*n - 1) % 3 == 0:\n            count += 1\n            if count == 1994:\n                return (n*n - 1) % 1000\n        n += 1"
+  },
+  {
+    "output": "0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "130"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "136"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "144"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1540"
+  },
+  {
+    "output": "9"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "10"
+  },
+  {
+    "output": "32"
+  },
+  {
+    "output": "def find_least_m():\n    from sympy import factorint\n    m = 1\n    while True:\n        val = m**2 - m + 11\n        factors = factorint(val)\n        total_factors = sum(factors.values())\n        if total_factors >= 4:\n            return m\n        m += 1"
+  },
+  {
+    "output": "def find_least_n():\n    from math import isqrt\n    def has_zero(x):\n        return '0' in str(x)\n    n = 1\n    while True:\n        power = 10 ** n\n        found = False\n        for i in range(1, isqrt(power) + 1):\n            if power % i == 0:\n                a, b = i, power // i\n                if not has_zero(a) and not has_zero(b):\n                    found = True\n                    break\n        if not found:\n            return n\n        n += 1"
+  },
+  {
+    "output": "Error: '(' was never closed (<string>, line 1)"
+  },
+  {
+    "output": "36"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "from itertools import combinations\n\ndef count_ascending_numbers():\n    count = 0\n    for length in range(2, 10):\n        for digits in combinations(range(1, 10), length):\n            if all(digits[i] < digits[i+1] for i in range(len(digits)-1)):\n                count += 1\n    return count"
+  },
+  {
+    "output": "8"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\n26"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "import math\n\ndef find_500th_term():\n    def count_excluded(n):\n        squares = int(math.isqrt(n))\n        cubes = int(n ** (1/3) + 1e-9)\n        sixth_powers = int(n ** (1/6) + 1e-9)\n        return n - (squares + cubes - sixth_powers)\n    left = 1\n    right = 1000\n    while left < right:\n        mid = (left + right) // 2\n        if count_excluded(mid) < 500:\n            left = mid + 1\n        else:\n            right = mid\n    return left"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "from collections import defaultdict\n\ndef calculate_probability():\n    dp = [defaultdict(int) for _ in range(7)]\n    dp[0][(0, 0)] = 1\n    total_paths = 4**6\n    successful_paths = 0\n    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]\n    for step in range(1, 7):\n        for (x, y), count in dp[step-1].items():\n            for dx, dy in directions:\n                nx, ny = x + dx, y + dy\n                dp[step][(nx, ny)] += count\n    for count in dp[6][(2, 2)]:\n        successful_paths += count\n    return successful_paths / total_paths"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def solve():\n    from sympy import symbols, Eq, solve, sqrt\n    x, y = symbols('x y')\n    A = (1, 0)\n    B = (2, 2*sqrt(3))\n    # Distance AB\n    AB_sq = (A[0] - B[0])**2 + (A[1] - B[1])**2\n    # Distance AC\n    AC_sq = (A[0] - x)**2 + (A[1] - y)**2\n    # Distance BC\n    BC_sq = (B[0] - x)**2 + (B[1] - y)**2\n    # Equilateral triangle equations\n    eq1 = Eq(AC_sq, AB_sq)\n    eq2 = Eq(BC_sq, AB_sq)\n    # Solve for C\n    C = solve((eq1, eq2), (x, y))\n    # Filter C in first quadrant\n    C = [pt for pt in C if pt[0] > 0 and pt[1] > 0][0]\n    # Centroid P\n    P = ((A[0] + B[0] + C[0])/3, (A[1] + B[1] + C[1])/3)\n    # Compute x * y\n    x_p, y_p = P\n    result = x_p * y_p\n    # Express in form p√q / r\n    from sympy import radsimp\n    result = radsimp(result)\n    return result"
+  },
+  {
+    "output": "10"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "134"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "4"
+  },
+  {
+    "output": "def count_lattice_points():\n    import math\n    n = 2000**2\n    count = 0\n    for a in range(1, int(math.isqrt(n)) + 1):\n        if n % a == 0:\n            b = n // a\n            if (a + b) % 2 == 0 and (b - a) % 2 == 0:\n                count += 1\n    return count * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def probability_to_origin(a, b): from functools import lru_cache @lru_cache(maxsize=None) def dp(a, b): if a == 0 and b == 0: return 1.0 if a == 0: return dp(a, b-1) if b == 0: return dp(a-1, b) return (dp(a-1, b) + dp(a, b-1) + dp(a-1, b-1)) / 3.0 return dp(a, b)"
+  },
+  {
+    "output": "s = 2 * (2116 * (2**0.5 + 1) / (2 + 2**0.5))**0.5"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1600"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "131"
+  },
+  {
+    "output": "def count_squares():\n    from math import isclose, pi\n    vertices = list(range(12))\n    squares = set()\n    for i in vertices:\n        for j in vertices:\n            if i == j:\n                continue\n            angle_diff = (j - i) * (pi / 6)\n            if isclose(angle_diff, pi / 2, rel_tol=1e-9) or isclose(angle_diff, 3 * pi / 2, rel_tol=1e-9):\n                k = (i + 3) % 12\n                l = (j + 3) % 12\n                if k in vertices and l in vertices:\n                    square = frozenset({i, j, k, l})\n                    squares.add(square)\n    return len(squares)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Error: '(' was never closed (<string>, line 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "214"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def count_valid_pairs():\n    count = 0\n    for i in range(1000, 2000):\n        if all(d1 + d2 < 10 for d1, d2 in zip(str(i), str(i+1))):\n            count += 1\n    return count"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "for r1 in range(-100, 101):\n    for r2 in range(-100, 101):\n        a = -(r1 + r2)\n        b = r1 * r2\n        if 1 <= a <= 100 and b >= 0:\n            count += 1\nreturn count"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "sum_a = 0\ni = 1\nwhile i <= 37:\n    sum_a += i * (i + 1)\n    i += 2\nsum_a += 39\nsum_b = 1\ni = 2\nwhile i <= 38:\n    sum_b += i * (i + 1)\n    i += 2\npositive_difference = abs(sum_a - sum_b)"
+  },
+  {
+    "output": "from itertools import combinations\n\ndef find_1000th_number_mod_1000():\n    count = 0\n    for bits in combinations(range(13), 8):\n        count += 1\n        if count == 1000:\n            return sum(1 << bit for bit in bits) % 1000\n\nfind_1000th_number_mod_1000()"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "0"
+  },
+  {
+    "output": "(Incomplete problem statement)"
+  },
+  {
+    "output": "def find_smallest_N():\n    N = 1\n    while True:\n        start = 1000 * N\n        end = start + 999\n        found = False\n        k = int(start**0.5)\n        while k*k <= end:\n            if k*k >= start:\n                found = True\n                break\n            k += 1\n        if not found:\n            return N\n        N += 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "60.6"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_largest_even():\n    from itertools import count\n    def is_composite(n):\n        if n < 2:\n            return False\n        for i in range(2, int(n**0.5)+1):\n            if n % i == 0:\n                return True\n        return False\n    odd_composites = [n for n in range(9, 100, 2) if is_composite(n)]\n    for even in count(4, 2):\n        found = False\n        for c in odd_composites:\n            if (even - c) in odd_composites:\n                found = True\n                break\n        if not found:\n            return even"
+  },
+  {
+    "output": "sum(F(n) for n in range(20, 101)) % 1000"
+  },
+  {
+    "output": "def find_numbers_with_three_proper_divisors():\n    from sympy import primerange\n    primes = list(primerange(1, 50))\n    result = set()\n    for i in range(len(primes)):\n        p = primes[i]\n        p3 = p**3\n        if p3 < 50:\n            result.add(p3)\n        for j in range(i + 1, len(primes)):\n            q = primes[j]\n            pq = p * q\n            if pq < 50:\n                result.add(pq)\n    return sorted(result)"
+  },
+  {
+    "output": "43 + 47 = 90"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "8"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "16"
+  },
+  {
+    "output": "def calculate_volume():\n    import math\n    # Coordinates of points\n    A = (0, 0, 0)\n    B = (4, 0, 0)\n    C = (4, 3, 0)\n    D = (0, 3, 0)\n    P = (1, 1, 2)\n    \n    # Vectors for triangle CDP\n    CD = (D[0] - C[0], D[1] - C[1], D[2] - C[2])\n    CP = (P[0] - C[0], P[1] - C[1], P[2] - C[2])\n    \n    # Cross product CD x CP\n    cross_product = (\n        CD[1] * CP[2] - CD[2] * CP[1],\n        CD[2] * CP[0] - CD[0] * CP[2],\n        CD[0] * CP[1] - CD[1] * CP[0]\n    )\n    \n    # Area of triangle CDP\n    area_base = math.sqrt(cross_product[0]**2 + cross_product[1]**2 + cross_product[2]**2) / 2\n    \n    # Vector from C to P\n    vector_CP = (P[0] - C[0], P[1] - C[1], P[2] - C[2])\n    \n    # Normal vector to the plane CDP (cross product CD x CP)\n    normal_vector = cross_product\n    \n    # Height is the absolute value of the dot product of vector CP and normal_vector divided by the magnitude of normal_vector\n    height = abs(vector_CP[0] * normal_vector[0] + vector_CP[1] * normal_vector[1] + vector_CP[2] * normal_vector[2]) / math.sqrt(normal_vector[0]**2 + normal_vector[1]**2 + normal_vector[2]**2)\n    \n    # Volume of the pyramid\n    volume = (1/3) * area_base * height\n    return volume"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_smallest_integer():\n    n = 1\n    while True:\n        if (n ** 3) % 1000 == 888:\n            return n\n        n += 1\n\nresult = find_smallest_integer()\nresult"
+  },
+  {
+    "output": "2√2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "144"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Error: '(' was never closed (<string>, line 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "468"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "103"
+  },
+  {
+    "output": "def find_100th_negative_index():\n    import math\n    count = 0\n    n = 1\n    while True:\n        numerator = math.sin(n / 2) * math.sin((n + 1) / 2)\n        if numerator < 0:\n            count += 1\n            if count == 100:\n                return n\n        n += 1"
+  },
+  {
+    "output": "12"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "36"
+  },
+  {
+    "output": "337"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "120"
+  },
+  {
+    "output": "155"
+  },
+  {
+    "output": "def compute_difference_mod_1000():\n    def count_solutions(target):\n        count = 0\n        for x in range(1, target // 4 + 1):\n            for y in range(1, (target - 4*x) // 3 + 1):\n                remaining = target - 4*x - 3*y\n                if remaining % 2 == 0 and remaining > 0:\n                    count += 1\n        return count\n    m = count_solutions(2009)\n    n = count_solutions(2000)\n    return (m - n) % 1000"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "300"
+  },
+  {
+    "output": "def count_valid_pairs():\n    count = 0\n    for a in range(6, 29):\n        for b in range(a + 1, 30):\n            sequence = [5, a, b]\n            valid = True\n            for i in range(len(sequence)):\n                for j in range(i + 1, len(sequence)):\n                    for k in range(j + 1, len(sequence)):\n                        for l in range(k + 1, len(sequence)):\n                            if 2 * sequence[j] == sequence[i] + sequence[k] or 2 * sequence[k] == sequence[j] + sequence[l]:\n                                valid = False\n                                break\n                        if not valid:\n                            break\n                    if not valid:\n                        break\n                if not valid:\n                    break\n            if valid:\n                count += 1\n    return count"
+  },
+  {
+    "output": "45"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "134"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "84"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "[Hard problem, difficulty=7] Step-by-step reasoning:\nYou've provided an incomplete problem statement. Let me clarify what the problem is asking.\n\nThe problem begins:\n\n> \"A function $ f $ is defined on the complex numbers by $ f(z $...\n\nIt seems like the problem was cut off. To proceed, I need the full problem statement. However, I can help you solve a common type of problem involving functions defined on complex numbers, such as:\n\n> \"A function $ f $ is defined on the complex numbers by $ f(z) = z^2 + 1 $. Find the number of complex solutions to the equation $ f(z) = 0 $.\"\n\nLet me assume this is the intended problem. If not, please provide the full problem statement, and I will solve it accordingly.\n\n---\n\n### Step 1: Identify what we're asked to find\n\nWe are asked to find the number of complex solutions to the equation:\n\n$$\nf(z) = 0\n$$\n\nGiven that $ f(z) = z^2 + 1 $, we substitute into the equation:\n\n$$\nz^2 + 1 = 0\n$$\n\n---\n\n### Step 2: Break down the problem into smaller parts\n\nWe need to solve the equation:\n\n$$\nz^2 + 1 = 0\n$$\n\nThis is a quadratic equation in the complex number $ z $.\n\n---\n\n### Step 3: Solve the equation\n\nWe solve:\n\n$$\nz^2 = -1\n$$\n\nTaking the square root of both sides:\n\n$$\nz = \\pm \\sqrt{-1}\n$$\n\nIn the complex number system, $ \\sqrt{-1} $ is defined as $ i $, where $ i $ is the imaginary unit such that $ i^2 = -1 $.\n\nSo the solutions are:\n\n$$\nz = i \\quad \\text{and} \\quad z = -i\n$$\n\n---\n\n### Step 4: Combine the results\n\nWe have found two distinct complex solutions: $ z = i $ and $ z = -i $.\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{2}\n$$\n\nThere are **2** complex solutions to the equation $ f(z) = 0 $.\n\n---\n\nIf the original problem was different, please provide the full statement, and I will solve it accordingly."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "from sympy import symbols, I, expand, Eq, solve\n\nb = symbols('b')\nz = 9 + b*I\nz2 = expand(z**2)\nz3 = expand(z**3)\n\nimag_z2 = z2.as_real_imag()[1]\nimag_z3 = z3.as_real_imag()[1]\n\nequation = Eq(imag_z2, imag_z3)\nsolution = solve(equation, b)\n\nsolution[0]"
+  },
+  {
+    "output": "13"
+  },
+  {
+    "output": "1000"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "def last_locker_opened(n):\n    lockers = [False] * n\n    current_position = 0\n    direction = 1\n    last_opened = -1\n    while True:\n        if not lockers[current_position]:\n            lockers[current_position] = True\n            last_opened = current_position + 1\n            if all(lockers):\n                break\n        current_position += direction\n        if current_position >= n or current_position < 0:\n            direction *= -1\n            current_position += 2 * direction\n    return last_opened"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "3"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "12"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "151764"
+  },
+  {
+    "output": "def find_nice_numbers_sum():\n    def proper_divisors(n):\n        divisors = set()\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                divisors.add(i)\n                divisors.add(n // i)\n        return divisors\n\n    nice_numbers = []\n    num = 2\n    while len(nice_numbers) < 10:\n        divisors = proper_divisors(num)\n        if divisors:\n            product = 1\n            for d in divisors:\n                product *= d\n            if product == num:\n                nice_numbers.append(num)\n        num += 1\n    return sum(nice_numbers)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "for a in range(1, 64):\n    for b in range(a + 1, 65):\n        c = 66 - a - b\n        if b < c:\n            pass"
+  },
+  {
+    "output": "2023"
+  },
+  {
+    "output": "1240"
+  },
+  {
+    "output": "17.3333333333, 84.0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Error: '(' was never closed (<string>, line 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "13/8"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "0.003923809523809524"
+  },
+  {
+    "output": "[Hard problem, difficulty=7] Step-by-step reasoning:\nWe are given a **regular hexagon** with side length **1** that is **inscribed in triangle PQR**, and the triangle has angles **75°, 60°, and 45°**. We are to find the **area of triangle PQR** in the form **(a + b√c)**.\n\n---\n\n### **Step 1: Identify what we're asked to find**\n\nWe are asked to find the **area of triangle PQR**, which has angles **75°, 60°, and 45°**, and is **circumscribed around a regular hexagon of side length 1**.\n\n---\n\n### **Step 2: Break down the problem into smaller parts**\n\nWe need to:\n\n1. **Understand the geometry of the triangle and the inscribed regular hexagon.**\n2. **Determine the side lengths of the triangle.**\n3. **Use the side lengths to compute the area of the triangle.**\n\n---\n\n### **Step 3: Understand the geometry**\n\n#### **(a) Regular Hexagon Properties**\n\nA **regular hexagon** has:\n- All sides equal (in this case, length = 1)\n- All internal angles = 120°\n- It can be inscribed in a **circle**, and its **diagonals** form equilateral triangles.\n\n#### **(b) Triangle PQR with angles 75°, 60°, and 45°**\n\nThis is a **scalene triangle** with angles:\n- ∠P = 75°\n- ∠Q = 60°\n- ∠R = 45°\n\nLet’s label the triangle as follows:\n- Let’s assume the triangle is labeled such that:\n  - ∠P = 75°\n  - ∠Q = 60°\n  - ∠R = 45°\n- Let’s denote the side opposite ∠P as **a**, opposite ∠Q as **b**, and opposite ∠R as **c**.\n\nWe will use the **Law of Sines** to relate the sides and angles.\n\n---\n\n### **Step 4: Use the Law of Sines**\n\nThe Law of Sines states:\n\n$$\n\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}\n$$\n\nLet’s denote:\n- $ A = 7"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_sum_of_least_c():\n    from itertools import combinations\n    def min_stamps(target, a, b, c):\n        for x in range(1, target // a + 1):\n            for y in range(1, (target - x*a) // b + 1):\n                if (target - x*a - y*b) % c == 0:\n                    return x + y + (target - x*a - y*b) // c\n        return float('inf')\n    c_values = set()\n    for a in range(1, 1000):\n        for b in range(1, 1000):\n            for c in range(1, 1000):\n                if a != b and b != c and a != c:\n                    if min_stamps(1000, a, b, c) == 97:\n                        c_values.add(c)\n    sorted_c = sorted(c_values)\n    return sum(sorted_c[:3])"
+  },
+  {
+    "output": "137"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "[Hard problem, difficulty=8] Step-by-step reasoning:\nWe are asked to compute the remainder when the product  \n$$\nP = 9 \\times 99 \\times 999 \\times \\cdots \\times \\underbrace{99\\cdots9}_{\\text{999 9's}}\n$$  \nis divided by $1000$. This is equivalent to computing  \n$$\nP = \\prod_{k=1}^{999} (10^k - 1) \\mod 1000\n$$\n\n---\n\n### **Step 1: Understand the structure of the product**\n\nEach term in the product is of the form $10^k - 1$, which is a number consisting of $k$ nines. For example:\n- $10^1 - 1 = 9$\n- $10^2 - 1 = 99$\n- $10^3 - 1 = 999$\n- ...\n- $10^{999} - 1 = \\underbrace{99\\cdots9}_{\\text{999 9's}}$\n\nSo the product is:\n$$\nP = \\prod_{k=1}^{999} (10^k - 1)\n$$\n\nWe are to compute $P \\mod 1000$.\n\n---\n\n### **Step 2: Use modular arithmetic properties**\n\nWe can compute the product modulo 1000 step by step, using the property:\n$$\n(a \\times b) \\mod m = [(a \\mod m) \\times (b \\mod m)] \\mod m\n$$\n\nSo we can compute the product modulo 1000 by multiplying each term modulo 1000 and taking the result modulo 1000 at each step.\n\n---\n\n### **Step 3: Observe periodicity in powers of 10 modulo 1000**\n\nWe can compute $10^k \\mod 1000$ for $k = 1$ to $999$, and then subtract 1 to get each term in the product.\n\nLet’s compute the first few terms:\n\n- $10^1 = 10 \\Rightarrow 10^1 - 1 = 9$\n- $10^2 = 100 \\Rightarrow 10^2 - 1 = 99$\n- $10^3 = 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def tau(n):\n    count = 0\n    for i in range(1, n + 1):\n        if n % i == 0:\n            count += 1\n    return count\n\ndef find_sum_of_six():\n    total = 0\n    count = 0\n    n = 1\n    while True:\n        if tau(n) == tau(n + 1):\n            total += n\n            count += 1\n            if count == 6:\n                return total\n        n += 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "from sympy import symbols, Eq, solve\n\nA, B, C = symbols('A B C')\neq1 = Eq(A*19**2 + B*19 + C, 0)\neq2 = Eq(A*92**2 + B*92 + C, 0)\nsolution = solve((eq1, eq2), (A, B, C))\na1 = solution[A]*1**2 + solution[B]*1 + solution[C]"
+  },
+  {
+    "output": "150"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "170"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "[Hard problem, difficulty=7] Step-by-step reasoning:\nWe are asked to find the **probability that Zou will win exactly 5 of the 6 races**, given the following conditions:\n\n- The probability of winning a race **depends on whether they won or lost the previous race**.\n- Zou **wins the first race**.\n\n---\n\n### Step 1: Understand the Problem\n\nWe are dealing with a **Markov process** where the outcome of each race depends on the outcome of the previous one. This means the probability of winning a race is not constant—it changes based on the previous result.\n\nWe are told:\n- Zou **wins the first race**.\n- We are to find the **probability that Zou wins exactly 5 out of the next 6 races** (i.e., total of 6 races, with the first one already known to be a win).\n\nSo, we are to find the probability that Zou wins **exactly 5 out of 6 races**, given that the first race is a win, and the probability of winning a race depends on the previous race's outcome.\n\n---\n\n### Step 2: Define the Transition Probabilities\n\nLet’s define the following:\n\n- Let $ p $ be the probability that Zou **wins a race** given that they **won the previous race**.\n- Let $ q $ be the probability that Zou **wins a race** given that they **lost the previous race**.\n\nWe are not given specific values for $ p $ and $ q $, so we will assume they are constants. However, since the problem is about **exactly 5 wins out of 6 races**, and the first race is a win, we can model this as a **Markov chain** with states:\n\n- **State W**: Zou wins the current race.\n- **State L**: Zou loses the current race.\n\nWe are given that the first race is a **win**, so we start in state **W**.\n\nWe are to find the probability that Zou wins **exactly 5 out of the next 6 races**, starting from a win.\n\n---\n\n### Step 3: Model the Problem as a Markov Chain\n\nLet’s denote the states as:\n\n- $ W $: Win the current race\n- $ L $: Lose the current race\n\nWe are given:\n- $ P(W|W) = p $\n- $ P(L|W) = 1 - p $\n- $ P(W|L) = q $\n- $ P(L|L) = 1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_greatest_n_and_compute_q_r():\n    for n in range(9999, 999, -1):\n        if all(int(d) != 1 for d in str(n)):\n            if all(int(str(n).replace(str(d), '1')) % 7 == 0 for d in str(n)):\n                q, r = divmod(n, 1000)\n                return q + r\n    return -1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "7000"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "137"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "map(str, base7_digits))) if base7_digits else 0\n    \n    return base10_number == 2 * n\n\ndef find_largest_7_10_double():\n    n = 1\n    while True:\n        if is_7_10_double(n):\n            result = n\n        else:\n            break\n        n += 1\n    return result"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_rotation_angle_and_center(A, B, C, A_prime, B_prime, C_prime):\n    import math\n    def midpoint(p1, p2):\n        return ((p1[0] + p2[0])/2, (p1[1] + p2[1])/2)\n    def slope(p1, p2):\n        if p2[0] - p1[0] == 0:\n            return float('inf')\n        return (p2[1] - p1[1]) / (p2[0] - p1[0])\n    def perpendicular_slope(s):\n        if s == 0:\n            return float('inf')\n        if s == float('inf'):\n            return 0\n        return -1 / s\n    def line_eq(p, m):\n        x, y = p\n        return (y - x * m, m)\n    def intersect(l1, l2):\n        m1, b1 = l1\n        m2, b2 = l2\n        if m1 == m2:\n            return None\n        x = (b2 - b1) / (m1 - m2)\n        y = m1 * x + b1\n        return (x, y)\n    mid_aa = midpoint(A, A_prime)\n    mid_bb = midpoint(B, B_prime)\n    slope_aa = slope(A, A_prime)\n    slope_bb = slope(B, B_prime)\n    perp_slope_aa = perpendicular_slope(slope_aa)\n    perp_slope_bb = perpendicular_slope(slope_bb)\n    line_aa = line_eq(mid_aa, perp_slope_aa)\n    line_bb = line_eq(mid_bb, perp_slope_bb)\n    center = intersect(line_aa, line_bb)\n    if center is None:\n        return (0, (0, 0))\n    def angle_between(p1, p2, center):\n        v1 = (p1[0] - center[0], p1[1] - center[1])\n        v2 = (p2[0] - center[0], p2[1] - center[1])\n        dot = v1[0] * v2[0] + v1[1] * v2[1]\n        mag1 = math.hypot(v1[0], v1[1])\n        mag2 = math.hypot(v2[0], v2[1])\n        if mag1 == 0 or mag2 == 0:\n            return 0\n        cos_theta = dot / (mag1 * mag2)\n        cos_theta = max(min(cos_theta, 1), -1)\n        theta = math.acos(cos_theta)\n        if (p1[0] - center[0]) * (p2[0] - center[0]) < 0 or (p1[1] - center[1]) * (p2[1] - center[1]) < 0:\n            theta = -theta\n        return math.degrees(theta)\n    angle = angle_between(A, A_prime, center)\n    return (angle, center)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "import math\n\n# Given values\nradius_large_circle = 20\ndiameter_small_circle = 10\nradius_small_circle = diameter_small_circle / 2\n\n# Step 1: Determine the side length of the square\n# The square is tangent to the smaller circle, so the side length is equal to the diameter of the smaller circle\nside_length_square = diameter_small_circle\n\n# Step 2: Calculate the length of AB\n# AB is the distance between two points on the larger circle, which is the diameter of the larger circle\nlength_AB = 2 * radius_large_circle\n\n# The length of AB can be written in the form m + sqrt(n)\n# Since the length is 40, it can be expressed as 40 + sqrt(0)\nm = 40\nn = 0\n\n# Return the result in the form m + sqrt(n)\nresult = m + math.sqrt(n)\nresult"
+  },
+  {
+    "output": "def solve():\n    from sympy import symbols, sqrt, I, expand, simplify, Eq, solve\n    m, n = symbols('m n', positive=True, integer=True)\n    z = m + sqrt(n) + 11*I\n    f_z = expand(z**2 - 19*z)\n    f_f_z = expand(f_z**2 - 19*f_z)\n    vec1 = f_z - z\n    vec2 = f_f_z - f_z\n    # Compute dot product (real part of conjugate(vec1)*vec2)\n    dot_product = simplify((vec1.conjugate() * vec2).as_real_imag()[0])\n    eq = Eq(dot_product, 0)\n    sol = solve(eq, (m, n))\n    return sol[0][0] + sol[0][1]"
+  },
+  {
+    "output": "262144"
+  },
+  {
+    "output": "120/243\n\nThe probability of getting exactly 3 heads in 5 flips with $ p = \\frac{1}{3} $ is $ \\frac{120}{243} $, which simplifies to $ \\frac{40}{81} $. Therefore, $ i + j = 40 + 81 = 121 $.\n\nFINAL ANSWER: 121"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1999000.0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "18"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def count_valid_strings():\n    from collections import defaultdict\n    dp = [defaultdict(int) for _ in range(11)]\n    dp[0]['A'][0] = 1\n    dp[0]['B'][0] = 1\n    for i in range(1, 11):\n        for c in ['A', 'B']:\n            for l in range(4):\n                if l == 0:\n                    dp[i][c][l] = dp[i-1]['A'][0] + dp[i-1]['B'][0]\n                else:\n                    dp[i][c][l] = dp[i-1][c][l-1]\n    return sum(dp[10]['A'][l] + dp[10]['B'][l] for l in range(4))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "$ r\\sqrt{3} $"
+  },
+  {
+    "output": "import math\nnumerator = math.cos(math.radians(96)) + math.sin(math.radians(96))\ndenominator = math.cos(math.radians(96)) - math.sin(math.radians(96))\nresult = numerator / denominator\nangle_rad = math.atan(result)\nx_deg = math.degrees(angle_rad) / 19"
+  },
+  {
+    "output": "264"
+  },
+  {
+    "output": "1504"
+  },
+  {
+    "output": "def count_paths():\n    num_vertices_per_layer = 5\n    dp = [[0]*num_vertices_per_layer for _ in range(3)]\n    dp[0] = [1]*num_vertices_per_layer\n    for layer in range(1, 3):\n        for vertex in range(num_vertices_per_layer):\n            dp[layer][vertex] = sum(dp[layer-1][vertex-1:vertex+2])\n    return sum(dp[2])"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "890"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "from math import gcd\nfrom functools import reduce\n\ndef lcm(a, b):\n    return a * b // gcd(a, b)\n\ndef compute_lcm_up_to_m(m):\n    return reduce(lcm, range(1, m + 1), 1)\n\ndef sum_q(m_max):\n    total = 0\n    current_lcm = 1\n    for m in range(2, m_max + 1):\n        current_lcm = lcm(current_lcm, m)\n        total = (total + current_lcm) % 1000\n    return total\n\nsum_q(2017)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "31"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "40"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "27.0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "g(x) = \\frac{x}{2}"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "55.0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "$\\frac{n}{n+1}$"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1559"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "88"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_smallest_common_sum():\n    def get_sums(n):\n        sums = set()\n        a = 1\n        while True:\n            s = n * (2 * a + n - 1) // 2\n            if s > 10000:\n                break\n            sums.add(s)\n            a += 1\n        return sums\n    nine_sums = get_sums(9)\n    ten_sums = get_sums(10)\n    eleven_sums = get_sums(11)\n    common = nine_sums & ten_sums & eleven_sums\n    return min(common)"
+  },
+  {
+    "output": "def count_equal_an():\n    def compute_an(n):\n        from math import gcd\n        m = 1 << n\n        for k in range(1, 10000):\n            if (k * 23) % m == 1:\n                return k * 23\n    count = 0\n    prev = 0\n    for n in range(1, 1001):\n        current = compute_an(n)\n        if current == prev:\n            count += 1\n        prev = current\n    return count"
+  },
+  {
+    "output": "-37"
+  },
+  {
+    "output": "Error: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (<string>, line 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "from math import log10, isqrt\n\ndef solve():\n    n = 1000000\n    divisors = set()\n    for i in range(1, isqrt(n) + 1):\n        if n % i == 0:\n            divisors.add(i)\n            divisors.add(n // i)\n    divisors.discard(n)\n    total = sum(log10(d) for d in divisors)\n    return round(total)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "[Easy problem, difficulty=4] Think simply and give the direct answer."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "49.5"
+  },
+  {
+    "output": "342"
+  },
+  {
+    "output": "The problem statement is incomplete and cannot be solved as given."
+  },
+  {
+    "output": "from math import comb\n\ndef calculate_favorable_outcomes():\n    odd_tiles = [1, 3, 5, 7, 9]\n    even_tiles = [2, 4, 6, 8]\n    total_odd = len(odd_tiles)\n    total_even = len(even_tiles)\n    \n    # Each player must have 1 or 3 odd tiles\n    # We need to distribute 5 odd tiles among 3 players such that each has 1 or 3\n    # Possible distributions of odd tiles: (1,1,3), (1,3,1), (3,1,1), (3,3,-1) invalid, etc.\n    # Only valid distributions are those where sum is 5 and each is 1 or 3\n    # Valid distributions: (1,1,3), (1,3,1), (3,1,1)\n    \n    # Number of ways to choose which player gets 3 odd tiles\n    ways_to_choose_player_with_3_odds = 3\n    \n    # For each such choice, choose 3 odd tiles for that player\n    ways_to_choose_3_odds = comb(total_odd, 3)\n    \n    # Remaining 2 odd tiles are distributed as 1 each to the other two players\n    # Number of ways to distribute remaining 2 odd tiles to 2 players\n    ways_to_distribute_remaining_odds = 1  # since it's fixed\n    \n    # Distribute even tiles: 4 even tiles to 3 players, each gets 0, 1, or 2\n    # Total ways to distribute 4 even tiles to 3 players (each can get 0, 1, or 2)\n    # We need to count all valid distributions of 4 even tiles to 3 players\n    # Using stars and bars with constraints (each player can get 0, 1, or 2)\n    # We can use combinatorics to count the number of valid distributions\n    \n    # Total number of ways to distribute 4 even tiles to 3 players\n    total_even_distributions = 0\n    for a in range(0, 3):\n        for b in range(0, 3):\n            c = 4 - a - b\n            if 0 <= c <= 2:\n                total_even_distributions += 1\n    \n    # Total number of ways to distribute all tiles\n    total_ways = comb(9, 3) * comb(6, 3) * comb(3, 3)\n    \n    # Calculate favorable outcomes\n    favorable = ways_to_choose_player_with_3_odds * ways_to_choose_3_odds * ways_to_distribute_remaining_odds * total_even_distributions\n    \n    return favorable, total_ways"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def count_progressive_sequences(target):\n    def backtrack(start, current_sum, current_sequence):\n        if current_sum > target:\n            return 0\n        if current_sum == target:\n            return 1\n        total = 0\n        for i in range(start, target - current_sum + 1):\n            if not current_sequence or i % current_sequence[-1] == 0:\n                total += backtrack(i + 1, current_sum + i, current_sequence + [i])\n        return total\n    return backtrack(1, 0, [])"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def count_non_carrying_pairs():\n    def no_carry(a, b):\n        while a > 0 or b > 0:\n            if (a % 10 + b % 10) >= 10:\n                return False\n            a //= 10\n            b //= 10\n        return True\n    count = 0\n    for m in range(1493):\n        n = 1492 - m\n        if no_carry(m, n):\n            count += 1\n    return count"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "2016"
+  },
+  {
+    "output": "2592√3"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def count_factors(n, p): return sum(n // (p**k) for k in range(1, n+1) if p**k <= n)"
+  },
+  {
+    "output": "from sympy import symbols, expand, Rational\n\nx = symbols('x')\nP = 1 - Rational(1,3)*x + Rational(1,6)*x**2\nQ = P * P.subs(x, x**3) * P.subs(x, x**5) * P.subs(x, x**7) * P.subs(x, x**9)\nQ_expanded = expand(Q)\ncoeffs = [abs(coeff) for coeff in Q_expanded.as_coefficients_dict().values()]\nsum_abs = sum(coeffs)\nsum_abs = sum_abs.as_numer_denom()\nm, n = sum_abs\nm + n"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "sum(int((n * (n + 1) // 2) % 10) for n in range(1, 2018)) % 1000"
+  },
+  {
+    "output": "def calculate_m():\n    from collections import defaultdict\n    import math\n\n    heights = [3, 4, 6]\n    n = 10\n    dp = [0] * (n * 6 + 1)\n    dp[0] = 1\n\n    for i in range(1, n + 1):\n        new_dp = [0] * (i * 6 + 1)\n        for h in range(i * 6 + 1):\n            for height in heights:\n                if h - height >= 0:\n                    new_dp[h] += dp[h - height]\n        dp = new_dp\n\n    total = 3 ** n\n    favorable = dp[41]\n\n    m = favorable\n    n = total\n    gcd = math.gcd(m, n)\n    m //= gcd\n    n //= gcd\n\n    return m"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The problem statement is incomplete and cannot be solved as given."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "792"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "4"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "import math; a = 150; b = 324; c = 375; gcd_ab = math.gcd(a, b); gcd_bc = math.gcd(b, c); gcd_ca = math.gcd(c, a); gcd_abc = math.gcd(math.gcd(a, b), c); result = a + b + c - gcd_ab - gcd_bc - gcd_ca + gcd_abc; result"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_min_n():\n    for x in range(1, 100):\n        for y in range(1, 100):\n            for z in range(1, 100):\n                hidden = x*y*z - (x*y + y*z + z*x - x - y - z + 1)\n                if hidden == 231:\n                    return x*y*z\n    return -1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "5151"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "2520"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "196"
+  },
+  {
+    "output": "Error: No problem found for CoT analysis"
+  },
+  {
+    "output": "def find_greatest_palindrome():\n    def is_palindrome(n):\n        s = str(n)\n        return s == s[::-1]\n    for i in range(999, 9, -1):\n        if is_palindrome(i) and is_palindrome(oct(i)[2:]):\n            return i\n    return 0"
+  },
+  {
+    "output": "2.86"
+  },
+  {
+    "output": "def E(r, b):\n    if r == 0:\n        return b\n    if b == 0:\n        return r\n    if r == b:\n        return 1 + E(r - 1, b - 1)\n    if r > b:\n        return 1 + (r / (r + b)) * E(r - 1, b) + (b / (r + b)) * E(r, b - 1)\n    else:\n        return 1 + (b / (r + b)) * E(r, b - 1) + (r / (r + b)) * E(r - 1, b)"
+  },
+  {
+    "output": "sum(1 for a3 in range(100) for a2 in range(100) for a1 in range(100) if (2010 - 1000*a3 - 100*a2 - 10*a1) >= 0 and (2010 - 1000*a3 - 100*a2 - 10*a1) <= 99)"
+  },
+  {
+    "output": "def find_sum_of_digits():\n    total = 0\n    for n in range(2020, 10**8 + 1, 10000):\n        k = n // 10000\n        if n % k == 0:\n            digit_sum = sum(int(d) for d in str(n))\n            total += digit_sum\n    return total"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "10"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "number = d * 1000 + (d-1) * 100 + (d-2) * 10 + (d-3)\n    remainder = number % 37\n    possible_remainders.add(remainder)\n\nsum_remainders = sum(possible_remainders)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1"
+  },
+  {
+    "output": "63"
+  },
+  {
+    "output": "71"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "[Hard problem, difficulty=7] Step-by-step reasoning:\nLet's solve this problem step by step.\n\n---\n\n### **Step 1: Understand the Problem**\n\nWe are given:\n\n- A **round table** with **12 chairs**, numbered **1 to 12**.\n- There are **4 ambassadors** and **4 advisors** (one for each ambassador).\n- **Each ambassador must sit in an even-numbered chair**.\n- **Each advisor must sit in a chair adjacent to their ambassador**.\n- We are to find the number of **valid seating arrangements** (N), and then find **N mod 1000**.\n\n---\n\n### **Step 2: Break Down the Problem**\n\n#### **2.1: Identify the even-numbered chairs**\n\nThere are 12 chairs, numbered 1 through 12. The **even-numbered chairs** are:\n\n$$\n\\{2, 4, 6, 8, 10, 12\\}\n$$\n\nSo there are **6 even-numbered chairs**.\n\nWe are told that **each of the 4 ambassadors must sit in an even-numbered chair**. That means we will choose **4 out of these 6 chairs** for the ambassadors.\n\n#### **2.2: Assign ambassadors to even-numbered chairs**\n\nWe need to choose **4 chairs** from the 6 even-numbered chairs for the ambassadors. The number of ways to choose 4 chairs from 6 is:\n\n$$\n\\binom{6}{4} = 15\n$$\n\nOnce we have selected the 4 chairs, we can assign the 4 ambassadors to these chairs in **4! = 24** ways.\n\nSo, the number of ways to assign ambassadors to even-numbered chairs is:\n\n$$\n\\binom{6}{4} \\times 4! = 15 \\times 24 = 360\n$$\n\n#### **2.3: Assign advisors to adjacent chairs**\n\nEach advisor must sit in a chair **adjacent** to their ambassador. Since the table is **round**, the chairs are arranged in a circle, and chair 12 is adjacent to chair 1.\n\nLet’s consider the **positions of the ambassadors**. Since they are in **even-numbered chairs**, their adjacent chairs are:\n\n- For chair 2: adjacent to 1 and 3\n- For chair 4: adjacent to 3 and 5\n- For chair 6: adjacent to 5 and 7\n-"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The problem is incomplete and cannot be solved as stated."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "sum(1 for i in range(1, 2004) if bin(i).count('1') > bin(i).count('0')) % 1000"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "11"
+  },
+  {
+    "output": "def calculate_n_mod_1000():\n    import math\n    n = 0\n    for i in range(1, 1001):\n        if i % 2 == 1:\n            n += i**2\n        else:\n            n -= i**2\n    return n % 1000"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "100"
+  },
+  {
+    "output": "Error: '(' was never closed (<string>, line 1)"
+  },
+  {
+    "output": "from math import gcd\n\ndef solution():\n    numerators = set()\n    for num in range(1, 10000):\n        g = gcd(num, 9999)\n        numerator = num // g\n        numerators.add(numerator)\n    return len(numerators) % 1000"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "265"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def count_valid_pairs():\n    count = 0\n    for a in range(1, 1000):\n        b = 1000 - a\n        if '0' not in str(a) and '0' not in str(b):\n            count += 1\n    return count"
+  },
+  {
+    "output": "432"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "17"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "[Hard problem, difficulty=7] Step-by-step reasoning:\nWe are given that:\n\n$$\nN \\equiv N^2 \\pmod{10000}\n$$\n\nThis means that $ N $ and $ N^2 $ end in the same four digits, i.e., they are congruent modulo 10000.\n\n---\n\n### **Step 1: Understand the congruence**\n\nWe are given:\n\n$$\nN \\equiv N^2 \\pmod{10000}\n$$\n\nRewriting this:\n\n$$\nN^2 - N \\equiv 0 \\pmod{10000}\n$$\n\n$$\nN(N - 1) \\equiv 0 \\pmod{10000}\n$$\n\nThis tells us that $ N(N - 1) $ is divisible by 10000.\n\n---\n\n### **Step 2: Factor 10000**\n\nWe factor 10000:\n\n$$\n10000 = 2^4 \\cdot 5^4\n$$\n\nSo, for $ N(N - 1) \\equiv 0 \\pmod{10000} $, we need:\n\n$$\nN(N - 1) \\equiv 0 \\pmod{16} \\quad \\text{and} \\quad N(N - 1) \\equiv 0 \\pmod{625}\n$$\n\nThis is because 16 and 625 are coprime, and by the Chinese Remainder Theorem, the congruence modulo 10000 is equivalent to the system of congruences modulo 16 and 625.\n\n---\n\n### **Step 3: Solve the system of congruences**\n\nWe now solve:\n\n$$\nN(N - 1) \\equiv 0 \\pmod{16} \\quad \\text{and} \\quad N(N - 1) \\equiv 0 \\pmod{625}\n$$\n\n#### **Part A: Solve modulo 16**\n\nWe want:\n\n$$\nN(N - 1) \\equiv 0 \\pmod{16}\n$$\n\nThis means that either:\n\n- $ N \\equiv 0 \\pmod{16} $, or\n- $ N \\equiv 1 \\pmod{16} $\n\nSo the solutions modulo 16 are:\n\n$$\nN \\equiv 0 \\pmod{16} \\quad \\"
+  },
+  {
+    "output": "[Hard problem, difficulty=7] Step-by-step reasoning:\nWe are asked to find the number of **positive integers** that are **divisors of at least one** of the numbers:  \n- $10^{10}$  \n- $15^7$  \n- $18^{11}$\n\n---\n\n### **Step 1: Prime Factorizations**\n\nWe begin by finding the prime factorizations of each number.\n\n#### **(a) $10^{10}$**\n\n$$\n10 = 2 \\cdot 5 \\Rightarrow 10^{10} = (2 \\cdot 5)^{10} = 2^{10} \\cdot 5^{10}\n$$\n\n#### **(b) $15^7$**\n\n$$\n15 = 3 \\cdot 5 \\Rightarrow 15^7 = (3 \\cdot 5)^7 = 3^7 \\cdot 5^7\n$$\n\n#### **(c) $18^{11}$**\n\n$$\n18 = 2 \\cdot 3^2 \\Rightarrow 18^{11} = (2 \\cdot 3^2)^{11} = 2^{11} \\cdot 3^{22}\n$$\n\n---\n\n### **Step 2: Find the Set of All Divisors**\n\nWe are to find the number of **positive integers** that are **divisors of at least one** of the three numbers:  \n- $10^{10} = 2^{10} \\cdot 5^{10}$  \n- $15^7 = 3^7 \\cdot 5^7$  \n- $18^{11} = 2^{11} \\cdot 3^{22}$\n\nLet’s denote the set of all divisors of these numbers as:\n\n$$\nD = \\text{Set of all divisors of } 10^{10} \\cup \\text{Set of all divisors of } 15^7 \\cup \\text{Set of all divisors of } 18^{11}\n$$\n\nWe are to find the **cardinality** of this union:  \n$$\n|D| = |\\text{Divisors of } 10^{10}| + |\\text{Divisors of } 15^7| + |\\text{Divisors of } 18^{11}| - |\\text{Divisors common to two of"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "for c in range(20, 100):\n    for w in range(0, 100):\n        s = 30 + 4 * c - w\n        if s > 80:\n            unique = True\n            for c2 in range(20, 100):\n                for w2 in range(0, 100):\n                    if 30 + 4 * c2 - w2 == s and (c2, w2) != (c, w):\n                        unique = False\n                        break\n                if not unique:\n                    break\n            if unique:\n                print(s)\n                break\n        if unique:\n            break"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Insufficient information to solve the problem."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\n\ndef process_fft(data):\n    if not data:\n        return np.array([]), np.array([]), None\n    arr = np.array(data)\n    fft_data = np.fft.fft(arr)\n    plt.hist(np.abs(fft_data), bins=20)\n    fig = plt.gcf()\n    return arr, fft_data, fig.axes[0] if fig.axes else None"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\n\ndef create_random_matrix_df(rows, cols):\n    matrix = np.random.randint(0, 100, size=(rows, cols))\n    return pd.DataFrame(matrix)"
+  },
+  {
+    "output": "def count_non_stopwords(text, stopwords):\n    words = text.split()\n    return len([word for word in words if word.lower() not in stopwords])"
+  },
+  {
+    "output": ".uniform(lon_range[0], lon_range[1], size=len(cities))\n    lat = np.random.uniform(lat_range[0], lat_range[1], size=len(cities))\n    \n    # Create GeoDataFrame\n    geometry = [Point(lon[i], lat[i]) for i in range(len(cities))]\n    gdf = gpd.GeoDataFrame({\n        'City': cities,\n        'Lon': lon,\n        'Lat': lat\n    }, geometry=geometry)\n    \n    return gdf"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "# Create a box plot of the imputed last column\n    plt.figure()\n    sns.boxplot(x=df[last_column])\n    axes = plt.gca()\n    return df, axes"
+  },
+  {
+    "output": "def task_func(input_list):\n    import pandas as pd\n    import numpy as np\n    import matplotlib.pyplot as plt\n    if not isinstance(input_list, list) or any(not isinstance(sublist, list) for sublist in input_list):\n        raise ValueError(\"Input must be a list of lists\")\n    flattened = []\n    for sublist in input_list:\n        if sublist:\n            flattened.extend(sublist)\n    if not flattened:\n        return plt.subplots()[1]\n    df = pd.DataFrame(flattened, columns=['value'])\n    fig, ax = plt.subplots()\n    df['value'].value_counts().plot(kind='bar', ax=ax)\n    return ax"
+  },
+  {
+    "output": "def run_scripts_in_directory(directory):\n    import os\n    import time\n    results = {}\n    for filename in os.listdir(directory):\n        if filename.endswith('.py'):\n            script_path = os.path.join(directory, filename)\n            start_time = time.time()\n            with open(script_path, 'r') as f:\n                code = f.read()\n            exec(code, {})\n            end_time = time.time()\n            results[filename] = end_time - start_time\n    return results"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\n\ndef generate_normal_distribution_plot(mean=0, std=1, size=1000):\n    np.random.seed(0)\n    data = np.random.normal(mean, std, size)\n    fig, ax = plt.subplots()\n    ax.hist(data, bins=30, density=True, alpha=0.6, color='g')\n    x = np.linspace(-5, 5, 1000)\n    pdf = (1/(std*np.sqrt(2*np.pi))) * np.exp(- (x - mean)**2 / (2*std**2))\n    ax.plot(x, pdf, 'k', linewidth=2)\n    return fig"
+  },
+  {
+    "output": "```python\nimport os\nimport sys\nimport importlib\nfrom pkgutil import iter_modules\nimport pkg_resources\n\ndef task_func(package_name"
+  },
+  {
+    "output": "def task_func(source_dir, destination_dir):\n    import os\n    if not os.path.exists(source_dir) or not os.path.isdir(source_dir):\n        raise ValueError(\"Source path does not exist or is not a directory\")\n    files = os.listdir(source_dir)\n    for file in files:\n        src_path = os.path.join(source_dir, file)\n        dest_path = os.path.join(destination_dir, file)\n        os.system(f\"cp {src_path} {dest_path}\")\n    return (os.path.basename(source_dir), files)"
+  },
+  {
+    "output": "import random\nimport string\n\ndef task_func(length, num_digits):\n    if num_digits > length or num_digits < 0:\n        raise ValueError(\"Number of digits cannot exceed the length of the password or be negative.\")\n    digits = ''.join(random.choices(string.digits, k=num_digits))\n    letters = ''.join(random.choices(string.ascii_letters, k=length - num_digits))\n    password_chars = list(digits + letters)\n    random.shuffle(password_chars)\n    return ''.join(password_chars)"
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nimport numpy as np\nfrom PIL import Image\nimport os\n\ndef read_image_and_create_histogram(image_path, output_path):\n    try:\n        img = Image.open(image_path)\n        img = img.convert('L')\n        data = np.array(img)\n        plt.hist(data.ravel(), bins=256, color='gray', alpha=0.7)\n        plt.xlabel('Pixel Value')\n        plt.ylabel('Frequency')\n        plt.title('Histogram')\n        plt.savefig(output_path)\n        plt.close()\n        return plt\n    except Exception as e:\n        print(f\"Error: {e}\")\n        return None"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\n\ndef task_func(mu, sigma, sample_size):\n    samples = np.random.normal(mu, sigma, sample_size)\n    plt.hist(samples, bins=30, alpha=0.75, color='blue', edgecolor='black')\n    plt.xlabel(\"Sample values\")\n    plt.ylabel(\"Frequency\")\n    plt.title(\"Histogram of Generated Samples\")\n    plt.show()\n    return samples"
+  },
+  {
+    "output": "from datetime import datetime\nimport pytz\nfrom dateutil.parser import parse\n\ndef task_func(date_str, tz_str):\n    date = parse(date_str)\n    current_year = date.year\n    if date.month > 1 or (date.month == 1 and date.day > 1):\n        next_new_year = datetime(current_year + 1, 1, 1, tzinfo=date.tzinfo)\n    else:\n        next_new_year = datetime(current_year, 1, 1, tzinfo=date.tzinfo)\n    time_until_new_year = (next_new_year - date).total_seconds()\n    return int(time_until_new_year)"
+  },
+  {
+    "output": "import itertools\nimport collections\n\ndef task_func(elements, subset_size):\n    subsets = itertools.combinations(elements, subset_size)\n    sums = [sum(subset) for subset in subsets]\n    count = collections.Counter(sums)\n    return dict(count)"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nimport random\n\ndef task_func(df):\n    def determine_winner(row):\n        if row['team1_score'] > row['team2_score']:\n            return row['team1']\n        elif row['team1_score'] < row['team2_score']:\n            return row['team2']\n        else:\n            return random.choice([row['team1'], row['team2']])\n    \n    df['winner'] = df.apply(determine_winner, axis=1)\n    return df\n```"
+  },
+  {
+    "output": "def process_hex_string(hex_str, salt_size):\n    import hashlib\n    import os\n    import base64\n    hex_bytes = bytes.fromhex(hex_str)\n    salt = os.urandom(salt_size)\n    salted_data = hex_bytes + salt\n    hash_result = hashlib.sha256(salted_data).digest()\n    return (base64.b64encode(salt).decode('utf-8'), base64.b64encode(hash_result).decode('utf-8'))"
+  },
+  {
+    "output": "def plot_normal_distributions(x, y, labels):\n    import matplotlib.pyplot as plt\n    fig, ax = plt.subplots()\n    for xi, yi, label in zip(x, y, labels):\n        ax.plot(xi, yi, label=label)\n    ax.legend()\n    return fig"
+  },
+  {
+    "output": "import numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom scipy import stats\nfrom scipy.stats import ttest_ind\nfrom sklearn.utils import check_array\nfrom numpy import nan\n\ndef analyze_data(data, group_column, value_column):\n    data = data.dropna()\n    groups = data.groupby(group_column)\n    group_data = {group: group_data[value_column].values for group, group_data in groups}\n    descriptive_stats = {group: group_data[value_column].describe() for group, group_data in groups}\n    sns.boxplot(x=group_column, y=value_column, data=data)\n    plt.title('Boxplot of Values by Group')\n    plt.show()\n    sns.histplot(data=value_column, multiple=\"stack\", hue=group_column, kde=False)\n    plt.title('Histogram of Values by Group')\n    plt.show()\n    t_stat, p_value = ttest_ind(group_data[list(group_data.keys())[0]], group_data[list(group_data.keys())[1]])\n    result = {\n        'descriptive_statistics': descriptive_stats,\n        't_statistic': t_stat,\n        'p_value': p_value\n    }\n    return result"
+  },
+  {
+    "output": "def process_hex_string(hex_str, salt_size):\n    import hashlib\n    import os\n    import base64\n    hex_bytes = bytes.fromhex(hex_str)\n    salt = os.urandom(salt_size)\n    salted_data = hex_bytes + salt\n    hash_result = hashlib.sha256(salted_data).digest()\n    return (base64.b64encode(salt).decode('utf-8'), base64.b64encode(hash_result).decode('utf-8'))"
+  },
+  {
+    "output": "def rotate_and_display_image(image_path, angle):\n    import numpy as np\n    from PIL import Image\n    import matplotlib.pyplot as plt\n    \n    try:\n        img = Image.open(image_path)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"The image file {image_path} does not exist.\")\n    \n    img_array = np.array(img)\n    height, width = img_array.shape[:2]\n    center = (width // 2, height // 2)\n    \n    rotated = img.rotate(angle, expand=True)\n    rotated_array = np.array(rotated)\n    \n    fig, axes = plt.subplots(1, 2, figsize=(10, 5))\n    axes[0].imshow(img)\n    axes[0].set_title('Original')\n    axes[1].imshow(rotated)\n    axes[1].set_title('Rotated')\n    plt.show()\n    \n    return img_array, rotated_array"
+  },
+  {
+    "output": "def task_func(min_val, max_val, seed=None):\n    import random\n    if seed is not None:\n        random.seed(seed)\n    numbers = [random.randint(min_val, max_val) for _ in range(100)]\n    freq_gen = ((num, numbers.count(num)) for num in numbers)\n    return max(freq_gen, key=lambda x: x[1])[0]"
+  },
+  {
+    "output": "def task_func(n, pattern):\n    import re\n    import random\n    import string\n    while True:\n        s = ''.join(random.choices(string.ascii_letters, k=n))\n        if re.fullmatch(pattern, s):\n            return s"
+  },
+  {
+    "output": "```python\nimport cgi\nimport http.server\nimport json\n\nSUCCESS_RESPONSE = {\n    'status': 'success',\n    'message': 'Data received successfully.'\n}\nERROR_RESPONSE = {\n    'status': 'error',\n    'message': 'Invalid data received.'\n}\n\ndef task_func():\n    class PostRequestHandler(http.server.BaseHTTPRequestHandler):\n        def do_POST(self):\n            content_length = int(self.headers.get('content-length', 0))\n            if content_length == 0:\n                self.send_error(400, \"No data key in request\")\n                return\n\n            content_type = self.headers.get('content-type')\n            if content_type != 'application/json':\n                self.send_response(400)\n                self.send_header('Content-Type', 'application/json')\n                self.end_headers()\n                self.wfile.write(json.dumps({\"error\": \""
+  },
+  {
+    "output": "import math\nfrom itertools import combinations\n\ndef calculate_log_sum(numbers):\n    total = 0\n    for r in range(1, len(numbers) + 1):\n        for combo in combinations(numbers, r):\n            product = 1\n            for num in combo:\n                product *= num\n            total += math.log(product)\n    return total"
+  },
+  {
+    "output": "def process_3d_data(objects, coordinates, save_plot, plot_path):\n    unzipped = list(zip(objects, coordinates))\n    objects, coordinates = zip(*unzipped)\n    coordinates = np.array(coordinates)\n    pca = PCA(n_components=2)\n    reduced = pca.fit_transform(coordinates)\n    if save_plot:\n        if plot_path is None:\n            raise ValueError(\"plot_path must be provided if save_plot is True\")\n        plt.scatter(reduced[:, 0], reduced[:, 1])\n        plt.savefig(plot_path)\n        return np.column_stack((objects, reduced))\n    else:\n        return np.column_stack((objects, reduced)), plt.gca()"
+  },
+  {
+    "output": "import random\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport os\nimport numpy as np\n\ndef task_func(hours, output_path):\n    time = pd.date_range(start='2023-01-01', periods=hours, freq='H')\n    vehicle_types = ['Car', 'Truck', 'Bike', 'Bus']\n    data = []\n    for t in time:\n        row = {'Time': t}\n        for vehicle in vehicle_types:\n            count = random.randint(0, 100)\n            row[vehicle] = count\n        data.append(row)\n    df = pd.DataFrame(data)\n    df.to_csv(output_path, index=False)\n    fig, ax = plt.subplots()\n    df.set_index('Time').plot(ax=ax)\n    return output_path, ax"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nimport random\nimport re\n\ndef task_func(person_names, email_domains, num_records=5):\n    # Input validation\n    if len(person_names) < num_records:\n        raise ValueError(\"Number of names provided is less than the number of records requested.\")\n    if not email_domains:\n        raise ValueError(\"No email domains provided.\")\n    \n    # Generate emails\n    emails = []\n    for _ in range(num_records):\n        name = random.choice(person_names)\n        domain = random.choice(email_domains)\n        email = f\"{name}@{domain}\"\n        cleaned_email = email.replace(\"@\", \"[at]\")\n        emails.append(cleaned_email)\n    \n    # Create DataFrame\n    df = pd.DataFrame({\n        'Name': [random.choice(person_names) for _ in range(num_records)],\n        'Email': emails\n    })\n    \n    return df\n```"
+  },
+  {
+    "output": "from flask import Flask, redirect, url_for, render_template, request\nfrom flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user\nfrom flask_wtf import FlaskForm\nfrom wtforms import StringField, PasswordField, validators\nimport os\n\napp = Flask(__name__)\napp.secret_key = os.urandom(24)\n\nlogin_manager = LoginManager()\nlogin_manager.init_app(app)\nlogin_manager.login_view = 'login'\n\nclass User(UserMixin):\n    def __init__(self, id, username, password):\n        self.id = id\n        self.username = username\n        self.password = password\n\n    def get_id(self):\n        return self.id\n\n@login_manager.user_loader\ndef load_user(user_id):\n    return User(1, 'testuser', 'password')\n\nclass LoginForm(FlaskForm):\n    username = StringField('Username', [validators.DataRequired()])\n    password = PasswordField('Password', [validators.DataRequired()])\n\n@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    form = LoginForm(request.form)\n    if request.method == 'POST' and form.validate():\n        user = load_user(1)\n        if user and user.password == form.password.data:\n            login_user(user)\n            return redirect(url_for('protected'))\n    return render_template('login.html', form=form)\n\n@app.route('/logout')\ndef logout():\n    logout_user()\n    return redirect(url_for('login'))\n\n@app.route('/protected')\n@login_required\ndef protected():\n    return f'Logged in as: {current_user.username}'\n\nif __name__ == '__main__':\n    app.run(debug=True)"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.linear_model import LinearRegression\n\ndef task_func(df, target):\n    X = df.drop(columns=[target])\n    y = df[target]\n    model = LinearRegression().fit(X, y)\n    score = model.score(X, y)\n    return score"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\n\ndef generate_grades_data(num_students=100, num_courses=5):\n    np.random.seed(42)\n    students = [f'Student_{i}' for i in range(1, num_students + 1)]\n    courses = [f'Course_{i}' for i in range(1, num_courses + 1)]\n    grades = np.random.uniform(50, 100, size=(num_students, num_courses))\n    df = pd.DataFrame(grades, columns=courses, index=students)\n    df['Average'] = df.mean(axis=1)\n    return df"
+  },
+  {
+    "output": "def standardize_and_plot(data, title, xlabel, ylabel):\n    import pandas as pd\n    import numpy as np\n    import matplotlib.pyplot as plt\n    data = data.drop_duplicates(subset='Name')\n    data['Age'] = (data['Age'] - data['Age'].mean()) / data['Age'].std()\n    data['Score'] = (data['Score'] - data['Score'].mean()) / data['Score'].std()\n    plt.scatter(data['Age'], data['Score'])\n    plt.title(title)\n    plt.xlabel(xlabel)\n    plt.ylabel(ylabel)\n    plt.show()"
+  },
+  {
+    "output": "import re\nimport csv\nimport os\n\ndef save_dollar_words(text, output_path):\n    words = re.findall(r'\\b\\$\\w+\\b', text)\n    filtered_words = [word for word in words if not re.fullmatch(r'[$\\w]+', word)]\n    with open(output_path, 'w', newline='') as csvfile:\n        writer = csv.writer(csvfile)\n        writer.writerow(['Word'])\n        for word in filtered_words:\n            writer.writerow([word])\n    return os.path.abspath(output_path)"
+  },
+  {
+    "output": "import pandas as pd\nimport re\nimport random\n\ndef search_csv_with_regex(file_path, pattern, sample_size=None):\n    df = pd.read_csv(file_path)\n    matches = []\n    for col in df.columns:\n        for index, row in df.iterrows():\n            match = re.search(pattern, str(row[col]))\n            if match:\n                matches.append((index, col, match.group()))\n    if sample_size:\n        random.shuffle(matches)\n        matches = matches[:sample_size]\n    return pd.DataFrame(matches, columns=['Index', 'Column', 'Match'])"
+  },
+  {
+    "output": "def count_files_with_word(directory, word):\n    import os\n    count = 0\n    for root, dirs, files in os.walk(directory):\n        for file in files:\n            file_path = os.path.join(root, file)\n            try:\n                with open(file_path, 'r') as f:\n                    if word in f.read():\n                        count += 1\n            except Exception:\n                pass\n    return count"
+  },
+  {
+    "output": "def calculate_statistics_and_create_pie_chart(data, column):\n    import pandas as pd\n    import matplotlib.pyplot as plt\n    if data.empty:\n        return \"Data is empty\"\n    stats = data[column].describe()\n    plt.figure()\n    plt.pie(stats['count'], labels=data[column].unique())\n    plt.title(f'Statistics for {column}')\n    plt.show()\n    return stats"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom mpl_toolkits.mplot3d import Axes3D\n\ndef task_func(n_points=100, random_seed=None):\n    np.random.seed(random_seed)\n    points = np.random.rand(n_points, 3)\n    fig = plt.figure()\n    plot = fig.add_subplot(111, projection='3d')\n    plot.scatter(points[:, 0], points[:, 1], points[:, 2], c='blue', marker='o')\n    plot.set_xlabel('X Axis')\n    plot.set_ylabel('Y Axis')\n    plot.set_zlabel('Z Axis')\n    return (points, plot)"
+  },
+  {
+    "output": "from gensim.models import Word2Vec\nfrom nltk.corpus import stopwords\nimport nltk\nnltk.download('stopwords')\n\ndef task_func(texts):\n    stop_words = set(stopwords.words('english'))\n    cleaned_texts = [[word for word in text if word.isalpha() and word not in stop_words] for text in texts]\n    model = Word2Vec(sentences=cleaned_texts, vector_size=100, window=5, min_count=1, workers=4)\n    return model.vectors, model.index_to_key"
+  },
+  {
+    "output": "def task_func(df):\n    pca = PCA(n_components=2)\n    df_pca = pca.fit_transform(df)\n    df_pca = pd.DataFrame(df_pca, columns=['PC1', 'PC2'])\n    return df_pca"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\ndef create_histogram(image):\n    try:\n        if not isinstance(image, np.ndarray) or image.ndim != 2:\n            raise ValueError(\"Input must be a 2D numpy array representing a grayscale image.\")\n        plt.hist(image.ravel(), bins=256, range=(0, 256), density=True)\n        plt.xlabel('Pixel Value')\n        plt.ylabel('Frequency')\n        plt.title('Grayscale Image Histogram')\n        return plt.gcf().canvas.renderer._renderer.tostring_rgb()\n    except Exception as e:\n        return str(e)"
+  },
+  {
+    "output": "import json\nimport zlib\nimport base64\n\ndef serialize_compress_encode(data):\n    json_str = json.dumps(data)\n    compressed = zlib.compress(json_str.encode('utf-8'))\n    encoded = base64.b64encode(compressed)\n    return encoded.decode('utf-8')"
+  },
+  {
+    "output": "import numpy as np\nfrom scipy import stats\n\ndef task_func(df, column, alpha):\n    data = np.array(df[column])\n    stat, p = stats.shapiro(data)\n    return p > alpha"
+  },
+  {
+    "output": "import json\nimport requests\n\ndef task_func(prefix, endpoint):\n    try:\n        response = requests.get(endpoint)\n        response.raise_for_status()\n        data = response.json()\n        filename = f\"{prefix}{endpoint.split('/')[-1]}.json\"\n        with open(filename, 'w') as file:\n            json.dump(data, file)\n        return filename\n    except Exception as e:\n        raise RuntimeError(str(e))"
+  },
+  {
+    "output": "def task_func(df, FEATURES, TARGET, dict_mapping, plot_histogram=False):\n    if not isinstance(df, pd.DataFrame) or TARGET not in df.columns or not all(f in df.columns for f in FEATURES):\n        raise ValueError(\"Invalid input DataFrame or missing columns\")\n    for col, mapping in dict_mapping.items():\n        if col in df.columns:\n            df[col] = df[col].replace(mapping)\n    scaler = StandardScaler()\n    df[FEATURES] = scaler.fit_transform(df[FEATURES])\n    if plot_histogram:\n        plt.hist(df[TARGET], bins=20)\n        plt.show()"
+  },
+  {
+    "output": "def archive_project(config_path):\n    import json\n    import os\n    import shutil\n    import zipfile\n    with open(config_path, 'r') as f:\n        config = json.load(f)\n    project_dir = config['project_dir']\n    archive_name = config['archive_name']\n    archive_path = os.path.join(project_dir, archive_name)\n    if os.path.exists(archive_path):\n        os.remove(archive_path)\n    with zipfile.ZipFile(archive_path, 'w', zipfile.ZIP_DEFLATED) as zipf:\n        for root, dirs, files in os.walk(project_dir):\n            for file in files:\n                file_path = os.path.join(root, file)\n                arcname = os.path.relpath(file_path, project_dir)\n                zipf.write(file_path, arcname)"
+  },
+  {
+    "output": "import sqlite3\nimport pandas as pd\nimport warnings\n\ndef task_func(db_path, query):\n    try:\n        conn = sqlite3.connect(db_path)\n        df = pd.read_sql_query(query, conn)\n        if len(df) > 10000:\n            warnings.warn(\"Dataset contains more than 10,000 rows.\")\n        return df\n    except Exception as e:\n        raise Exception(\"An error occurred while processing the database query.\") from e"
+  },
+  {
+    "output": "from collections import defaultdict\n\ndef count_letter_frequencies(word_dict):\n    frequency = defaultdict(int)\n    for word in word_dict:\n        for letter in word:\n            frequency[letter] += 1\n    return frequency"
+  },
+  {
+    "output": "```python\nimport binascii\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\ndef task_func(hex_str):\n    try:\n        # Remove the '\\\\x' prefix if present\n        if hex_str.startswith('\\\\x'):\n            hex_str = hex_str[2:]\n        # Convert hex string to bytes\n        byte_data = binascii.unhexlify(hex_str)\n        # Count the frequency of each byte value\n        byte_freq = pd.Series(byte_data).value_counts()\n        # Create a DataFrame with 'Byte Value' and 'Frequency'\n        df = pd.DataFrame({\n            'Byte Value': byte_freq.index,\n            'Frequency': byte"
+  },
+  {
+    "output": "import re\nimport requests\n\ndef extract_and_send(url_str, token):\n    url_pattern = re.compile(r'https?://\\S+')\n    url = url_pattern.search(url_str)\n    if url:\n        url = url.group(0)\n        headers = {'Authorization': f'Bearer {token}'}\n        response = requests.post('https://api.example.com/endpoint', json={'url': url}, headers=headers)\n        return response.json()\n    return None"
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nfrom collections import Counter\n\nFRUITS = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig', 'Grape', 'Honeydew', 'Indian Prune', 'Jackfruit']\n\ndef task_func(fruit_dict):\n    fruit_counts = Counter(fruit_dict.values())\n    fruits = list(fruit_counts.keys())\n    counts = list(fruit_counts.values())\n    fig, ax = plt.subplots()\n    ax.bar(fruits, counts)\n    ax.set_xlabel('Fruit')\n    ax.set_ylabel('Frequency')\n    ax.set_title('Fruit Frequency')\n    return fruit_counts, ax"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.stats import kurtosis\n\ndef generate_and_analyze():\n    np.random.seed(0)\n    num_intervals = 1000\n    random_numbers = np.random.normal(size=num_intervals)\n    plt.plot(random_numbers)\n    plt.xlabel('Time')\n    plt.ylabel('Value')\n    plt.title('Random Numbers Over Time')\n    plt.show()\n    kurt = kurtosis(random_numbers)\n    return kurt"
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nimport matplotlib.dates as mdates\nfrom datetime import datetime\nimport numpy as np\n\ndef parse_times_and_plot(times, time_format):\n    seconds = []\n    for time_str in times:\n        try:\n            dt = datetime.strptime(time_str, time_format)\n            seconds.append(dt.second)\n        except ValueError:\n            raise ValueError(f\"Invalid time string: {time_str}\")\n    plt.hist(seconds, bins=range(0, 61), align='left', rwidth=0.8)\n    plt.xlabel('Seconds')\n    plt.ylabel('Frequency')\n    plt.title('Histogram of Seconds')\n    plt.xticks(range(0, 60, 5))\n    plt.grid(axis='y', alpha=0.75)\n    plt.show()\n    return None"
+  },
+  {
+    "output": "ax.plot(theta, r, color=color)\nax.set_rlabel_position(rlabel_pos)"
+  },
+  {
+    "output": "def task_func(directory_path):\n    import os\n    import time\n    if not os.path.exists(directory_path):\n        return []\n    files = os.listdir(directory_path)\n    result = []\n    for file in files:\n        file_path = os.path.join(directory_path, file)\n        if os.path.isfile(file_path):\n            stats = os.stat(file_path)\n            size = stats.st_size\n            creation_time = time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime(stats.st_ctime))\n            modification_time = time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime(stats.st_mtime))\n            result.append({\n                'name': file,\n                'size': size,\n                'creation_time': creation_time,\n                'modification_time': modification_time\n            })\n    return result"
+  },
+  {
+    "output": "def task_func(url, path, column):\n    import requests\n    import os\n    import csv\n    \n    response = requests.get(url)\n    with open(path, 'wb') as f:\n        f.write(response.content)\n    \n    with open(path, 'r') as f:\n        reader = csv.DictReader(f)\n        columns = reader.fieldnames\n    \n    if column not in columns:\n        os.remove(path)\n        raise ValueError(\"Column does not exist\")\n    \n    counts = {}\n    with open(path, 'r') as f:\n        reader = csv.DictReader(f)\n        for row in reader:\n            value = row[column]\n            counts[value] = counts.get(value, 0) + 1\n    \n    os.remove(path)\n    return counts"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\nfrom sklearn.preprocessing import StandardScaler\nimport matplotlib.pyplot as plt\n\ndef standardize_and_visualize(list1, list2):\n    data = pd.DataFrame({'List1': list1, 'List2': list2})\n    scaler = StandardScaler()\n    standardized = scaler.fit_transform(data)\n    df_standardized = pd.DataFrame(standardized, columns=data.columns)\n    fig, ax = plt.subplots()\n    df_standardized.plot(kind='bar', ax=ax)\n    return df_standardized, ax"
+  },
+  {
+    "output": "```python\nimport numpy as np\nimport itertools\nimport random\nimport statistics\n\ndef task_func(T1, RANGE=100):\n    if not T1:\n        raise statistics.StatisticsError(\"T1 is empty\")\n    \n    converted_T1 = [int(x) for x in T1]\n    size = sum(converted_T1)\n    \n    random_list = [random.randint(1, RANGE) for _ in range(size)]\n    \n    mean = statistics.mean(random_list)\n    median = statistics.median(random_list)\n    mode = statistics.mode(random_list)\n    \n    return (float(mean), float(median), int(mode))\n```"
+  },
+  {
+    "output": "def normalize_and_plot(data, key1, key2):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    try:\n        x = np.array(data[key1])\n        y = np.array(data[key2])\n    except KeyError as e:\n        raise ValueError(f\"Missing key: {e}\") from e\n    except TypeError:\n        raise ValueError(\"Data must be a dictionary with numeric values\") from None\n    x_min, x_max = x.min(), x.max()\n    y_min, y_max = y.min(), y.max()\n    normalized_x = (x - x_min) / (x_max - x_min)\n    normalized_y = (y - y_min) / (y_max - y_min)\n    plt.scatter(normalized_x, normalized_y)\n    plt.xlabel('Normalized ' + key1)\n    plt.ylabel('Normalized ' + key2)\n    plt.title('Normalized Data Plot')\n    plt.show()"
+  },
+  {
+    "output": "import random\nfrom string import ascii_uppercase\n\ndef task_func(dict1):\n    unique_ids = []\n    for department, employees in dict1.items():\n        for _ in range(employees):\n            random_str = ''.join(random.choices(ascii_uppercase, k=5))\n            employee_id = f\"{department}{random_str}\"\n            unique_ids.append(employee_id)\n    return unique_ids"
+  },
+  {
+    "output": "def task_func():\n    try:\n        result = 10 / 0\n    except ZeroDivisionError:\n        return \"Error: Division by zero\"\n    return result"
+  },
+  {
+    "output": "import re\nimport string\n\nPUNCTUATION = string.punctuation\n\ndef task_func(text):\n    words = re.findall(r'\\b\\w+\\b', text)\n    num_words = len(words)\n    num_punctuation = 0\n    for char in text:\n        if char in PUNCTUATION:\n            num_punctuation += 1\n    return (num_words, num_punctuation)"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.decomposition import PCA\nimport matplotlib.pyplot as plt\n\ndef task_func(df):\n    if not isinstance(df, pd.DataFrame):\n        raise ValueError(\"Input is not a DataFrame\")\n    if df.empty:\n        raise ValueError(\"DataFrame is empty\")\n    \n    pca = PCA(n_components=2)\n    principal_components = pca.fit_transform(df)\n    \n    pc_df = pd.DataFrame(data=principal_components, columns=['Principal Component 1', 'Principal Component 2'])\n    \n    plt.figure(figsize=(8, 6))\n    plt.scatter(pc_df['Principal Component 1'], pc_df['Principal Component 2'])\n    plt.title('2 Component PCA')\n    plt.xlabel('Principal Component 1')\n    plt.ylabel('Principal Component 2')\n    axes = plt.gca()\n    \n    return pc_df, axes"
+  },
+  {
+    "output": "ax.set_ylabel('Height')\n        ax.set_title('KMeans Clustering')\n        ax.grid(True)\n        plt.colorbar(scatter)\n        # Return the DataFrame and the Axes object\n        return filtered_df, ax"
+  },
+  {
+    "output": "def task_func(*args, **kwargs):\n    import inspect\n    func_name = inspect.currentframe().f_back.f_code.co_name\n    num_args = len(args)\n    sqrt_num_args = num_args ** 0.5\n    lambda_count = 0\n    for default in kwargs.values():\n        if isinstance(default, list):\n            lambda_count += sum(1 for x in default if isinstance(x, lambda))\n        elif isinstance(default, dict):\n            lambda_count += sum(1 for v in default.values() if isinstance(v, lambda))\n        elif isinstance(default, set):\n            lambda_count += sum(1 for x in default if isinstance(x, lambda))\n    return func_name, sqrt_num_args, lambda_count"
+  },
+  {
+    "output": "return ax"
+  },
+  {
+    "output": "def filter_word_lengths(data, first_letter):\n    filtered = [word for word in data['Word'] if word.startswith(first_letter)]\n    lengths = [len(word) for word in filtered]\n    from collections import Counter\n    return dict(Counter(lengths))"
+  },
+  {
+    "output": "def task_func(data, threshold=0.5):\n    if not isinstance(data, (list, tuple)) or not all(isinstance(x, (int, float)) for x in data):\n        raise ValueError(\"Input data must be a list or tuple of integers or floats.\")\n    if not isinstance(threshold, (int, float)):\n        raise ValueError(\"Threshold must be an integer or float.\")\n    if threshold < 0 or threshold > 1:\n        raise ValueError(\"Threshold must be between 0 and 1.\")\n    normalized = [x / max(data) if max(data) != 0 else 0 for x in data]\n    import matplotlib.pyplot as plt\n    plt.plot(normalized)\n    plt.title(\"Normalized Data\")\n    plt.xlabel(\"Index\")\n    plt.ylabel(\"Value\")\n    plt.show()\n    return normalized"
+  },
+  {
+    "output": "import itertools\nimport random\n\ndef task_func(t, n):\n    if n > len(t):\n        raise ValueError(\"n cannot be greater than the length of the tuple\")\n    combinations = list(itertools.combinations(t, n))\n    random_combination = random.choice(combinations)\n    return tuple(random_combination)"
+  },
+  {
+    "output": "def task_func(file1, file2):\n    import hashlib\n    try:\n        with open(file1, 'rb') as f1, open(file2, 'rb') as f2:\n            hash1 = hashlib.md5(f1.read()).hexdigest()\n            hash2 = hashlib.md5(f2.read()).hexdigest()\n        return hash1 == hash2\n    except FileNotFoundError:\n        raise FileNotFoundError(\"Either file does not exist.\")"
+  },
+  {
+    "output": "def task_func(script_path, timeout):\n    import os\n    import psutil\n    import subprocess\n    import time\n    \n    if not os.path.exists(script_path):\n        return {\"error\": \"Script path does not exist\"}\n    \n    process = None\n    start_time = time.time()\n    cpu_usage = 0.0\n    memory_usage = 0\n    \n    try:\n        process = subprocess.Popen(\n            script_path,\n            stdout=subprocess.PIPE,\n            stderr=subprocess.PIPE,\n            stdin=subprocess.PIPE,\n            start_new_session=True\n        )\n        \n        while True:\n            if time.time() - start_time > timeout:\n                process.terminate()\n                time.sleep(0.1)\n                process.kill()\n                return {\"error\": \"Timeout reached\"}\n            \n            if not process.poll():\n                try:\n                    cpu_usage += psutil.Process(process.pid).cpu_percent(interval=0.1)\n                    memory_usage = psutil.Process(process.pid).memory_info().rss\n                except psutil.NoSuchProcess:\n                    return {\"error\": \"Process not found\"}\n                time.sleep(0.1)\n            else:\n                break\n        \n        return {\"cpu_usage\": cpu_usage, \"memory_usage\": memory_usage}\n    \n    except Exception as e:\n        return {\"error\": str(e)}"
+  },
+  {
+    "output": "def task_func(input_list):\n    import random\n    import pandas as pd\n    random.seed(42)\n    modified_list = []\n    for s in input_list:\n        if len(s) < 2:\n            modified_list.append(s)\n            continue\n        indices = list(range(len(s)))\n        random.shuffle(indices)\n        for i in indices:\n            if i + 1 <= len(s):\n                substring = s[i:i+1]\n                new_substring = ''.join(random.choices('abcdefghijklmnopqrstuvwxyz', k=1))\n                s = s[:i] + new_substring + s[i+1:]\n        modified_list.append(s)\n    df = pd.DataFrame({'Original': input_list, 'Modified': modified_list})\n    return df"
+  },
+  {
+    "output": "def task_func(activities):\n    import matplotlib.pyplot as plt\n    from datetime import datetime\n    for activity in activities:\n        if not isinstance(activity, datetime):\n            raise TypeError(\"All activities must be datetime objects\")\n    days = [activity.strftime(\"%A\") for activity in activities]\n    from collections import Counter\n    counts = Counter(days)\n    days_order = [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\", \"Sunday\"]\n    counts = {day: counts.get(day, 0) for day in days_order}\n    fig, ax = plt.subplots()\n    ax.bar(counts.keys(), counts.values())\n    ax.set_xlabel(\"Day of the Week\")\n    ax.set_ylabel(\"Number of Activities\")\n    ax.set_title(\"Activities Per Day of the Week\")\n    return ax"
+  },
+  {
+    "output": "def draw_squares(colors):\n    import turtle\n    import time\n    screen = turtle.Screen()\n    screen.setup(800, 600)\n    t = turtle.Turtle()\n    t.speed(0)\n    for i in range(5):\n        color = colors[i % len(colors)]\n        t.color(color)\n        for _ in range(4):\n            t.forward(100)\n            t.right(90)\n        t.penup()\n        t.goto(t.xcor() + 150, t.ycor())\n        t.pendown()\n        time.sleep(1)\n    screen.mainloop()"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.cluster import KMeans\nimport numpy as np\n\ndef task_func(x_list, y_list, n_clusters=2, random_state=0):\n    data = pd.DataFrame({'x': x_list, 'y': y_list})\n    kmeans = KMeans(n_clusters=n_clusters, random_state=random_state)\n    kmeans.fit(data)\n    return (kmeans.labels_, kmeans.cluster_centers_)"
+  },
+  {
+    "output": "import pandas as pd\nimport re\n\ndef task_func(data, mapping):\n    def replace_acronyms(text):\n        if pd.isna(text):\n            return text\n        for acronym, full_form in mapping.items():\n            text = re.sub(r'\\b' + re.escape(acronym) + r'\\b', full_form, text)\n        return text\n    \n    data = data.applymap(replace_acronyms)\n    return data"
+  },
+  {
+    "output": "import os\nimport json\n\ndef task_func(config_path: str) -> dict:\n    if not os.path.exists(config_path):\n        raise FileNotFoundError(f\"The configuration file {config_path} does not exist.\")\n    with open(config_path, 'r') as file:\n        config = json.load(file)\n    return config"
+  },
+  {
+    "output": "import hashlib\nfrom blake3 import blake3\n\ndef task_func(data):\n    blake3_hash = blake3(data.encode()).digest()\n    hex_hash = blake3_hash.hex()\n    md5_hash = hashlib.md5(hex_hash.encode()).hexdigest()\n    return md5_hash"
+  },
+  {
+    "output": "def task_func(input_lists):\n    from math import isqrt\n    POSSIBLE_NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n    result = []\n    for lst in input_lists:\n        n = len(lst)\n        if n <= 3:\n            take = n\n        elif 4 <= n <= 7:\n            take = 4\n        else:\n            take = isqrt(n)\n        selected = POSSIBLE_NUMBERS[:take]\n        sum_squares = sum(x*x for x in selected)\n        result.append(sum_squares)\n    return result"
+  },
+  {
+    "output": "def task_func(data_list):\n    if not data_list:\n        raise ValueError(\"data_list is empty\")\n    import matplotlib.pyplot as plt\n    import numpy as np\n    data = np.array(data_list)\n    for i in range(data.shape[1]):\n        plt.plot(data[:, i], label=f'Position {i}')\n    plt.legend()\n    plt.show()"
+  },
+  {
+    "output": "def task_func(source_dir, dest_dir):\n    import os\n    import shutil\n    import random\n    files = [f for f in os.listdir(source_dir) if os.path.isfile(os.path.join(source_dir, f))]\n    if not files:\n        return \"\"\n    selected_file = random.choice(files)\n    source_path = os.path.join(source_dir, selected_file)\n    dest_path = os.path.join(dest_dir, selected_file)\n    shutil.move(source_path, dest_path)\n    return selected_file"
+  },
+  {
+    "output": "plt.figure(figsize=(10, 6))\nplt.plot(df['Date'], df['Sales'], marker='o', linestyle='-')\nplt.title('Daily Turnover Line Chart')\nplt.xlabel('Date')\nplt.ylabel('Sales')\nplt.grid(True)\nreturn plt.gca()"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.preprocessing import StandardScaler\nimport matplotlib.pyplot as plt\n# Constants\nFEATURE_NAMES = [\"Feature 1\", \"Feature 2\", \"Feature 3\", \"Feature 4\", \"Feature 5\"]\n\ndef task_func(data_matrix):\n    scaler = StandardScaler()\n    standardized_data = scaler.fit_transform(data_matrix)\n    standardized_df = pd.DataFrame(standardized_data, columns=FEATURE_NAMES)\n    row_means = standardized_df.mean(axis=1)\n    standardized_df['Mean'] = row_means\n    fig, ax = plt.subplots()\n    ax.hist(row_means, bins=10, edgecolor='black')\n    ax.set_title('Distribution of Means')\n    return (standardized_df, ax)"
+  },
+  {
+    "output": "def task_func(x, y):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    if not isinstance(x, (list, np.ndarray)) or not isinstance(y, (list, np.ndarray)):\n        raise TypeError(\"Input must be a list or numpy array\")\n    if len(x) == 0 or len(y) == 0:\n        raise ValueError(\"Input lists cannot be empty\")\n    X, Y = np.meshgrid(x, y)\n    Z = X + 1j * Y\n    phase = np.angle(Z)\n    fig, ax = plt.subplots()\n    im = ax.imshow(phase, extent=[min(x), max(x), min(y), max(y)], origin='lower')\n    plt.colorbar(im)\n    return ax, phase"
+  },
+  {
+    "output": "def plot_function_and_integral(func, x_range, func_name):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    from scipy.integrate import cumtrapz\n    x = np.linspace(x_range[0], x_range[1], 1000)\n    y = func(x)\n    integral = cumtrapz(y, x, initial=0)\n    fig, ax = plt.subplots()\n    ax.plot(x, y, label=f\"{func_name} (original)\")\n    ax.plot(x, integral, label=f\"{func_name} (integral)\")\n    ax.legend()\n    ax.set_xlabel(f\"x\")\n    ax.set_ylabel(f\"{func_name}\")\n    return ax"
+  },
+  {
+    "output": "from sklearn.model_selection import KFold\nfrom sklearn.metrics import accuracy_score\nfrom tensorflow.keras.models import Sequential\nfrom tensorflow.keras.layers import Dense\nfrom tensorflow.keras.utils import to_categorical\nimport numpy as np\n\ndef train_neural_network(X, y, k=5):\n    kf = KFold(n_splits=k)\n    history_list = []\n    for train_index, val_index in kf.split(X):\n        X_train, X_val = X[train_index], X[val_index]\n        y_train, y_val = y[train_index], y[val_index]\n        model = Sequential()\n        model.add(Dense(20, activation='relu', input_shape=(X_train.shape[1],)))\n        model.add(Dense(1, activation='sigmoid'))\n        model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])\n        history = model.fit(X_train, y_train, epochs=10, batch_size=32, validation_data=(X_val, y_val), verbose=0)\n        val_loss = history.history['loss'][-1]\n        val_acc = history.history['accuracy'][-1]\n        history_list.append((val_loss, val_acc))\n    return history_list"
+  },
+  {
+    "output": "import pandas as pd\nimport collections\n\ndef task_func(df):\n    if not isinstance(df, pd.DataFrame):\n        raise ValueError(\"Input must be a DataFrame.\")\n    total_sales = df['Sales'].sum()\n    category_sales = df.groupby('Category')['Sales'].sum().reset_index()\n    category_sales.sort_values(by=['Sales', 'Category'], ascending=[False, True], inplace=True)\n    most_popular_category = category_sales.iloc[0]['Category']\n    return {\n        'Total Sales': total_sales,\n        'Most Popular Category': most_popular_category\n    }"
+  },
+  {
+    "output": "def scan_ip_range(start_ip, end_ip, port):\n    import threading\n    import socket\n    results = []\n    def check_ip(ip):\n        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n        sock.settimeout(1)\n        try:\n            sock.connect((ip, port))\n            results.append((ip, True))\n        except:\n            results.append((ip, False))\n        finally:\n            sock.close()\n    threads = []\n    for ip in range(int(start_ip.split('.')[-1]), int(end_ip.split('.')[-1]) + 1):\n        ip_address = f\"{start_ip.split('.')[0]}.{start_ip.split('.')[1]}.{start_ip.split('.')[2]}.{ip}\"\n        t = threading.Thread(target=check_ip, args=(ip_address,))\n        threads.append(t)\n        t.start()\n    for t in threads:\n        t.join()\n    return results"
+  },
+  {
+    "output": "import numpy as np\nimport pandas as pd\n\ndef task_func(rows, columns=[\"A\", \"B\", \"C\", \"D\", \"E\"], seed=0) -> pd.DataFrame:\n    np.random.seed(seed)\n    data = np.random.rand(rows, len(columns))\n    df = pd.DataFrame(data, columns=columns)\n    df = df.sample(n=len(columns), axis=1, random_state=seed)\n    return df"
+  },
+  {
+    "output": "def process_filenames(directory):\n    import os\n    files = os.listdir(directory)\n    new_files = []\n    for filename in files:\n        parts = filename.split('.')\n        reversed_parts = parts[::-1]\n        new_filename = '.'.join(reversed_parts)\n        new_files.append(new_filename)\n    return new_files"
+  },
+  {
+    "output": "import pandas as pd\nimport requests\nimport os\n\ndef task_func(url):\n    response = requests.get(url)\n    with open(\"temp.json\", \"wb\") as f:\n        f.write(response.content)\n    df = pd.read_json(\"temp.json\")\n    os.remove(\"temp.json\")\n    return df"
+  },
+  {
+    "output": "def remove_jquery_files(directory):\n    import os\n    if not os.path.exists(directory):\n        raise FileNotFoundError(f\"The directory {directory} does not exist.\")\n    removed_files = []\n    for filename in os.listdir(directory):\n        if filename.startswith('jquery') and filename.endswith('.js'):\n            file_path = os.path.join(directory, filename)\n            os.remove(file_path)\n            removed_files.append(filename)\n    return (len(removed_files), removed_files)"
+  },
+  {
+    "output": "def task_func(data, specified_value):\n    average = sum(data) / len(data)\n    greater_than_average = [x for x in data if x > average]\n    count_greater_than_specified = sum(1 for x in data if x > specified_value)\n    import matplotlib.pyplot as plt\n    sorted_data = sorted(data)\n    plt.hist(sorted_data, bins=10)\n    plt.show()\n    return average, greater_than_average, count_greater_than_specified, sorted_data"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\nimport datetime\nimport random\n\ndef generate_sensor_data(start_time, end_time, step, sensor_statuses):\n    timestamps = []\n    sensor_readings = []\n    sensor_statuses_list = []\n    \n    current_time = start_time\n    while current_time <= end_time:\n        timestamps.append(current_time)\n        timestamp_seconds = (current_time - datetime.datetime(1970, 1, 1)).total_seconds()\n        sine_val = np.sin(timestamp_seconds) + np.random.normal(0, 0.1)\n        cosine_val = np.cos(timestamp_seconds) + np.random.normal(0, 0.1)\n        tan_val = np.tan(timestamp_seconds) + np.random.normal(0, 0.1)\n        sensor_readings.append((sine_val, cosine_val, tan_val))\n        sensor_statuses_list.append(random.choice(sensor_statuses))\n        current_time += step\n    \n    df = pd.DataFrame({\n        'timestamp': timestamps,\n        'sine_reading': [r[0] for r in sensor_readings],\n        'cosine_reading': [r[1] for r in sensor_readings],\n        'tan_reading': [r[2] for r in sensor_readings],\n        'status': sensor_statuses_list\n    })\n    \n    return df"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.linear_model import LinearRegression\n\ndef task_func(d, target='y'):\n    X = [[item['x'], item['z']] for item in d]\n    y = [item[target] for item in d]\n    model = LinearRegression()\n    model.fit(X, y)\n    return model"
+  },
+  {
+    "output": "import pandas as pd\nimport random\n\ndef task_func(n_data_points=10000):\n    if n_data_points <= 0:\n        return pd.DataFrame(columns=['Value'])\n    \n    data = [round(random.uniform(0.0, 10.0), 3) for _ in range(n_data_points)]\n    return pd.DataFrame(data, columns=['Value'])"
+  },
+  {
+    "output": "def task_func(text, analyzer):\n    import re\n    cleaned_text = re.sub(r'\\W+', ' ', text).lower()\n    sentiment = analyzer.polarity_scores(cleaned_text)\n    return {\n        'neg': sentiment['neg'],\n        'neu': sentiment['neu'],\n        'pos': sentiment['pos'],\n        'compound': sentiment['compound']\n    }"
+  },
+  {
+    "output": "def task_func():\n    from Crypto.PublicKey import RSA\n    from Crypto.Cipher import AES\n    from Crypto.Random import get_random_bytes\n    from Crypto.Protocol.KDF import PBKDF2\n    import os\n    import base64\n\n    password = os.urandom(16)\n    nonce = get_random_bytes(16)\n    key = RSA.generate(2048)\n    private_key = key.export_key(passphrase=password, pkcs=8, protection=\"AES128-CBC-PKCS1-OAEP\")\n    private_key = base64.b64encode(private_key).decode('utf-8')\n    salt = get_random_bytes(16)\n    derived_key = PBKDF2(password, salt, dkLen=16, count=100000)\n    cipher = AES.new(derived_key, AES.MODE_CBC, nonce)\n    encrypted_private_key = cipher.encrypt(private_key.encode('utf-8'))\n    encrypted_private_key = base64.b64encode(encrypted_private_key).decode('utf-8')\n    filename = f\"rsa_key_{os.urandom(16).hex()}.enc\"\n    with open(filename, 'w') as f:\n        f.write(encrypted_private_key)\n    return key.public_key(), filename, password, nonce"
+  },
+  {
+    "output": "from collections import Counter\nimport itertools\n\ndef task_func(letters: list, repetitions: int) -> dict:\n    repeated_letters = list(itertools.chain.from_iterable([letter] * repetitions for letter in letters))\n    frequency = dict(Counter(repeated_letters))\n    return frequency"
+  },
+  {
+    "output": "import pandas as pd\nfrom sklearn.cluster import DBSCAN\n\ndef task_func(data, cols):\n    df = pd.DataFrame(data, columns=cols)\n    dbscan = DBSCAN(eps=3, min_samples=2)\n    clusters = dbscan.fit_predict(df)\n    df['Cluster'] = clusters\n    return df"
+  },
+  {
+    "output": "def create_histogram(input_string):\n    import matplotlib.pyplot as plt\n    import numpy as np\n    data = np.array([float(x) for x in input_string.split()])\n    plt.hist(data, bins=10, edgecolor='black')\n    plt.title('Histogram of Numeric Series')\n    plt.xlabel('Value')\n    plt.ylabel('Frequency')\n    plt.show()"
+  },
+  {
+    "output": "import re\nfrom nltk.corpus import words\n\ndef task_func(s, n):\n    word_list = set()\n    words_corpus = set(words.words)\n    for word in re.findall(r'\\b\\w+\\b', s.lower()):\n        if word in words_corpus:\n            word_list.add(word)\n            if len(word_list) >= n:\n                return list(word_list)\n    return list(word_list)"
+  },
+  {
+    "output": "def task_func(data):\n    import numpy as np\n    from scipy import stats\n    import numpy.fft as fft\n    counts, bins = np.histogram(data, bins=np.unique(data))\n    mode = bins[np.argmax(counts)]\n    count = np.max(counts)\n    fft_result = fft.fft(counts)\n    return {'mode': np.array([mode]), 'count': np.array([count]), 'fft': fft_result}"
+  },
+  {
+    "output": "import pandas as pd\nimport os\n\nOUTPUT_DIR = './output'\n\ndef task_func(df, filename, output_dir=OUTPUT_DIR):\n    os.makedirs(output_dir, exist_ok=True)\n    file_path = os.path.join(output_dir, filename)\n    df.to_json(file_path, orient='records')\n    return file_path"
+  },
+  {
+    "output": "def extract_phone_numbers(source, output_file):\n    import re\n    import requests\n    from urllib.parse import urlparse\n    import json\n    import os\n\n    def get_content(url):\n        response = requests.get(url)\n        return response.text\n\n    def extract_numbers(text):\n        pattern = r'\\+?1?\\-?\\.?[\\d\\s\\-\\.]+[\\d\\-\\.]?\\d{3}[\\d\\-\\.]?\\d{4}[\\d\\-\\.]?\\d{4}'\n        return re.findall(pattern, text)\n\n    def save_to_json(data, filename):\n        with open(filename, 'w') as f:\n            json.dump(data, f)\n\n    if urlparse(source).scheme in ('http', 'https'):\n        content = get_content(source)\n    else:\n        with open(source, 'r') as f:\n            content = f.read()\n\n    numbers = extract_numbers(content)\n    save_to_json(numbers, output_file)\n    return numbers"
+  },
+  {
+    "output": "import platform\nimport psutil\n\ndef gather_system_details():\n    return {\n        'os': platform.system(),\n        'os_version': platform.version(),\n        'architecture': platform.machine(),\n        'memory_total': psutil.virtual_memory().total,\n        'memory_used': psutil.virtual_memory().used,\n        'memory_free': psutil.virtual_memory().free\n    }"
+  },
+  {
+    "output": "import re\nimport math\n\ndef task_func(s):\n    elements = [element.strip() for element in s.split(\",\")]\n    count = 0\n    sum_sqrt = 0.0\n\n    for element in elements:\n        try:\n            num = float(element)\n            count += 1\n            sum_sqrt += math.sqrt(num)\n        except ValueError:\n            pass\n\n    return count, sum_sqrt"
+  },
+  {
+    "output": "[[math.sin(x) for x in tup] for tup in tuples_list]"
+  },
+  {
+    "output": "def move_files_by_extension(source_dir, dest_dir, extension):\n    import os\n    import shutil\n    count = 0\n    for filename in os.listdir(source_dir):\n        if filename.endswith(extension):\n            src_path = os.path.join(source_dir, filename)\n            dest_path = os.path.join(dest_dir, filename)\n            shutil.move(src_path, dest_path)\n            count += 1\n    return count"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndef task_func(start_date='2016-01-01', periods=13, freq='WOM-2FRI', seed=0):\n    np.random.seed(seed)\n    dates = pd.date_range(start=start_date, periods=periods, freq=freq)\n    prices = np.random.uniform(100, 500, size=periods)\n    df = pd.DataFrame({'Date': dates, 'Price': prices})\n    \n    fig, ax = plt.subplots()\n    ax.plot(df['Date'], df['Price'], marker='o')\n    ax.set_xlabel('Date')\n    ax.set_ylabel('Price')\n    ax.set_title('Share Price Series')\n    \n    return (df, ax)"
+  },
+  {
+    "output": "def task_func(text):\n    import nltk\n    from nltk.corpus import stopwords\n    import numpy as np\n    import pandas as pd\n    import matplotlib.pyplot as plt\n    nltk.download('stopwords')\n    stop_words = set(stopwords.words('english'))\n    words = text.split()\n    words = [word for word in words if word not in stop_words]\n    unique_words = []\n    prev = None\n    for word in words:\n        if word != prev:\n            unique_words.append(word)\n        prev = word\n    word_to_index = {word: i for i, word in enumerate(unique_words)}\n    n = len(unique_words)\n    co_occurrence = np.zeros((n, n), dtype=int)\n    for i in range(len(unique_words) - 1):\n        current = unique_words[i]\n        next_word = unique_words[i + 1]\n        co_occurrence[word_to_index[current], word_to_index[next_word]] += 1\n    df = pd.DataFrame(co_occurrence, index=unique_words, columns=unique_words)\n    plt.figure(figsize=(10, 10))\n    plt.imshow(df, cmap='viridis', interpolation='nearest')\n    plt.colorbar()\n    plt.title('Co-occurrence Matrix')\n    plt.xlabel('Words')\n    plt.ylabel('Words')\n    plot_obj = plt.gcf()\n    return (df, plot_obj)"
+  },
+  {
+    "output": "def scan_logs_for_ip_counts(directory):\n    import os\n    import re\n    ip_count = {}\n    ip_pattern = re.compile(r'\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b')\n    for filename in os.listdir(directory):\n        file_path = os.path.join(directory, filename)\n        if os.path.isfile(file_path):\n            with open(file_path, 'r') as file:\n                for line in file:\n                    ips = ip_pattern.findall(line)\n                    for ip in ips:\n                        ip_count[ip] = ip_count.get(ip, 0) + 1\n    return ip_count"
+  },
+  {
+    "output": "import random\nfrom collections import Counter\nimport string\n\ndef task_func(input_list):\n    alphabet = string.ascii_lowercase\n    for i in range(len(input_list)):\n        if not input_list[i]:\n            input_list[i] = random.sample(alphabet, 5)\n    return Counter([item for sublist in input_list for item in sublist])"
+  },
+  {
+    "output": "def process_text(text):\n    if not text:\n        raise ValueError(\"Input text is empty\")\n    words = re.findall(r'\\b\\w+\\b', text.lower())\n    words = [word.replace(' ', '_') for word in words]\n    from collections import Counter\n    word_counts = Counter(words)\n    import matplotlib.pyplot as plt\n    plt.bar(word_counts.keys(), word_counts.values())\n    plt.xlabel('Words')\n    plt.ylabel('Frequency')\n    plt.title('Word Frequency')\n    plt.show()"
+  },
+  {
+    "output": "# Train linear regression model\n    X = df[['Goals']]\n    y = df['Penalty Cost']\n    model = LinearRegression().fit(X, y)\n    \n    # Predict penalty cost for a new goal input\n    predicted_cost = model.predict([[goals]])[0]\n    \n    # Return the predicted penalty cost\n    return predicted_cost"
+  },
+  {
+    "output": "def merge_and_encode(lists):\n    import numpy as np\n    from sklearn.preprocessing import OneHotEncoder\n    merged = [item for sublist in lists for item in sublist]\n    encoder = OneHotEncoder(sparse_output=False)\n    encoded = encoder.fit_transform(np.array(merged).reshape(-1, 1))\n    return encoded.flatten().tolist()"
+  },
+  {
+    "output": "def generate_random_string(length):\n    import random\n    import string\n    if length < 0:\n        raise ValueError(\"Length cannot be negative\")\n    chars = string.ascii_letters\n    random_string = ''.join(random.choice(chars) for _ in range(length))\n    counts = {}\n    for char in random_string:\n        counts[char] = counts.get(char, 0) + 1\n    return random_string, counts"
+  },
+  {
+    "output": "import pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\ndef create_and_plot_data(goals, penalties):\n    data = {'Goals': goals, 'Penalties': penalties}\n    df = pd.DataFrame(data)\n    sns.pairplot(df)\n    plt.show()"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\nCOLUMNS = ['Column1', 'Column2', 'Column3', 'Column4', 'Column5']\ndef task_func(length):\n    data = np.random.rand(length, len(COLUMNS))\n    df = pd.DataFrame(data, columns=COLUMNS)\n    return df"
+  },
+  {
+    "output": "from collections import deque\nimport math\n\ndef task_func():\n    dq = deque([1, 2, 3, 4, 5])\n    dq.rotate(2)\n    total = sum(dq)\n    sqrt_total = math.sqrt(total)\n    print(sqrt_total)"
+  },
+  {
+    "output": "```python\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Constants defining the range of random integers and the size of the DataFrame\nRANGE = 100\nSIZE = 1000\n\ndef task_func():\n    # Generate random integers for 'X' and 'Y' columns\n    np.random.seed(42)  # For reproducibility\n    data = {\n        'X': np.random.randint(0, RANGE, SIZE),\n        'Y': np.random.randint(0, RANGE, SIZE)\n    }\n    df = pd.DataFrame(data)\n    \n    # Plot the scatter plot using Seaborn\n    sns.scatterplot(data=df, x='X', y='Y')\n    plt.title('Scatter Plot of Random Integers')\n    plt.xlabel('X')\n    plt.ylabel('Y')\n    plt.show()\n    \n    return df\n```"
+  },
+  {
+    "output": "def task_func(csv_url_dict, sort_by_column=\"title\"):\n    if not isinstance(csv_url_dict, dict):\n        raise ValueError(\"Input must be a dictionary.\")\n    if not csv_url_dict:\n        raise ValueError(\"The dictionary is empty.\")\n    if 'URL' not in csv_url_dict:\n        raise ValueError(\"The key 'URL' is missing.\")\n    url = csv_url_dict['URL']\n    response = requests.get(url)\n    csv_data = StringIO(response.text)\n    df = pd.read_csv(csv_data)\n    df_sorted = df.sort_values(by=sort_by_column)\n    return df_sorted"
+  },
+  {
+    "output": "python_code_returner(import pandas as pd\nimport random\n\ndef task_func(dictionary, item, seed):\n    random.seed(seed)\n    df = pd.DataFrame(dictionary)\n    occurrences = []\n    for index, row in df.iterrows():\n        for col, value in row.items():\n            if value == item:\n                occurrences.append((index, col))\n    count = len(occurrences)\n    random_number = random.randint(0, 9)\n    updated_count = count + random_number\n    return occurrences, updated_count, df)"
+  },
+  {
+    "output": "def task_func(length=10):\n    import random\n    import string\n    try:\n        if length <= 0:\n            raise ValueError(\"Length must be a positive integer.\")\n        chars = string.ascii_letters + string.digits\n        generated_str = ''.join(random.choice(chars) for _ in range(length))\n        characteristics = {\n            'has_uppercase': any(c.isupper() for c in generated_str),\n            'has_lowercase': any(c.islower() for c in generated_str),\n            'has_digit': any(c.isdigit() for c in generated_str),\n            'has_special': any(not c.isalnum() for c in generated_str)\n        }\n        return (generated_str, characteristics)\n    except Exception as e:\n        return (str(e), {})"
+  },
+  {
+    "output": "def task_func(source_dir, target_dir):\n    import os\n    import csv\n    from docx import Document\n    from openpyxl import load_workbook\n\n    if not os.path.exists(source_dir):\n        raise FileNotFoundError(f\"Source directory {source_dir} does not exist.\")\n\n    os.makedirs(target_dir, exist_ok=True)\n    converted_count = 0\n\n    for filename in os.listdir(source_dir):\n        file_path = os.path.join(source_dir, filename)\n        if not os.path.isfile(file_path):\n            continue\n        ext = os.path.splitext(filename)[1].lower()\n        target_path = os.path.join(target_dir, os.path.splitext(filename)[0] + \".csv\")\n\n        if ext == \".txt\":\n            with open(file_path, 'r') as src, open(target_path, 'w', newline='') as dst:\n                csv.writer(dst).writerows([line.strip().split() for line in src])\n            converted_count += 1\n        elif ext == \".docx\":\n            doc = Document(file_path)\n            with open(target_path, 'w', newline='') as dst:\n                csv.writer(dst).writerows([[para.text for para in para_list] for para_list in doc.paragraphs])\n            converted_count += 1\n        elif ext == \".xlsx\":\n            wb = load_workbook(file_path)\n            ws = wb.active\n            with open(target_path, 'w', newline='') as dst:\n                csv.writer(dst).writerows([[cell.value for cell in row] for row in ws.iter_rows()])\n            converted_count += 1\n        elif ext == \".csv\":\n            with open(file_path, 'r') as src, open(target_path, 'w', newline='') as dst:\n                csv.writer(dst).writerows(csv.reader(src))\n            converted_count += 1\n\n    return converted_count"
+  },
+  {
+    "output": "def compare_csv_files(file1, file2):\n    import pandas as pd\n    import os\n    from pandas.core.exceptions import DataFrameError\n\n    if not os.path.exists(file1) or not os.path.exists(file2):\n        raise FileNotFoundError(\"One or both files do not exist.\")\n    \n    try:\n        df1 = pd.read_csv(file1)\n        df2 = pd.read_csv(file2)\n    except DataFrameError as e:\n        raise DataFrameError(f\"Error reading CSV files: {e}\")\n\n    if df1.columns.tolist() != df2.columns.tolist():\n        raise ValueError(\"The CSV files have different column structures.\")\n\n    diff = pd.concat([df1, df2], axis=1, keys=['File1', 'File2'])\n    diff = diff.apply(lambda row: row['File1'] == row['File2'], axis=1)\n    diff = diff.rename('IsEqual')\n    return diff.reset_index()"
+  },
+  {
+    "output": "def task_func(X, y):\n    from sklearn.model_selection import train_test_split\n    from tensorflow.keras.models import Sequential\n    from tensorflow.keras.layers import Dense\n    from tensorflow.keras.optimizers import SGD\n    from sklearn.metrics import precision_recall_curve\n    import matplotlib.pyplot as plt\n    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n    model = Sequential()\n    model.add(Dense(10, activation='sigmoid', input_shape=(X.shape[1],)))\n    model.compile(loss='binary_crossentropy', optimizer=SGD(), metrics=['accuracy'])\n    model.fit(X_train, y_train, epochs=10, batch_size=32, validation_split=0.1, verbose=0)\n    y_scores = model.predict(X_test)\n    precision, recall, _ = precision_recall_curve(y_test, y_scores)\n    fig, ax = plt.subplots()\n    ax.plot(recall, precision)\n    ax.set_xlabel('Recall')\n    ax.set_ylabel('Precision')\n    return model, ax"
+  },
+  {
+    "output": "import pandas as pd\nfrom nltk.corpus import stopwords\nfrom nltk.tokenize import sent_tokenize, word_tokenize\nimport string\n\ndef task_func(text):\n    sentences = sent_tokenize(text)\n    stop_words = set(stopwords.words('english'))\n    word_counts = {}\n    for sentence in sentences:\n        words = word_tokenize(sentence)\n        words = [word.lower() for word in words if word.isalpha()]\n        for word in words:\n            if word not in stop_words:\n                word_counts[word] = word_counts.get(word, 0) + 1\n    return pd.Series(word_counts)"
+  },
+  {
+    "output": "def task_func(file_path):\n    from cryptography.hazmat.primitives.asymmetric import rsa\n    from cryptography.hazmat.primitives import serialization\n    from cryptography.hazmat.primitives import hashes\n    from cryptography.hazmat.primitives.asymmetric import padding\n    from cryptography.fernet import Fernet\n    import os\n    import base64\n\n    private_key = rsa.generate_private_key(\n        public_exponent=65537,\n        key_size=2048,\n    )\n    public_key = private_key.public_key()\n\n    with open(file_path, 'rb') as f:\n        file_data = f.read()\n\n    fernet_key = Fernet.generate_key()\n    fernet = Fernet(fernet_key)\n    encrypted_data = fernet.encrypt(file_data)\n\n    encrypted_fernet_key = public_key.encrypt(\n        fernet_key,\n        padding.OAEP(mgf=padding.MGF1(algorithm=hashes.SHA256()), algorithm=hashes.SHA256(), label=None)\n    )\n\n    encrypted_file_path = f\"{file_path}.enc\"\n    fernet_key_file_path = f\"{file_path}.fernet.enc\"\n\n    with open(encrypted_file_path, 'wb') as f:\n        f.write(encrypted_data)\n\n    with open(fernet_key_file_path, 'wb') as f:\n        f.write(encrypted_fernet_key)\n\n    return public_key, encrypted_file_path, fernet_key_file_path"
+  },
+  {
+    "output": "def process_files(input_list):\n    if not isinstance(input_list, list):\n        raise TypeError(\"Input must be a list\")\n    input_list.append('12')\n    total = sum(map(int, input_list))\n    import os\n    import pandas as pd\n    files = [f for f in os.listdir() if f.endswith('.csv')]\n    if not files:\n        raise FileNotFoundError(\"No CSV files found\")\n    df = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)\n    return df"
+  },
+  {
+    "output": "def count_adjacent_pairs(word):\n    from collections import Counter\n    pairs = []\n    for i in range(len(word) - 1):\n        pairs.append(word[i:i+2])\n    return dict(Counter(pairs))"
+  },
+  {
+    "output": "def task_func(data):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    prices = [float(item['price']) for item in data]\n    mean = np.mean(prices)\n    median = np.median(prices)\n    std_dev = np.std(prices)\n    plt.hist(prices, bins=10, edgecolor='black')\n    plt.title('Price Distribution')\n    plt.xlabel('Price')\n    plt.ylabel('Frequency')\n    plt.show()\n    return mean, median, std_dev"
+  },
+  {
+    "output": "def generate_distance_matrix(data):\n    import pandas as pd\n    import numpy as np\n    df = pd.DataFrame(data)\n    n = len(df)\n    distance_matrix = np.zeros((n, n))\n    for i in range(n):\n        for j in range(n):\n            distance_matrix[i, j] = np.linalg.norm(df.iloc[i] - df.iloc[j])\n    return pd.DataFrame(distance_matrix)"
+  },
+  {
+    "output": "import csv\nimport collections\nimport operator\n\ndef task_func(csv_file_path):\n    product_sales = collections.defaultdict(int)\n    \n    with open(csv_file_path, 'r') as file:\n        reader = csv.DictReader(file)\n        for row in reader:\n            product = row['product']\n            quantity = int(row['quantity'])\n            product_sales[product] += quantity\n    \n    if not product_sales:\n        return \"No data found\"\n    \n    top_product = max(product_sales.items(), key=operator.itemgetter(1))[0]\n    return top_product"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\n\ndef task_func():\n    np.random.seed(42)\n    products = ['Product A', 'Product B', 'Product C', 'Product D']\n    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']\n    sales_data = np.random.randint(100, 1000, size=(len(products), len(months)))\n    df = pd.DataFrame(sales_data, columns=months, index=products)\n    df['Average Sales'] = df.mean(axis=1)\n    return df.reset_index().rename(columns={0: 'Product'})"
+  },
+  {
+    "output": "from collections import Counter\nimport json\nimport random\n\ndef task_func(n, file_name, seed=77):\n    random.seed(seed)\n    selected_words = random.sample(WORDS, n)\n    with open(file_name, 'w') as f:\n        json.dump(selected_words, f)\n    return file_name"
+  },
+  {
+    "output": "import ast\nimport re\n\ndef task_func(text_file: str) -> list:\n    with open(text_file, 'r') as file:\n        content = file.read()\n    \n    pattern = r'\\{.*?\\}'\n    matches = re.findall(pattern, content)\n    \n    dictionaries = []\n    for match in matches:\n        try:\n            dict_str = match.strip()\n            dict_obj = ast.literal_eval(dict_str)\n            dictionaries.append(dict_obj)\n        except (ValueError, SyntaxError):\n            continue\n    \n    return dictionaries"
+  },
+  {
+    "output": "def encrypt_and_save(data, password, filename): \n    import os \n    from cryptography.fernet import Fernet \n    if not os.path.exists(os.path.dirname(filename)): \n        os.makedirs(os.path.dirname(filename)) \n    key = Fernet.generate_key() \n    fernet = Fernet(key) \n    encrypted = fernet.encrypt(data.encode()) \n    with open(filename, 'wb') as f: \n        f.write(encrypted) \n    return key.decode()"
+  },
+  {
+    "output": "import random\nimport math\n\ndef task_func(range_start=1, range_end=100, pairs_count=10, random_seed=None):\n    if random_seed is not None:\n        random.seed(random_seed)\n    def generator():\n        for _ in range(pairs_count):\n            num1 = random.randint(range_start, range_end)\n            num2 = random.randint(range_start, range_end)\n            diff = abs(num1 - num2)\n            sqrt_diff = math.sqrt(diff)\n            yield (num1, num2, sqrt_diff)\n    return generator()"
+  },
+  {
+    "output": "import pandas as pd\nimport matplotlib.pyplot as plt\n\ndef task_func(array):\n    df = pd.DataFrame(array, columns=['A', 'B', 'C', 'D', 'E'])\n    column_sums = df.sum()\n    plt.figure(figsize=(10, 6))\n    column_sums.plot(kind='bar')\n    plt.title('Sum of Each Column')\n    plt.xlabel('Columns')\n    plt.ylabel('Sum')\n    plt.xticks(rotation=0)\n    plt.tight_layout()\n    return df, plt.gca()"
+  },
+  {
+    "output": "import random\nimport string\n\ndef task_func(length, num_strings):\n    chars = string.ascii_lowercase\n    strings = [''.join(random.choice(chars) for _ in range(length)) for _ in range(num_strings)]\n    freq = {}\n    for s in strings:\n        for c in s:\n            freq[c] = freq.get(c, 0) + 1\n    sorted_freq = sorted(freq.items(), key=lambda x: x[1], reverse=True)\n    return sorted_freq"
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nimport pandas as pd\n\ndef process_dataframe(df, target_values):\n    for col in df.columns:\n        df[col] = df[col].apply(lambda x: x if x in target_values else 0)\n    axes = []\n    for col in df.columns:\n        ax = plt.subplot(len(df.columns), 1, df.columns.get_loc(col) + 1)\n        df[col].plot(kind='hist', ax=ax)\n        ax.set_title(col)\n        axes.append(ax)\n    return axes"
+  },
+  {
+    "output": "def task_func(text_data):\n    text_data = text_data.str.lower()\n    text_data = text_data.apply(lambda x: re.sub(r'\\W+', ' ', x))\n    text_data = text_data.apply(lambda x: re.sub(r'\\d+', ' ', x))\n    stop_words = set(stopwords.words('english'))\n    text_data = text_data.apply(lambda x: ' '.join(word for word in x.split() if word not in stop_words))\n    vectorizer = CountVectorizer()\n    return vectorizer.fit_transform(text_data)"
+  },
+  {
+    "output": "def task_func():\n    return \"Hello, World!\""
+  },
+  {
+    "output": "# Draw bar chart\n    statistics.T.plot(kind='bar', figsize=(10, 6))\n    plt.title('Comparison of Statistics for Two Arrays')\n    plt.ylabel('Value')\n    plt.xlabel('Statistic')\n    plt.legend(['Array1', 'Array2'])\n    plt.show()"
+  },
+  {
+    "output": "def task_func(directory, predicates):\n    import os\n    from collections import defaultdict\n\n    if not os.path.exists(directory) or not os.path.isdir(directory):\n        return {}\n\n    deduplicated_predicates = list(set(predicates))\n    results = defaultdict(list)\n\n    for item in os.listdir(directory):\n        item_path = os.path.join(directory, item)\n        if os.path.isfile(item_path):\n            matches = []\n            for pred in deduplicated_predicates:\n                if pred(item_path):\n                    matches.append(pred.__name__)\n            results[item].extend(matches)\n\n    return dict(results)"
+  },
+  {
+    "output": ".axes[0].transform, ha='left', va='top')\n    \n    # Set plot title and labels\n    ax.set_title(PLOT_TITLE)\n    ax.set_xlabel(X_LABEL)\n    ax.set_ylabel(Y_LABEL)\n    \n    # Save the plot as a PNG file\n    plt.savefig('sqrt_plot.png')\n    \n    # Return the computed square values\n    return square_values"
+  },
+  {
+    "output": "def task_func():\n    import sqlite3\n    import random\n    import os\n    import sys\n    try:\n        conn = sqlite3.connect(':memory:')\n        c = conn.cursor()\n        c.execute('''CREATE TABLE data (id INTEGER PRIMARY KEY, value TEXT)''')\n        for _ in range(10):\n            c.execute(\"INSERT INTO data (value) VALUES (?)\", (random.choice(['a', 'b', 'c', 'd']),))\n        conn.commit()\n        c.execute(\"SELECT * FROM data\")\n        rows = c.fetchall()\n        for row in rows:\n            print(row)\n    except sqlite3.DatabaseError as e:\n        print(f\"Database error: {e}\")\n        conn.rollback()\n    except Exception as e:\n        print(f\"Unexpected error: {e}\")\n        sys.exit(1)\n    finally:\n        if 'conn' in locals():\n            conn.close()"
+  },
+  {
+    "output": "def task_func():\n    return \"Hello, world!\""
+  },
+  {
+    "output": "import numpy as np\nimport pandas as pd\nimport csv\nimport os\n\ndef generate_and_write_matrix(filename, rows, cols):\n    letters = [chr(i) for i in range(ord('a'), ord('z') + 1)]\n    matrix = np.random.choice(letters, size=(rows, cols))\n    df = pd.DataFrame(matrix)\n    df.to_csv(filename, index=False, header=False)"
+  },
+  {
+    "output": "from scipy.stats import linregress\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nif column1 not in data.columns or column2 not in data.columns:\n    raise ValueError(f\"Columns {column1} and {column2} not found in the DataFrame.\")\nslope, intercept, r_value, p_value, std_err = linregress(data[column1], data[column2])\nfig, ax = plt.subplots()\nax.scatter(data[column1], data[column2], label='Data points')\nx_vals = np.linspace(data[column1].min(), data[column1].max(), 100)\ny_vals = intercept + slope * x_vals\nax.plot(x_vals, y_vals, color='red', label='Fitted line')\nax.set_xlabel(column1)\nax.set_ylabel(column2)\nax.legend()\n(slope, intercept, r_value, p_value, std_err), ax"
+  },
+  {
+    "output": "def visualize_stock_distribution(data):\n    import matplotlib.pyplot as plt\n    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))\n    ax1.boxplot(data)\n    ax1.set_title('Box Plot of Stock Closing Prices')\n    ax2.hist(data, bins=20, color='skyblue', edgecolor='black')\n    ax2.set_title('Histogram of Stock Closing Prices')\n    return (ax1, ax2)"
+  },
+  {
+    "output": "import random\nimport string\nimport collections\n\ndef task_func(n_strings, string_length):\n    random_strings = [''.join(random.choice(string.ascii_letters + string.digits) for _ in range(string_length)) for _ in range(n_strings)]\n    char_count = collections.Counter()\n    for s in random_strings:\n        char_count.update(s)\n    return dict(char_count)"
+  },
+  {
+    "output": "import csv\nimport matplotlib.pyplot as plt\nimport unicodedata\n\ndef task_func(file_path):\n    with open(file_path, 'r', encoding='utf-8') as file:\n        reader = csv.reader(file)\n        text = ' '.join(row[0] for row in reader)\n    normalized_text = unicodedata.normalize('NFKC', text).lower()\n    words = normalized_text.split()\n    from collections import Counter\n    word_counts = Counter(words)\n    most_common = word_counts.most_common(10)\n    words, counts = zip(*most_common)\n    plt.bar(words, counts)\n    plt.xlabel('Words')\n    plt.ylabel('Frequency')\n    plt.title('Top 10 Most Common Words')\n    plt.show()\n    return list(most_common)"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\n\ndef sort_cumsum_plot(data):\n    sorted_data = sorted(data, key=lambda x: x[1])\n    cumsum = np.cumsum([x[1] for x in sorted_data])\n    fig, ax = plt.subplots()\n    ax.plot(cumsum)\n    return (cumsum, ax)"
+  },
+  {
+    "output": "def count_occurrences_in_csv_files(file_paths, columns):\n    from collections import defaultdict\n    import csv\n    counts = defaultdict(lambda: defaultdict(int))\n    for file_path in file_paths:\n        with open(file_path, 'r') as file:\n            reader = csv.DictReader(file)\n            for row in reader:\n                for column in columns:\n                    value = row.get(column, '')\n                    counts[column][value] += 1\n    return dict(counts)"
+  },
+  {
+    "output": "from PIL import Image, ImageFilter\nimport cv2\nimport numpy as np\nimport os\n\ndef task_func(img_path, blur_radius=5):\n    if not os.path.exists(img_path):\n        raise FileNotFoundError(f\"The image file does not exist at the specified path: {img_path}\")\n    \n    pil_image = Image.open(img_path)\n    original_array = np.array(pil_image)\n    \n    blurred_image = pil_image.filter(ImageFilter.GaussianBlur(blur_radius))\n    processed_array = np.array(blurred_image.convert(\"L\"))\n    \n    return (original_array, processed_array)"
+  },
+  {
+    "output": "def task_func(url):\n    import subprocess\n    import platform\n    import time\n    if platform.system() == \"Windows\":\n        command = [\"start\", \"\", url]\n    elif platform.system() == \"Darwin\":\n        command = [\"open\", url]\n    elif platform.system() == \"Linux\":\n        command = [\"xdg-open\", url]\n    else:\n        raise OSError(\"Unsupported operating system\")\n    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, start_new_session=True)\n    time.sleep(1)\n    return process.returncode"
+  },
+  {
+    "output": "def load_and_predict(csv_file, target_attribute):\n    import pandas as pd\n    from sklearn.model_selection import train_test_split\n    from sklearn.linear_model import LinearRegression\n    df = pd.read_csv(csv_file)\n    X = df.drop(columns=[target_attribute])\n    y = df[target_attribute]\n    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n    model = LinearRegression().fit(X_train, y_train)\n    predictions = model.predict(X_test)\n    return model, predictions"
+  },
+  {
+    "output": "def task_func(url):\n    import requests\n    import xml.etree.ElementTree as ET\n    import pandas as pd\n    response = requests.get(url)\n    response.raise_for_status()\n    root = ET.fromstring(response.content)\n    if not root.findall('.//data'):\n        raise ValueError(\"XML structure is invalid\")\n    data = []\n    for item in root.findall('.//data'):\n        row = {}\n        for child in item:\n            row[child.tag] = child.text\n        data.append(row)\n    return pd.DataFrame(data)"
+  },
+  {
+    "output": "def perform_feature_selection_and_heatmap(X, y):\n    from sklearn.feature_selection import SelectKBest, f_classif\n    from sklearn.preprocessing import StandardScaler\n    import seaborn as sns\n    import matplotlib.pyplot as plt\n    import numpy as np\n    \n    scaler = StandardScaler()\n    X_scaled = scaler.fit_transform(X)\n    \n    selector = SelectKBest(score_func=f_classif, k=2)\n    selected_features = selector.fit_transform(X_scaled, y)\n    selected_indices = selector.get_support(indices=True)\n    selected_features_names = X.columns[selected_indices].tolist()\n    \n    corr = np.corrcoef(selected_features.T)\n    sns.heatmap(corr, annot=True, fmt=\".2f\", xticklabels=selected_features_names, yticklabels=selected_features_names)\n    plt.tight_layout()\n    fig = plt.gcf()\n    \n    return selected_features_names, fig.axes[0]"
+  },
+  {
+    "output": "def task_func(string, patterns):\n    import re\n    if not isinstance(string, str):\n        raise ValueError(\"Input string must be a string.\")\n    if not isinstance(patterns, list):\n        raise ValueError(\"Input patterns must be a list.\")\n    result = {}\n    for pattern in patterns:\n        if not pattern:\n            continue\n        regex = re.compile(pattern)\n        matches = regex.findall(string)\n        result[pattern] = len(matches)\n    return result"
+  },
+  {
+    "output": "return ax, empirical_mean, empirical_std"
+  },
+  {
+    "output": "def task_func(data_dict):\n    if not data_dict:\n        return \"No data provided\"\n    counts = list(data_dict.values())\n    average_count = sum(counts) / len(counts)\n    is_uniform = all(count == counts[0] for count in counts)\n    import matplotlib.pyplot as plt\n    plt.hist(counts, bins=range(min(counts), max(counts)+2), align='left', rwidth=0.8)\n    plt.title('Histogram of Counts')\n    plt.xlabel('Count Value')\n    plt.ylabel('Frequency')\n    plt.grid(axis='y', alpha=0.75)\n    plt.show()\n    return f\"Average count: {average_count:.2f}, Uniform distribution: {is_uniform}\""
+  },
+  {
+    "output": "```python\nfrom sklearn.preprocessing import MinMaxScaler\nimport pandas as pd\n\ndef task_func(l):\n    scaler = MinMaxScaler()\n    scaled_array = scaler.fit_transform(l)\n    df = pd.DataFrame(scaled_array, columns=['Scaled Values'])\n    return df\n```"
+  },
+  {
+    "output": "import numpy as np\nimport itertools\n\ndef task_func(dimension, seed=42):\n    np.random.seed(seed)\n    matrix = np.random.randint(1, 101, size=dimension)\n    flat_list = list(itertools.chain.from_iterable(matrix))\n    return (matrix, flat_list)"
+  },
+  {
+    "output": "def create_series_list(list_of_lists):\n    import pandas as pd\n    import numpy as np\n    result = []\n    for sublist in list_of_lists:\n        indices = sublist\n        values = np.random.permutation(range(1, len(indices) + 1))\n        series = pd.Series(values, index=indices)\n        result.append(series)\n    return result"
+  },
+  {
+    "output": "def generate_employee_dates():\n    import pandas as pd\n    employees = ['Alice', 'Bob', 'Charlie']\n    dates = pd.date_range(start='2023-04-01', periods=10)\n    data = []\n    for employee in employees:\n        for date in dates:\n            data.append({'Employee': employee, 'Date': date})\n    return pd.DataFrame(data)"
+  },
+  {
+    "output": "task_func(date_str, from_tz)"
+  },
+  {
+    "output": "def task_func():\n    try:\n        result = 10 / 0\n    except ZeroDivisionError:\n        return \"Error: Division by zero\"\n    return result"
+  },
+  {
+    "output": "def matrix_tensor_multiplication_and_heatmap(matrix, tensor):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    import seaborn as sns\n    result = np.tensordot(matrix, tensor, axes=1)\n    plt.figure(figsize=(8, 6))\n    sns.heatmap(result, annot=True, fmt=\".2f\", cmap=\"viridis\")\n    plt.title(\"Matrix-Tensor Multiplication Result\")\n    plt.show()"
+  },
+  {
+    "output": "import matplotlib.pyplot as plt\nimport seaborn as sns\nimport numpy as np\n\ndef create_swarm_plot(data, x, y, intersecting_points):\n    fig, ax = plt.subplots()\n    sns.swarmplot(x=x, y=y, data=data, ax=ax)\n    for point in intersecting_points:\n        ax.scatter(point[x], point[y], color='red', s=100, edgecolor='black')\n    return ax, len(intersecting_points)"
+  },
+  {
+    "output": "def process_data(d):\n    if not isinstance(d, list) or any(not isinstance(item, dict) for item in d):\n        raise ValueError(\"Input must be a list of dictionaries\")\n    stats = {}\n    for key in ['x', 'y', 'z']:\n        values = [item[key] for item in d]\n        mean = sum(values) / len(values)\n        sum_val = sum(values)\n        max_val = max(values)\n        min_val = min(values)\n        variance = sum((x - mean)**2 for x in values) / len(values)\n        std_dev = variance**0.5\n        stats[key] = {\n            'mean': mean,\n            'sum': sum_val,\n            'max': max_val,\n            'min': min_val,\n            'std_dev': std_dev\n        }\n    return stats"
+  },
+  {
+    "output": "```python\nimport regex as re\nimport glob\nimport os\nfrom openpyxl import load_workbook\n\ndef task_func(directory_path='./xlsx_files/'):\n    # Find all Excel files in the specified directory\n    excel_files = glob.glob(os.path.join(directory_path, \"*.xlsx\"))\n    \n    # Initialize counter for processed files\n    processed_files = 0\n    \n    # Process each Excel file\n    for file_path in excel_files:\n        try:\n            # Load the workbook and select the active worksheet\n            workbook = load_workbook(filename=file_path)\n            worksheet = workbook.active\n            \n            # Iterate through all cells in the worksheet\n            for row in worksheet.iter_rows():\n                for cell in row:\n                    # Check if the cell contains double quotes\n                    if '\"' in str(cell.value):\n                        # Replace all double quotes with double backslashes\n                        new_value = re.sub(r'\\\"', r'\\\\\\\"', str(cell.value))\n                        # Update the cell value\n                        cell.value = new_value\n            \n            # Save the modified workbook\n            workbook"
+  },
+  {
+    "output": "import xml.etree.ElementTree as ET\nimport csv\n\ndef task_func(xml_content, csv_file_path):\n    try:\n        root = ET.fromstring(xml_content)\n        data = []\n        for child in root:\n            row = []\n            for subchild in child:\n                row.append(subchild.text)\n            data.append(row)\n        with open(csv_file_path, 'w', newline='') as csvfile:\n            writer = csv.writer(csvfile)\n            writer.writerows(data)\n    except ET.ParseError:\n        pass\n    except IOError:\n        pass"
+  },
+  {
+    "output": "def count_keys_with_prefixes(directory, prefixes):\n    import os\n    import json\n    stats = {}\n    for filename in os.listdir(directory):\n        file_path = os.path.join(directory, filename)\n        if os.path.isfile(file_path) and filename.endswith('.json'):\n            with open(file_path, 'r') as f:\n                data = json.load(f)\n            for key in data:\n                for prefix in prefixes:\n                    if key.startswith(prefix):\n                        stats[prefix] = stats.get(prefix, 0) + 1\n    return stats"
+  },
+  {
+    "output": "def task_func(colors, seed=None):\n    import random\n    from itertools import cycle\n    if seed is not None:\n        random.seed(seed)\n    return [random.choice(colors) for _ in cycle(colors)]"
+  },
+  {
+    "output": "import json\nimport random\nfrom itertools import combinations_with_replacement\n\ndef generate_combinations_and_save(letters, n, output_dir):\n    random_number = random.randint(1000, 9999)\n    filename = f\"{output_dir}/combinations_{random_number}.json\"\n    results = {}\n    for combo in combinations_with_replacement(letters, n):\n        count = {}\n        for letter in combo:\n            count[letter] = count.get(letter, 0) + 1\n        results[tuple(combo)] = count\n    with open(filename, 'w') as f:\n        json.dump(results, f)"
+  },
+  {
+    "output": "def generate_and_plot_timestamps(num_timestamps, output_path):\n    import random\n    import datetime\n    import matplotlib.pyplot as plt\n    timestamps = [datetime.datetime.now() + datetime.timedelta(seconds=random.randint(0, 3600*24)) for _ in range(num_timestamps)]\n    formatted_timestamps = [t.strftime(\"%Y-%m-%d %H:%M:%S\") for t in timestamps]\n    plt.hist([t.timestamp() for t in timestamps], bins=20, color='blue', edgecolor='black')\n    plt.title('Timestamp Distribution')\n    plt.xlabel('Timestamp (seconds since epoch)')\n    plt.ylabel('Frequency')\n    plt.savefig(output_path)\n    plt.close()\n    return formatted_timestamps"
+  },
+  {
+    "output": "plt.figure(figsize=(10, 8))\nsns.heatmap(df, annot=True, cmap='viridis', cbar_kws={'label': 'Sales'})\nplt.title('Sales Heatmap')\nplt.show()"
+  },
+  {
+    "output": "def task_func(file_path, unknown_key):\n    import json\n    import hashlib\n    import base64\n    import datetime\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    value = data\n    for key in unknown_key.split('.'):\n        value = value[key]\n    hash_obj = hashlib.sha256(str(value).encode())\n    encoded_hash = base64.b64encode(hash_obj.digest()).decode()\n    timestamp = datetime.datetime.now().strftime(\"%Y%m%d%H%M%S\")\n    new_file_path = f\"/tmp/encoded_hash_{timestamp}.txt\"\n    with open(new_file_path, 'w') as f:\n        f.write(encoded_hash)\n    return new_file_path"
+  },
+  {
+    "output": "import numpy as np\n\ndef reverse_words_in_array(arr):\n    return np.char.rsplit(arr, ' ', maxsplit=1).str[::-1].str.join(' ')"
+  },
+  {
+    "output": "def task_func(rows=3, columns=2, seed=0):\n    np.random.seed(seed)\n    matrix = np.random.rand(rows, columns)\n    U, s, Vh = svd(matrix)\n    return (U, s, Vh)"
+  },
+  {
+    "output": "def max_weight_substring(x, w):\n    max_weight = 0\n    current_weight = 0\n    start = 0\n    max_start = 0\n    max_end = 0\n    for end in range(len(x)):\n        current_weight += w.get(x[end], 0)\n        if current_weight > max_weight:\n            max_weight = current_weight\n            max_start = start\n            max_end = end\n        elif current_weight == 0:\n            start = end + 1\n    return x[max_start:max_end+1]"
+  },
+  {
+    "output": "import pandas as pd\nimport matplotlib.pyplot as plt\nimport json\n\ndef json_to_df_and_hist(json_data, column_name):\n    try:\n        data = json.loads(json_data)\n        df = pd.DataFrame(data)\n        plt.hist(df[column_name], bins=10, edgecolor='black')\n        plt.title(f'Histogram of {column_name}')\n        plt.xlabel(column_name)\n        plt.ylabel('Frequency')\n        plt.show()\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data\")\n    except KeyError:\n        print(f\"Column '{column_name}' not found in the data\")\n    except Exception as e:\n        print(f\"An error occurred: {e}\")"
+  },
+  {
+    "output": "def reverse_csv_lines(file_path):\n    import pandas as pd\n    df = pd.read_csv(file_path)\n    df = df.iloc[::-1].reset_index(drop=True)\n    df.to_csv(file_path, index=False)\n    with open(file_path, 'r') as f:\n        lines = f.readlines()\n    with open(file_path, 'w') as f:\n        f.writelines(lines)"
+  },
+  {
+    "output": "import numpy as np\nfrom sklearn.linear_model import LinearRegression\n\ndef task_func(df):\n    X = df[['feature']].values\n    y = df['value'].values\n    model = LinearRegression().fit(X, y)\n    coefficients = model.coef_[0]\n    intercept = model.intercept_\n    result = {\n        'coefficients': coefficients,\n        'intercept': intercept\n    }\n    return result"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\n\ndef generate_random_dataframe(rows, cols, min_val, max_val, seed=None):\n    np.random.seed(seed)\n    data = np.random.uniform(min_val, max_val, size=(rows, cols))\n    return pd.DataFrame(data)"
+  },
+  {
+    "output": "import pandas as pd\nimport matplotlib.pyplot as plt\nimport numpy as np\n\ndef generate_and_visualize_df(num_rows):\n    data = np.random.randint(0, 10, size=(num_rows, 5))\n    df = pd.DataFrame(data, columns=['A', 'B', 'C', 'D', 'E'])\n    non_zero_counts = df.apply(lambda col: col[col != 0].count())\n    fig, ax = plt.subplots()\n    non_zero_counts.plot(kind='bar', ax=ax)\n    return df, ax"
+  },
+  {
+    "output": "from collections import Counter\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport itertools\n\ndef task_func(list_of_menuitems, title=\"Menu Distribution\", color=\"blue\", width=1.0):\n    flattened = list(itertools.chain.from_iterable(list_of_menuitems))\n    item_counts = Counter(flattened)\n    items = list(item_counts.keys())\n    counts = list(item_counts.values())\n    items.sort()\n    fig, ax = plt.subplots(figsize=(10, 6))\n    ax.bar(items, counts, color=color, width=width)\n    ax.set_xlabel(\"Menu Items\")\n    ax.set_ylabel(\"Frequency\")\n    ax.set_title(title)\n    plt.xticks(rotation=45)\n    plt.tight_layout()\n    return ax"
+  },
+  {
+    "output": "import numpy as np\nimport math\nimport random\nfrom random import uniform\n\ndef task_func(radius, num_points):\n    points = []\n    for _ in range(num_points):\n        while True:\n            x = uniform(-radius, radius)\n            y = uniform(-radius, radius)\n            if x**2 + y**2 <= radius**2:\n                points.append((x, y))\n                break\n    return points"
+  },
+  {
+    "output": "import pandas as pd\nimport numpy as np\n\ndef generate_ratings_df(weights, num_users=1000, num_items=500):\n    np.random.seed(42)\n    ratings = np.random.choice(list(weights.keys()), size=num_users * num_items, p=list(weights.values()))\n    ratings = ratings.reshape(num_users, num_items)\n    df = pd.DataFrame(ratings, columns=weights.keys())\n    df = df.melt(var_name='item', value_name='rating')\n    df = df.sort_values('rating', ascending=False)\n    return df"
+  },
+  {
+    "output": "import random\n\nLETTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']\n\ndef task_func(n_keys, n_values):\n    n_keys = min(n_keys, len(LETTERS))\n    selected_keys = random.sample(LETTERS, n_keys)\n    values = list(range(1, n_values + 1))\n    result_dict = {key: values for key in selected_keys}\n    return result_dict"
+  },
+  {
+    "output": "def task_func(s_list, plot_path=None):\n    import numpy as np\n    from difflib import SequenceMatcher\n\n    if not isinstance(s_list, list) or any(not isinstance(s_str, str) for s_str in s_list):\n        raise ValueError(\"s_list must be a list of strings\")\n    if len(s_list) <= 1:\n        return np.nan\n    scores = []\n    for i, s1 in enumerate(s_list):\n        total = 0\n        count = 0\n        for j, s2 in enumerate(s_list):\n            if i != j:\n                ratio = SequenceMatcher(None, s1, s2).ratio()\n                total += ratio\n                count += 1\n        avg_score = total / count\n        scores.append(avg_score)\n    if plot_path is not None:\n        import matplotlib.pyplot as plt\n        plt.plot(scores)\n        plt.savefig(plot_path)\n    return scores"
+  },
+  {
+    "output": "import random\nimport collections\n\ndef task_func(number_teams=5):\n    teams = {}\n    for i in range(1, number_teams + 1):\n        team_name = f\"Team {i}\"\n        points = random.randint(0, 100)\n        teams[team_name] = points\n    \n    sorted_teams = sorted(teams.items(), key=lambda x: x[1], reverse=True)\n    ordered_dict = collections.OrderedDict(sorted_teams)\n    \n    return ordered_dict"
+  },
+  {
+    "output": "```python\nimport xmltodict\nimport json\n\ndef task_func(s, save_json, json_file_path):\n    # Input validation\n    if not s.strip():\n        raise ValueError(\"The input XML string is empty or contains only whitespace.\")\n    \n    # Parse XML string into a dictionary\n    parsed_xml = xmltodict.parse(s)\n    \n    # Convert the parsed XML to a dictionary\n    xml_dict = parsed_xml.get('school', {})\n    \n    # Save as JSON if required\n    if save_json and json_file_path:\n        with open(json_file_path, 'w') as json_file:\n            json.dump(xml_dict, json_file)\n    \n    return xml_dict\n```"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nfrom scipy import stats\nimport matplotlib.pyplot as plt\n\ndef task_func(df):\n    # Part A: Validate the input\n    if not isinstance(df, pd.DataFrame):\n        raise ValueError(\"The input is not a DataFrame.\")\n    \n    # Part B: Remove rows with duplicate names\n    df = df.groupby('name').filter(lambda x: len(x) == 1)\n    \n    # Part C: Perform linear regression\n    x = df['age']\n    y = df['score']\n    slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)\n    \n    # Part D: Plot the data\n    plt.figure"
+  },
+  {
+    "output": "import requests\nimport matplotlib.pyplot as plt\nfrom collections import Counter\nimport re\n\ndef task_func(url):\n    response = requests.get(url)\n    text = response.text\n    words = re.findall(r'\\b\\w+\\b', text.lower())\n    word_counts = Counter(words)\n    top_ten = word_counts.most_common(10)\n    words_list = [word for word, _ in top_ten]\n    counts_list = [count for _, count in top_ten]\n    plt.bar(words_list, counts_list)\n    plt.xlabel('Words')\n    plt.ylabel('Frequency')\n    plt.title('Top 10 Most Frequent Words')\n    plt.xticks(rotation=45)\n    plt.tight_layout()\n    plt.show()"
+  },
+  {
+    "output": "'residuals': residuals.tolist(),\n        'predicted_values': y_pred.tolist(),\n        'plot': plt\n    }"
+  },
+  {
+    "output": "import pandas as pd\nimport statistics\nimport random\n\ndef task_func(students, subjects, seed=None):\n    if seed is not None:\n        random.seed(seed)\n    grades = []\n    for student in students:\n        subject_grades = [random.randint(0, 100) for _ in subjects]\n        grades.append(subject_grades)\n    average_grades = [statistics.mean(subjects) for subjects in grades]\n    data = {\n        'Student': students,\n        **{f'Subject{i+1}': grades[i] for i in range(len(subjects))}\n    }\n    data['Average Grade'] = average_grades\n    df = pd.DataFrame(data)\n    return df"
+  },
+  {
+    "output": "import re\nimport json\n\ndef extract_urls_from_json(json_str):\n    data = json.loads(json_str)\n    url_pattern = re.compile(r'https?://\\S+')\n    url_counts = {}\n    for value in data.values():\n        urls = url_pattern.findall(str(value))\n        for url in urls:\n            url_counts[url] = url_counts.get(url, 0) + 1\n    return url_counts"
+  },
+  {
+    "output": "import pandas as pd\nimport regex as re\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nCOLUMN_NAMES = [\"Name\", \"Email\", \"Age\", \"Country\"]\n\ndef task_func(text):\n    pattern = r\"Name: (.*?), Email: (.*?), Age: (.*?), Country: (.*?)($|\\n)\"\n    matches = re.finditer(pattern, text)\n    data = []\n    for match in matches:\n        name = match.group(1)\n        email = match.group(2)\n        age = int(match.group(3))\n        country = match.group(4)\n        data.append([name, email, age, country])\n    df = pd.DataFrame(data, columns=COLUMN_NAMES)\n    sns.histplot(df['Age'], bins=10, kde=False)\n    plt.title('Age Distribution')\n    plt.xlabel('Age')\n    plt.ylabel('Frequency')\n    plt.show()\n    return df"
+  },
+  {
+    "output": "```python\nimport heapq\nimport random\n\ndef task_func(obj_list, attr, top_n=5, seed=None):\n    if seed is not None:\n        random.seed(seed)\n    if not obj_list:\n        return [], None\n    # Extract the values of the specified attribute\n    attribute_values = [getattr(obj, attr) for obj in obj_list]\n    # Find the top N values\n    top_values = heapq.nlargest(top_n, attribute_values)\n    # Randomly sample a value of all attributes\n    all_values = [getattr(obj, attr) for obj in obj_list]\n    random_value = random.choice(all_values)\n    return top_values, random_value\n```"
+  },
+  {
+    "output": "def task_func(input_list):\n    import numpy as np\n    import statistics\n    sorted_list = sorted(input_list, key=lambda x: x)\n    mean_list = statistics.mean(sorted_list)\n    median_list = statistics.median(sorted_list)\n    mode_list = statistics.mode(sorted_list)\n    fft = np.fft.fft(sorted_list)\n    magnitudes = np.abs(fft)\n    mean_mag = statistics.mean(magnitudes)\n    median_mag = statistics.median(magnitudes)\n    mode_mag = statistics.mode(magnitudes)\n    return (round(mean_list), round(median_list), round(mode_list), round(mean_mag), round(median_mag), round(mode_mag))"
+  },
+  {
+    "output": "def get_business_days(start_date, end_date, country_code):\n    import datetime\n    import holidays\n    if not isinstance(start_date, datetime.date) or not isinstance(end_date, datetime.date):\n        raise ValueError(\"Invalid date format\")\n    if start_date > end_date:\n        raise ValueError(\"Start date cannot be after end date\")\n    country_holidays = holidays.CountryHoliday(country_code)\n    date_range = [start_date + datetime.timedelta(days=i) for i in range((end_date - start_date).days + 1)]\n    business_days = [date for date in date_range if date.weekday() < 5 and date not in country_holidays]\n    return business_days"
+  },
+  {
+    "output": "import os\nimport sqlite3\nimport pandas as pd\nimport re\n\ndef task_func(database_path, table_name, column_name, regex_pattern):\n    if not os.path.exists(database_path):\n        return pd.DataFrame()\n    conn = sqlite3.connect(database_path)\n    query = f\"SELECT {column_name} FROM {table_name}\"\n    df = pd.read_sql_query(query, conn)\n    conn.close()\n    matches = df[column_name].apply(lambda x: re.findall(regex_pattern, str(x)))\n    matches_df = pd.DataFrame(matches)\n    return matches_df"
+  },
+  {
+    "output": "import random\nimport numpy as np\nimport statistics\n\ndef generate_and_analyze_data(size, min_val, max_val):\n    data = [random.uniform(min_val, max_val) for _ in range(size)]\n    truncated_data = [x for x in data if min_val <= x <= max_val]\n    mean = statistics.mean(truncated_data)\n    median = statistics.median(truncated_data)\n    std_dev = statistics.stdev(truncated_data)\n    return mean, median, std_dev"
+  },
+  {
+    "output": "elif not in_brackets:\n            current_name += char\n        elif current_name:\n            extracted_names.append(current_name)\n            current_name = \"\"\n    if current_name:\n        extracted_names.append(current_name)\n    \n    # Format email message\n    message = \"Extracted names:\\n\" + \"\\n\".join(extracted_names)\n    \n    # Send email\n    if smtp is None:\n        smtp = smtplib.SMTP(smtp_server, smtp_port)\n        smtp.starttls()\n        smtp.login(email_address, email_password)\n    smtp.sendmail(email_address, recepient_address, message)\n    smtp.quit()\n    \n    return extracted_names"
+  },
+  {
+    "output": "python_code_returner\n```python\nimport itertools\nfrom typing import Any\nfrom scipy import stats\n\n\ndef task_func(input_list: list, repetitions: int) -> Any:\n    flattened_list = list(itertools.chain.from_iterable(itertools.repeat(input_list, repetitions)))\n    mode_result = stats.mode(flattened_list)\n    return mode_result"
+  },
+  {
+    "output": "```python\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndef task_func(file_path=\"data.csv\", columns=[\"A\", \"B\", \"C\"]):\n    # Read CSV file into a DataFrame\n    df = pd.read_csv(file_path)\n    \n    # Convert numeric values to floats\n    df = df.apply(pd.to_numeric, errors='coerce')\n    \n    # Drop rows with NaN values\n    df = df.dropna()\n    \n    # Plot the data\n    fig, ax = plt.subplots()\n    df[columns].plot"
+  },
+  {
+    "output": "task_func([\"A\", \"E\", \"I\"]) 45"
+  },
+  {
+    "output": "import os\nimport pandas as pd\n\ndef task_func(dataset, filename, output_dir):\n    os.makedirs(output_dir, exist_ok=True)\n    filepath = os.path.join(output_dir, filename)\n    with open(filepath, 'w') as f:\n        for i, df in enumerate(dataset):\n            df.to_csv(f, index=False)\n            if i != len(dataset) - 1:\n                f.write('-' * 40 + '\\n')"
+  },
+  {
+    "output": "# Plot the counts for each animal\n    plt.figure(figsize=(12, 6))\n    for i, animal in enumerate(animals):\n        plt.plot(counts[animal], label=f'{animal} Counts')\n    plt.title('Animal Counts Over 10 Observations')\n    plt.xlabel('Observation')\n    plt.ylabel('Count')\n    plt.legend()\n    plt.grid(True)\n    plt.show()\n\n    # Return the statistics\n    return statistics"
+  },
+  {
+    "output": "def insert_number_into_sorted_list(original_list, number):\n    import random\n    new_list = original_list.copy()\n    new_list.append(number)\n    new_list.sort()\n    return tuple((original_list, new_list))"
+  },
+  {
+    "output": "def task_func(source_dir: str, target_dir: str, extensions: List[str]) -> int:\n    import shutil\n    from pathlib import Path\n    source_path = Path(source_dir)\n    target_path = Path(target_dir)\n    if not source_path.exists() or not target_path.exists():\n        raise ValueError(\"source_dir or target_dir does not exist\")\n    moved_count = 0\n    for file in source_path.iterdir():\n        if file.is_file():\n            file_ext = file.suffix[1:]\n            if file_ext in extensions:\n                target_file = target_path / file.name\n                shutil.move(str(file), str(target_file))\n                moved_count += 1\n    return moved_count"
+  },
+  {
+    "output": "def task_func(file_path):\n    import csv\n    from collections import Counter\n    with open(file_path, 'r') as file:\n        reader = csv.reader(file)\n        words = []\n        for row in reader:\n            words.extend(row)\n    word_counts = Counter(words)\n    return sorted(word_counts.items(), key=lambda x: -x[1])"
+  },
+  {
+    "output": "import numpy as np\nimport matplotlib.pyplot as plt\n\ndef fit_and_plot_quadratic(X, Y):\n    X = np.array(X).reshape(-1, 1)\n    Y = np.array(Y)\n    A = np.c_[np.ones(X.shape[0]), X, X**2]\n    params, _ = np.linalg.lstsq(A, Y, rcond=None)\n    x_fit = np.linspace(min(X), max(X), 100)\n    y_fit = params[0] + params[1] * x_fit + params[2] * x_fit**2\n    fig, ax = plt.subplots()\n    ax.scatter(X, Y, color='blue')\n    ax.plot(x_fit, y_fit, color='red')\n    return params, ax"
+  },
+  {
+    "output": "from django.http import FileResponse\nfrom django.core.files import File\nimport io\nimport zipfile\n\ndef generate_zip_file_response(request, files):\n    buffer = io.BytesIO()\n    with zipfile.ZipFile(buffer, 'w') as zipf:\n        for file in files:\n            zipf.writestr(file['name'], file['content'])\n    buffer.seek(0)\n    return FileResponse(buffer, as_attachment=True, filename='files.zip')"
+  },
+  {
+    "output": "def extract_and_plot(data):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    values = [item for sublist in data for item in sublist if isinstance(item, (int, float))]\n    mean = np.mean(values)\n    median = np.median(values)\n    std_dev = np.std(values)\n    plt.hist(values, bins=20, density=True, alpha=0.6, color='g')\n    pdf = np.histogram(values, bins=20, density=True)[0]\n    x = np.linspace(min(values), max(values), 100)\n    pdf_values = (1 / (std_dev * np.sqrt(2 * np.pi))) * np.exp(- (x - mean)**2 / (2 * std_dev**2))\n    plt.plot(x, pdf_values, 'k--', linewidth=2)\n    plt.title('Histogram with PDF')\n    plt.xlabel('Value')\n    plt.ylabel('Density')\n    plt.show()"
+  },
+  {
+    "output": "```python\nimport re\nimport random\nimport pandas as pd\n\ndef task_func(data_list, seed=None):\n    if seed is not None:\n        random.seed(seed)\n    original_strings = []\n    shuffled_strings = []\n    \n    for string in data_list:\n        substrings = [s.strip() for s in string.split(',')]\n        random.shuffle(substrings)\n        original_strings.append(string)\n        shuffled_strings.append(', '.join(substrings))\n    \n    df = pd.DataFrame({\n        'Original String': original_strings,\n        'Shuffled String': shuffled_strings\n    })\n    return df\n```"
+  },
+  {
+    "output": "def generate_and_insert(n, total):\n    import random\n    import bisect\n    while True:\n        numbers = [random.randint(1, total - (n-1)) for _ in range(n-1)]\n        remaining = total - sum(numbers)\n        if remaining > 0:\n            numbers.append(remaining)\n            random.shuffle(numbers)\n            break\n    sorted_numbers = sorted(numbers)\n    new_number = random.randint(1, total)\n    return bisect.bisect_left(sorted_numbers, new_number)"
+  },
+  {
+    "output": "import mechanize\nfrom bs4 import BeautifulSoup\n\ndef task_func(url, form_id, data):\n    br = mechanize.Browser()\n    br.open(url)\n    br.select_form(nr=0)\n    br.form['form_id'] = form_id\n    br.form.set_all_readonly(False)\n    br.form['data'] = data\n    response = br.submit()\n    soup = BeautifulSoup(response.read(), 'html.parser')\n    title = soup.find('title')\n    return title.get_text() if title else 'No Title'"
+  },
+  {
+    "output": "def generate_and_plot_scores(students):\n    import numpy as np\n    import matplotlib.pyplot as plt\n    scores = np.random.randint(0, 100, size=len(students))\n    sorted_scores = np.sort(scores)\n    plt.bar(students, sorted_scores)\n    plt.xlabel('Students')\n    plt.ylabel('Scores')\n    plt.title('Student Scores')\n    plt.show()\n    return sorted_scores, plt.gcf()"
+  }
+]

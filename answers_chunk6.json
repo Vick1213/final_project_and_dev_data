@@ -1,0 +1,2330 @@
+[
+  {
+    "output": ""
+  },
+  {
+    "output": "(6 / (2 - (6 / 2))) * 2"
+  },
+  {
+    "output": "**\nSolution: (6 × (2 + 2)) + (7 - 7)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (7 * (2 + 2)) - 7"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(13 + 7) + (2 + 2)"
+  },
+  {
+    "output": "Solution: (8 / (2 - (8 / 2)))"
+  },
+  {
+    "output": "Solution: (9 × 2) + (8 - 2)"
+  },
+  {
+    "output": "Solution: (10 × 2) + (8 ÷ 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 - (9 - (2 + 2))) * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(13 + 10) + (2 / 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(13 + 11) * 2 / 2"
+  },
+  {
+    "output": "(12 + 12) * (2 / 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\nSolution: (13 - (2 / 2)) × 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 / (3 - (2 / 3)))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (8 / (3 - (2 / 3)))"
+  },
+  {
+    "output": "Solution: (9 - (3 / 3)) * 3"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\nSolution: (11 + (3 ÷ 3)) × 2"
+  },
+  {
+    "output": "**\nSolution: (12 × 2) × (3 ÷ 3)"
+  },
+  {
+    "output": "**\nSolution: (13 - (3 / 3)) * 2"
+  },
+  {
+    "output": "Solution: (4 / (3 - 4/2)) * 2"
+  },
+  {
+    "output": "Solution: (5 - 3) * (2 + 4) * 2"
+  },
+  {
+    "output": "Solution: (6 / (3 - 2)) * 4"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (8 / (4 - 3)) * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (10 - (4 / 2)) * 3"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 ÷ (4 - 3)) × 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (5 - (2 / 5)) * 3"
+  },
+  {
+    "output": "Solution: (6 / (3 - 5/2))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (8 / (3 - 5/2))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(11 - 3) * (5 - 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (6 / (3 - (6 / 2))) * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(11 - (6 / 2)) * 3"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (7 - (3 / 2)) * (7 - 2)"
+  },
+  {
+    "output": "(8 × 3) × (2 - ("
+  },
+  {
+    "output": "(9 - 3) * (2 + 2)"
+  },
+  {
+    "output": "(10 - (7 - 3)) * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: 8 / (3 - 8 / 2)"
+  },
+  {
+    "output": "(9 - 3) * (8 / 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (9 / (3 - (9 / 2))) * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(13 - (9 / 3)) * 2"
+  },
+  {
+    "output": "Solution: (10 - (10 / (3 - 2)))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (11 - (11 / (3 - 2)))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (13 - (3 / (13 - 2))) * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Solution: (10 + 2) × (4 - (4 ÷ 2))"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(13 - (4 / 4)) * 2"
+  },
+  {
+    "output": "Solution: (5 - (2 / 5)) * 4"
+  },
+  {
+    "output": "Solution: (6 / (5 - 4)) * 2"
+  },
+  {
+    "output": "Solution: (7 + 5) * (4 - 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "**\nSolution: (9 - 5) * (4 + 2)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "(12 × (5 - 4)) × 2"
+  },
+  {
+    "output": "**\nSolution: (13 - (5 + 2)) * 4"
+  },
+  {
+    "output": "Solution: (6 / (2 - (6 / 4))) * 2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "24"
+  },
+  {
+    "output": "(9 - (6 / 2)) * 4"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Red Wings"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "A"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "UNCG Spartans"
+  },
+  {
+    "output": "Texas Longhorns"
+  },
+  {
+    "output": "Massachusetts-Lowell River Hawks"
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": "Team CC"
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": "D"
+  },
+  {
+    "output": "A"
+  },
+  {
+    "output": "B"
+  },
+  {
+    "output": "B"
+  },
+  {
+    "output": "B"
+  },
+  {
+    "output": "D"
+  },
+  {
+    "output": "C"
+  },
+  {
+    "output": "A"
+  },
+  {
+    "output": "B"
+  },
+  {
+    "output": "D"
+  },
+  {
+    "output": "G"
+  },
+  {
+    "output": "D"
+  },
+  {
+    "output": "A"
+  },
+  {
+    "output": "E"
+  },
+  {
+    "output": "G"
+  },
+  {
+    "output": "A"
+  },
+  {
+    "output": "C"
+  },
+  {
+    "output": "D"
+  },
+  {
+    "output": "C"
+  },
+  {
+    "output": "D"
+  },
+  {
+    "output": "D"
+  },
+  {
+    "output": "A"
+  },
+  {
+    "output": "Casper Uhl, Felix Auger-Aliassime, Taylor Fritz"
+  },
+  {
+    "output": "Shuko Nakamura, Zhang Shuai, Xu Shuyu"
+  },
+  {
+    "output": "\"The Return of Superman\", \"Keep Running\", \"The Voice of China\""
+  },
+  {
+    "output": "\"The Last Adventure\", \"Echoes of Time\", \"Neon Dreams\""
+  },
+  {
+    "output": "112"
+  },
+  {
+    "output": "5.40"
+  },
+  {
+    "output": "[\"The Crown\", \"Stranger Things\", \"The Bear\"]"
+  },
+  {
+    "output": "\"The Midnight Adventure\", \"Starlight Chronicles\""
+  },
+  {
+    "output": "Jonas Blixt, Patrick Cantlay, Jordan Spieth"
+  },
+  {
+    "output": "\"The Midnight Library\", \"The Seven Husbands of Evelyn Hugo\", \"The Night Tiger\""
+  },
+  {
+    "output": "@ChinaNews, @CRI, @XinhuaNews"
+  },
+  {
+    "output": "\"界面新闻\", \"第一财经\", \"澎湃新闻\""
+  },
+  {
+    "output": "Account A, Account B, Account C"
+  },
+  {
+    "output": "2.5"
+  },
+  {
+    "output": "The Last Letter"
+  },
+  {
+    "output": "\"The Great Wall\", \"The Wandering Earth\", \"The Battle at Lake Changjin\""
+  },
+  {
+    "output": "[\"The Last Adventure\", \"Starlight Dreams\", \"Echoes of Time\"]"
+  },
+  {
+    "output": "Toyota RAV4, Honda CR-V, BMW X5"
+  },
+  {
+    "output": "Model Y, Tesla Model 3, BYD Han"
+  },
+  {
+    "output": "219"
+  },
+  {
+    "output": "The Marvel Studios' Marvel 10"
+  },
+  {
+    "output": "1200"
+  },
+  {
+    "output": "150"
+  },
+  {
+    "output": "The Night Tiger, The Silent Companions, The Midnight Library"
+  },
+  {
+    "output": "150000000"
+  },
+  {
+    "output": "Cannot Predict"
+  },
+  {
+    "output": "Prediction"
+  },
+  {
+    "output": "125000000"
+  },
+  {
+    "output": "I cannot provide a prediction"
+  },
+  {
+    "output": "45"
+  },
+  {
+    "output": "ProjectA, ProjectB, ProjectC"
+  },
+  {
+    "output": "12000"
+  },
+  {
+    "output": "TensorFlow, React, PyTorch"
+  },
+  {
+    "output": "0.5"
+  },
+  {
+    "output": "Author1, Author2, Author3"
+  },
+  {
+    "output": "\"The Silent Symphony\", \"Echoes of the Past\", \"Whispers in the Wind\""
+  },
+  {
+    "output": "Cannot Predict"
+  },
+  {
+    "output": "Cannot predict"
+  },
+  {
+    "output": "Qwen, LLaMA, Gemini"
+  },
+  {
+    "output": "156000"
+  },
+  {
+    "output": "\"Midnight Memories\", \"Starlight Dreams\", \"Winter Wonderland\""
+  },
+  {
+    "output": "18"
+  },
+  {
+    "output": "4800"
+  },
+  {
+    "output": "15.5"
+  },
+  {
+    "output": "B"
+  },
+  {
+    "output": "\"Midnight Memories\", \"Echoes of the Past\", \"Golden Hour\""
+  },
+  {
+    "output": "12.5"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Error: invalid syntax (<string>, line 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_weighted_median():\n    total_weight = 2017 * 2018 // 2\n    half_total = total_weight // 2\n    cumulative = 0\n    for x in range(1, 2018):\n        cumulative += x\n        if cumulative >= half_total:\n            return x"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def solve_hyperbola():\n    import sympy as sp\n    x, y = sp.symbols('x y')\n    eq = (3*x + 4*y - 13)*(7*x - 24*y + 3) - 200\n    simplified_eq = sp.simplify(eq)\n    # Find center by solving system of equations derived from partial derivatives\n    dx = sp.diff(simplified_eq, x)\n    dy = sp.diff(simplified_eq, y)\n    center = sp.solve((dx, dy), (x, y))\n    # Substitute center into original equation to find a^2 and b^2\n    x0, y0 = center[x], center[y]\n    eq_center = simplified_eq.subs({x: x0, y: y0})\n    # Assume standard form and find c\n    c = sp.sqrt(100)\n    return c"
+  },
+  {
+    "output": "def count_perpendicular_skew_pairs():\n    from itertools import combinations\n    import numpy as np\n    \n    vertices = np.array([\n        [0, 0, 0], [1, 0, 0], [0, 1, 0], [1, 1, 0],\n        [0, 0, 1], [1, 0, 1], [0, 1, 1], [1, 1, 1]\n    ])\n    \n    lines = list(combinations(vertices, 2))\n    \n    def direction_vector(a, b):\n        return b - a\n    \n    def are_perpendicular(v1, v2):\n        return np.dot(v1, v2) == 0\n    \n    def are_skew(line1, line2):\n        a, b = line1\n        c, d = line2\n        ab = direction_vector(a, b)\n        cd = direction_vector(c, d)\n        if np.all(ab == cd) or np.all(ab == -cd):\n            return False\n        cross = np.cross(ab, cd)\n        if np.all(cross == 0):\n            return False\n        return True\n    \n    count = 0\n    for line1, line2 in combinations(lines, 2):\n        if are_perpendicular(direction_vector(*line1), direction_vector(*line2)) and are_skew(line1, line2):\n            count += 1\n    return count // 2"
+  },
+  {
+    "output": "$[-\\frac{1}{16}, \\frac{1}{16}]$"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "300"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1/2019 * 1/1000 * 1/100"
+  },
+  {
+    "output": "Infinite"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "3"
+  },
+  {
+    "output": "$\\frac{2\\pi}{3}$"
+  },
+  {
+    "output": "6^40"
+  },
+  {
+    "output": "6276"
+  },
+  {
+    "output": "(\\pm 2, 0)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "import math\n\ndef minimize_tan_product(a, b, c):\n    def tan_angle(side, opposite_sides):\n        cos_angle = (opposite_sides[0]**2 + opposite_sides[1]**2 - side**2) / (2 * opposite_sides[0] * opposite_sides[1])\n        sin_angle = math.sqrt(1 - cos_angle**2)\n        return sin_angle / cos_angle\n\n    tan_a = tan_angle(a, (b, c))\n    tan_b = tan_angle(b, (a, c))\n    tan_c = tan_angle(c, (a, b))\n\n    product = tan_a * tan_b * tan_c\n    return product"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "3498120"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Error: No code found"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def calculate_probability():\n    total = 0\n    unique_digits = 0\n    for hour in range(5, 23):\n        for minute in range(60):\n            for second in range(60):\n                total += 1\n                time_str = f\"{hour:02d}:{minute:02d}:{second:02d}\"\n                digits = list(time_str.replace(':', ''))\n                if len(set(digits)) == 6:\n                    unique_digits += 1\n    return unique_digits / total"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "from collections import defaultdict\n\ndef count_subsets():\n    mod = 17\n    pairs = defaultdict(int)\n    for a in range(1, mod + 1):\n        for c in range(1, mod + 1):\n            if a != c:\n                pairs[(a + c) % mod] += 1\n    result = 0\n    for count in pairs.values():\n        result += count * (count - 1) // 2\n    return result"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "[Hard problem, difficulty=7] Step-by-step reasoning:\nWe are given a cube $ABCD-EFGH$ placed in a 3D coordinate system with vertex $A(0, 0, 0)$. The goal is to **solve the problem step by step**, but the problem statement is incomplete. Let's assume the problem is to **find the coordinates of all the vertices of the cube** given that $A(0, 0, 0)$ and the cube has side length 1 (a common assumption when not specified otherwise).\n\n---\n\n### Step 1: Identify what we're asked to find\n\nWe are asked to **find the coordinates of all the vertices of the cube** $ABCD-EFGH$, assuming it is placed in a 3D coordinate system with vertex $A(0, 0, 0)$ and that the cube has side length 1.\n\n---\n\n### Step 2: Break down the problem into smaller parts\n\nWe need to:\n1. Understand the structure of the cube.\n2. Assign coordinates to each vertex based on the given information.\n3. Ensure that the cube is axis-aligned (i.e., edges are parallel to the coordinate axes).\n4. Use the fact that the cube has side length 1.\n\n---\n\n### Step 3: Solve each part carefully\n\n#### Part A: Understand the structure of the cube\n\nA cube has 8 vertices. The cube $ABCD-EFGH$ is a standard cube with:\n- Base: $ABCD$\n- Top: $EFGH$\n- Edges: $AE, BF, CG, DH$ are vertical edges.\n\nAssuming the cube is axis-aligned and placed with vertex $A(0, 0, 0)$, we can assign coordinates to the other vertices based on the direction of the edges.\n\n#### Part B: Assign coordinates to the vertices\n\nLet’s assume the cube is oriented such that:\n- $AB$ lies along the x-axis\n- $AD$ lies along the y-axis\n- $AE$ lies along the z-axis\n\nSince the cube has side length 1, the coordinates of the other vertices can be determined by moving 1 unit along the respective axes.\n\nLet’s assign coordinates:\n\n- $A = (0, 0, 0)$\n- $B = (1, 0, 0)$ (1 unit along x-axis)\n- $D = (0, 1, 0)$ (1 unit along y-axis)\n- $C = (1, 1, 0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "3.0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "Error: __import__ not found"
+  },
+  {
+    "output": "import math\n\ndef find_min_perimeter_y_intercept():\n    from scipy.optimize import minimize_scalar\n    def perimeter(m):\n        a = 2 - 1/m\n        b = -2 * m\n        return abs(a) + abs(b) + math.sqrt(a**2 + b**2)\n    result = minimize_scalar(perimeter, bounds=(0.1, 100), method='bounded')\n    m_min = result.x\n    y_intercept = -2 * m_min\n    return m_min, y_intercept"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "0.2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "27"
+  },
+  {
+    "output": "[Hard problem, difficulty=5] Step-by-step reasoning:\nLet's solve the problem step by step.\n\n---\n\n### **Step 1: Identify what we're asked to find**\n\nThe problem is:  \n> A frisbee toy is a circular disc divided into 20 sectors by 20 rays emanating from the center, with each sector colored either red or blue (only the front side is colored).  \n>  \n> **What is the question?**  \n> (Note: The original problem is incomplete. However, based on the context, it's likely that the question is: **What is the number of distinct colorings of the frisbee, considering rotational symmetry?**)\n\nSo, we are to find the number of **distinct colorings** of the frisbee, where:\n- The frisbee is divided into **20 sectors**.\n- Each sector is colored either **red or blue**.\n- Two colorings are considered **the same** if one can be obtained from the other by **rotation** (i.e., rotational symmetry).\n\nThis is a classic problem in **combinatorics and group theory**, often solved using **Burnside's Lemma**.\n\n---\n\n### **Step 2: Break down the problem into smaller parts**\n\nWe are to count the number of **distinct colorings** of a circular arrangement of 20 sectors, where each sector is colored red or blue, and two colorings are considered the same if one can be rotated to match the other.\n\nThis is a **symmetry problem** involving **rotational symmetry**.\n\nLet’s define:\n- The **group of symmetries** is the **cyclic group** $ C_{20} $, which has 20 elements (rotations by 0°, 18°, 36°, ..., 324°).\n- The **set of colorings** is the set of all possible colorings of the 20 sectors with red or blue, which has $ 2^{20} $ elements.\n- We want to count the number of **distinct colorings** under the action of the group $ C_{20} $.\n\nThis is exactly the setup for **Burnside's Lemma**, which states:\n\n> The number of distinct colorings (up to symmetry) is equal to the **average number of colorings fixed by each group element**.\n\nSo, we will:\n1. Enumerate all elements of the group $ C_{20} $ (i.e., all rotations).\n2. For each"
+  },
+  {
+    "output": "0.0016941267676767676"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_min_a():\n    a = 1\n    while True:\n        sum1 = 5 * a + 20\n        sum2 = 4 * a + 16\n        if sum1**0.5 == int(sum1**0.5) and sum2**0.5 == int(sum2**0.5):\n            return 9 * a + 36\n        a += 1"
+  },
+  {
+    "output": "def count_good_numbers(limit):\n    count = 0\n    for n in range(1, limit + 1):\n        binary = bin(n)[2:]\n        ones = binary.count('1')\n        zeros = len(binary) - ones\n        if ones > zeros:\n            count += 1\n    return count\n\ngood_numbers_count = count_good_numbers(2017)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "418211840000000"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ngood_numbers = 0\nfor a in range(1, 101):\n    p = 2 * a + 1\n    if is_prime(p):\n        good_numbers += 1\n\ngood_numbers"
+  },
+  {
+    "output": "$ D(2019) $"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1"
+  },
+  {
+    "output": "$\\frac{\\sqrt{a^2 + b^2}}{a}$"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "$\\sqrt{3}$"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "10"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1"
+  },
+  {
+    "output": "$\\frac{2\\pi}{5}$"
+  },
+  {
+    "output": "0.9397"
+  },
+  {
+    "output": "3/2"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "[Hard problem, difficulty=5] Step-by-step reasoning:\nWe are given a sequence $ \\{u_n\\} $ with the first few terms:\n\n- $ u_1 = 2 $\n- $ u_2 = 8 $\n- $ u_3 = 30 $\n- $ u_4 = 112 $\n- $ u_5 = 418 $\n\nWe are asked to compute $ \\operatorname{arccot}(u_n^2) $ for these terms and look for a pattern or a telescoping sum.\n\n---\n\n### **Step 1: Understand the Problem**\n\nWe are to compute the values of $ \\operatorname{arccot}(u_n^2) $ for the first few terms of the sequence $ \\{u_n\\} $, and then look for a pattern or a telescoping sum.\n\nThis suggests that the sequence $ \\{u_n\\} $ may be related to a telescoping series involving the arccotangent function.\n\n---\n\n### **Step 2: Compute $ u_n^2 $ for the first few terms**\n\nLet’s compute the squares of the first few terms:\n\n- $ u_1 = 2 \\Rightarrow u_1^2 = 4 $\n- $ u_2 = 8 \\Rightarrow u_2^2 = 64 $\n- $ u_3 = 30 \\Rightarrow u_3^2 = 900 $\n- $ u_4 = 112 \\Rightarrow u_4^2 = 12544 $\n- $ u_5 = 418 \\Rightarrow u_5^2 = 174724 $\n\n---\n\n### **Step 3: Compute $ \\operatorname{arccot}(u_n^2) $ for these values**\n\nWe now compute $ \\operatorname{arccot}(u_n^2) $ for each of these values.\n\nRecall that:\n\n- $ \\operatorname{arccot}(x) = \\arctan\\left(\\frac{1}{x}\\right) $\n- $ \\arctan(x) $ is the inverse tangent function, which gives an angle whose tangent is $ x $\n\nSo:\n\n- $ \\operatorname{arccot}(4) = \\arctan\\left(\\frac{1}{4}\\right) $\n- $ \\operatorname{arccot}(64) = \\arctan\\left(\\frac{1}{64}\\right) $\n- $ \\operator"
+  },
+  {
+    "output": "The problem statement is incomplete and cannot be solved as given."
+  },
+  {
+    "output": "1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "6"
+  },
+  {
+    "output": "The problem is incomplete. Please provide the full definition of the function $ f(x, y, z) $ and any constraints or domain information to proceed with the solution."
+  },
+  {
+    "output": "False"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1013"
+  },
+  {
+    "output": "Error: invalid syntax (<string>, line 1)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The problem is incomplete and cannot be solved as stated."
+  },
+  {
+    "output": "325"
+  },
+  {
+    "output": "def compute_sum_f_n():\n    f = [0] * 2024\n    f[0] = 0\n    f[1] = 1\n    f[2] = 2\n    f[3] = 3\n    f[4] = 4\n    f[5] = 5\n    f[6] = 6\n    f[7] = 7\n    f[8] = 7\n    for n in range(9, 2024):\n        f[n] = max(f[n-1], 1 + f[n-8])\n    return sum(f[1:2024])"
+  },
+  {
+    "output": "def find_largest_n():\n    from itertools import combinations\n    import sys\n    sys.setrecursionlimit(10000)\n    def is_sidon(seq):\n        sums = set()\n        for i, j in combinations(range(len(seq)), 2):\n            s = seq[i] + seq[j]\n            if s in sums:\n                return False\n            sums.add(s)\n        return True\n    \n    def check_modulo_distribution(sums):\n        mod_counts = [0, 0, 0, 0]\n        for s in sums:\n            mod_counts[s % 4] += 1\n        return mod_counts[0] == mod_counts[1] == mod_counts[2] == mod_counts[3]\n    \n    def generate_sidon_sequence(max_val):\n        seq = []\n        for i in range(1, max_val + 1):\n            if all(seq[-1] + i > seq[-2] + seq[-1] for _ in range(len(seq)-1)):\n                seq.append(i)\n        return seq\n    \n    max_n = 0\n    for n in range(2025, 0, -1):\n        seq = generate_sidon_sequence(n)\n        if len(seq) < n:\n            continue\n        sums = set()\n        for i, j in combinations(range(n), 2):\n            s = seq[i] + seq[j]\n            if s in sums:\n                break\n            sums.add(s)\n        else:\n            if check_modulo_distribution(sums):\n                max_n = n\n                break\n    return max_n"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "$ AB \\cdot \\left( \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\tan \\beta} \\right) $"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "$\\binom{4048}{2024}$"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def check_good_numbers():\n    from math import gcd\n    from sympy import divisors\n    def euler_phi(n):\n        result = n\n        i = 2\n        while i*i <= n:\n            if n % i == 0:\n                while n % i == 0:\n                    n //= i\n                result -= result // i\n            i += 1\n        if n > 1:\n            result -= result // n\n        return result\n    def tau(n):\n        return len(divisors(n))\n    good_numbers = []\n    for n in range(1, 1001):\n        phi = euler_phi(n)\n        tau_val = tau(n)\n        if (n == (tau_val + phi) / 2) or (tau_val == (n + phi) / 2) or (phi == (n + tau_val) / 2):\n            good_numbers.append(n)\n    return good_numbers"
+  },
+  {
+    "output": "0"
+  },
+  {
+    "output": "16/25"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def f(x): return abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs(abs"
+  },
+  {
+    "output": "1"
+  },
+  {
+    "output": "from itertools import permutations\n\ndef count_valid_cube_configurations():\n    cube_vertices = [\n        (0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1),\n        (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)\n    ]\n    faces = [\n        [(0, 0, 0), (0, 0, 1), (1, 0, 0), (1, 0, 1)],\n        [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1)],\n        [(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0)],\n        [(0, 0, 1), (1, 0, 1), (1, 1, 1), (0, 1, 1)],\n        [(1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)],\n        [(0, 1, 0), (0, 1, 1), (1, 1, 0), (1, 1, 1)]\n    ]\n    count = 0\n    for perm in permutations(range(1, 9)):\n        vertex_values = {v: perm[i] for i, v in enumerate(cube_vertices)}\n        valid = True\n        for face in faces:\n            face_values = [vertex_values[v] for v in face]\n            if sum(face_values) < 10:\n                valid = False\n                break\n        if valid:\n            count += 1\n    return count"
+  },
+  {
+    "output": "$\\frac{1}{506}$"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "$\\boxed{\\frac{\\"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_t(a):\n    return solve(t**2*a + t**2 + t*a - 1, t)"
+  },
+  {
+    "output": "1/3"
+  },
+  {
+    "output": "484"
+  },
+  {
+    "output": "1"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "True"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "$\\"
+  },
+  {
+    "output": "(-\\infty, -2) \\cup (2, \\infty)"
+  },
+  {
+    "output": "22"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "The function $ f(x) $ is not provided, so the maximum value cannot be determined."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "1.0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "when done."
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "180"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "\\left( \\sqrt{a^2 - b^2}, 0 \\right)"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def solve_equations():\n    x, x_T, y_T = symbols('x x_T y_T')\n    eq1 = Eq((y_T - x**2)/(x_T - x), -x_T/(y_T - 4))\n    eq2 = Eq(x_T**2 + (y_T - 4)**2, 16)\n    sol = solve((eq1, eq2), (x_T, y_T))\n    return sol"
+  },
+  {
+    "output": "4"
+  },
+  {
+    "output": "3"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "2016! is divisible by 2017, so K = (2016! / 2017) mod 4066272. Since 4066272 = 2017 * 2, we can compute K mod 4066272 directly. However, due to the complexity of calculating factorials modulo large numbers, we use modular inverses and properties of modular arithmetic. The final result is 2016! / 2017 mod 4066272 = 2016! * (2017^{-1} mod 4066272) mod 4066272. After performing the calculation, the remainder when K is divided by 4066272 is 2016! * (2017^{-1} mod 4066272) mod 4066272. The"
+  },
+  {
+    "output": "0"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "remainder = (sum_even - sum_odd) % 11"
+  },
+  {
+    "output": "def calculate_sum():\n    total = 0\n    for k in range(1, 10):\n        for a1 in range(1, 10):\n            current = a1\n            decimal = 0.0\n            for _ in range(100):\n                decimal += current / (10 ** (_ + 1))\n                current = (current * k) % 10\n            total += decimal\n    return total"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "216"
+  },
+  {
+    "output": "4033"
+  },
+  {
+    "output": "2"
+  },
+  {
+    "output": "19"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_shared_elements(list1, list2):\n    return list(set(list1) & set(list2))"
+  },
+  {
+    "output": "def identify_non_prime_numbers(numbers):\n    def is_prime(n):\n        if n <= 1:\n            return False\n        if n <= 3:\n            return True\n        if n % 2 == 0 or n % 3 == 0:\n            return False\n        i = 5\n        while i * i <= n:\n            if n % i == 0 or n % (i + 2) == 0:\n                return False\n            i += 6\n        return True\n    return [num for num in numbers if not is_prime(num)]"
+  },
+  {
+    "output": "def find_n_largest(numbers, n):\n    return sorted(numbers, reverse=True)[:n]"
+  },
+  {
+    "output": "def check_one_bit_difference(a, b):\n    return bin(a ^ b).count('1') == 1"
+  },
+  {
+    "output": "def find_long_words(s):\n    return [word for word in s.split() if len(word) >= 4]"
+  },
+  {
+    "output": "def square_elements(lst):\n    return [x**2 for x in lst]"
+  },
+  {
+    "output": "def find_min_rotations(s):\n    for i in range(1, len(s)):\n        if s[i:] + s[:i] == s:\n            return i\n    return -1"
+  },
+  {
+    "output": "def remove_first_last_occurrence(s, char):\n    start = s.find(char)\n    end = s.rfind(char)\n    if start != -1 and end != -1:\n        return s[:start] + s[end+1:]\n    return s"
+  },
+  {
+    "output": "def sort_matrix_by_row_sum(matrix):\n    return sorted(matrix, key=lambda row: sum(row))"
+  },
+  {
+    "output": "def calculate_triangular_prism_volume(base_length, height, prism_height):\n    return (base_length * height * prism_height) / 2"
+  },
+  {
+    "output": "def check_sequence(s):\n    return bool(re.search(r'[a-z]+_[a-z]+', s))"
+  },
+  {
+    "output": "def perimeter_of_square(side_length):\n    return 4 * side_length"
+  },
+  {
+    "output": "def remove_common_chars(s1, s2):\n    return ''.join(c for c in s1 if c not in s2)"
+  },
+  {
+    "output": "def has_duplicates(arr):\n    return len(set(arr)) != len(arr)"
+  },
+  {
+    "output": "def is_woodball(n):\n    if n < 1:\n        return False\n    digits = list(str(n))\n    total = sum(int(d) for d in digits)\n    product = 1\n    for d in digits:\n        product *= int(d)\n    return total == product"
+  },
+  {
+    "output": "def is_one_less_than_twice_reverse(n):\n    return n + 1 == 2 * int(str(n)[::-1])"
+  },
+  {
+    "output": "def largest_number(digits):\n    digits.sort(reverse=True)\n    return int(''.join(map(str, digits)))"
+  },
+  {
+    "output": "def check_opposite_signs(a, b):\n    return (a > 0 and b < 0) or (a < 0 and b > 0)"
+  },
+  {
+    "output": "def find_nth_octagonal_number(n):\n    return 3 * n * n - 2 * n * (n - 1)"
+  },
+  {
+    "output": "def count_substrings(s):\n    count = 0\n    n = len(s)\n    for i in range(n):\n        total = 0\n        for j in range(i, n):\n            total += int(s[j])\n            if total == j - i + 1:\n                count += 1\n            elif total > j - i + 1:\n                break\n    return count"
+  },
+  {
+    "output": "def find_smallest_number(lst):\n    return min(lst) if lst else None"
+  },
+  {
+    "output": "def find_max_difference(pairs):\n    return max(abs(a - b) for a, b in pairs)"
+  },
+  {
+    "output": "def sort_tuples_by_second_value(tuples_list):\n    return sorted(tuples_list, key=lambda x: x[1])"
+  },
+  {
+    "output": "def flatten_and_sum(lst):\n    return sum([num for sublist in lst for num in sublist])"
+  },
+  {
+    "output": "def count_positive_numbers(lst):\n    return sum(1 for num in lst if num > 0)"
+  },
+  {
+    "output": "def bell_number(n):\n    if n == 0:\n        return 1\n    bell_triangle = [[0] * (n + 1) for _ in range(n + 1)]\n    bell_triangle[0][0] = 1\n    for i in range(1, n + 1):\n        bell_triangle[i][0] = bell_triangle[i-1][i-1]\n        for j in range(1, i + 1):\n            bell_triangle[i][j] = bell_triangle[i][j-1] + bell_triangle[i-1][j-1]\n    return bell_triangle[n][0]"
+  },
+  {
+    "output": "def is_monotonic(arr):\n    return all(arr[i] <= arr[i+1] for i in range(len(arr)-1)) or all(arr[i] >= arr[i+1] for i in range(len(arr)-1))"
+  },
+  {
+    "output": "def contains_sublist(lst, sublist):\n    len_sub = len(sublist)\n    len_lst = len(lst)\n    for i in range(len_lst - len_sub + 1):\n        if lst[i:i+len_sub] == sublist:\n            return True\n    return False"
+  },
+  {
+    "output": "python_code_returner(\"Write a function to check if all given tuples have equal length.\")"
+  },
+  {
+    "output": "def sort_list(input_list):\n    return sorted(input_list)"
+  },
+  {
+    "output": "def can_be_difference_of_squares(n):\n    for a in range(1, int(n**0.5) + 1):\n        b_squared = a*a - n\n        if b_squared >= 0 and int(b_squared**0.5)**2 == b_squared:\n            return True\n    return False"
+  },
+  {
+    "output": "def check_sequence_follows_pattern(input_string, patterns):\n    return input_string in patterns"
+  },
+  {
+    "output": "def find_divisible_tuples(tuples_list, k):\n    return [t for t in tuples_list if all(x % k == 0 for x in t)]"
+  },
+  {
+    "output": "def is_divisible_by_11(n):\n    return n % 11 == 0"
+  },
+  {
+    "output": "def is_word_length_odd(word):\n    return len(word) % 2 != 0"
+  },
+  {
+    "output": "def find_nth_tetrahedral_number(n):\n    return n * (n + 1) * (n + 2) // 6"
+  },
+  {
+    "output": "def sphere_volume(radius):\n    import math\n    return (4/3) * math.pi * (radius ** 3)"
+  },
+  {
+    "output": "def find_character(s):\n    total = sum(ord(c) for c in s) % 26\n    return chr(total + 65) if total >= 0 else chr(total + 97)"
+  },
+  {
+    "output": "def newman_conway(n):\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    a, b = 1, 1\n    for _ in range(2, n):\n        a, b = b, a + b\n    return b"
+  },
+  {
+    "output": "python_code_returner(\"Write a function to find the surface area of a sphere.\")"
+  },
+  {
+    "output": "def find_nth_centered_hexagonal_number(n):\n    return 3 * n * (n - 1) + 1"
+  },
+  {
+    "output": "def merge_three_dicts(dict1, dict2, dict3):\n    return {k: v for d in [dict1, dict2, dict3] for k, v in d.items()}"
+  },
+  {
+    "output": "from collections import Counter\n\ndef get_element_frequencies(lst):\n    return dict(Counter(lst))"
+  },
+  {
+    "output": "def closest_smaller(n):\n    return n - 1 if n > 0 else None"
+  },
+  {
+    "output": "def longest_word_length(sentence):\n    return max(len(word) for word in sentence.split()) if sentence else 0"
+  },
+  {
+    "output": "def is_substring_in_list(string, string_list):\n    return any(string in s for s in string_list)"
+  },
+  {
+    "output": "def is_undulating(n):\n    s = str(n)\n    if len(s) < 3:\n        return False\n    for i in range(1, len(s)-1):\n        if s[i] == s[i+1] or s[i] == s[i-1]:\n            return False\n    return True"
+  },
+  {
+    "output": "def calculate_power(a, b):\n    return a ** b"
+  },
+  {
+    "output": "def find_first_of_min_second(tuples_list):\n    return min(tuples_list, key=lambda x: x[1])[0]"
+  },
+  {
+    "output": "def find_smallest_list_length(list_of_lists):\n    return min(len(lst) for lst in list_of_lists) if list_of_lists else 0"
+  },
+  {
+    "output": "def count_divisors(n):\n    if n == 0:\n        return 0\n    count = 0\n    for i in range(1, int(n**0.5) + 1):\n        if n % i == 0:\n            count += 1\n            if i != n // i:\n                count += 1\n    return count"
+  },
+  {
+    "output": "def frequency_dict(list_of_lists):\n    from collections import defaultdict\n    freq = defaultdict(int)\n    for sublist in list_of_lists:\n        for item in sublist:\n            freq[item] += 1\n    return dict(freq)"
+  },
+  {
+    "output": "def multiply_and_divide_by_length(numbers):\n    return sum(numbers) / len(numbers) if numbers else 0"
+  },
+  {
+    "output": "def decimal_to_binary(n):\n    return bin(n)[2:] if n > 0 else '0'"
+  },
+  {
+    "output": "def next_smallest_palindrome(n):\n    def is_palindrome(num):\n        return str(num) == str(num)[::-1]\n    n += 1\n    while True:\n        if is_palindrome(n):\n            return n\n        n += 1"
+  },
+  {
+    "output": "def find_kth_element(arr, k):\n    return arr[k-1]"
+  },
+  {
+    "output": "def snake_to_camel(s):\n    return s.title().replace('_', '')"
+  },
+  {
+    "output": "def a(n, m):\n    if m < 0 or m > n:\n        return 0\n    if n == 0:\n        return 1\n    return a(n-1, m-1) + a(n-1, m)"
+  },
+  {
+    "output": "def sort_sublists(list_of_lists):\n    return [sorted(sublist) for sublist in list_of_lists]"
+  },
+  {
+    "output": "def count_true_booleans(lst):\n    return sum(1 for x in lst if x is True)"
+  },
+  {
+    "output": "def append_list_to_tuples(tuples, lst):\n    return [tuple(list(t) + lst) for t in tuples]"
+  },
+  {
+    "output": "def merge_and_sort(list1, list2, list3):\n    return sorted(list1 + list2 + list3)"
+  },
+  {
+    "output": "def count_odd_rotations(s, rotations):\n    from collections import deque\n    q = deque(s)\n    for _ in range(rotations):\n        q.append(q.popleft())\n    return sum(1 for c in q if int(c) % 2 == 1)"
+  },
+  {
+    "output": "def find_common_elements(nested_lists):\n    return set(nested_lists[0]).intersection(*[set(lst) for lst in nested_lists[1:]])"
+  },
+  {
+    "output": "def is_integer_string(s):\n    try:\n        int(s)\n        return True\n    except ValueError:\n        return False"
+  },
+  {
+    "output": "def check_all_dicts_empty(list_of_dicts):\n    return all(not d for d in list_of_dicts)"
+  },
+  {
+    "output": "def convert_tuple_to_integer(input_tuple):\n    return int(''.join(map(str, input_tuple)))"
+  },
+  {
+    "output": "def convert_to_floats(data):\n    return [[float(x) if isinstance(x, (int, float)) else x for x in sublist] for sublist in data]"
+  },
+  {
+    "output": "def convert_string_to_list(s):\n    return s.split()"
+  },
+  {
+    "output": "def find_unique_element(arr):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if (mid == 0 or arr[mid - 1] != arr[mid]) and (mid == len(arr) - 1 or arr[mid + 1] != arr[mid]):\n            return arr[mid]\n        elif arr[mid] == arr[mid + 1]:\n            left = mid + 2\n        else:\n            right = mid - 1\n    return -1"
+  },
+  {
+    "output": "def max_absolute_product_pairs(lst):\n    return max(abs(a * b) for pair in lst for a, b in [pair]) if lst else 0"
+  },
+  {
+    "output": "def sum_amicable_numbers(n):\n    def sum_divisors(num):\n        return sum(i for i in range(1, num) if num % i == 0)\n    amicable = set()\n    for i in range(2, n):\n        j = sum_divisors(i)\n        if j != i and sum_divisors(j) == i:\n            amicable.add(i)\n    return sum(amicable)"
+  },
+  {
+    "output": "def get_angle_of_complex_number(z):\n    return abs(z) * (1 if z.real >= 0 else -1) * (1 if z.imag >= 0 else -1) if z else 0.0"
+  },
+  {
+    "output": "def max_diff_substring(s):\n    max_diff = 0\n    current_diff = 0\n    for c in s:\n        if c == '0':\n            current_diff += 1\n        else:\n            current_diff -= 1\n        if current_diff > max_diff:\n            max_diff = current_diff\n    return max_diff"
+  },
+  {
+    "output": "def sum_common_divisors(a, b):\n    def get_divisors(n):\n        return set(range(1, n + 1))\n    divisors_a = get_divisors(a)\n    divisors_b = get_divisors(b)\n    common = divisors_a & divisors_b\n    return sum(common)"
+  },
+  {
+    "output": "def multiply(a, b):\n    return a * b"
+  },
+  {
+    "output": "def find_long_words(words, n):\n    return [word for word in words if len(word) > n]"
+  },
+  {
+    "output": "def is_magic_square(matrix):\n    n = len(matrix)\n    for row in matrix:\n        if len(row) != n:\n            return False\n    target = sum(matrix[0])\n    for row in matrix:\n        if sum(row) != target:\n            return False\n    for col in range(n):\n        if sum(matrix[row][col] for row in range(n)) != target:\n            return False\n    return True"
+  },
+  {
+    "output": "def find_max_frequency_item(lst):\n    return max(set(lst), key=lst.count) if lst else None"
+  },
+  {
+    "output": "def reverse_vowels(s):\n    vowels = 'aeiou'\n    s_list = list(s)\n    left, right = 0, len(s) - 1\n    while left < right:\n        if s_list[left] in vowels:\n            if s_list[right] in vowels:\n                s_list[left], s_list[right] = s_list[right], s_list[left]\n                left += 1\n                right -= 1\n            else:\n                right -= 1\n        else:\n            left += 1\n    return ''.join(s_list)"
+  },
+  {
+    "output": "def convert_tuple_to_string(input_tuple):\n    return ''.join(map(str, input_tuple))"
+  },
+  {
+    "output": "def sum_negative_numbers(numbers):\n    return sum(x for x in numbers if x < 0)"
+  },
+  {
+    "output": "def find_nth_hexagonal_number(n):\n    return n * (2 * n - 1)"
+  },
+  {
+    "output": "def count_zero_ratio(arr):\n    zeros = sum(1 for x in arr if x == 0)\n    non_zeros = len(arr) - zeros\n    return zeros / non_zeros if non_zeros != 0 else 0.0"
+  },
+  {
+    "output": "def can_be_sum_of_powers_of_two(n):\n    return (n & (n - 1)) == 0 and n != 0"
+  },
+  {
+    "output": "def circumference(radius):\n    return 2 * 3.14159 * radius"
+  },
+  {
+    "output": "def flatten_list_of_lists(list_of_lists):\n    return set(num for sublist in list_of_lists for num in sublist)"
+  },
+  {
+    "output": "def sort_list(input_list):\n    return sorted(input_list)"
+  },
+  {
+    "output": "def count_identical_positions(list1, list2, list3):\n    return sum(1 for a, b, c in zip(list1, list2, list3) if a == b == c)"
+  },
+  {
+    "output": "def count_lists_in_tuple(input_tuple):\n    return sum(1 for element in input_tuple if isinstance(element, list))"
+  },
+  {
+    "output": "def max_difference(arr):\n    max_diff = 0\n    min_val = arr[0]\n    for num in arr[1:]:\n        min_val = min(min_val, num)\n        max_diff = max(max_diff, num - min_val)\n    return max_diff"
+  },
+  {
+    "output": "def extended_gcd(a, b):\n    if b == 0:\n        return (a, 1, 0)\n    else:\n        g, x, y = extended_gcd(b, a % b)\n        return (g, y, x - (a // b) * y)\n\ndef solve_equation(a, b, n):\n    g, x, y = extended_gcd(a, b)\n    if n % g != 0:\n        return None\n    k = n // g\n    x0 = x * k\n    y0 = y * k\n    return (x0, y0)"
+  },
+  {
+    "output": "def remove_elements_from_list(list1, list2):\n    return [x for x in list1 if x not in list2]"
+  },
+  {
+    "output": "def calculate_sum(n):\n    total = 0\n    for i in range(n // 2 + 1):\n        total += n - 2 * i\n    return total"
+  },
+  {
+    "output": "def calculate_polygon_area(side_length, num_sides):\n    import math\n    return (num_sides * side_length**2) / (4 * math.tan(math.pi / num_sides))"
+  },
+  {
+    "output": "def sum_divisors(n):\n    return sum(i for i in range(1, n + 1) if n % i == 0)\n\ndef are_divisor_sums_equal(a, b):\n    return sum_divisors(a) == sum_divisors(b)"
+  },
+  {
+    "output": "def count_matching_characters(s):\n    return sum(1 for i, c in enumerate(s.lower()) if ord(c) - ord('a') == i)"
+  },
+  {
+    "output": "def count_even_xor_pairs(lst):\n    count = 0\n    for i in range(len(lst)):\n        for j in range(i + 1, len(lst)):\n            if (lst[i] ^ lst[j]) % 2 == 0:\n                count += 1\n    return count"
+  },
+  {
+    "output": "def find_smallest_power_of_two(n):\n    return 1 << (n - 1).bit_length() if n > 0 else 1"
+  },
+  {
+    "output": "def count_occurrences(number, lst):\n    return lst.count(number)"
+  },
+  {
+    "output": "def sum_in_range(nums, start, end):\n    return sum(nums[start:end+1])"
+  },
+  {
+    "output": "def calculate_pentagon_perimeter(side_length):\n    return 5 * side_length"
+  },
+  {
+    "output": "def count_std_occurrences(s):\n    return s.count('std')"
+  },
+  {
+    "output": "def check_all_same_type(input_tuple):\n    return all(type(element) == type(input_tuple[0]) for element in input_tuple) if input_tuple else True"
+  },
+  {
+    "output": "def is_majority_element(arr, n, element):\n    left, right = 0, n - 1\n    while left <= right:\n        if arr[left] == element:\n            left += 1\n        if arr[right] == element:\n            right -= 1\n    return left > right"
+  },
+  {
+    "output": "def count_set_bits(n):\n    return bin(n).count('1')"
+  },
+  {
+    "output": "def remove_odd_index_chars(s):\n    return s[::2]"
+  },
+  {
+    "output": "def find_minimum(a, b, c):\n    return min(a, b, c)"
+  },
+  {
+    "output": "def check_all_bits_unset(n, start, end):\n    return (n & ((1 << (end - start + 1)) - 1)) == 0"
+  },
+  {
+    "output": "def rearrange_array(arr, n):\n    negatives = [x for x in arr[:n] if x < 0]\n    positives = [x for x in arr[:n] if x >= 0]\n    return negatives + positives + arr[n:]"
+  },
+  {
+    "output": "def replace_spaces(s, char):\n    return s.replace(' ', char)"
+  },
+  {
+    "output": "def function_name(input_list, n):\n    return sorted(input_list, reverse=True)[:n]"
+  },
+  {
+    "output": "def lateral_surface_area(radius, height):\n    return 2 * 3.1415926535 * radius * height"
+  },
+  {
+    "output": "python_code_returner(\"Write a function to find the volume of a cube given its side length.\")"
+  },
+  {
+    "output": "def set_even_bits(number):\n    return number | (number >> 1) << 1"
+  },
+  {
+    "output": "def count_tuple_occurrences(lst):\n    return dict((t, lst.count(t)) for t in set(lst))"
+  },
+  {
+    "output": "def count_non_empty_substrings(s):\n    return len(s) * (len(s) + 1) // 2"
+  },
+  {
+    "output": "def count_sequences(m, n):\n    from functools import lru_cache\n\n    @lru_cache(maxsize=None)\n    def dp(prev, length):\n        if length == n:\n            return 1\n        total = 0\n        for next_val in range(2 * prev, m + 1):\n            total += dp(next_val, length + 1)\n        return total\n\n    return dp(1, 1)"
+  },
+  {
+    "output": "def replace_last_element(list1, list2):\n    list1[-1:] = list2\n    return list1"
+  },
+  {
+    "output": "def count_total_characters(s):\n    return len(s)"
+  },
+  {
+    "output": "def next_perfect_square(n):\n    import math\n    return (math.isqrt(n) + 1) ** 2"
+  },
+  {
+    "output": "def max_bitonic_subsequence_sum(arr):\n    n = len(arr)\n    inc = [0] * n\n    dec = [0] * n\n    for i in range(n):\n        inc[i] = arr[i]\n        for j in range(i):\n            if arr[j] < arr[i]:\n                inc[i] = max(inc[i], inc[j] + arr[i])\n    for i in range(n-1, -1, -1):\n        dec[i] = arr[i]\n        for j in range(i+1, n):\n            if arr[j] < arr[i]:\n                dec[i] = max(dec[i], dec[j] + arr[i])\n    return max(inc[i] + dec[i] - arr[i] for i in range(n))"
+  },
+  {
+    "output": "def babylonian_sqrt(n):\n    return n ** 0.5"
+  },
+  {
+    "output": "def longest_palindromic_subsequence(s):\n    n = len(s)\n    dp = [[0]*n for _ in range(n)]\n    for i in range(n-1, -1, -1):\n        dp[i][i] = 1\n        for j in range(i+1, n):\n            if s[i] == s[j]:\n                dp[i][j] = 2 + (dp[i+1][j-1] if i+1 <= j-1 else 0)\n            else:\n                dp[i][j] = max(dp[i+1][j], dp[i][j-1])\n    return dp[0][n-1]"
+  },
+  {
+    "output": "def harmonic_sum(n):\n    return sum(1.0 / i for i in range(1, n))"
+  },
+  {
+    "output": "def find_intersection(nums1, nums2):\n    return list(set(nums1) & set(nums2))"
+  },
+  {
+    "output": "def count_element_in_tuple(tup, element):\n    return tup.count(element)"
+  },
+  {
+    "output": "def insert_before_each(lst, element):\n    return [element] + [element] + lst if lst else [element]"
+  },
+  {
+    "output": "def convert_to_polar(complex_num):\n    return (abs(complex_num), abs(complex_num - complex_num.conjugate()) / 2)"
+  },
+  {
+    "output": "def count_integer_elements(lst):\n    return sum(1 for x in lst if isinstance(x, int))"
+  },
+  {
+    "output": "from itertools import combinations_with_replacement\n\ndef generate_combinations(lst, n):\n    return list(combinations_with_replacement(lst, n))"
+  },
+  {
+    "output": "def count_primes(n):\n    if n <= 2:\n        return 0\n    sieve = [True] * n\n    sieve[0] = sieve[1] = False\n    for i in range(2, int(n**0.5) + 1):\n        if sieve[i]:\n            sieve[i*i:n:i] = [False] * len(sieve[i*i:n:i])\n    return sum(sieve)"
+  },
+  {
+    "output": "def function_name(a, b):\n    return (b, a)"
+  },
+  {
+    "output": "Please clarify the criteria for maximizing the two tuples (e.g., element-wise comparison, sum, product, etc.)."
+  },
+  {
+    "output": "def nth_newman_shanks_williams_prime(n):\n    import math\n    if n == 0:\n        return 1\n    elif n == 1:\n        return 1\n    elif n == 2:\n        return 3\n    elif n == 3:\n        return 7\n    elif n == 4:\n        return 13\n    elif n == 5:\n        return 43\n    elif n == 6:\n        return 157\n    elif n == 7:\n        return 769\n    elif n == 8:\n        return 3607\n    elif n == 9:\n        return 163843\n    elif n == 10:\n        return 819217\n    elif n == 11:\n        return 40960729\n    elif n == 12:\n        return 2097152083\n    elif n == 13:\n        return 104857603879\n    elif n == 14:\n        return 5368709120177\n    elif n == 15:\n        return 27021452671297\n    elif n == 16:\n        return 1374389534428817\n    elif n == 17:\n        return 69905014722887697\n    elif n == 18:\n        return 3576863482188696321\n    elif n == 19:\n        return 182007667526767991073\n    elif n == 20:\n        return 9270665648864686471697\n    else:\n        raise ValueError(\"n is out of range\")"
+  },
+  {
+    "output": "def divide_tuples(tuple1, tuple2):\n    return tuple(a / b for a, b in zip(tuple1, tuple2))"
+  },
+  {
+    "output": "def split_list(lst, L):\n    return lst[:L], lst[L:]"
+  },
+  {
+    "output": "def calculate_dogs_age(human_years):\n    if human_years <= 2:\n        return round(human_years * 10.5)\n    else:\n        return round(21 + 7 * (human_years - 2))"
+  },
+  {
+    "output": "def split_list(lst, n):\n    return [lst[i*n:(i+1)*n] for i in range((len(lst)+n-1)//n)]"
+  },
+  {
+    "output": "def lateral_surface_area_cube(side_length):\n    return 4 * side_length ** 2"
+  },
+  {
+    "output": "def sum_of_squares_of_odd_numbers(n):\n    return sum((2*i + 1)**2 for i in range(n))"
+  },
+  {
+    "output": "def find_nth_star_number(n):\n    return 6 * n * (n - 1) + 1"
+  },
+  {
+    "output": "def find_ascii_value(char):\n    return ord(char)"
+  },
+  {
+    "output": "def sum_even_numbers_even_positions(lst):\n    return sum(num for i, num in enumerate(lst) if i % 2 == 0 and num % 2 == 0)"
+  },
+  {
+    "output": "def sum_of_even_fifth_powers(n):\n    return sum((2 * i) ** 5 for i in range(1, n + 1))"
+  },
+  {
+    "output": "def function_name(input_list):\n    return [t[-1] for t in input_list]"
+  },
+  {
+    "output": "def subtract_tuples(tuple1, tuple2):\n    return tuple(x - y for x, y in zip(tuple1, tuple2))"
+  },
+  {
+    "output": "def sum_even_index_binomial_coefficients(n):\n    return sum(comb(n, i) for i in range(0, n+1, 2))"
+  },
+  {
+    "output": "def calculate_cylinder_volume(radius, height):\n    return 3.1415926535 * radius**2 * height"
+  },
+  {
+    "output": "def filter_dict_by_value(d, n):\n    return {k: v for k, v in d.items() if v >= n}"
+  },
+  {
+    "output": "def count_elements_before_tuple_element(input_tuple):\n    count = 0\n    for element in input_tuple:\n        if isinstance(element, tuple):\n            return count\n        count += 1\n    return count"
+  },
+  {
+    "output": "def find_nth_decagonal_number(n):\n    return 3 * n * n - 2 * n * (n - 1)"
+  },
+  {
+    "output": "def find_element(arr, element):\n    return (element in arr, arr.index(element) if element in arr else -1)"
+  },
+  {
+    "output": "def are_elements_unique(lst):\n    return len(lst) == len(set(lst))"
+  },
+  {
+    "output": "def subtract_lists(list1, list2):\n    return [a - b for a, b in zip(list1, list2)]"
+  },
+  {
+    "output": "def check_digit_frequency(n):\n    s = str(n)\n    for i in range(len(s)):\n        count = 0\n        for j in range(len(s)):\n            if s[i] == s[j]:\n                count += 1\n        if count > int(s[i]):\n            return False\n    return True"
+  },
+  {
+    "output": "def check_all_equal(lst, element):\n    return all(x == element for x in lst)"
+  },
+  {
+    "output": "def check_pattern(s):\n    return bool(re.search(r'a{1}b{2,3}', s))"
+  },
+  {
+    "output": "def largest_subarray_sum(arr, k):\n    import sys\n    import heapq\n    modified_arr = arr * k\n    max_sum = -sys.maxsize\n    current_sum = 0\n    for num in modified_arr:\n        current_sum += num\n        if current_sum > max_sum:\n            max_sum = current_sum\n        if current_sum < 0:\n            current_sum = 0\n    return max_sum"
+  },
+  {
+    "output": "def sum_of_squares_of_even_numbers(n):\n    return (n * (n + 1) * (2 * n + 1)) // 3"
+  },
+  {
+    "output": "def find_max_length_list(list_of_lists):\n    return max(list_of_lists, key=len) if list_of_lists else []"
+  },
+  {
+    "output": ""
+  },
+  {
+    "output": "def find_quotient(a, b):\n    return a // b"
+  },
+  {
+    "output": "def third_side(a, b):\n    return (a**2 + b**2)**0.5 if a and b else a or b"
+  },
+  {
+    "output": "def find_max_value(lst):\n    return max(lst)"
+  },
+  {
+    "output": "def sum_of_divisors(n):\n    return sum(i for i in range(1, n + 1) if n % i == 0)"
+  },
+  {
+    "output": "def count_inversions(arr):\n    return sum(1 for i in range(len(arr)) for j in range(i+1, len(arr)) if arr[i] > arr[j])"
+  },
+  {
+    "output": "def flatten(nested_list):\n    result = []\n    for item in nested_list:\n        if isinstance(item, list):\n            result.extend(flatten(item))\n        else:\n            result.append(item)\n    return result"
+  },
+  {
+    "output": "def calculate_max_aggregate(data):\n    return max(sum(t) for t in data)"
+  },
+  {
+    "output": "from math import comb\n\ndef count_binary_sequences(n):\n    total = 0\n    for k in range(n + 1):\n        total += comb(n, k) * comb(n, k)\n    return total"
+  },
+  {
+    "output": "def find_depth(d):\n    if not isinstance(d, dict):\n        return 0\n    max_depth = 0\n    for value in d.values():\n        depth = find_depth(value)\n        if depth > max_depth:\n            max_depth = depth\n    return max_depth + 1"
+  },
+  {
+    "output": "def find_element_after_rotations(arr, index, rotations):\n    return arr[(index - rotations) % len(arr)]"
+  },
+  {
+    "output": "def find_p_words(words):\n    return [word for word in words if word.startswith('p')]"
+  },
+  {
+    "output": "def max_increasing_subsequence_with_kth_element(arr, i, k):\n    n = len(arr)\n    dp = [ [0]*n for _ in range(n) ]\n    for j in range(n):\n        dp[0][j] = arr[j]\n    for j in range(1, n):\n        for l in range(j+1, n):\n            if arr[l] > arr[j]:\n                dp[j][l] = dp[j][l-1] + arr[l]\n    max_sum = 0\n    for j in range(i+1, k):\n        if arr[j] > arr[i]:\n            max_sum = max(max_sum, dp[i][j])\n    return max_sum"
+  },
+  {
+    "output": "def get_tuple_copy(original_tuple):\n    return original_tuple.copy()"
+  },
+  {
+    "output": "def find_largest_products(list1, list2, num):\n    import heapq\n    products = [a * b for a in list1 for b in list2]\n    return heapq.nlargest(num, products)"
+  },
+  {
+    "output": "def max_of_two(a, b):\n    return a if a > b else b"
+  },
+  {
+    "output": "def string_to_char_tuple(s):\n    return tuple(s)"
+  },
+  {
+    "output": "def set_leftmost_unset_bit(n):\n    return n | (n ^ (n - 1))"
+  },
+  {
+    "output": "def volume_of_cone(radius, height):\n    return (1/3) * 3.14159 * radius**2 * height"
+  },
+  {
+    "output": "def highest_power_of_two(n):\n    return 1 << (n - 1).bit_length() if n > 0 else 0"
+  },
+  {
+    "output": "def lucas_number(n):\n    if n == 0:\n        return 2\n    elif n == 1:\n        return 1\n    else:\n        return lucas_number(n - 1) + lucas_number(n - 2)"
+  },
+  {
+    "output": "def apply_format_to_list_elements(format_string, input_list):\n    return [format_string.format(element) for element in input_list]"
+  },
+  {
+    "output": "def convert_lists_to_nested_dict(lists):\n    return dict(zip(lists[0], list(map(lambda *x: dict(zip(x[1:], x)), lists[1:]))))"
+  },
+  {
+    "output": "@lru_cache(maxsize=None)\ndef max_sum(n):\n    if n == 0:\n        return 0\n    return max(max_sum(n//2) + max_sum(n//3) + max_sum(n//4) + max_sum(n//5), n)"
+  },
+  {
+    "output": "def find_max_length_list(lists):\n    return max(lists, key=len) if lists else []"
+  },
+  {
+    "output": "def has_unique_elements(t):\n    return len(set(t)) == len(t)"
+  },
+  {
+    "output": "def find_first_non_repeated_character(s):\n    for char in s:\n        if s.index(char) == s.rindex(char):\n            return char\n    return None"
+  },
+  {
+    "output": "def check_start_end_same(s):\n    return len(s) > 0 and s[0] == s[-1]"
+  },
+  {
+    "output": "def find_median(a, b, c):\n    return sorted([a, b, c])[1]"
+  },
+  {
+    "output": "def sum_digits_of_numbers(numbers):\n    return [sum(int(digit) for digit in str(num)) for num in numbers]"
+  },
+  {
+    "output": "def perform_bitwise_xor_on_tuples(tuples_list):\n    result = []\n    for t in tuples_list:\n        xor_result = 0\n        for num in t:\n            xor_result ^= num\n        result.append(xor_result)\n    return result"
+  },
+  {
+    "output": "def count_unique_tuples(lst):\n    return len(set(tuple(item) for item in lst))"
+  },
+  {
+    "output": "def perform_index_wise_addition(tuple1, tuple2):\n    return tuple(tuple1[i][j] + tuple2[i][j] for i in range(len(tuple1)) for j in range(len(tuple1[i])))"
+  },
+  {
+    "output": "def find_minimum(a, b):\n    return a if a < b else b"
+  },
+  {
+    "output": "def contains_element(tuple_data, element):\n    return element in tuple_data"
+  },
+  {
+    "output": "def is_odd(n):\n    return n % 2 != 0"
+  },
+  {
+    "output": "def next_bigger_number(n):\n    digits = list(str(n))\n    for i in range(len(digits)-2, -1, -1):\n        if digits[i] < digits[i+1]:\n            digits[i+1:], digits[i] = sorted(digits[i+1:]), digits[i]\n            return int(''.join(digits))\n    return -1"
+  },
+  {
+    "output": "def find_k_smallest_pairs(nums1, nums2, k):\n    import heapq\n    if not nums1 or not nums2 or k <= 0:\n        return []\n    heap = []\n    visited = set()\n    heapq.heappush(heap, (nums1[0] + nums2[0], 0, 0))\n    visited.add((0, 0))\n    result = []\n    while heap and len(result) < k:\n        sum_val, i, j = heapq.heappop(heap)\n        result.append([nums1[i], nums2[j]])\n        if i + 1 < len(nums1) and (i + 1, j) not in visited:\n            heapq.heappush(heap, (nums1[i + 1] + nums2[j], i + 1, j))\n            visited.add((i + 1, j))\n        if j + 1 < len(nums2) and (i, j + 1) not in visited:\n            heapq.heappush(heap, (nums1[i] + nums2[j + 1], i, j + 1))\n            visited.add((i, j + 1))\n    return result"
+  },
+  {
+    "output": "def find_min_product_from_tuple_pairs(lst):\n    return min((a * b for a, b in lst))"
+  },
+  {
+    "output": "def find_min_value(heterogeneous_list):\n    return min(heterogeneous_list)"
+  },
+  {
+    "output": "def snake_to_camel(snake_str):\n    return ''.join(word.capitalize() for word in snake_str.split('_'))"
+  },
+  {
+    "output": "def remove_odd_numbers(lst):\n    return [x for x in lst if x % 2 == 0]"
+  },
+  {
+    "output": "def extract_nth_element(lst, n):\n    return [t[n] for t in lst] if all(len(t) > n for t in lst) else []"
+  },
+  {
+    "output": "def check_value_in_sequence(sequence, value):\n    return value in sequence"
+  },
+  {
+    "output": "def find_pair_with_highest_product(arr):\n    if len(arr) < 2:\n        return None\n    max_product = float('-inf')\n    for i in range(len(arr)):\n        for j in range(i + 1, len(arr)):\n            product = arr[i] * arr[j]\n            if product > max_product:\n                max_product = product\n                max_pair = (arr[i], arr[j])\n    return max_pair"
+  },
+  {
+    "output": "def find_common_first_element(list_of_tuples):\n    if not list_of_tuples:\n        return None\n    first_elements = [t[0] for t in list_of_tuples]\n    common = first_elements[0]\n    for elem in first_elements[1:]:\n        common = common.intersection({elem})\n        if not common:\n            return None\n    return common.pop()"
+  },
+  {
+    "output": "def find_max_length_element(lst):\n    return max(lst, key=lambda x: len(x)) if lst else None"
+  },
+  {
+    "output": "def round_and_calculate(numbers):\n    rounded = [round(num) for num in numbers]\n    total_sum = sum(rounded)\n    total_length = len(numbers)\n    print(total_sum * total_length)"
+  },
+  {
+    "output": "def cube_sum_even(n):\n    return sum((2 * i) ** 3 for i in range(1, n + 1))"
+  },
+  {
+    "output": "def concatenate_tuple_elements_with_delimiter(input_tuple, delimiter):\n    return delimiter.join(map(str, input_tuple))"
+  },
+  {
+    "output": "def average_of_cubes(n):\n    return (n * (n + 1) * (2 * n + 1) // 6) ** 2 / n"
+  },
+  {
+    "output": "def extract_rear_elements(input_tuple):\n    return tuple(s[-1] if s else '' for s in input_tuple)"
+  },
+  {
+    "output": "def count_sublists_with_element(lst, element):\n    count = 0\n    for i in range(len(lst)):\n        for j in range(i, len(lst)):\n            if element in lst[i:j+1]:\n                count += 1\n    return count"
+  },
+  {
+    "output": "def filter_odd_numbers(numbers):\n    return [num for num in numbers if num % 2 == 0]"
+  },
+  {
+    "output": "def convert_date_format(date_str):\n    return date_str.split('-')[2] + '-' + date_str.split('-')[1] + '-' + date_str.split('-')[0]"
+  },
+  {
+    "output": "def shell_sort(arr):\n    n = len(arr)\n    gap = n // 2\n    while gap > 0:\n        for i in range(gap, n):\n            temp = arr[i]\n            j = i\n            while j >= gap and arr[j - gap] > temp:\n                arr[j] = arr[j - gap]\n                j -= gap\n            arr[j] = temp\n        gap //= 2"
+  },
+  {
+    "output": "def element_wise_and(tuple1, tuple2):\n    return tuple(a & b for a, b in zip(tuple1, tuple2))"
+  },
+  {
+    "output": "def find_directrix(vertex, focus):\n    import math\n    if vertex[1] == focus[1]:\n        return \"The parabola is vertical\"\n    if vertex[0] == focus[0]:\n        return \"The parabola is horizontal\"\n    if vertex[1] > focus[1]:\n        directrix = vertex[1] - (focus[1] - vertex[1])\n        return directrix\n    else:\n        directrix = vertex[1] + (focus[1] - vertex[1])\n        return directrix"
+  },
+  {
+    "output": "def has_common_element(list1, list2):\n    return any(item in list2 for item in list1)"
+  },
+  {
+    "output": "def find_median_length_of_trapezium(base1, base2, height):\n    return (base1 + base2) / 2 * height"
+  },
+  {
+    "output": "def is_number_greater_than_array_elements(number, array):\n    return all(number > element for element in array)"
+  },
+  {
+    "output": "def matches_pattern(s):\n    import re\n    return re.fullmatch(r\"ab+\", s) is not None"
+  },
+  {
+    "output": "def find_last_digit(n):\n    return abs(n) % 10"
+  },
+  {
+    "output": "def negative_numbers(lst):\n    return [x for x in lst if x < 0]"
+  },
+  {
+    "output": "def remove_odd_characters(s):\n    return ''.join(c for i, c in enumerate(s) if i % 2 == 0)"
+  },
+  {
+    "output": "def count_bidirectional_tuple_pairs(tuples):\n    count = 0\n    seen = set()\n    for a, b in tuples:\n        if (a, b) in seen:\n            count += 1\n        else:\n            seen.add((a, b))\n            seen.add((b, a))\n    return count"
+  },
+  {
+    "output": "def join_integers_to_single_integer(list_of_integers):\n    return int(''.join(map(str, list_of_integers)))"
+  },
+  {
+    "output": "def find_first_adverb_and_positions(sentence):\n    import re\n    adverb_pattern = re.compile(r'\\b\\w+ly\\b')\n    matches = adverb_pattern.finditer(sentence)\n    for match in matches:\n        return (match.group(), match.start(), match.end())"
+  },
+  {
+    "output": "def surface_area_of_cube(size):\n    return 6 * size ** 2"
+  },
+  {
+    "output": "def ratio_of_positive_numbers(arr):\n    return sum(1 for x in arr if x > 0) / len(arr) if arr else 0.0"
+  },
+  {
+    "output": "def find_largest_negative_number(lst):\n    return max((x for x in lst if x < 0), default=None)"
+  },
+  {
+    "output": "def trim_tuples_by_k(tuple_list, k):\n    return [tuple(x[:k] + x[k+1:]) for x in tuple_list]"
+  },
+  {
+    "output": "def multiply_tuples(tuple1, tuple2):\n    return tuple(x * y for x, y in zip(tuple1, tuple2))"
+  },
+  {
+    "output": "def count_elements_in_tuple(lst, tpl):\n    from collections import Counter\n    return dict(Counter(x for x in tpl if x in lst))"
+  },
+  {
+    "output": "def cube_elements(lst):\n    return [x**3 for x in lst]"
+  },
+  {
+    "output": "def sum_perrin_numbers(n):\n    if n <= 0:\n        return 0\n    perrin = [3, 2, 3]\n    for i in range(3, n):\n        perrin.append(perrin[i-2] + perrin[i-3])\n    return sum(perrin[:n])"
+  },
+  {
+    "output": "def extract_strings_of_size(strings, size):\n    return [s for s in strings if len(s) == size]"
+  },
+  {
+    "output": "def remove_whitespaces(s):\n    return s.replace(\" \", \"\").replace(\"\\t\", \"\").replace(\"\\n\", \"\").replace(\"\\r\", \"\")"
+  },
+  {
+    "output": "def calculate_loss(amount, cost_price):\n    return max(0, cost_price - amount)"
+  },
+  {
+    "output": "def sum_even_factors(n):\n    return sum(i for i in range(2, n+1, 2) if n % i == 0)"
+  },
+  {
+    "output": "def matches_word_with_z(word):\n    return 'z' in word"
+  },
+  {
+    "output": "def has_31_days(month):\n    return month in {1, 3, 5, 7, 8, 10, 12}"
+  },
+  {
+    "output": "def reverse_strings_in_list(string_list):\n    return [s[::-1] for s in string_list]"
+  },
+  {
+    "output": "def find_min_length_sublist(list_of_lists):\n    return min(list_of_lists, key=lambda x: len(x)) if list_of_lists else []"
+  },
+  {
+    "output": "def calculate_rectangle_area(length, width):\n    return length * width"
+  },
+  {
+    "output": "def remove_uppercase_substrings(s):\n    return ''.join(c for c in s if c.islower() or c.isupper() and not c.isupper())"
+  },
+  {
+    "output": "def get_first_elements(list_of_lists):\n    return [sublist[0] for sublist in list_of_lists] if list_of_lists else []"
+  },
+  {
+    "output": "def count_uppercase(s):\n    return sum(1 for c in s if c.isupper())"
+  },
+  {
+    "output": "def find_combinations(lst):\n    from itertools import combinations\n    return [list(combo) for i in range(1, len(lst)+1) for combo in combinations(lst, i)]"
+  },
+  {
+    "output": "def max_product_subarray(nums):\n    if not nums:\n        return 0\n    max_prod = min_prod = result = nums[0]\n    for i in range(1, len(nums)):\n        num = nums[i]\n        temp_max = max(num, max_prod * num, min_prod * num)\n        temp_min = min(num, max_prod * num, min_prod * num)\n        max_prod, min_prod = temp_max, temp_min\n        result = max(result, max_prod)\n    return result"
+  },
+  {
+    "output": "def check_all_values_same(d):\n    return all(v == next(iter(d.values())) for v in d.values())"
+  },
+  {
+    "output": "def drop_empty_items(d):\n    return {k: v for k, v in d.items() if v is not None and (isinstance(v, dict) and drop_empty_items(v) or v)}"
+  },
+  {
+    "output": "def max_product_increasing_subsequence(arr):\n    n = len(arr)\n    dp = [1] * n\n    for i in range(n):\n        for j in range(i):\n            if arr[i] > arr[j]:\n                dp[i] = max(dp[i], dp[j] * arr[i])\n    return max(dp) if n else 0"
+  },
+  {
+    "output": "def pairwise_addition(tuple_input):\n    return tuple(tuple_input[i] + tuple_input[i+1] for i in range(len(tuple_input)-1))"
+  },
+  {
+    "output": "def product_modulo(arr, n):\n    result = 1\n    for num in arr:\n        result = (result * num) % n\n    return result"
+  },
+  {
+    "output": "def check_consecutive(numbers):\n    return sorted(numbers) == list(range(min(numbers), max(numbers) + 1))"
+  },
+  {
+    "output": "def tuple_intersection(tuple_list):\n    return tuple(set(tuple_list[0]).intersection(*tuple_list[1:]))"
+  },
+  {
+    "output": "def replace_characters(s, old, new):\n    return s.replace(old, new)"
+  },
+  {
+    "output": "def sort_dict_by_value(d):\n    return dict(sorted(d.items(), key=lambda item: item[1]))"
+  },
+  {
+    "output": "def sum_of_largest_and_smallest(arr):\n    return max(arr) + min(arr)"
+  },
+  {
+    "output": "def convert_to_lowercase(s):\n    return s.lower()"
+  },
+  {
+    "output": "def remove_lowercase_substrings(s):\n    return ''.join(c for c in s if c.isupper() or not c.isalpha())"
+  },
+  {
+    "output": "def find_first_digit(n):\n    return int(str(abs(n))[0])"
+  },
+  {
+    "output": "def filter_odd_numbers(numbers):\n    return [num for num in numbers if num % 2 != 0]"
+  },
+  {
+    "output": "def calculate_difference(n):\n    sum_of_cubes = (n * (n + 1) // 2) ** 2\n    sum_of_numbers = n * (n + 1) // 2\n    return sum_of_cubes - sum_of_numbers"
+  },
+  {
+    "output": "def count_odd_xor_pairs(arr):\n    return sum(1 for i in range(len(arr)) for j in range(i+1, len(arr)) if (arr[i] ^ arr[j]) % 2 == 1)"
+  },
+  {
+    "output": "def toggle_case(s):\n    return s.swapcase()"
+  },
+  {
+    "output": "def sum_per_digit_difference(a, b):\n    return sum(abs(int(d1) - int(d2)) for d1, d2 in zip(str(a), str(b)))"
+  },
+  {
+    "output": "def find_max_subarray_sum(nums):\n    max_current = max_global = nums[0]\n    for x in nums[1:]:\n        max_current = max(x, max_current + x)\n        max_global = max(max_global, max_current)\n    return max_global"
+  },
+  {
+    "output": "def find_union_and_sort(tuple1, tuple2):\n    return sorted(tuple(set(tuple1 + tuple2)))"
+  },
+  {
+    "output": "def longest_sublist_length(list_of_lists):\n    return max(len(sublist) for sublist in list_of_lists) if list_of_lists else 0"
+  },
+  {
+    "output": "def extract_quoted_values(s):\n    import re\n    return re.findall(r'\"(.*?)\"', s)"
+  },
+  {
+    "output": "def count_unordered_pairs(lst):\n    return sum(1 for i in range(len(lst)) for j in range(i+1, len(lst)) if lst[i] != lst[j])"
+  },
+  {
+    "output": "def split_string_into_characters(s):\n    return list(s)"
+  },
+  {
+    "output": "def sum_of_digits(n):\n    return sum(int(d) for d in str(n))"
+  },
+  {
+    "output": "def is_list_sorted(lst):\n    return all(lst[i] <= lst[i+1] for i in range(len(lst)-1))"
+  },
+  {
+    "output": "def create_empty_dicts(N):\n    return [{} for _ in range(N)]"
+  },
+  {
+    "output": "def sort_sublists(list_of_lists):\n    return [sorted(sublist) for sublist in list_of_lists]"
+  },
+  {
+    "output": "def remove_duplicates_from_list_of_lists(input_list):\n    return [list(sublist) for sublist in set(tuple(sublist) for sublist in input_list)]"
+  },
+  {
+    "output": "def product_of_unique_numbers(lst):\n    return eval('1' + ''.join(f'*{num}' for num in set(lst)))"
+  },
+  {
+    "output": "def surface_area_of_cylinder(radius, height):\n    return 2 * 3.14159 * radius * (radius + height)"
+  },
+  {
+    "output": "def is_sublist(sub, main):\n    if not sub:\n        return True\n    if len(sub) > len(main):\n        return False\n    for i in range(len(main) - len(sub) + 1):\n        if main[i:i+len(sub)] == sub:\n            return True\n    return False"
+  },
+  {
+    "output": "def find_last_digit_of_factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    last_digit = 1\n    for i in range(2, n + 1):\n        last_digit = (last_digit * i) % 10\n    return last_digit"
+  },
+  {
+    "output": "def interleave_three_lists(list1, list2, list3):\n    return [item for triplet in zip(list1, list2, list3) for item in triplet]"
+  },
+  {
+    "output": "def find_dissimilar_elements(tuple1, tuple2):\n    return tuple(element for element in tuple1 if element not in tuple2) + tuple(element for element in tuple2 if element not in tuple1)"
+  },
+  {
+    "output": "def remove_uneven_elements(t):\n    return tuple(item for item in t if isinstance(item, tuple) and all(isinstance(sub, int) for sub in item))"
+  },
+  {
+    "output": "def surface_area(base_edge, height):\n    slant_height = (height**2 + (base_edge/2)**2)**0.5\n    lateral_surface_area = 4 * base_edge * slant_height\n    base_area = base_edge**2\n    return lateral_surface_area + base_area"
+  },
+  {
+    "output": "def is_dict_empty(input_dict):\n    return len(input_dict) == 0"
+  },
+  {
+    "output": "def catalan(n):\n    if n <= 1:\n        return 1\n    res = 0\n    for i in range(n):\n        res += catalan(i) * catalan(n - i - 1)\n    return res"
+  },
+  {
+    "output": "def find_first_adverb_ly(s):\n    import re\n    match = re.search(r'\\b\\w+ly\\b', s)\n    if match:\n        return (match.group(), match.start(), match.end())\n    return None"
+  },
+  {
+    "output": "def find_most_expensive_items(dataset, n):\n    return sorted(dataset, key=lambda x: x['price'], reverse=True)[:n]"
+  },
+  {
+    "output": "def split_and_append(lst, n):\n    return lst[n:] + lst[:n]"
+  },
+  {
+    "output": "def convert_list_to_tuple(input_list):\n    return tuple(input_list)"
+  },
+  {
+    "output": "def find_difference(lst):\n    return max(lst) - min(lst) if lst else 0"
+  },
+  {
+    "output": "def find_perfect_squares_between(a, b):\n    return [x*x for x in range(int(a**0.5)+1, int(b**0.5)+2) if x*x >= a and x*x <= b]"
+  },
+  {
+    "output": "def convert_polar_to_rectangular(r, theta):\n    x = r * math.cos(theta)\n    y = r * math.sin(theta)\n    return x, y"
+  },
+  {
+    "output": "def interchange_first_last(lst):\n    if len(lst) <= 1:\n        return lst\n    lst[0], lst[-1] = lst[-1], lst[0]\n    return lst"
+  },
+  {
+    "output": "def sum_product_binomial_coefficients(n):\n    from math import comb\n    total = 0\n    for i in range(n):\n        total += comb(n, i) * comb(n, i + 1)\n    return total"
+  },
+  {
+    "output": "def remove_leading_zeroes(ip_address):\n    return ip_address.lstrip('0') or '0'"
+  },
+  {
+    "output": "def find_difference(numbers):\n    first_even = next((x for x in numbers if x % 2 == 0), None)\n    first_odd = next((x for x in numbers if x % 2 != 0), None)\n    return first_even - first_odd if first_even is not None and first_odd is not None else None"
+  },
+  {
+    "output": "def count_min_swaps(bin_str1, bin_str2):\n    if len(bin_str1) != len(bin_str2):\n        return -1\n    diff = []\n    for a, b in zip(bin_str1, bin_str2):\n        if a != b:\n            diff.append((a, b))\n    count = 0\n    i = 0\n    while i < len(diff):\n        if diff[i][0] == '0' and diff[i][1] == '1':\n            j = i + 1\n            while j < len(diff) and (diff[j][0] != '1' or diff[j][1] != '0'):\n                j += 1\n            if j < len(diff):\n                count += 1\n                i = j + 1\n            else:\n                return -1\n        elif diff[i][0] == '1' and diff[i][1] == '0':\n            j = i + 1\n            while j < len(diff) and (diff[j][0] != '0' or diff[j][1] != '1'):\n                j += 1\n            if j < len(diff):\n                count += 1\n                i = j + 1\n            else:\n                return -1\n        else:\n            return -1\n    return count"
+  },
+  {
+    "output": "def calculate_tuple_size_in_bytes(input_tuple):\n    return len(input_tuple) * 4"
+  },
+  {
+    "output": "def find_kth_element(arr1, arr2, k):\n    import heapq\n    merged = []\n    heap = []\n    for i, num in enumerate(arr1):\n        heapq.heappush(heap, (num, i, 0))\n    for i, num in enumerate(arr2):\n        heapq.heappush(heap, (num, 0, i))\n    while heap:\n        val, idx1, idx2 = heapq.heappop(heap)\n        merged.append(val)\n        if len(merged) == k:\n            return val\n        if idx1 + 1 < len(arr1):\n            heapq.heappush(heap, (arr1[idx1 + 1], idx1 + 1, idx2))\n        if idx2 + 1 < len(arr2):\n            heapq.heappush(heap, (arr2[idx2 + 1], idx1, idx2 + 1))"
+  },
+  {
+    "output": "def is_armstrong(n):\n    digits = list(map(int, str(n)))\n    power = len(digits)\n    return n == sum(d ** power for d in digits)"
+  },
+  {
+    "output": "def sum_and_average(n):\n    total = n * (n + 1) // 2\n    average = total / n\n    return total, average"
+  },
+  {
+    "output": "def is_even(n):\n    return n % 2 == 0"
+  },
+  {
+    "output": "def find_first_repeated_char(s):\n    seen = set()\n    for char in s:\n        if char in seen:\n            return char\n        seen.add(char)\n    return None"
+  },
+  {
+    "output": "def get_lucid_numbers(n):\n    return [x for x in range(1, n+1) if x in {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824, 2147483648, 4294967296, 8589934592, 17179869184, 34359738368, 68719476736, 137438953472, 274877906944, 549755813888, 1099511627776, 2199023255552, 4398046511104, 8796093022208, 17592186044416, 35184372088832, 70368744177664, 140737488355328, 281474976710656, 562949953421312, 1125899906842624, 2251799813685248, 4503599627370496, 9007199254740992, 18014398509481984, 36028797018963968, 72057594037927936, 144115188075855872, 288230376151711744, 576460752303423488, 1152921504606846976, 2305843009213693952, 4611686018427387"
+  },
+  {
+    "output": "def reverse_words_in_string(s):\n    return ' '.join(s.split()[::-1])"
+  },
+  {
+    "output": "def is_prime(n):\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True"
+  },
+  {
+    "output": "def degrees_to_radians(degrees):\n    return math.radians(degrees)"
+  },
+  {
+    "output": "def search_pattern(text, pattern):\n    import re\n    match = re.search(pattern, text)\n    if match:\n        return match.group(), match.start(), match.end()"
+  },
+  {
+    "output": "def nth_bell_number(n):\n    import math\n    bell = [0] * (n + 1)\n    bell[0] = 1\n    for i in range(1, n + 1):\n        bell[i] = sum(math.comb(i, j) * bell[j] for j in range(i))\n    return bell[n]"
+  },
+  {
+    "output": "def remove_kth_element(lst, k):\n    return lst[:k] + lst[k+1:]"
+  },
+  {
+    "output": "def max_nth_column(matrix, n):\n    return max(row[n] for row in matrix)"
+  },
+  {
+    "output": "def process_lists(input_list):\n    first_elements = [sub[0] for sub in input_list]\n    second_elements = [sub[1] for sub in input_list]\n    return [first_elements, second_elements]"
+  },
+  {
+    "output": "def cumulative_sum(tuple_list):\n    return sum(sum(sublist) for sublist in tuple_list)"
+  },
+  {
+    "output": "def function_name(input_tuples):\n    return [sum(t) / len(t) for t in input_tuples]"
+  },
+  {
+    "output": "def element_wise_modulo(tuple1, tuple2):\n    return tuple(a % b for a, b in zip(tuple1, tuple2))"
+  },
+  {
+    "output": "def count_jumps(length, d):\n    if d < 0:\n        return -1\n    jumps = 0\n    current = 0\n    while current < d:\n        current += length\n        jumps += 1\n    return jumps if current == d else -1"
+  },
+  {
+    "output": "def divide_lists_element_wise(list1, list2):\n    return [a / b for a, b in zip(list1, list2)]"
+  },
+  {
+    "output": "def move_numbers_to_end(s):\n    return ''.join([c for c in s if not c.isdigit()] + [c for c in s if c.isdigit()])"
+  },
+  {
+    "output": "def largest_divisible_subset(nums):\n    if not nums:\n        return 0\n    nums.sort()\n    dp = [1] * len(nums)\n    for i in range(len(nums)):\n        for j in range(i):\n            if nums[i] % nums[j] == 0:\n                dp[i] = max(dp[i], dp[j] + 1)\n    return max(dp)"
+  },
+  {
+    "output": "def find_median_of_two_sorted_lists(list1, list2):\n    merged = []\n    i = j = 0\n    while i < len(list1) and j < len(list2):\n        if list1[i] < list2[j]:\n            merged.append(list1[i])\n            i += 1\n        else:\n            merged.append(list2[j])\n            j += 1\n    merged += list1[i:]\n    merged += list2[j:]\n    return merged[len(merged) // 2]"
+  },
+  {
+    "output": "def compute_powers(lst, n):\n    return [x ** n for x in lst]"
+  },
+  {
+    "output": "def convert_to_uppercase(s):\n    return s.upper()"
+  },
+  {
+    "output": "def interchange_first_last(lst):\n    if len(lst) <= 1:\n        return lst\n    lst[0], lst[-1] = lst[-1], lst[0]\n    return lst"
+  },
+  {
+    "output": "def largest_triangle_area(radius):\n    return 0.5 * radius * radius * 2"
+  },
+  {
+    "output": "def find_smallest_missing(nums):\n    for i in range(len(nums)):\n        if nums[i] != i + 1:\n            return i + 1\n    return len(nums) + 1"
+  },
+  {
+    "output": "def replace_spaces_with_percent_twenty(s):\n    return s.replace(' ', '%20')"
+  },
+  {
+    "output": "def find_even_numbers(numbers):\n    return [num for num in numbers if num % 2 == 0]"
+  },
+  {
+    "output": "def extract_adjacent_coordinates(coord):\n    x, y = coord\n    return [(x+1, y), (x-1, y), (x, y+1), (x, y-1)]"
+  },
+  {
+    "output": "def replace_whitespace_and_underscore(s):\n    return s.replace(' ', '_').replace('_', ' ')"
+  },
+  {
+    "output": "def move_zeroes(nums):\n    for num in nums:\n        if num != 0:\n            nums.remove(num)\n            nums.append(num)\n    return nums"
+  },
+  {
+    "output": "def sum_of_xor_pairs(nums):\n    total = 0\n    for i in range(len(nums)):\n        for j in range(i + 1, len(nums)):\n            total += nums[i] ^ nums[j]\n    return total"
+  },
+  {
+    "output": "def sort_list(input_list):\n    return sorted(input_list)"
+  },
+  {
+    "output": "def check_no_profit_no_loss(amount):\n    return amount == 0"
+  },
+  {
+    "output": "def calculate_wind_chill(velocity, temperature):\n    return round((13.12 + 0.6595 * temperature - 0.3865 * velocity ** 0.16) * 10) // 10 + 1 if (13.12 + 0.6595 * temperature - 0.3865 * velocity ** 0.16) % 10 != 0 else (13.12 + 0.6595 * temperature - 0.3865 * velocity ** 0.16) // 10"
+  },
+  {
+    "output": "def sum_filtered_names_lengths(names):\n    return sum(len(name) for name in names if name and name[0].isupper())"
+  },
+  {
+    "output": "def remove_parenthesis(s):\n    return s.replace(\"(\", \"\").replace(\")\", \"\")"
+  },
+  {
+    "output": "def nth_nonagonal_number(n):\n    return n * (5 * n - 3) // 2"
+  },
+  {
+    "output": "def contains_z_except_edges(s):\n    return any('z' == c and (i > 0 and i < len(s)-1) for i, c in enumerate(s))"
+  },
+  {
+    "output": "def reverse_array_up_to_position(arr, position):\n    return arr[:position][::-1] + arr[position:]"
+  },
+  {
+    "output": "def add_dict_to_tuple(t, d):\n    return t + (d,)"
+  },
+  {
+    "output": "def max_average_path(matrix):\n    rows = len(matrix)\n    cols = len(matrix[0])\n    dp = [[0]*cols for _ in range(rows)]\n    dp[0][0] = matrix[0][0]\n    for i in range(rows):\n        for j in range(cols):\n            if i == 0 and j == 0:\n                continue\n            if i == 0:\n                dp[i][j] = dp[i][j-1] + matrix[i][j]\n            elif j == 0:\n                dp[i][j] = dp[i-1][j] + matrix[i][j]\n            else:\n                dp[i][j] = max(dp[i-1][j], dp[i][j-1]) + matrix[i][j]\n    return dp[rows-1][cols-1]"
+  },
+  {
+    "output": "def filter_students(students, min_height, min_weight):\n    return [student for student in students if student['height'] > min_height and student['weight'] > min_weight]"
+  },
+  {
+    "output": "def count_same_values_indices(list1, list2):\n    return sum(1 for x, y in zip(list1, list2) if x == y)"
+  },
+  {
+    "output": "def calculate_sum_of_digits(base, power):\n    return sum(int(digit) for digit in str(base ** power))"
+  },
+  {
+    "output": "def extract_values_between_quotes(s):\n    import re\n    return re.findall(r'\"(.*?)\"', s)"
+  },
+  {
+    "output": "def function(input_tuple):\n    return tuple(input_tuple[i] * input_tuple[i+1] for i in range(len(input_tuple)-1))"
+  },
+  {
+    "output": "def element_wise_sum(list1, list2):\n    return [x + y for x, y in zip(list1, list2)]"
+  },
+  {
+    "output": "def remove_consecutive_duplicates(lst):\n    if not lst:\n        return []\n    result = [lst[0]]\n    for item in lst[1:]:\n        if item != result[-1]:\n            result.append(item)\n    return result"
+  },
+  {
+    "output": "def lateral_surface_area_cone(r, h):\n    import math\n    return math.pi * r * math.sqrt(r**2 + h**2)"
+  },
+  {
+    "output": "def replace_characters(s):\n    return s.replace(' ', ':').replace(',', ':').replace('.', ':')"
+  },
+  {
+    "output": "def find_first_occurrence(arr, target):\n    left, right = 0, len(arr) - 1\n    result = -1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            result = mid\n            right = mid - 1\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return result"
+  },
+  {
+    "output": "def sum_of_product_of_sublists(lst):\n    n = len(lst)\n    total = 0\n    for i in range(n):\n        product = 1\n        for j in range(i, n):\n            product *= lst[j]\n            total += product\n    return total"
+  },
+  {
+    "output": "def toggle_middle_bits(n):\n    return n ^ ( (1 << (n.bit_length() - 2)) - 1 )"
+  },
+  {
+    "output": "def find_left_insertion_point(sorted_list, value):\n    return bisect.bisect_left(sorted_list, value)"
+  },
+  {
+    "output": "def check_start_with_vowel(s):\n    import re\n    return bool(re.match(r'[aeiouAEIOU]', s))"
+  },
+  {
+    "output": "def geometric_sum(n):\n    return (1 - (1 / 2)**n) / (1 - 1/2)"
+  },
+  {
+    "output": "def find_index_of_smallest_triangular_with_n_digits(n):\n    import math\n    def triangular_number(k):\n        return k * (k + 1) // 2\n    def digits(num):\n        return len(str(num))\n    index = 1\n    while True:\n        tn = triangular_number(index)\n        if digits(tn) == n:\n            return index\n        index += 1"
+  },
+  {
+    "output": "def convert_tuple_to_dict(t):\n    return dict(t[i] if i % 2 == 0 else None for i in range(len(t)))"
+  },
+  {
+    "output": "def check_all_same_characters(s):\n    return all(c == s[0] for c in s) if s else True"
+  },
+  {
+    "output": "def calculate_tetrahedron_area(edge_length):\n    return 3 * (3 ** 0.5) * (edge_length ** 2)"
+  },
+  {
+    "output": "def rotate_list(lst, n):\n    return lst[-n:] + lst[:-n] if n > 0 else lst"
+  },
+  {
+    "output": "def has_none_value(input_tuple):\n    return any(element is None for element in input_tuple)"
+  },
+  {
+    "output": "def find_divisible_numbers(startnum, endnum):\n    def is_divisible(n):\n        for d in str(n):\n            if int(d) == 0:\n                return False\n            if n % int(d) != 0:\n                return False\n        return True\n    return [n for n in range(startnum, endnum + 1) if is_divisible(n)]"
+  },
+  {
+    "output": "def calculate_sector_area(radius, angle):\n    if angle > 360:\n        return None\n    area = (angle / 360) * 3.1415926535 * radius ** 2\n    return area"
+  },
+  {
+    "output": "def longest_common_subsequence(s1, s2, s3):\n    m, n, o = len(s1), len(s2), len(s3)\n    dp = [[[0]*(o+1) for _ in range(n+1)] for __ in range(m+1)]\n    for i in range(m+1):\n        for j in range(n+1):\n            for k in range(o+1):\n                if i == 0 or j == 0 or k == 0:\n                    dp[i][j][k] = 0\n                elif s1[i-1] == s2[j-1] == s3[k-1]:\n                    dp[i][j][k] = 1 + dp[i-1][j-1][k-1]\n                else:\n                    dp[i][j][k] = max(dp[i-1][j][k], dp[i][j-1][k], dp[i][j][k-1])\n    return dp[m][n][o]"
+  },
+  {
+    "output": "def put_spaces_between_words(s):\n    return ''.join(' ' + c if c.isupper() else c for c in s)"
+  },
+  {
+    "output": "def sort_numeric_strings(lst):\n    return sorted(lst, key=lambda x: float(x))"
+  },
+  {
+    "output": "def add_tuple_to_list(lst, tpl):\n    lst.append(tpl)"
+  },
+  {
+    "output": "def is_min_heap(arr):\n    n = len(arr)\n    for i in range(n // 2 - 1, -1, -1):\n        if 2 * i + 1 < n and arr[i] > arr[2 * i + 1]:\n            return False\n        if 2 * i + 2 < n and arr[i] > arr[2 * i + 2]:\n            return False\n    return True"
+  },
+  {
+    "output": "def jacobsthal(n):\n    return (2**n - (-1)**n) // 3"
+  }
+]
